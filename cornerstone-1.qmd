@@ -1,17 +1,41 @@
 ---
-  title: "Cornerstone 1 Web Anwendungen Übungen"
+  title: "Cornerstone Übung C1: Javascript Basics"
 ---
-
-# Cornerstone Übung C1: Javascript Basics
 
 > Wichtig: Bearbeiten Sie die Übungen **bevor** Sie sich die Lösungen ansehen.
 
 
 ## Aufgabe C.1.1
 
-Erstellen Sie eine Schleife in Javascript, die die Zhalen von 10 bis 30 ausgibt.
+Erstellen Sie eine Schleife in Javascript, die die Zahlen von 10 bis 30 ausgibt.
 
 ## Aufgabe C.1.2
 
-Erstellen Sie eine Schleife in Javascript, die die Zhalen von 10 bis 30 ausgibt.
+Gegeben ist der untenstehende String. Geben Sie mit Javascript die einzelnen Buchstaben des Strings in umgekehrter Reihenfolge einzeln aus.
+```text
+Das Huhn frisst gerne Körner.
+``` 
 
+## Aufgabe C.1.3
+
+Erstellen Sie eine Funktion mit dem Namen `subtract`, die als Parameter zwei Zahlen übergeben bekommt, die Zahl im zweiten Parameter von der Zahl im ersten Parameter subtrahiert und das Ergebnis dieser Subtraktion zurückgibt. Geben Sie einen Beispiel-Aufruf der Funktion an, der das Ergebnis ausgibt.
+
+## Aufgabe C.1.4
+
+Welche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie!
+   
+```javascript
+console.log(weisnicht(3, weisnicht(2, 2, 11), 47))
+
+function weisnicht(a, b, c) {
+    return a * b
+    console.log(a * a)    
+}
+```
+
+```javascript
+const  data = [
+    { nachname: "Karlsen", vorname: "Karl" },
+    { nachname: "Klarsen", vorname: "Karla" }
+]
+```
