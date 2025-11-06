@@ -4,8 +4,18 @@
 
 Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.
 
+- Übung 1: Setup
+- Übung 2
+- Übung 3
+- Übung 4
 - [Übung 5: Objektorientierung und AdonisJS](u5/index.qmd)
 - [Cornerstone Übung 1: Javascript Basics](cornerstone-1.qmd)
 - [Übung 6: AdonisJS und Datenbanken](u6/index.qmd)
 - [Übung 7: AdonisJS: Eine Todo-Liste](u7/index.qmd)
+- Übung 8+9: Interaktive Übung (Link siehe Vorlesung)
+- Übung 10
+- Übung 11
+- Übung 12
+- Übung 13
+- Übung 14
 
