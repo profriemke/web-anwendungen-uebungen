@@ -12,7 +12,7 @@ Erstellen Sie eine Schleife in Javascript, die die Zahlen von 10 bis 30 ausgibt.
 
 ## Aufgabe C.1.2
 
-Gegeben ist der untenstehende String. Geben Sie mit Javascript die einzelnen Buchstaben des Strings in umgekehrter Reihenfolge einzeln aus.
+Gegeben ist der untenstehende String. Geben Sie mit Javascript die einzelnen Buchstaben des Strings in umgekehrter Reihenfolge _einzeln_ aus.
 ```text
 Das Huhn frisst gerne Körner.
 ``` 

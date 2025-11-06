@@ -7,6 +7,20 @@
     "text": "Erstellen Sie eine Schleife in Javascript, die die Zahlen von 10 bis 30 ausgibt.\nLösung:\nfor (let i = 10; i &lt;= 30; i++) {\n  console.log(i);\n}\nErklärung:\n\nlet i = 10; Startwert der Zählvariablen.\ni &lt;= 30; Bedingung: Die Schleife läuft, solange i kleiner oder gleich 30 ist.\ni++ Erhöht i nach jedem Durchlauf um 1.\nconsole.log(i); → Gibt die aktuelle Zahl in der Konsole aus."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Web Anwendungen Übungen",
+    "section": "",
+    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nCornerstone Übung 1: Javascript Basics"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Web Anwendungen Übungen",
+    "section": "",
+    "text": "Test"
+  },
+  {
     "objectID": "cornerstone-1.html",
     "href": "cornerstone-1.html",
     "title": "Cornerstone Übung C.1: Javascript Basics",
@@ -49,17 +63,10 @@
     "text": "Aufgabe C.1.4\nWelche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie!\nconst  data = [\n    { nachname: \"Karlsen\", vorname: \"Karl\" },\n    { nachname: \"Klarsen\", vorname: \"Karla\" }\n]"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Web Anwendungen Übungen",
+    "objectID": "loesungen/c-1-2.html",
+    "href": "loesungen/c-1-2.html",
+    "title": "Cornerstone Übung C.1.1: Javascript Basics",
     "section": "",
-    "text": "Test"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Web Anwendungen Übungen",
-    "section": "",
-    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nCornerstone Übung 1: Javascript Basics"
+    "text": "Gegeben ist der untenstehende String. Geben Sie mit Javascript die einzelnen Buchstaben des Strings in umgekehrter Reihenfolge einzeln aus.\nDas Huhn frisst gerne Körner.\nLösung:\nconst text = \"Das Huhn frisst gerne Körner.\";\n\nfor (let i = text.length - 1; i &gt;= 0; i--) {\n  console.log(text[i]);\n}\nErklärung:\n\ntext.length - 1 Letzter Index des Strings (da Indizes bei 0 beginnen).\ni &gt;= 0 Die Schleife läuft rückwärts bis zum ersten Zeichen.\ntext[i] Greift auf das jeweilige Zeichen im String zu.\nconsole.log(text[i]) Gibt jedes Zeichen einzeln in einer neuen Zeile aus."
   }
 ]
