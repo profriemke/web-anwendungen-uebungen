@@ -7,13 +7,13 @@ Schreiben Sie eine Schleife, die die Namen aus dem Array ausgibt und abbricht, s
 const namen = ['Malte', 'Svenja', 'Rebecca', 'Klaus'] 
 ```
 
-**Lösung:** 
+### Lösung:
 
-### Lösungsansatz
+#### Lösungsansatz
 
 Hier wird eine kompakte **do-while-Schleife** verwendet, die das gewünschte Verhalten ohne `if` erreicht.
 
-### Erste Idee
+#### Erste Idee
 
 ```javascript
 const namen = ["Anna", "Lukas", "Tim", "Rebecca", "Sophie", "Max"];
@@ -27,7 +27,7 @@ while ( namen[i] !== "Rebecca" )
 ```
 Problem: Wir vergessen hierbei den 0. Eintrag `Anna`, da wir zwar bei `0` starten, aber dann sofort hoch.
 
-## Sonderfall lösen
+#### Sonderfall lösen
 
 Lösung hierfür ist einfach "ein weiter unten" zu starten, nämlich bei `-1`.
 
@@ -42,7 +42,7 @@ console.log(namen[i])
 while ( namen[i] !== "Rebecca" )
 ```
 
-## Erklärung
+#### Erklärung
 
 - **`console.log(namen[i])`** gibt den aktuellen Namen aus.  
 - Der Ausdruck **`namen[i] !== "Rebecca"`** prüft, ob der aktuelle Name ungleich "Rebecca" ist.  
@@ -52,7 +52,7 @@ while ( namen[i] !== "Rebecca" )
 
 ---
 
-## Ausgabe
+#### Ausgabe
 
 ```
 Anna

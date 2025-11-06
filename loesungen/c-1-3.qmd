@@ -4,7 +4,7 @@
 Erstellen Sie eine Funktion mit dem Namen `subtract`, die als Parameter zwei Zahlen übergeben bekommt, die Zahl im zweiten Parameter von der Zahl im ersten Parameter subtrahiert und das Ergebnis dieser Subtraktion zurückgibt. Geben Sie einen Beispiel-Aufruf der Funktion an, der das Ergebnis ausgibt.
 
 
-**Lösung:** 
+### Lösung:
 
 ```javascript
 function subtract(a, b) {
@@ -15,7 +15,7 @@ function subtract(a, b) {
 console.log(subtract(10, 3)); // Ausgabe: 7
 
 ```
-Erklärung:
+#### Erklärung:
 
 - `function subtract(a, b)` definiert eine Funktion mit zwei Parametern.
 - `return a - b;` führt die Subtraktion aus und gibt das Ergebnis zurück.

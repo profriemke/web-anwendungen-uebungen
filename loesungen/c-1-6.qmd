@@ -3,7 +3,7 @@
 ---
 Schreiben Sie eine Arrow-Function, die zwei Zahlen entgegennimmt und die Summe der beiden Zahlen zurückgibt. Wenn Sonderfälle auftreten, behandeln Sie diese entsprechend. Geben Sie einen Beispiel-Aufruf an.
 
-**Lösung:** 
+### Lösung:
    
 ```javascript
 const add  = (a,b)  => {
@@ -14,13 +14,13 @@ const add  = (a,b)  => {
 console.log(add(5, 7)) // Ausgabe: 12
 ```
 
-Erklärung:
+#### Erklärung:
 
 - Es wird eine Arrow Function mit zwei Parametern (`a` und `b`) definiert und der Konstanten `add` zugewiesen.
 - Das Ergebnis der Addition von `a + b` wird mit `return` zurückgegeben.
 - `console.log(add(5, 7));` gibt das Ergebnis `12` aus.
 
-### Alternative Lösung in Kurzform
+#### Alternative Lösung in Kurzform
 
 ```javascript
 const add = (a, b) => a + b

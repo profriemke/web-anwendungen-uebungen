@@ -17,7 +17,7 @@ const person = {
 2. Geben Sie die Werte anschließend mit `console.log()` aus.  
 
 
-**Lösung:**
+### Lösung:
 
 ```javascript
 const person = {
@@ -35,7 +35,7 @@ console.log(vorname) // Ausgabe: Lisa
 console.log(beruf)   // Ausgabe: Webentwicklerin
 ```
 
-### Erklärung
+#### Erklärung:
 
 - Durch **Destructuring** können Werte direkt aus einem Objekt in einzelne Variablen extrahiert werden.  
 - Die Syntax `{ vorname, beruf } = person` weist die Werte der gleichnamigen Eigenschaften Variablen mit den Namen `vorname` und `beruf` zu.  

@@ -14,7 +14,7 @@ Erstellen Sie ein Objekt `auto`, das folgende Eigenschaften und Methoden enthäl
 
 Rufen Sie beide Methoden anschließend auf.
 
-**Lösung:** 
+### Lösung: 
 
 ```javascript
 const auto = {
@@ -36,7 +36,7 @@ auto.start(); // Ausgabe: Das Auto startet.
 auto.info();  // Ausgabe: BMW X3, Baujahr 2021
 ```
 
-## Erklärung
+#### Erklärung:
 
 - Das Objekt **`auto`** enthält sowohl **Attribute (Daten bze.Eigenschaften)** als auch **Methoden (Funktionalität)**.  
 - Die Methode `info()` greift mit **`this`** auf die Eigenschaften **dieses** Objekts zu, in dem es ausgeführt wird.  

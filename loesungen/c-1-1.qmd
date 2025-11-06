@@ -3,14 +3,14 @@
 ---
 Erstellen Sie eine Schleife in Javascript, die die Zahlen von 10 bis 30 ausgibt.
 
-**Lösung:** 
+### Lösung:
 
 ```javascript
 for (let i = 10; i <= 30; i++) {
   console.log(i);
 }
 ```
-Erklärung:
+#### Erklärung:
 
 - `let i = 10;` Startwert der Zählvariablen.
 - `i <= 30;` Bedingung: Die Schleife läuft, solange `i` kleiner oder gleich `30` ist.

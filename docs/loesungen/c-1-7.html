@@ -153,11 +153,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lösungsansatz" id="toc-lösungsansatz" class="nav-link active" data-scroll-target="#lösungsansatz">Lösungsansatz</a></li>
-  <li><a href="#erste-idee" id="toc-erste-idee" class="nav-link" data-scroll-target="#erste-idee">Erste Idee</a></li>
-  <li><a href="#sonderfall-lösen" id="toc-sonderfall-lösen" class="nav-link" data-scroll-target="#sonderfall-lösen">Sonderfall lösen</a></li>
-  <li><a href="#erklärung" id="toc-erklärung" class="nav-link" data-scroll-target="#erklärung">Erklärung</a></li>
-  <li><a href="#ausgabe" id="toc-ausgabe" class="nav-link" data-scroll-target="#ausgabe">Ausgabe</a></li>
+  <li><a href="#lösung" id="toc-lösung" class="nav-link active" data-scroll-target="#lösung">Lösung:</a></li>
   </ul>
 </nav>
     </div>
@@ -185,13 +181,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <p>Schreiben Sie eine Schleife, die die Namen aus dem Array ausgibt und abbricht, sobald der Name Rebecca auftaucht. Dabei soll der name Rebecca noch ausgegeben werden. Der Code darf kein <code>if</code>-Statement enthalten.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> namen <span class="op">=</span> [<span class="st">'Malte'</span><span class="op">,</span> <span class="st">'Svenja'</span><span class="op">,</span> <span class="st">'Rebecca'</span><span class="op">,</span> <span class="st">'Klaus'</span>] </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Lösung:</strong></p>
-<section id="lösungsansatz" class="level3">
-<h3 class="anchored" data-anchor-id="lösungsansatz">Lösungsansatz</h3>
+<section id="lösung" class="level3">
+<h3 class="anchored" data-anchor-id="lösung">Lösung:</h3>
+<section id="lösungsansatz" class="level4">
+<h4 class="anchored" data-anchor-id="lösungsansatz">Lösungsansatz</h4>
 <p>Hier wird eine kompakte <strong>do-while-Schleife</strong> verwendet, die das gewünschte Verhalten ohne <code>if</code> erreicht.</p>
 </section>
-<section id="erste-idee" class="level3">
-<h3 class="anchored" data-anchor-id="erste-idee">Erste Idee</h3>
+<section id="erste-idee" class="level4">
+<h4 class="anchored" data-anchor-id="erste-idee">Erste Idee</h4>
 <div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> namen <span class="op">=</span> [<span class="st">"Anna"</span><span class="op">,</span> <span class="st">"Lukas"</span><span class="op">,</span> <span class="st">"Tim"</span><span class="op">,</span> <span class="st">"Rebecca"</span><span class="op">,</span> <span class="st">"Sophie"</span><span class="op">,</span> <span class="st">"Max"</span>]<span class="op">;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">do</span>{</span>
@@ -202,8 +199,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> ( namen[i] <span class="op">!==</span> <span class="st">"Rebecca"</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Problem: Wir vergessen hierbei den 0. Eintrag <code>Anna</code>, da wir zwar bei <code>0</code> starten, aber dann sofort hoch.</p>
 </section>
-<section id="sonderfall-lösen" class="level2">
-<h2 class="anchored" data-anchor-id="sonderfall-lösen">Sonderfall lösen</h2>
+<section id="sonderfall-lösen" class="level4">
+<h4 class="anchored" data-anchor-id="sonderfall-lösen">Sonderfall lösen</h4>
 <p>Lösung hierfür ist einfach “ein weiter unten” zu starten, nämlich bei <code>-1</code>.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> namen <span class="op">=</span> [<span class="st">"Anna"</span><span class="op">,</span> <span class="st">"Lukas"</span><span class="op">,</span> <span class="st">"Tim"</span><span class="op">,</span> <span class="st">"Rebecca"</span><span class="op">,</span> <span class="st">"Sophie"</span><span class="op">,</span> <span class="st">"Max"</span>]<span class="op">;</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> i <span class="op">=</span> <span class="op">-</span><span class="dv">1</span></span>
@@ -214,8 +211,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> ( namen[i] <span class="op">!==</span> <span class="st">"Rebecca"</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="erklärung" class="level2">
-<h2 class="anchored" data-anchor-id="erklärung">Erklärung</h2>
+<section id="erklärung" class="level4">
+<h4 class="anchored" data-anchor-id="erklärung">Erklärung</h4>
 <ul>
 <li><strong><code>console.log(namen[i])</code></strong> gibt den aktuellen Namen aus.<br>
 </li>
@@ -229,14 +226,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <hr>
 </section>
-<section id="ausgabe" class="level2">
-<h2 class="anchored" data-anchor-id="ausgabe">Ausgabe</h2>
+<section id="ausgabe" class="level4">
+<h4 class="anchored" data-anchor-id="ausgabe">Ausgabe</h4>
 <pre><code>Anna
 Lukas
 Tim
 Rebecca</code></pre>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

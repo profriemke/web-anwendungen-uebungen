@@ -6,7 +6,7 @@ Gegeben ist der untenstehende String. Geben Sie mit Javascript die einzelnen Buc
 Das Huhn frisst gerne Körner.
 ``` 
 
-**Lösung:** 
+### Lösung:
 
 ```javascript
 const text = "Das Huhn frisst gerne Körner.";
@@ -16,7 +16,7 @@ for (let i = text.length - 1; i >= 0; i--) {
 }
 ```
 
-Erklärung:
+#### Erklärung:
 
 - Wir können Strings als Arrays behandeln und dieses Array mit einer Schleife durchwandern.
 - `text.length - 1` letzter Index des Strings (da Indizes bei `0` beginnen).

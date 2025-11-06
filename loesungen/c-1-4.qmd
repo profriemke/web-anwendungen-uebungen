@@ -12,9 +12,9 @@ function weisnicht(a, b, c) {
 }
 ```
 
-**Lösung:** 
+### Lösung:
 
-### Analyse
+#### Analyse
 
 1. **Verschachtelter Funktionsaufruf:**
 
@@ -39,9 +39,7 @@ function weisnicht(a, b, c) {
    console.log(12)
    ```
 
----
-
-### Ergebnis
+#### Ergebnis
 
 Die **Ausgabe** des Programms lautet:
 
@@ -49,9 +47,7 @@ Die **Ausgabe** des Programms lautet:
 12
 ```
 
----
-
-### Begründung
+#### Begründung
 
 - Der `return`-Befehl beendet die Funktion sofort.  
 - Code nach `return` (wie `console.log(a * a)`) wird **nicht mehr ausgeführt**.  

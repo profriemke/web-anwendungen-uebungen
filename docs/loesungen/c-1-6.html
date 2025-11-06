@@ -153,7 +153,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#alternative-lösung-in-kurzform" id="toc-alternative-lösung-in-kurzform" class="nav-link active" data-scroll-target="#alternative-lösung-in-kurzform">Alternative Lösung in Kurzform</a></li>
+  <li><a href="#lösung" id="toc-lösung" class="nav-link active" data-scroll-target="#lösung">Lösung:</a></li>
   </ul>
 </nav>
     </div>
@@ -180,21 +180,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Schreiben Sie eine Arrow-Function, die zwei Zahlen entgegennimmt und die Summe der beiden Zahlen zurückgibt. Wenn Sonderfälle auftreten, behandeln Sie diese entsprechend. Geben Sie einen Beispiel-Aufruf an.</p>
-<p><strong>Lösung:</strong></p>
+<section id="lösung" class="level3">
+<h3 class="anchored" data-anchor-id="lösung">Lösung:</h3>
 <div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> add  <span class="op">=</span> (a<span class="op">,</span>b)  <span class="kw">=&gt;</span> {</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> a<span class="op">+</span>b </span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">// Beispielaufruf</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">add</span>(<span class="dv">5</span><span class="op">,</span> <span class="dv">7</span>)) <span class="co">// Ausgabe: 12</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Erklärung:</p>
+<section id="erklärung" class="level4">
+<h4 class="anchored" data-anchor-id="erklärung">Erklärung:</h4>
 <ul>
 <li>Es wird eine Arrow Function mit zwei Parametern (<code>a</code> und <code>b</code>) definiert und der Konstanten <code>add</code> zugewiesen.</li>
 <li>Das Ergebnis der Addition von <code>a + b</code> wird mit <code>return</code> zurückgegeben.</li>
 <li><code>console.log(add(5, 7));</code> gibt das Ergebnis <code>12</code> aus.</li>
 </ul>
-<section id="alternative-lösung-in-kurzform" class="level3">
-<h3 class="anchored" data-anchor-id="alternative-lösung-in-kurzform">Alternative Lösung in Kurzform</h3>
+</section>
+<section id="alternative-lösung-in-kurzform" class="level4">
+<h4 class="anchored" data-anchor-id="alternative-lösung-in-kurzform">Alternative Lösung in Kurzform</h4>
 <div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> add <span class="op">=</span> (a<span class="op">,</span> b) <span class="kw">=&gt;</span> a <span class="op">+</span> b</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">// Beispielaufruf:</span></span>
@@ -208,6 +211,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
