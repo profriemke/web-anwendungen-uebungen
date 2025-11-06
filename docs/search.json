@@ -49,11 +49,11 @@
     "text": "Budget: 90 Minuten\n\nIn dieser Woche soll Step-by-Step eine Todo-Liste-App entstehen, die ToDos verwaltet. Das natürlich in AdonisJS.\nUnsere Schritte:\n\nErstellen Sie eine neue AdonisJS Anwendung an. Konfigurieren Sie entsprechend des Vorgehens aus der Vorlesung das Projekt, insbesondere die Datenbank-Verbindung.\nLegeb Sie eine Datenbank mit einer Tabelle mit dem Namen todos und den Attributen id, text an. Am Besten fügen Sie ein paar Beispiel-Todos gleich ein.\nModifizieren Sie die Route / so, dass sie die Todos alle vollständig anzeigt. Legen Sie dafür ein geeignetes Template an.\nMit einem Formular können neue Todos angelegt werden. Hierzu brauchen Sie eine Route mit Formular und eine Route, die dieses verarbeitet.\nTodos lassen sich löschen. Fügen Sie hierzu auf der Startseite bei den Todos einen individuellen Löschlink ein."
   },
   {
-    "objectID": "u7/index.html#homework-woche-7",
-    "href": "u7/index.html#homework-woche-7",
+    "objectID": "u7/index.html#homework-woche",
+    "href": "u7/index.html#homework-woche",
     "title": "Übung 7: AdonisJS: Eine Todo-Liste",
-    "section": "Homework Woche 7",
-    "text": "Homework Woche 7\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Eine bessere Todo-Liste\n\nBudget: 15 Minuten\n\n\nErweitern Sie die Todo-App um die Möglichkeit Todos zu kategorisieren. Jedem Todo kann keine oder eine Kategorie zugewiesen werden.\nErweitern Sie hierzu in geeigneter Weise (siehe Datenbank-Vorlesung!) das Datenbank-Schema.\nSetzen Sie Zuweisung in Code um – hier gibt es verschiedene Möglichkeiten und wenn es funktioniert haben Sie eine richtige Lösung! Hier muss man knobeln!"
+    "section": "Homework Woche",
+    "text": "Homework Woche\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Eine bessere Todo-Liste\n\nBudget: 15 Minuten\n\n\nErweitern Sie die Todo-App um die Möglichkeit Todos zu kategorisieren. Jedem Todo kann keine oder eine Kategorie zugewiesen werden.\nErweitern Sie hierzu in geeigneter Weise (siehe Datenbank-Vorlesung!) das Datenbank-Schema.\nSetzen Sie Zuweisung in Code um – hier gibt es verschiedene Möglichkeiten und wenn es funktioniert haben Sie eine richtige Lösung! Hier muss man knobeln!"
   },
   {
     "objectID": "u5/index.html",

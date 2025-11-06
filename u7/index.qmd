@@ -15,7 +15,7 @@ Unsere Schritte:
 4. Mit einem Formular können neue Todos angelegt werden. Hierzu brauchen Sie eine Route mit Formular und eine Route, die dieses verarbeitet.
 5. Todos lassen sich löschen. Fügen Sie hierzu auf der Startseite bei den Todos einen individuellen Löschlink ein.
 
-## Homework Woche 7
+## Homework Woche
 
 Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.
 
