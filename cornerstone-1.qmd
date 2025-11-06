@@ -1,0 +1,17 @@
+---
+  title: "Cornerstone 1 Web Anwendungen Übungen"
+---
+
+# Cornerstone Übung C1: Javascript Basics
+
+> Wichtig: Bearbeiten Sie die Übungen **bevor** Sie sich die Lösungen ansehen.
+
+
+## Aufgabe C.1.1
+
+Erstellen Sie eine Schleife in Javascript, die die Zhalen von 10 bis 30 ausgibt.
+
+## Aufgabe C.1.2
+
+Erstellen Sie eine Schleife in Javascript, die die Zhalen von 10 bis 30 ausgibt.
+

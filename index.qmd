@@ -2,4 +2,8 @@
   title: "Web Anwendungen Übungen"
 ---
 
-# Test
+# Web Anwendungen Übungen
+
+Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.
+
+- [Cornerstone Übung 1: Javascript Basics](cornerstone-1.qmd)
