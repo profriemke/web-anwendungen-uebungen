@@ -56,6 +56,34 @@
     "text": "Homework Woche\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Eine bessere Todo-Liste\n\nBudget: 15 Minuten\n\n\nErweitern Sie die Todo-App um die Möglichkeit Todos zu kategorisieren. Jedem Todo kann keine oder eine Kategorie zugewiesen werden.\nErweitern Sie hierzu in geeigneter Weise (siehe Datenbank-Vorlesung!) das Datenbank-Schema.\nSetzen Sie Zuweisung in Code um – hier gibt es verschiedene Möglichkeiten und wenn es funktioniert haben Sie eine richtige Lösung! Hier muss man knobeln!"
   },
   {
+    "objectID": "u2/index.html",
+    "href": "u2/index.html",
+    "title": "Übung 1: Setup & Basics",
+    "section": "",
+    "text": "Budget: 30 Minuten\n\nFür die Lehrveranstaltung benötigen wir das richtige Tooling.\n\nGithub (Student) Account. Verwenden Sie einen sinnvollen Nutzernamen, da dieser im Business möglicherweise eine lebenslange Visitenkarte ist. Link: https://education.github.com/pack\nChatGPT Account. Link: https://chat.openai.com/auth/login\n\nRichten Sie die folgende Software ein:\n\nDB Browser for SQLite Link:https://sqlitebrowser.org/\nVisual Studio Code Link: https://code.visualstudio.com/\nNodeJS Link: https://nodejs.org/en\n\n\nWichtig: Installieren Sie die LTS (Long Term Support) Version\nZu beachten: NodeJS erscheint nicht als Programm in der Übersicht der Programme. Sie können die Funktion im Terminal auf der Kommandozeite mit node -v überprüfen.\n\n\nFolgende Visual Studio Code Erweiterungen\n\n\nhttps://marketplace.visualstudio.com/items?itemName=jripouteau.adonis-vscode-extension\nhttps://marketplace.visualstudio.com/items?itemName=luongnd.edge\nhttps://marketplace.visualstudio.com/items?itemName=GitHub.copilot"
+  },
+  {
+    "objectID": "u2/index.html#aufgabe-1-das-setup",
+    "href": "u2/index.html#aufgabe-1-das-setup",
+    "title": "Übung 1: Setup & Basics",
+    "section": "",
+    "text": "Budget: 30 Minuten\n\nFür die Lehrveranstaltung benötigen wir das richtige Tooling.\n\nGithub (Student) Account. Verwenden Sie einen sinnvollen Nutzernamen, da dieser im Business möglicherweise eine lebenslange Visitenkarte ist. Link: https://education.github.com/pack\nChatGPT Account. Link: https://chat.openai.com/auth/login\n\nRichten Sie die folgende Software ein:\n\nDB Browser for SQLite Link:https://sqlitebrowser.org/\nVisual Studio Code Link: https://code.visualstudio.com/\nNodeJS Link: https://nodejs.org/en\n\n\nWichtig: Installieren Sie die LTS (Long Term Support) Version\nZu beachten: NodeJS erscheint nicht als Programm in der Übersicht der Programme. Sie können die Funktion im Terminal auf der Kommandozeite mit node -v überprüfen.\n\n\nFolgende Visual Studio Code Erweiterungen\n\n\nhttps://marketplace.visualstudio.com/items?itemName=jripouteau.adonis-vscode-extension\nhttps://marketplace.visualstudio.com/items?itemName=luongnd.edge\nhttps://marketplace.visualstudio.com/items?itemName=GitHub.copilot"
+  },
+  {
+    "objectID": "u2/index.html#aufgabe-2-das-web",
+    "href": "u2/index.html#aufgabe-2-das-web",
+    "title": "Übung 1: Setup & Basics",
+    "section": "Aufgabe 2: Das Web",
+    "text": "Aufgabe 2: Das Web\n\nBudget: 30 Minuten\n\n\nErklären Sie gemeinsam im Team den Ablauf einer DNS-Auflösung. Stellen Sie den Ablauf grafisch dar.\nUnd nun das Web: Erstellen Sie gemeinsam einen grafischen Ablauf eines Web-Seiten-Aufrufs von der Eingabe der URL in den Browser bis zur vollständigen Anzeige der Web-Seite. Die Grafik soll alle wichtigen Fachbegriffe enthalten. Vergessen Sie nicht TCP."
+  },
+  {
+    "objectID": "u2/index.html#homework",
+    "href": "u2/index.html#homework",
+    "title": "Übung 1: Setup & Basics",
+    "section": "Homework",
+    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Anmeldung zum Workshop\n\nBudget: 30 Minuten\n\nSie benötigen in der Veranstaltung Kenntnisse im Umgang mit der Kommandozeile Ihres Betriebssystems. Im Moodle-Kurs finden Sie Einführungskurse, die Sie absolvieren können. Die untenstehenden Playlists sind Vorschläge. Sie können sich das Wissen natürlich auch auf andere Art aneignen.\nhttps://moodle.hdm-stuttgart.de/course/view.php?id=12697#coursecontentcollapse2"
+  },
+  {
     "objectID": "u5/index.html",
     "href": "u5/index.html",
     "title": "Übung 5: Objektorientierung und AdonisJS",
@@ -110,6 +138,55 @@
     "title": "Übung 6: AdonisJS und Datenbanken",
     "section": "Homework",
     "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Anmeldung zum Workshop\n\nBudget: 40 Minuten\n\n\nÜberlegen Sie, welche Daten eine Anmeldung für einen Marketing-Workshop an der HdM benötigt. Erstellen Sie im DB Browser for SQLite oder im SQLite3 Editor-Plugin eine Tabelle für diese Daten in der Kunden-Datenbank.\nErstellen Sie eine AdonisJS-Anwendung, die in einem Formular die Daten erfasst und in der Datenbank in dieser Tabelle speichert."
+  },
+  {
+    "objectID": "u1/index.html",
+    "href": "u1/index.html",
+    "title": "Übung 2: Node.js und Kommandozeile",
+    "section": "",
+    "text": "Budget: 25 Minuten\n\n\nWas ist eine Kommandozeile, auch Shell oder genannt, und wozu werden Shells in der Praxis verwendet?\nEs gibt verschiedene Kommandozeilen. Manche Betriebssysteme erlauben verschiedene Shells, manche haben eine Standard-Shell. Was sind die Unterschiede zwischen den häufig genutzten Shells bash, zsh, cmd und Powershell. Welche Shell(s) hat Ihr System?\nModerne Betriebssysteme verstecken mehr oder weniger die genaue Struktur des Dateisystems vor dem Nutzer. Wie sieht die Struktur Ihres Dateisystems in Wirklichkeit aus? Finden Sie Ihren Benutzerordner (Home-Verzeichnis). r\nÖffnen Sie Ihre Kommandozeile/Shell/Terminal. Windows: Verwenden Sie nicht Powershell, sondern die Command/cmd Shell.\nListen Sie im Terminal alle vorhandenen Ordner auf. Die Anzeige erfolgt mit ls (= list auf MacOS und Linux) bzw. dir (= directory unter Windows).\nWo wird Ihnen angezeigt in welchen Ordner Sie sich befinden?\nWechseln Sie mit dem Befehl cd (change directory) in Ihr Home-Verzeichnis. Es gibt die unten dargestellten Befehle für den Wechsel.\nLegen Sie einen Ordner mit beliebigen Namen an. Wechseln Sie in diesen Ordner und lassen Sie sich den Inhalt anzeigen. Finden Sie den neuen Ordner im Finder oder Explorer.\n\n\n\n\nAktion\nBefehl\n\n\n\n\nin das Home-Verzeichnis wechseln\ncd ~\n\n\nin das übergeordnete Verzeichnis wechseln\ncd ..\n\n\nin den obersten Ordner (Wurzel/Root) wechseln\ncd /\n\n\nn ein Verzeichnis wechseln\n`cd verzeichnis\n\n\n\n**Riemkes Tipp:*\nZwei hilfreiche Tipps zum Umgang mit der Kommandozeile:\n\nBei Ordner- und Dateinamen muss meistens nur der Beginn eingegeben werden. Sobald der Name eindeutig ist lässt sich der Name durch das Drücken der Tab-Taste vervollständigen.\nDie letzten Befehle sind in der Regel über die Pfeiltaste nach oben erreichbar und müssen nicht immer neu getippt werden."
+  },
+  {
+    "objectID": "u1/index.html#aufgabe-1-die-kommandozeile",
+    "href": "u1/index.html#aufgabe-1-die-kommandozeile",
+    "title": "Übung 2: Node.js und Kommandozeile",
+    "section": "",
+    "text": "Budget: 25 Minuten\n\n\nWas ist eine Kommandozeile, auch Shell oder genannt, und wozu werden Shells in der Praxis verwendet?\nEs gibt verschiedene Kommandozeilen. Manche Betriebssysteme erlauben verschiedene Shells, manche haben eine Standard-Shell. Was sind die Unterschiede zwischen den häufig genutzten Shells bash, zsh, cmd und Powershell. Welche Shell(s) hat Ihr System?\nModerne Betriebssysteme verstecken mehr oder weniger die genaue Struktur des Dateisystems vor dem Nutzer. Wie sieht die Struktur Ihres Dateisystems in Wirklichkeit aus? Finden Sie Ihren Benutzerordner (Home-Verzeichnis). r\nÖffnen Sie Ihre Kommandozeile/Shell/Terminal. Windows: Verwenden Sie nicht Powershell, sondern die Command/cmd Shell.\nListen Sie im Terminal alle vorhandenen Ordner auf. Die Anzeige erfolgt mit ls (= list auf MacOS und Linux) bzw. dir (= directory unter Windows).\nWo wird Ihnen angezeigt in welchen Ordner Sie sich befinden?\nWechseln Sie mit dem Befehl cd (change directory) in Ihr Home-Verzeichnis. Es gibt die unten dargestellten Befehle für den Wechsel.\nLegen Sie einen Ordner mit beliebigen Namen an. Wechseln Sie in diesen Ordner und lassen Sie sich den Inhalt anzeigen. Finden Sie den neuen Ordner im Finder oder Explorer.\n\n\n\n\nAktion\nBefehl\n\n\n\n\nin das Home-Verzeichnis wechseln\ncd ~\n\n\nin das übergeordnete Verzeichnis wechseln\ncd ..\n\n\nin den obersten Ordner (Wurzel/Root) wechseln\ncd /\n\n\nn ein Verzeichnis wechseln\n`cd verzeichnis\n\n\n\n**Riemkes Tipp:*\nZwei hilfreiche Tipps zum Umgang mit der Kommandozeile:\n\nBei Ordner- und Dateinamen muss meistens nur der Beginn eingegeben werden. Sobald der Name eindeutig ist lässt sich der Name durch das Drücken der Tab-Taste vervollständigen.\nDie letzten Befehle sind in der Regel über die Pfeiltaste nach oben erreichbar und müssen nicht immer neu getippt werden."
+  },
+  {
+    "objectID": "u1/index.html#aufgabe-2-node.js",
+    "href": "u1/index.html#aufgabe-2-node.js",
+    "title": "Übung 2: Node.js und Kommandozeile",
+    "section": "Aufgabe 2: Node.js",
+    "text": "Aufgabe 2: Node.js\n\nBudget: 15 Minuten\n\nAchten Sie bei den Antworten auf eine fachliche, gute Formulierung. Verwenden Sie keine Stichwörter.\n\nWas ist Node.js?\nWo liegt der Unterschied von Node.js und einem Javascript-Interpreter in einem Browser?\nWarum eignet sich Node.js besonders gut für Echtzeitanwendungen? r"
+  },
+  {
+    "objectID": "u1/index.html#aufgabe-3-javascript-die-fallunterscheidung",
+    "href": "u1/index.html#aufgabe-3-javascript-die-fallunterscheidung",
+    "title": "Übung 2: Node.js und Kommandozeile",
+    "section": "Aufgabe 3: Javascript: Die Fallunterscheidung",
+    "text": "Aufgabe 3: Javascript: Die Fallunterscheidung\n\nBudget: 10 Minuten\n\n\nWas ist eine Modulo-Rechnung und wie kann ich diese für den Test auf gerade/ungerade nutzen? r\nErstellen Sie ein Programm, welches den Inhalt der Variablen zahl testet und gerade/ungerade ausgibt. Verwenden Sie eine Fallunterscheidung mittels if-Statement.\nVerkürzen die das Programm mit einem ternären Operator."
+  },
+  {
+    "objectID": "u1/index.html#aufgabe-4-type-coercion",
+    "href": "u1/index.html#aufgabe-4-type-coercion",
+    "title": "Übung 2: Node.js und Kommandozeile",
+    "section": "Aufgabe 4: Type Coercion",
+    "text": "Aufgabe 4: Type Coercion\n\nBudget: 10 Minuten\n\nAchten Sie bei den Antworten auf eine fachliche, gute Formulierung. Verwenden Sie keine Stichwörter.\n\nWas versteht man unter Type Coercion?\nWarum ist diese notwendig?\nErstellen Sie zwei Code-Beispiele für Type Coercion und probieren Sie diese aus.\nWann benötigt eine Programmiersprache keine Type Coercion?"
+  },
+  {
+    "objectID": "u1/index.html#aufgabe-5-schleifen",
+    "href": "u1/index.html#aufgabe-5-schleifen",
+    "title": "Übung 2: Node.js und Kommandozeile",
+    "section": "Aufgabe 5: Schleifen",
+    "text": "Aufgabe 5: Schleifen\n\nBudget: 10 Minuten\n\nAchten Sie bei den Antworten auf eine fachliche, gute Formulierung. Verwenden Sie keine Stichwörter.\n\nErstellen Sie eine for-Schleife, die die Zahlen von 1 bis 100 ausgibt. Überlegen Sie kurz vor dem Entwickeln in einer Skizze, wie der Ablauf aussehen muss.\nErstellen Sie eine for-Schleife, die von 100 bis 0 zählt. Hierfür gibt es zwei Möglichkeiten die for-Schleife zu programmieren. Welche?\nLösen Sie die Aufgabe aus b. mit einer do-while-Schleife."
+  },
+  {
+    "objectID": "u1/index.html#homework",
+    "href": "u1/index.html#homework",
+    "title": "Übung 2: Node.js und Kommandozeile",
+    "section": "Homework",
+    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Die Wort-Schleife\n\nBudget: 15 Minuten\n\nErstellen Sie eine for-Schleife, die die Zahlen von 1 bis 100 ausgibt. Allerdings sollen die Zahlen als Wörter ausgegeben werden, also:\neins\nzwei\n...\nDabei soll der Einfachheit halber statt “zweiundzwanzig” einfach nur “zweizwei” ausgegeben werden. Sie benötigen zum Zusammenbau der Wörter eine Schleife und am Besten ein switch.\n\n\nAufgabe 2: Happy Strings\n\nBudget: 10 Minuten\n\nGegeben ist der folgende String:\n“Die schnelle braune Füchsin springt über den faulen Hund. Dabei beobachtet sie die grauen Wolken am Himmel, während der Wind sanft durch die grünen Blätter der Bäume weht. In der Ferne hört man das leise Rauschen eines Baches.”\nGeben Sie die folgenden Punkt jeweils in einem Javascript-Programm aus.\n\nDie Länge des Strings.\nÜberprüfen Sie, ob das Wort “Füchsin” im Satz vorkommt und geben Sie das Ergebnis aus\nErsetzen Sie das Wort “braune” durch “rote” und geben den neuen String aus.\nKonvertieren Sie den gesamten Satz in Kleinbuchstaben und geben ihn aus.\nSpeichern Sie alle Sätze einzeln in einem Array und geben dieses in einer Schleife aus."
   },
   {
     "objectID": "cornerstone-1.html",
@@ -186,7 +263,7 @@
     "href": "index.html",
     "title": "Web Anwendungen Übungen",
     "section": "",
-    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nÜbung 1: Setup\nÜbung 2\nÜbung 3\nÜbung 4\nÜbung 5: Objektorientierung und AdonisJS\nCornerstone Übung 1: Javascript Basics\nÜbung 6: AdonisJS und Datenbanken\nÜbung 7: AdonisJS: Eine Todo-Liste\nÜbung 8+9: Interaktive Übung (Link siehe Vorlesung)\nCornerstone Übung 2: AdonisJS Entwicklung\nÜbung 10\nÜbung 11\nÜbung 12\nÜbung 13\nCornerstone Übung 3: CSS\nÜbung 14\nCornerstone Übung 4: Client-seitiges Javascript"
+    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nÜbung 1: Setup & Basics\nÜbung 2: Node.js und Kommandozeile\nÜbung 3\nÜbung 4\nÜbung 5: Objektorientierung und AdonisJS\nCornerstone Übung 1: Javascript Basics\nÜbung 6: AdonisJS und Datenbanken\nÜbung 7: AdonisJS: Eine Todo-Liste\nÜbung 8+9: Interaktive Übung (Link siehe Vorlesung)\nCornerstone Übung 2: AdonisJS Entwicklung\nÜbung 10\nÜbung 11\nÜbung 12\nÜbung 13\nCornerstone Übung 3: CSS\nÜbung 14\nCornerstone Übung 4: Client-seitiges Javascript"
   },
   {
     "objectID": "loesungen/c-1-3.html",

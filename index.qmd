@@ -4,8 +4,8 @@
 
 Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.
 
-- Übung 1: Setup
-- Übung 2
+- [Übung 1: Setup & Basics](u1/index.qmd)
+- [Übung 2: Node.js und Kommandozeile](u2/index.qmd)
 - Übung 3
 - Übung 4
 - [Übung 5: Objektorientierung und AdonisJS](u5/index.qmd)
