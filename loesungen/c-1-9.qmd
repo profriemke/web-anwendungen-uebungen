@@ -1,0 +1,42 @@
+---
+  title: "Cornerstone Übung C.1.9: Javascript Basics"
+---
+
+Gegeben ist folgendes Objekt:
+
+```javascript
+const person = {
+  vorname: "Lisa",
+  nachname: "Meyer",
+  alter: 28,
+  beruf: "Webentwicklerin"
+};
+```
+
+1. Verwenden Sie **Object Destructuring**, um die Werte der Eigenschaften `vorname` und `beruf` aus dem Objekt zu extrahieren.  
+2. Geben Sie die Werte anschließend mit `console.log()` aus.  
+
+
+**Lösung:**
+
+```javascript
+const person = {
+  vorname: "Lisa",
+  nachname: "Meyer",
+  alter: 28,
+  beruf: "Webentwicklerin"
+}
+
+// Object Destructuring
+const { vorname, beruf } = person
+
+// Ausgabe
+console.log(vorname) // Ausgabe: Lisa
+console.log(beruf)   // Ausgabe: Webentwicklerin
+```
+
+### Erklärung
+
+- Durch **Destructuring** können Werte direkt aus einem Objekt in einzelne Variablen extrahiert werden.  
+- Die Syntax `{ vorname, beruf } = person` weist die Werte der gleichnamigen Eigenschaften Variablen mit den Namen `vorname` und `beruf` zu.  
+- Das spart Code und verbessert die Lesbarkeit, besonders bei großen Objekten, von denen an dieser Stelle nicht alles verwendet werden soll.

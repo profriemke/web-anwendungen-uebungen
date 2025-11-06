@@ -72,7 +72,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0d923d1ce2fbc328467bd8e3a581bae7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-76b13546cc83bdca894379f4e87fb82e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -160,6 +160,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#aufgabe-c.1.5" id="toc-aufgabe-c.1.5" class="nav-link" data-scroll-target="#aufgabe-c.1.5">Aufgabe C.1.5</a></li>
   <li><a href="#aufgabe-c.1.6" id="toc-aufgabe-c.1.6" class="nav-link" data-scroll-target="#aufgabe-c.1.6">Aufgabe C.1.6</a></li>
   <li><a href="#aufgabe-c.1.7" id="toc-aufgabe-c.1.7" class="nav-link" data-scroll-target="#aufgabe-c.1.7">Aufgabe C.1.7</a></li>
+  <li><a href="#aufgabe-c.1.9" id="toc-aufgabe-c.1.9" class="nav-link" data-scroll-target="#aufgabe-c.1.9">Aufgabe C.1.9</a></li>
   </ul>
 </nav>
     </div>
@@ -231,9 +232,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="aufgabe-c.1.7" class="level2">
 <h2 class="anchored" data-anchor-id="aufgabe-c.1.7">Aufgabe C.1.7</h2>
-<p>Schreiben Sie eine Schleife, die die Namen aus dem Array ausgibt und abbricht, sobald der Name Rebecca auftaucht. Dabei soll der name Rebecca noch ausgegeben werden. Der Code darf kein if-Statement enthalten.</p>
+<p>Schreiben Sie eine Schleife, die die Namen aus dem Array ausgibt und abbricht, sobald der Name Rebecca auftaucht. Dabei soll der name Rebecca noch ausgegeben werden. Der Code darf kein <code>if</code>-Statement enthalten.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> namen <span class="op">=</span> [<span class="st">'Malte'</span><span class="op">,</span> <span class="st">'Svenja'</span><span class="op">,</span> <span class="st">'Rebecca'</span><span class="op">,</span> <span class="st">'Klaus'</span>] </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><a href="./loesungen/c-1-7.html">Lösung</a></p>
+</section>
+<section id="aufgabe-c.1.9" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-c.1.9">Aufgabe C.1.9</h2>
+<p>Gegeben ist folgendes Objekt:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> person <span class="op">=</span> {</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">vorname</span><span class="op">:</span> <span class="st">"Lisa"</span><span class="op">,</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">nachname</span><span class="op">:</span> <span class="st">"Meyer"</span><span class="op">,</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">alter</span><span class="op">:</span> <span class="dv">28</span><span class="op">,</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">beruf</span><span class="op">:</span> <span class="st">"Webentwicklerin"</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol type="1">
+<li>Verwenden Sie <strong>Object Destructuring</strong>, um die Werte der Eigenschaften <code>vorname</code> und <code>beruf</code> aus dem Objekt zu extrahieren.<br>
+</li>
+<li>Geben Sie die Werte anschließend mit <code>console.log()</code> aus.</li>
+</ol>
+<p><a href="./loesungen/c-1-9.html">Lösung</a></p>
 
 
 </section>

@@ -59,10 +59,28 @@ Schreiben Sie eine Arrow-Function, die zwei Zahlen entgegennimmt und die Summe d
 [Lösung](loesungen/c-1-6.qmd)
 
 ## Aufgabe C.1.7
-Schreiben Sie eine Schleife, die die Namen aus dem Array ausgibt und abbricht, sobald der Name Rebecca auftaucht. Dabei soll der name Rebecca noch ausgegeben werden. Der Code darf kein if-Statement enthalten.
+Schreiben Sie eine Schleife, die die Namen aus dem Array ausgibt und abbricht, sobald der Name Rebecca auftaucht. Dabei soll der name Rebecca noch ausgegeben werden. Der Code darf kein `if`-Statement enthalten.
 
 ```javascript
 const namen = ['Malte', 'Svenja', 'Rebecca', 'Klaus'] 
 ```
 
 [Lösung](loesungen/c-1-7.qmd)
+
+## Aufgabe C.1.9
+
+Gegeben ist folgendes Objekt:
+
+```javascript
+const person = {
+  vorname: "Lisa",
+  nachname: "Meyer",
+  alter: 28,
+  beruf: "Webentwicklerin"
+};
+```
+
+1. Verwenden Sie **Object Destructuring**, um die Werte der Eigenschaften `vorname` und `beruf` aus dem Objekt zu extrahieren.  
+2. Geben Sie die Werte anschließend mit `console.log()` aus.  
+
+[Lösung](loesungen/c-1-9.qmd)

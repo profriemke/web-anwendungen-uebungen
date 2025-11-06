@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Cornerstone Übung C.1.4: Javascript Basics – Web Anwendungen Übungen</title>
+<title>Cornerstone Übung C.1.9: Javascript Basics – Web Anwendungen Übungen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -153,9 +153,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#analyse" id="toc-analyse" class="nav-link active" data-scroll-target="#analyse">Analyse</a></li>
-  <li><a href="#ergebnis" id="toc-ergebnis" class="nav-link" data-scroll-target="#ergebnis">Ergebnis</a></li>
-  <li><a href="#begründung" id="toc-begründung" class="nav-link" data-scroll-target="#begründung">Begründung</a></li>
+  <li><a href="#erklärung" id="toc-erklärung" class="nav-link active" data-scroll-target="#erklärung">Erklärung</a></li>
   </ul>
 </nav>
     </div>
@@ -164,7 +162,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Cornerstone Übung C.1.4: Javascript Basics</h1>
+<h1 class="title">Cornerstone Übung C.1.9: Javascript Basics</h1>
 </div>
 
 
@@ -181,59 +179,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Welche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie!</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">weisnicht</span>(<span class="dv">3</span><span class="op">,</span> <span class="fu">weisnicht</span>(<span class="dv">2</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">11</span>)<span class="op">,</span> <span class="dv">47</span>))</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">weisnicht</span>(a<span class="op">,</span> b<span class="op">,</span> c) {</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">*</span> b</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(a <span class="op">*</span> a)    </span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Lösung:</strong></p>
-<section id="analyse" class="level3">
-<h3 class="anchored" data-anchor-id="analyse">Analyse</h3>
+<p>Gegeben ist folgendes Objekt:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> person <span class="op">=</span> {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">vorname</span><span class="op">:</span> <span class="st">"Lisa"</span><span class="op">,</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">nachname</span><span class="op">:</span> <span class="st">"Meyer"</span><span class="op">,</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">alter</span><span class="op">:</span> <span class="dv">28</span><span class="op">,</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">beruf</span><span class="op">:</span> <span class="st">"Webentwicklerin"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol type="1">
-<li><p><strong>Verschachtelter Funktionsaufruf:</strong></p>
-<p>Zuerst wird die innere Funktion ausgeführt:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">weisnicht</span>(<span class="dv">2</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">11</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li><code>a = 2</code>, <code>b = 2</code>, <code>c = 11</code><br>
+<li>Verwenden Sie <strong>Object Destructuring</strong>, um die Werte der Eigenschaften <code>vorname</code> und <code>beruf</code> aus dem Objekt zu extrahieren.<br>
 </li>
-<li>Rückgabe: <code>a * b = 4</code><br>
-</li>
-<li>Die Zeile <code>console.log(a * a)</code> wird <strong>nicht ausgeführt</strong>, da sie <strong>nach</strong> dem <code>return</code> steht.</li>
-</ul></li>
-<li><p><strong>Äußere Funktion:</strong></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">weisnicht</span>(<span class="dv">3</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">47</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li><code>a = 3</code>, <code>b = 4</code>, <code>c = 47</code></li>
-<li><code>c</code> wird in der Funktion nicht verwendet und hat daher keinen Einfluss.</li>
-<li>Rückgabe: <code>3 * 4 = 12</code></li>
-</ul></li>
-<li><p><strong>Endergebnis:</strong></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="dv">12</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li>Geben Sie die Werte anschließend mit <code>console.log()</code> aus.</li>
 </ol>
-<hr>
-</section>
-<section id="ergebnis" class="level3">
-<h3 class="anchored" data-anchor-id="ergebnis">Ergebnis</h3>
-<p>Die <strong>Ausgabe</strong> des Programms lautet:</p>
-<pre><code>12</code></pre>
-<hr>
-</section>
-<section id="begründung" class="level3">
-<h3 class="anchored" data-anchor-id="begründung">Begründung</h3>
+<p><strong>Lösung:</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> person <span class="op">=</span> {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">vorname</span><span class="op">:</span> <span class="st">"Lisa"</span><span class="op">,</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">nachname</span><span class="op">:</span> <span class="st">"Meyer"</span><span class="op">,</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">alter</span><span class="op">:</span> <span class="dv">28</span><span class="op">,</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">beruf</span><span class="op">:</span> <span class="st">"Webentwicklerin"</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">// Object Destructuring</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> { vorname<span class="op">,</span> beruf } <span class="op">=</span> person</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">// Ausgabe</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(vorname) <span class="co">// Ausgabe: Lisa</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(beruf)   <span class="co">// Ausgabe: Webentwicklerin</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="erklärung" class="level3">
+<h3 class="anchored" data-anchor-id="erklärung">Erklärung</h3>
 <ul>
-<li>Der <code>return</code>-Befehl beendet die Funktion sofort.<br>
+<li>Durch <strong>Destructuring</strong> können Werte direkt aus einem Objekt in einzelne Variablen extrahiert werden.<br>
 </li>
-<li>Code nach <code>return</code> (wie <code>console.log(a * a)</code>) wird <strong>nicht mehr ausgeführt</strong>.<br>
+<li>Die Syntax <code>{ vorname, beruf } = person</code> weist die Werte der gleichnamigen Eigenschaften Variablen mit den Namen <code>vorname</code> und <code>beruf</code> zu.<br>
 </li>
-<li>Es tritt <strong>kein Fehler</strong> auf.<br>
-</li>
-<li>Die Berechnung erfolgt korrekt durch Verschachtelung der Funktionsaufrufe:
-<ol type="1">
-<li><code>weisnicht(2, 2, 11)</code> → <code>4</code></li>
-<li><code>weisnicht(3, 4, 47)</code> → <code>12</code></li>
-</ol></li>
+<li>Das spart Code und verbessert die Lesbarkeit, besonders bei großen Objekten, von denen an dieser Stelle nicht alles verwendet werden soll.</li>
 </ul>
 
 

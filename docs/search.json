@@ -49,6 +49,13 @@
     "text": "Erstellen Sie eine Funktion mit dem Namen subtract, die als Parameter zwei Zahlen übergeben bekommt, die Zahl im zweiten Parameter von der Zahl im ersten Parameter subtrahiert und das Ergebnis dieser Subtraktion zurückgibt. Geben Sie einen Beispiel-Aufruf der Funktion an, der das Ergebnis ausgibt.\nLösung:\nfunction subtract(a, b) {\n  return a - b;\n}\n\n// Beispiel-Aufruf:\nconsole.log(subtract(10, 3)); // Ausgabe: 7\nErklärung:\n\nfunction subtract(a, b) definiert eine Funktion mit zwei Parametern.\nreturn a - b; führt die Subtraktion aus und gibt das Ergebnis zurück.\nconsole.log(subtract(10, 3)); ruft die Funktion auf und gibt das Ergebnis 7 in der Konsole aus."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Web Anwendungen Übungen",
+    "section": "",
+    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nCornerstone Übung 1: Javascript Basics"
+  },
+  {
     "objectID": "cornerstone-1.html",
     "href": "cornerstone-1.html",
     "title": "Cornerstone Übung C.1: Javascript Basics",
@@ -105,11 +112,18 @@
     "text": "Aufgabe C.1.7\nSchreiben Sie eine Schleife, die die Namen aus dem Array ausgibt und abbricht, sobald der Name Rebecca auftaucht. Dabei soll der name Rebecca noch ausgegeben werden. Der Code darf kein if-Statement enthalten.\nconst namen = ['Malte', 'Svenja', 'Rebecca', 'Klaus'] \nLösung"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Web Anwendungen Übungen",
+    "objectID": "cornerstone-1.html#aufgabe-c.1.9",
+    "href": "cornerstone-1.html#aufgabe-c.1.9",
+    "title": "Cornerstone Übung C.1: Javascript Basics",
+    "section": "Aufgabe C.1.9",
+    "text": "Aufgabe C.1.9\nGegeben ist folgendes Objekt:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n};\n\nVerwenden Sie Object Destructuring, um die Werte der Eigenschaften vorname und beruf aus dem Objekt zu extrahieren.\n\nGeben Sie die Werte anschließend mit console.log() aus.\n\nLösung"
+  },
+  {
+    "objectID": "loesungen/c-1-9.html",
+    "href": "loesungen/c-1-9.html",
+    "title": "Cornerstone Übung C.1.9: Javascript Basics",
     "section": "",
-    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nCornerstone Übung 1: Javascript Basics"
+    "text": "Gegeben ist folgendes Objekt:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n};\n\nVerwenden Sie Object Destructuring, um die Werte der Eigenschaften vorname und beruf aus dem Objekt zu extrahieren.\n\nGeben Sie die Werte anschließend mit console.log() aus.\n\nLösung:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n}\n\n// Object Destructuring\nconst { vorname, beruf } = person\n\n// Ausgabe\nconsole.log(vorname) // Ausgabe: Lisa\nconsole.log(beruf)   // Ausgabe: Webentwicklerin\n\nErklärung\n\nDurch Destructuring können Werte direkt aus einem Objekt in einzelne Variablen extrahiert werden.\n\nDie Syntax { vorname, beruf } = person weist die Werte der gleichnamigen Eigenschaften Variablen mit den Namen vorname und beruf zu.\n\nDas spart Code und verbessert die Lesbarkeit, besonders bei großen Objekten, von denen an dieser Stelle nicht alles verwendet werden soll."
   },
   {
     "objectID": "loesungen/c-1-6.html",

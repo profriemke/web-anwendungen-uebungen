@@ -1,7 +1,7 @@
 ---
   title: "Cornerstone Übung C.1.7: Javascript Basics"
 ---
-Schreiben Sie eine Schleife, die die Namen aus dem Array ausgibt und abbricht, sobald der Name Rebecca auftaucht. Dabei soll der name Rebecca noch ausgegeben werden. Der Code darf kein if-Statement enthalten.
+Schreiben Sie eine Schleife, die die Namen aus dem Array ausgibt und abbricht, sobald der Name Rebecca auftaucht. Dabei soll der name Rebecca noch ausgegeben werden. Der Code darf kein `if`-Statement enthalten.
 
 ```javascript
 const namen = ['Malte', 'Svenja', 'Rebecca', 'Klaus'] 
