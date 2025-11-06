@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Web Anwendungen Übungen</title>
+<title>Übung 7: AdonisJS: Eine Todo-Liste – Web Anwendungen Übungen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-76b13546cc83bdca894379f4e87fb82e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-76b13546cc83bdca894379f4e87fb82e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Web Anwendungen Übungen</span>
     </a>
   </div>
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -98,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-cornerstone-übungen">    
         <li>
-    <a class="dropdown-item" href="./cornerstone-1.html">
+    <a class="dropdown-item" href="../cornerstone-1.html">
  <span class="dropdown-text">C.1: Javascript Basics</span></a>
   </li>  
     </ul>
@@ -114,15 +114,25 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#aufgabe-1-die-todo-liste" id="toc-aufgabe-1-die-todo-liste" class="nav-link active" data-scroll-target="#aufgabe-1-die-todo-liste">Aufgabe 1: Die Todo-Liste</a></li>
+  <li><a href="#homework-woche-7" id="toc-homework-woche-7" class="nav-link" data-scroll-target="#homework-woche-7">Homework Woche 7</a>
+  <ul class="collapse">
+  <li><a href="#aufgabe-1-eine-bessere-todo-liste" id="toc-aufgabe-1-eine-bessere-todo-liste" class="nav-link" data-scroll-target="#aufgabe-1-eine-bessere-todo-liste">Aufgabe 1: Eine bessere Todo-Liste</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Web Anwendungen Übungen</h1>
+<h1 class="title">Übung 7: AdonisJS: Eine Todo-Liste</h1>
 </div>
 
 
@@ -139,15 +149,38 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.</p>
-<ul>
-<li><a href="./u5/index.html">Übung 5: Objektorientierung und AdonisJS</a></li>
-<li><a href="./cornerstone-1.html">Cornerstone Übung 1: Javascript Basics</a></li>
-<li><a href="./u6/index.html">Übung 6: AdonisJS und Datenbanken</a></li>
-<li><a href="./u7/index.html">Übung 7: AdonisJS: Eine Todo-Liste</a></li>
-</ul>
+<section id="aufgabe-1-die-todo-liste" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-1-die-todo-liste">Aufgabe 1: Die Todo-Liste</h2>
+<blockquote class="blockquote">
+<p>Budget: 90 Minuten</p>
+</blockquote>
+<p>In dieser Woche soll Step-by-Step eine Todo-Liste-App entstehen, die ToDos verwaltet. Das natürlich in AdonisJS.</p>
+<p>Unsere Schritte:</p>
+<ol type="1">
+<li>Erstellen Sie eine neue AdonisJS Anwendung an. Konfigurieren Sie entsprechend des Vorgehens aus der Vorlesung das Projekt, insbesondere die Datenbank-Verbindung.</li>
+<li>Legeb Sie eine Datenbank mit einer Tabelle mit dem Namen <code>todos</code> und den Attributen <code>id, text</code> an. Am Besten fügen Sie ein paar Beispiel-Todos gleich ein.</li>
+<li>Modifizieren Sie die Route <code>/</code> so, dass sie die Todos alle vollständig anzeigt. Legen Sie dafür ein geeignetes Template an.</li>
+<li>Mit einem Formular können neue Todos angelegt werden. Hierzu brauchen Sie eine Route mit Formular und eine Route, die dieses verarbeitet.</li>
+<li>Todos lassen sich löschen. Fügen Sie hierzu auf der Startseite bei den Todos einen individuellen Löschlink ein.</li>
+</ol>
+</section>
+<section id="homework-woche-7" class="level2">
+<h2 class="anchored" data-anchor-id="homework-woche-7">Homework Woche 7</h2>
+<p>Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.</p>
+<section id="aufgabe-1-eine-bessere-todo-liste" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-1-eine-bessere-todo-liste">Aufgabe 1: Eine bessere Todo-Liste</h3>
+<blockquote class="blockquote">
+<p>Budget: 15 Minuten</p>
+</blockquote>
+<ol type="1">
+<li>Erweitern Sie die Todo-App um die Möglichkeit Todos zu kategorisieren. Jedem Todo kann keine oder eine Kategorie zugewiesen werden.</li>
+<li>Erweitern Sie hierzu in geeigneter Weise (siehe Datenbank-Vorlesung!) das Datenbank-Schema.</li>
+<li>Setzen Sie Zuweisung in Code um – hier gibt es verschiedene Möglichkeiten und wenn es funktioniert haben Sie eine richtige Lösung! Hier muss man knobeln!</li>
+</ol>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

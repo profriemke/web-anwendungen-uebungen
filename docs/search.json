@@ -35,6 +35,83 @@
     "text": "Gegeben ist folgendes Objekt:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n};\n\nVerwenden Sie Object Destructuring, um die Werte der Eigenschaften vorname und beruf aus dem Objekt zu extrahieren.\n\nGeben Sie die Werte anschließend mit console.log() aus.\n\n\nLösung:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n}\n\n// Object Destructuring\nconst { vorname, beruf } = person\n\n// Ausgabe\nconsole.log(vorname) // Ausgabe: Lisa\nconsole.log(beruf)   // Ausgabe: Webentwicklerin\n\nErklärung:\n\nDurch Destructuring können Werte direkt aus einem Objekt in einzelne Variablen extrahiert werden.\n\nDie Syntax { vorname, beruf } = person weist die Werte der gleichnamigen Eigenschaften Variablen mit den Namen vorname und beruf zu.\n\nDas spart Code und verbessert die Lesbarkeit, besonders bei großen Objekten, von denen an dieser Stelle nicht alles verwendet werden soll."
   },
   {
+    "objectID": "u7/index.html",
+    "href": "u7/index.html",
+    "title": "Übung 7: AdonisJS: Eine Todo-Liste",
+    "section": "",
+    "text": "Budget: 90 Minuten\n\nIn dieser Woche soll Step-by-Step eine Todo-Liste-App entstehen, die ToDos verwaltet. Das natürlich in AdonisJS.\nUnsere Schritte:\n\nErstellen Sie eine neue AdonisJS Anwendung an. Konfigurieren Sie entsprechend des Vorgehens aus der Vorlesung das Projekt, insbesondere die Datenbank-Verbindung.\nLegeb Sie eine Datenbank mit einer Tabelle mit dem Namen todos und den Attributen id, text an. Am Besten fügen Sie ein paar Beispiel-Todos gleich ein.\nModifizieren Sie die Route / so, dass sie die Todos alle vollständig anzeigt. Legen Sie dafür ein geeignetes Template an.\nMit einem Formular können neue Todos angelegt werden. Hierzu brauchen Sie eine Route mit Formular und eine Route, die dieses verarbeitet.\nTodos lassen sich löschen. Fügen Sie hierzu auf der Startseite bei den Todos einen individuellen Löschlink ein."
+  },
+  {
+    "objectID": "u7/index.html#aufgabe-1-die-todo-liste",
+    "href": "u7/index.html#aufgabe-1-die-todo-liste",
+    "title": "Übung 7: AdonisJS: Eine Todo-Liste",
+    "section": "",
+    "text": "Budget: 90 Minuten\n\nIn dieser Woche soll Step-by-Step eine Todo-Liste-App entstehen, die ToDos verwaltet. Das natürlich in AdonisJS.\nUnsere Schritte:\n\nErstellen Sie eine neue AdonisJS Anwendung an. Konfigurieren Sie entsprechend des Vorgehens aus der Vorlesung das Projekt, insbesondere die Datenbank-Verbindung.\nLegeb Sie eine Datenbank mit einer Tabelle mit dem Namen todos und den Attributen id, text an. Am Besten fügen Sie ein paar Beispiel-Todos gleich ein.\nModifizieren Sie die Route / so, dass sie die Todos alle vollständig anzeigt. Legen Sie dafür ein geeignetes Template an.\nMit einem Formular können neue Todos angelegt werden. Hierzu brauchen Sie eine Route mit Formular und eine Route, die dieses verarbeitet.\nTodos lassen sich löschen. Fügen Sie hierzu auf der Startseite bei den Todos einen individuellen Löschlink ein."
+  },
+  {
+    "objectID": "u7/index.html#homework-woche-7",
+    "href": "u7/index.html#homework-woche-7",
+    "title": "Übung 7: AdonisJS: Eine Todo-Liste",
+    "section": "Homework Woche 7",
+    "text": "Homework Woche 7\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Eine bessere Todo-Liste\n\nBudget: 15 Minuten\n\n\nErweitern Sie die Todo-App um die Möglichkeit Todos zu kategorisieren. Jedem Todo kann keine oder eine Kategorie zugewiesen werden.\nErweitern Sie hierzu in geeigneter Weise (siehe Datenbank-Vorlesung!) das Datenbank-Schema.\nSetzen Sie Zuweisung in Code um – hier gibt es verschiedene Möglichkeiten und wenn es funktioniert haben Sie eine richtige Lösung! Hier muss man knobeln!"
+  },
+  {
+    "objectID": "u5/index.html",
+    "href": "u5/index.html",
+    "title": "Übung 5: Objektorientierung und AdonisJS",
+    "section": "",
+    "text": "Budget: 10 Minuten\n\nGegeben ist folgende Code:\nfunction printPerson(_________________________________) {\n  console.log(`Name: ${firstName} ${lastName}`);\n}\n\nconst person = {\n  firstName: 'Jane',\n  lastName: 'Doe',\n  age: 25,\n  country: 'Germany'\n};\n\nprintPersonInfo(person);\n\nObject Destructuring kommt in der Web-Entwicklung mit Javascript häufig vor. Erklären Sie den Begriff. Achten Sie dabei auf eine fachlich korrekte und vollständige Antwort.\nErgänzen Sie den freien Platz bei der Funktion in der Parameter-Übergabe mittels Object Destructuring so, dass der Code funktioniert.\nWas sind die Vorteile von Object Destructuring? r"
+  },
+  {
+    "objectID": "u5/index.html#aufgabe-1-object-destructuring",
+    "href": "u5/index.html#aufgabe-1-object-destructuring",
+    "title": "Übung 5: Objektorientierung und AdonisJS",
+    "section": "",
+    "text": "Budget: 10 Minuten\n\nGegeben ist folgende Code:\nfunction printPerson(_________________________________) {\n  console.log(`Name: ${firstName} ${lastName}`);\n}\n\nconst person = {\n  firstName: 'Jane',\n  lastName: 'Doe',\n  age: 25,\n  country: 'Germany'\n};\n\nprintPersonInfo(person);\n\nObject Destructuring kommt in der Web-Entwicklung mit Javascript häufig vor. Erklären Sie den Begriff. Achten Sie dabei auf eine fachlich korrekte und vollständige Antwort.\nErgänzen Sie den freien Platz bei der Funktion in der Parameter-Übergabe mittels Object Destructuring so, dass der Code funktioniert.\nWas sind die Vorteile von Object Destructuring? r"
+  },
+  {
+    "objectID": "u5/index.html#aufgabe-2-die-erste-seite-in-adonisjs",
+    "href": "u5/index.html#aufgabe-2-die-erste-seite-in-adonisjs",
+    "title": "Übung 5: Objektorientierung und AdonisJS",
+    "section": "Aufgabe 2: Die erste Seite in AdonisJS",
+    "text": "Aufgabe 2: Die erste Seite in AdonisJS\n\nBudget: 20 Minuten\n\n\nErstellen Sie eine Web-Anwendung in AdonisJS, die beim Aufruf „Hallo, hier bin ich!“ ausgibt (ohne View/Template).\nWeb-Anwendungen benötigen einen Web-Server. Wo ist der in Ihrer AdonisJS-Anwendung?\nWas ist eine Route?\nWas haben HTTP-Verben mit der Route zu tun."
+  },
+  {
+    "objectID": "u5/index.html#aufgabe-3-der-plus-taschenrechner",
+    "href": "u5/index.html#aufgabe-3-der-plus-taschenrechner",
+    "title": "Übung 5: Objektorientierung und AdonisJS",
+    "section": "Aufgabe 3: Der Plus-Taschenrechner",
+    "text": "Aufgabe 3: Der Plus-Taschenrechner\n\nBudget: 20 Minuten\n\nErstellen Sie eine AdonisJS-Anwendung, die zwei Zahlen in einem Formular entgegennimmt und das Ergebnis addiert ausgibt.\nBevor Sie beginnen, überlegen Sie sich die einzelnen Schritte in einem Rezept, welches Sie dann abarbeiten."
+  },
+  {
+    "objectID": "u5/index.html#homework",
+    "href": "u5/index.html#homework",
+    "title": "Übung 5: Objektorientierung und AdonisJS",
+    "section": "Homework",
+    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Formulare in AdonisJS\n\nBudget: 30 Minuten\n\n\nErstellen Sie ein Formular in AdonisJS, welches Name und Vorname unter der Route /liste/eingabe erfasst. Wird das Formular an die Route /liste/eingabe/danke abgesendet erscheint eine Seite, die sich für die Eingabe bedankt und die Daten ausgibt. Tipp: Zum Speichern einer Liste eignet sich ein Array.\nErweitern Sie die Route /liste/eingabe/danke so, dass sie einen Link auf /liste enthält. Die Route sorgt jetzt auch dafür, dass die Daten als Objekt zu einem Array hinzugefügt werden. Wir merken uns die Daten also in einer Variablen im Hauptspeicher.\nDie Route /liste gibt alle eingegebenen Namen aus."
+  },
+  {
+    "objectID": "u6/index.html",
+    "href": "u6/index.html",
+    "title": "Übung 6: AdonisJS und Datenbanken",
+    "section": "",
+    "text": "Budget: 90 Minuten\n\n\nErstellen Sie eine AdonisJS-Anwendung, die Zugriff auf Ihre Kunden-Datenbank aus dem ersten Semester hat. Erstellen Sie hierfür ein neues Adonis-Projekt. Sie finden die Kunden-Datenbank im Moodle-Kurs im SQLite-Format. Kopieren Sie diese in das Projekt und konfigurieren Lucid so, dass diese Datenbank verwendet wird.\nGeben Sie alle Kunden aus Stuttgart jeweils in einem &lt;div&gt; pro Kunde aus. Legen Sie am Besten hierfür eine Route /stuttgart an. Legen Sie die &lt;div&gt; in einer Schleife an.\nDie &lt;div&gt; aus Aufgabe b. Sollen als Attribut des &lt;div&gt; eine id erhalten. Die id hat den Wert der Kundennummer des jeweiligen Kunden. Beachten Sie, dass der Wert von HTML-Attributen immer in doppelten Anführungszeichen steht.\nGeben Sie die Kunden aus Berlin mit Name, Vorname, Straße, Postleitzahl und Ort in einer Tabelle aus. Lösungsidee: Eine Schleife im Template, die jeweils pro Datensatz eine Tabellenzeile (&lt;tr&gt;) erzeugt. Auch hier eine neue Route: /berlin.\nErweitern Sie Ihren Code um ein Formular, in das eine beliebige Stadt eingegeben werden kann. Auch hier eine neue Route: /suche. Nach Absenden des Formulars wird diese Stadt in der Datenbank gesucht und alle Kunden werden in einer Tabelle wie in Aufgabenteil d. ausgegeben.\nErweitern Sie Aufgabe e. so, dass nach einem weiteren Attribut, nämlich der Kundennummer gesucht werden kann.\nErstellen Sie ein Formular und eine Route, welches einen neuen Kundendatensatz erfasst und in der Datenbank speichert. Als Ergebnis wird der Primärschlüssel, also die Kundennummer zurückgegeben. Suchen Sie den Kunden mit der Suche aus f."
+  },
+  {
+    "objectID": "u6/index.html#aufgabe-1-die-kundendatenbank",
+    "href": "u6/index.html#aufgabe-1-die-kundendatenbank",
+    "title": "Übung 6: AdonisJS und Datenbanken",
+    "section": "",
+    "text": "Budget: 90 Minuten\n\n\nErstellen Sie eine AdonisJS-Anwendung, die Zugriff auf Ihre Kunden-Datenbank aus dem ersten Semester hat. Erstellen Sie hierfür ein neues Adonis-Projekt. Sie finden die Kunden-Datenbank im Moodle-Kurs im SQLite-Format. Kopieren Sie diese in das Projekt und konfigurieren Lucid so, dass diese Datenbank verwendet wird.\nGeben Sie alle Kunden aus Stuttgart jeweils in einem &lt;div&gt; pro Kunde aus. Legen Sie am Besten hierfür eine Route /stuttgart an. Legen Sie die &lt;div&gt; in einer Schleife an.\nDie &lt;div&gt; aus Aufgabe b. Sollen als Attribut des &lt;div&gt; eine id erhalten. Die id hat den Wert der Kundennummer des jeweiligen Kunden. Beachten Sie, dass der Wert von HTML-Attributen immer in doppelten Anführungszeichen steht.\nGeben Sie die Kunden aus Berlin mit Name, Vorname, Straße, Postleitzahl und Ort in einer Tabelle aus. Lösungsidee: Eine Schleife im Template, die jeweils pro Datensatz eine Tabellenzeile (&lt;tr&gt;) erzeugt. Auch hier eine neue Route: /berlin.\nErweitern Sie Ihren Code um ein Formular, in das eine beliebige Stadt eingegeben werden kann. Auch hier eine neue Route: /suche. Nach Absenden des Formulars wird diese Stadt in der Datenbank gesucht und alle Kunden werden in einer Tabelle wie in Aufgabenteil d. ausgegeben.\nErweitern Sie Aufgabe e. so, dass nach einem weiteren Attribut, nämlich der Kundennummer gesucht werden kann.\nErstellen Sie ein Formular und eine Route, welches einen neuen Kundendatensatz erfasst und in der Datenbank speichert. Als Ergebnis wird der Primärschlüssel, also die Kundennummer zurückgegeben. Suchen Sie den Kunden mit der Suche aus f."
+  },
+  {
+    "objectID": "u6/index.html#homework",
+    "href": "u6/index.html#homework",
+    "title": "Übung 6: AdonisJS und Datenbanken",
+    "section": "Homework",
+    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Anmeldung zum Workshop\n\nBudget: 40 Minuten\n\n\nÜberlegen Sie, welche Daten eine Anmeldung für einen Marketing-Workshop an der HdM benötigt. Erstellen Sie im DB Browser for SQLite oder im SQLite3 Editor-Plugin eine Tabelle für diese Daten in der Kunden-Datenbank.\nErstellen Sie eine AdonisJS-Anwendung, die in einem Formular die Daten erfasst und in der Datenbank in dieser Tabelle speichert."
+  },
+  {
     "objectID": "cornerstone-1.html",
     "href": "cornerstone-1.html",
     "title": "Cornerstone Übung C.1: Javascript Basics",
@@ -105,67 +182,11 @@
     "text": "Aufgabe C.1.9\nGegeben ist folgendes Objekt:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n};\n\nVerwenden Sie Object Destructuring, um die Werte der Eigenschaften vorname und beruf aus dem Objekt zu extrahieren.\n\nGeben Sie die Werte anschließend mit console.log() aus.\n\nLösung"
   },
   {
-    "objectID": "u6/index.html",
-    "href": "u6/index.html",
-    "title": "Übung 6: AdonisJS und Datenbanken",
-    "section": "",
-    "text": "Budget: 90 Minuten\n\n\nErstellen Sie eine AdonisJS-Anwendung, die Zugriff auf Ihre Kunden-Datenbank aus dem ersten Semester hat. Erstellen Sie hierfür ein neues Adonis-Projekt. Sie finden die Kunden-Datenbank im Moodle-Kurs im SQLite-Format. Kopieren Sie diese in das Projekt und konfigurieren Lucid so, dass diese Datenbank verwendet wird.\nGeben Sie alle Kunden aus Stuttgart jeweils in einem &lt;div&gt; pro Kunde aus. Legen Sie am Besten hierfür eine Route /stuttgart an. Legen Sie die &lt;div&gt; in einer Schleife an.\nDie &lt;div&gt; aus Aufgabe b. Sollen als Attribut des &lt;div&gt; eine id erhalten. Die id hat den Wert der Kundennummer des jeweiligen Kunden. Beachten Sie, dass der Wert von HTML-Attributen immer in doppelten Anführungszeichen steht.\nGeben Sie die Kunden aus Berlin mit Name, Vorname, Straße, Postleitzahl und Ort in einer Tabelle aus. Lösungsidee: Eine Schleife im Template, die jeweils pro Datensatz eine Tabellenzeile (&lt;tr&gt;) erzeugt. Auch hier eine neue Route: /berlin.\nErweitern Sie Ihren Code um ein Formular, in das eine beliebige Stadt eingegeben werden kann. Auch hier eine neue Route: /suche. Nach Absenden des Formulars wird diese Stadt in der Datenbank gesucht und alle Kunden werden in einer Tabelle wie in Aufgabenteil d. ausgegeben.\nErweitern Sie Aufgabe e. so, dass nach einem weiteren Attribut, nämlich der Kundennummer gesucht werden kann.\nErstellen Sie ein Formular und eine Route, welches einen neuen Kundendatensatz erfasst und in der Datenbank speichert. Als Ergebnis wird der Primärschlüssel, also die Kundennummer zurückgegeben. Suchen Sie den Kunden mit der Suche aus f."
-  },
-  {
-    "objectID": "u6/index.html#aufgabe-1-die-kundendatenbank",
-    "href": "u6/index.html#aufgabe-1-die-kundendatenbank",
-    "title": "Übung 6: AdonisJS und Datenbanken",
-    "section": "",
-    "text": "Budget: 90 Minuten\n\n\nErstellen Sie eine AdonisJS-Anwendung, die Zugriff auf Ihre Kunden-Datenbank aus dem ersten Semester hat. Erstellen Sie hierfür ein neues Adonis-Projekt. Sie finden die Kunden-Datenbank im Moodle-Kurs im SQLite-Format. Kopieren Sie diese in das Projekt und konfigurieren Lucid so, dass diese Datenbank verwendet wird.\nGeben Sie alle Kunden aus Stuttgart jeweils in einem &lt;div&gt; pro Kunde aus. Legen Sie am Besten hierfür eine Route /stuttgart an. Legen Sie die &lt;div&gt; in einer Schleife an.\nDie &lt;div&gt; aus Aufgabe b. Sollen als Attribut des &lt;div&gt; eine id erhalten. Die id hat den Wert der Kundennummer des jeweiligen Kunden. Beachten Sie, dass der Wert von HTML-Attributen immer in doppelten Anführungszeichen steht.\nGeben Sie die Kunden aus Berlin mit Name, Vorname, Straße, Postleitzahl und Ort in einer Tabelle aus. Lösungsidee: Eine Schleife im Template, die jeweils pro Datensatz eine Tabellenzeile (&lt;tr&gt;) erzeugt. Auch hier eine neue Route: /berlin.\nErweitern Sie Ihren Code um ein Formular, in das eine beliebige Stadt eingegeben werden kann. Auch hier eine neue Route: /suche. Nach Absenden des Formulars wird diese Stadt in der Datenbank gesucht und alle Kunden werden in einer Tabelle wie in Aufgabenteil d. ausgegeben.\nErweitern Sie Aufgabe e. so, dass nach einem weiteren Attribut, nämlich der Kundennummer gesucht werden kann.\nErstellen Sie ein Formular und eine Route, welches einen neuen Kundendatensatz erfasst und in der Datenbank speichert. Als Ergebnis wird der Primärschlüssel, also die Kundennummer zurückgegeben. Suchen Sie den Kunden mit der Suche aus f."
-  },
-  {
-    "objectID": "u6/index.html#homework",
-    "href": "u6/index.html#homework",
-    "title": "Übung 6: AdonisJS und Datenbanken",
-    "section": "Homework",
-    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Anmeldung zum Workshop\n\nBudget: 40 Minuten\n\n\nÜberlegen Sie, welche Daten eine Anmeldung für einen Marketing-Workshop an der HdM benötigt. Erstellen Sie im DB Browser for SQLite oder im SQLite3 Editor-Plugin eine Tabelle für diese Daten in der Kunden-Datenbank.\nErstellen Sie eine AdonisJS-Anwendung, die in einem Formular die Daten erfasst und in der Datenbank in dieser Tabelle speichert."
-  },
-  {
-    "objectID": "u5/index.html",
-    "href": "u5/index.html",
-    "title": "Übung 5: Objektorientierung und AdonisJS",
-    "section": "",
-    "text": "Budget: 10 Minuten\n\nGegeben ist folgende Code:\nfunction printPerson(_________________________________) {\n  console.log(`Name: ${firstName} ${lastName}`);\n}\n\nconst person = {\n  firstName: 'Jane',\n  lastName: 'Doe',\n  age: 25,\n  country: 'Germany'\n};\n\nprintPersonInfo(person);\n\nObject Destructuring kommt in der Web-Entwicklung mit Javascript häufig vor. Erklären Sie den Begriff. Achten Sie dabei auf eine fachlich korrekte und vollständige Antwort.\nErgänzen Sie den freien Platz bei der Funktion in der Parameter-Übergabe mittels Object Destructuring so, dass der Code funktioniert.\nWas sind die Vorteile von Object Destructuring? r"
-  },
-  {
-    "objectID": "u5/index.html#aufgabe-1-object-destructuring",
-    "href": "u5/index.html#aufgabe-1-object-destructuring",
-    "title": "Übung 5: Objektorientierung und AdonisJS",
-    "section": "",
-    "text": "Budget: 10 Minuten\n\nGegeben ist folgende Code:\nfunction printPerson(_________________________________) {\n  console.log(`Name: ${firstName} ${lastName}`);\n}\n\nconst person = {\n  firstName: 'Jane',\n  lastName: 'Doe',\n  age: 25,\n  country: 'Germany'\n};\n\nprintPersonInfo(person);\n\nObject Destructuring kommt in der Web-Entwicklung mit Javascript häufig vor. Erklären Sie den Begriff. Achten Sie dabei auf eine fachlich korrekte und vollständige Antwort.\nErgänzen Sie den freien Platz bei der Funktion in der Parameter-Übergabe mittels Object Destructuring so, dass der Code funktioniert.\nWas sind die Vorteile von Object Destructuring? r"
-  },
-  {
-    "objectID": "u5/index.html#aufgabe-2-die-erste-seite-in-adonisjs",
-    "href": "u5/index.html#aufgabe-2-die-erste-seite-in-adonisjs",
-    "title": "Übung 5: Objektorientierung und AdonisJS",
-    "section": "Aufgabe 2: Die erste Seite in AdonisJS",
-    "text": "Aufgabe 2: Die erste Seite in AdonisJS\n\nBudget: 20 Minuten\n\n\nErstellen Sie eine Web-Anwendung in AdonisJS, die beim Aufruf „Hallo, hier bin ich!“ ausgibt (ohne View/Template).\nWeb-Anwendungen benötigen einen Web-Server. Wo ist der in Ihrer AdonisJS-Anwendung?\nWas ist eine Route?\nWas haben HTTP-Verben mit der Route zu tun."
-  },
-  {
-    "objectID": "u5/index.html#aufgabe-3-der-plus-taschenrechner",
-    "href": "u5/index.html#aufgabe-3-der-plus-taschenrechner",
-    "title": "Übung 5: Objektorientierung und AdonisJS",
-    "section": "Aufgabe 3: Der Plus-Taschenrechner",
-    "text": "Aufgabe 3: Der Plus-Taschenrechner\n\nBudget: 20 Minuten\n\nErstellen Sie eine AdonisJS-Anwendung, die zwei Zahlen in einem Formular entgegennimmt und das Ergebnis addiert ausgibt.\nBevor Sie beginnen, überlegen Sie sich die einzelnen Schritte in einem Rezept, welches Sie dann abarbeiten."
-  },
-  {
-    "objectID": "u5/index.html#homework",
-    "href": "u5/index.html#homework",
-    "title": "Übung 5: Objektorientierung und AdonisJS",
-    "section": "Homework",
-    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Formulare in AdonisJS\n\nBudget: 30 Minuten\n\n\nErstellen Sie ein Formular in AdonisJS, welches Name und Vorname unter der Route /liste/eingabe erfasst. Wird das Formular an die Route /liste/eingabe/danke abgesendet erscheint eine Seite, die sich für die Eingabe bedankt und die Daten ausgibt. Tipp: Zum Speichern einer Liste eignet sich ein Array.\nErweitern Sie die Route /liste/eingabe/danke so, dass sie einen Link auf /liste enthält. Die Route sorgt jetzt auch dafür, dass die Daten als Objekt zu einem Array hinzugefügt werden. Wir merken uns die Daten also in einer Variablen im Hauptspeicher.\nDie Route /liste gibt alle eingegebenen Namen aus."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Web Anwendungen Übungen",
     "section": "",
-    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nÜbung 5: Objektorientierung und AdonisJS\nCornerstone Übung 1: Javascript Basics\nÜbung 6: AdonisJS und Datenbanken"
+    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nÜbung 5: Objektorientierung und AdonisJS\nCornerstone Übung 1: Javascript Basics\nÜbung 6: AdonisJS und Datenbanken\nÜbung 7: AdonisJS: Eine Todo-Liste"
   },
   {
     "objectID": "loesungen/c-1-3.html",
