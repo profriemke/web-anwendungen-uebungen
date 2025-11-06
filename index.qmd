@@ -4,4 +4,7 @@
 
 Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.
 
+- [Übung 5: Objektorientierung und AdonisJS](u5/index.qmd)
 - [Cornerstone Übung 1: Javascript Basics](cornerstone-1.qmd)
+- [Übung 5: Objektorientierung und AdonisJS](u5/index.qmd)
+
