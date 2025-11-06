@@ -11,7 +11,7 @@
     "href": "loesungen/c-1-2.html",
     "title": "Cornerstone Übung C.1.1: Javascript Basics",
     "section": "",
-    "text": "Gegeben ist der untenstehende String. Geben Sie mit Javascript die einzelnen Buchstaben des Strings in umgekehrter Reihenfolge einzeln aus.\nDas Huhn frisst gerne Körner.\nLösung:\nconst text = \"Das Huhn frisst gerne Körner.\";\n\nfor (let i = text.length - 1; i &gt;= 0; i--) {\n  console.log(text[i]);\n}\nErklärung:\n\ntext.length - 1 letzter Index des Strings (da Indizes bei 0 beginnen).\ni &gt;= 0 die Schleife läuft rückwärts bis zum ersten Zeichen.\ntext[i] greift auf das jeweilige Zeichen im String zu.\nconsole.log(text[i]) gibt jedes Zeichen einzeln in einer neuen Zeile aus."
+    "text": "Gegeben ist der untenstehende String. Geben Sie mit Javascript die einzelnen Buchstaben des Strings in umgekehrter Reihenfolge einzeln aus.\nDas Huhn frisst gerne Körner.\nLösung:\nconst text = \"Das Huhn frisst gerne Körner.\";\n\nfor (let i = text.length - 1; i &gt;= 0; i--) {\n  console.log(text[i]);\n}\nErklärung:\n\nWir können Strings als Arrays behandeln und dieses Array mit einer Schleife durchwandern.\ntext.length - 1 letzter Index des Strings (da Indizes bei 0 beginnen).\ni &gt;= 0 die Schleife läuft rückwärts bis zum ersten Zeichen.\ntext[i] greift auf das jeweilige Zeichen im String zu.\nconsole.log(text[i]) gibt jedes Zeichen einzeln in einer neuen Zeile aus."
   },
   {
     "objectID": "loesungen/c-1-7.html",
@@ -42,18 +42,25 @@
     "text": "Ausgabe\nAnna\nLukas\nTim\nRebecca"
   },
   {
-    "objectID": "loesungen/c-1-3.html",
-    "href": "loesungen/c-1-3.html",
-    "title": "Cornerstone Übung C.1.3: Javascript Basics",
+    "objectID": "loesungen/c-1-8.html",
+    "href": "loesungen/c-1-8.html",
+    "title": "Cornerstone Übung C.1.8: Javascript Basics",
     "section": "",
-    "text": "Erstellen Sie eine Funktion mit dem Namen subtract, die als Parameter zwei Zahlen übergeben bekommt, die Zahl im zweiten Parameter von der Zahl im ersten Parameter subtrahiert und das Ergebnis dieser Subtraktion zurückgibt. Geben Sie einen Beispiel-Aufruf der Funktion an, der das Ergebnis ausgibt.\nLösung:\nfunction subtract(a, b) {\n  return a - b;\n}\n\n// Beispiel-Aufruf:\nconsole.log(subtract(10, 3)); // Ausgabe: 7\nErklärung:\n\nfunction subtract(a, b) definiert eine Funktion mit zwei Parametern.\nreturn a - b; führt die Subtraktion aus und gibt das Ergebnis zurück.\nconsole.log(subtract(10, 3)); ruft die Funktion auf und gibt das Ergebnis 7 in der Konsole aus."
+    "text": "Erstellen Sie ein Objekt auto, das folgende Eigenschaften und Methoden enthält:\nRufen Sie beide Methoden anschließend auf.\nLösung:"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Web Anwendungen Übungen",
+    "objectID": "loesungen/c-1-8.html#erklärung",
+    "href": "loesungen/c-1-8.html#erklärung",
+    "title": "Cornerstone Übung C.1.8: Javascript Basics",
+    "section": "Erklärung",
+    "text": "Erklärung\n\nDas Objekt auto enthält sowohl Attribute (Daten bze.Eigenschaften) als auch Methoden (Funktionalität).\n\nDie Methode info() greift mit this auf die Eigenschaften dieses Objekts zu, in dem es ausgeführt wird.\n\nDurch den Aufruf auto.start() und auto.info() werden die Methoden ausgeführt und Text in der Konsole ausgegeben.\nZu beachten: Die Methoden geben direkt aus und geben keinen Wert zurück."
+  },
+  {
+    "objectID": "loesungen/c-1-9.html",
+    "href": "loesungen/c-1-9.html",
+    "title": "Cornerstone Übung C.1.9: Javascript Basics",
     "section": "",
-    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nCornerstone Übung 1: Javascript Basics"
+    "text": "Gegeben ist folgendes Objekt:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n};\n\nVerwenden Sie Object Destructuring, um die Werte der Eigenschaften vorname und beruf aus dem Objekt zu extrahieren.\n\nGeben Sie die Werte anschließend mit console.log() aus.\n\nLösung:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n}\n\n// Object Destructuring\nconst { vorname, beruf } = person\n\n// Ausgabe\nconsole.log(vorname) // Ausgabe: Lisa\nconsole.log(beruf)   // Ausgabe: Webentwicklerin\n\nErklärung\n\nDurch Destructuring können Werte direkt aus einem Objekt in einzelne Variablen extrahiert werden.\n\nDie Syntax { vorname, beruf } = person weist die Werte der gleichnamigen Eigenschaften Variablen mit den Namen vorname und beruf zu.\n\nDas spart Code und verbessert die Lesbarkeit, besonders bei großen Objekten, von denen an dieser Stelle nicht alles verwendet werden soll."
   },
   {
     "objectID": "cornerstone-1.html",
@@ -95,7 +102,7 @@
     "href": "cornerstone-1.html#aufgabe-c.1.5",
     "title": "Cornerstone Übung C.1: Javascript Basics",
     "section": "Aufgabe C.1.5",
-    "text": "Aufgabe C.1.5\nWelche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie!\nconst  data = [\n    { nachname: \"Karlsen\", vorname: \"Karl\" },\n    { nachname: \"Klarsen\", vorname: \"Karla\" }\n]\nLösung"
+    "text": "Aufgabe C.1.5\nGegeben ist der nachfolgende Code-Ausschnitt in Javascript. Erstellen Sie Code, der jeweils das Attribut vorname aller Objekte im Array data ausgibt. Der Code soll auch dann funktionieren, wenn weitere Objekte in das Array eingefügt werden.\nconst  data = [\n    { nachname: \"Karlsen\", vorname: \"Karl\" },\n    { nachname: \"Klarsen\", vorname: \"Karla\" }\n]\nLösung"
   },
   {
     "objectID": "cornerstone-1.html#aufgabe-c.1.6",
@@ -112,6 +119,13 @@
     "text": "Aufgabe C.1.7\nSchreiben Sie eine Schleife, die die Namen aus dem Array ausgibt und abbricht, sobald der Name Rebecca auftaucht. Dabei soll der name Rebecca noch ausgegeben werden. Der Code darf kein if-Statement enthalten.\nconst namen = ['Malte', 'Svenja', 'Rebecca', 'Klaus'] \nLösung"
   },
   {
+    "objectID": "cornerstone-1.html#aufgabe-c.1.8",
+    "href": "cornerstone-1.html#aufgabe-c.1.8",
+    "title": "Cornerstone Übung C.1: Javascript Basics",
+    "section": "Aufgabe C.1.8",
+    "text": "Aufgabe C.1.8\nErstellen Sie ein Objekt auto, das folgende Eigenschaften und Methoden enthält:\n\nEigenschaften:\n\nmarke (z. B. “BMW”)\nmodell (z. B. “X3”)\nbaujahr (z. B. 2021)\n\nMethoden:\n\nstart() → gibt \"Das Auto startet.\" in der Konsole aus.\n\ninfo() → gibt eine Beschreibung des Autos aus, z. B. \"BMW X3, Baujahr 2021\".\n\n\nRufen Sie beide Methoden anschließend auf.\nLösung"
+  },
+  {
     "objectID": "cornerstone-1.html#aufgabe-c.1.9",
     "href": "cornerstone-1.html#aufgabe-c.1.9",
     "title": "Cornerstone Übung C.1: Javascript Basics",
@@ -119,39 +133,39 @@
     "text": "Aufgabe C.1.9\nGegeben ist folgendes Objekt:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n};\n\nVerwenden Sie Object Destructuring, um die Werte der Eigenschaften vorname und beruf aus dem Objekt zu extrahieren.\n\nGeben Sie die Werte anschließend mit console.log() aus.\n\nLösung"
   },
   {
-    "objectID": "loesungen/c-1-9.html",
-    "href": "loesungen/c-1-9.html",
-    "title": "Cornerstone Übung C.1.9: Javascript Basics",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Web Anwendungen Übungen",
     "section": "",
-    "text": "Gegeben ist folgendes Objekt:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n};\n\nVerwenden Sie Object Destructuring, um die Werte der Eigenschaften vorname und beruf aus dem Objekt zu extrahieren.\n\nGeben Sie die Werte anschließend mit console.log() aus.\n\nLösung:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n}\n\n// Object Destructuring\nconst { vorname, beruf } = person\n\n// Ausgabe\nconsole.log(vorname) // Ausgabe: Lisa\nconsole.log(beruf)   // Ausgabe: Webentwicklerin\n\nErklärung\n\nDurch Destructuring können Werte direkt aus einem Objekt in einzelne Variablen extrahiert werden.\n\nDie Syntax { vorname, beruf } = person weist die Werte der gleichnamigen Eigenschaften Variablen mit den Namen vorname und beruf zu.\n\nDas spart Code und verbessert die Lesbarkeit, besonders bei großen Objekten, von denen an dieser Stelle nicht alles verwendet werden soll."
+    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nCornerstone Übung 1: Javascript Basics"
+  },
+  {
+    "objectID": "loesungen/c-1-3.html",
+    "href": "loesungen/c-1-3.html",
+    "title": "Cornerstone Übung C.1.3: Javascript Basics",
+    "section": "",
+    "text": "Erstellen Sie eine Funktion mit dem Namen subtract, die als Parameter zwei Zahlen übergeben bekommt, die Zahl im zweiten Parameter von der Zahl im ersten Parameter subtrahiert und das Ergebnis dieser Subtraktion zurückgibt. Geben Sie einen Beispiel-Aufruf der Funktion an, der das Ergebnis ausgibt.\nLösung:\nfunction subtract(a, b) {\n  return a - b;\n}\n\n// Beispiel-Aufruf:\nconsole.log(subtract(10, 3)); // Ausgabe: 7\nErklärung:\n\nfunction subtract(a, b) definiert eine Funktion mit zwei Parametern.\nreturn a - b; führt die Subtraktion aus und gibt das Ergebnis zurück.\nconsole.log(subtract(10, 3)); ruft die Funktion auf und gibt das Ergebnis 7 in der Konsole aus."
   },
   {
     "objectID": "loesungen/c-1-6.html",
     "href": "loesungen/c-1-6.html",
     "title": "Cornerstone Übung C.1.6: Javascript Basics",
     "section": "",
-    "text": "Schreiben Sie eine Arrow-Function, die zwei Zahlen entgegennimmt und die Summe der beiden Zahlen zurückgibt. Wenn Sonderfälle auftreten, behandeln Sie diese entsprechend. Geben Sie einen Beispiel-Aufruf an.\nLösung:\nconst add  = (a,b)  =&gt; {\n      return a+b \n}\n\n// Beispielaufruf\nconsole.log(add(5, 7)) // Ausgabe: 12\nErklärung:\n\nEs wird eine Arrow Function mit zwei Parametern (a und b) definiert und der Konstanten add zugewiesen.\nDas Ergebnis der Addition von a + b wird mit return zurückgegeben.\nconsole.log(add(5, 7)); gibt das Ergebnis 12 aus.\n\n\nAlternative Lösung in Kurzform\nconst add = (a, b) =&gt; a + b\n\n// Beispielaufruf:\nconsole.log(add(5, 7)) // Ausgabe: 12\nErklärung:\n\nconst add = (a, b) =&gt; a + b; definiert eine kurze Arrow Function mit zwei Parametern (a und b).\nDer Ausdruck a + b wird automatisch zurückgegeben (kein return nötig, da es nur ein Ausdruck ist).\nconsole.log(add(5, 7)); gibt das Ergebnis 12 aus."
+    "text": "Schreiben Sie eine Arrow-Function, die zwei Zahlen entgegennimmt und die Summe der beiden Zahlen zurückgibt. Wenn Sonderfälle auftreten, behandeln Sie diese entsprechend. Geben Sie einen Beispiel-Aufruf an.\nLösung:\nconst add  = (a,b)  =&gt; {\n      return a+b \n}\n\n// Beispielaufruf\nconsole.log(add(5, 7)) // Ausgabe: 12\nErklärung:\n\nEs wird eine Arrow Function mit zwei Parametern (a und b) definiert und der Konstanten add zugewiesen.\nDas Ergebnis der Addition von a + b wird mit return zurückgegeben.\nconsole.log(add(5, 7)); gibt das Ergebnis 12 aus.\n\n\nAlternative Lösung in Kurzform\nconst add = (a, b) =&gt; a + b\n\n// Beispielaufruf:\nconsole.log(add(5, 7)) // Ausgabe: 12\nErklärung:\n\nconst add = (a, b) =&gt; a + b definiert eine kurze Arrow Function mit zwei Parametern (a und b).\nDer Ausdruck a + b wird automatisch zurückgegeben (kein return nötig, da es nur ein Ausdruck ist).\nconsole.log(add(5, 7)) gibt das Ergebnis 12 aus.\nEs gibt keine Sonderfälle in diesem Beispiel. Bei anderen Funktion jedoch sehrwohl, Beispiel: Bei einer Division müsste immer geprüft werden, ob durch 0 geteilt wird und ggf. ein Fehler ausgegeben werden."
   },
   {
     "objectID": "loesungen/c-1-5.html",
     "href": "loesungen/c-1-5.html",
     "title": "Cornerstone Übung C.1.5: Javascript Basics",
     "section": "",
-    "text": "Welche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie!\nLösung:\nHier wird eine kompakte do-while-Schleife verwendet, die das gewünschte Verhalten ohne if erreicht:"
+    "text": "Welche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie!\nLösung:"
   },
   {
     "objectID": "loesungen/c-1-5.html#erklärung",
     "href": "loesungen/c-1-5.html#erklärung",
     "title": "Cornerstone Übung C.1.5: Javascript Basics",
     "section": "Erklärung",
-    "text": "Erklärung\n\nconsole.log(namen[i]) gibt den aktuellen Namen aus.\n\nDer Ausdruck namen[i++] !== \"Rebecca\" prüft, ob der aktuelle Name ungleich “Rebecca” ist.\n\nSolange das Ergebnis true ist, läuft die Schleife weiter.\n\nSobald der Name “Rebecca” erreicht ist, ergibt der Ausdruck false → die Schleife stoppt.\n\nDurch die Reihenfolge (console.log zuerst, dann der Vergleich) wird Rebecca noch ausgegeben, bevor der Abbruch erfolgt."
-  },
-  {
-    "objectID": "loesungen/c-1-5.html#ausgabe",
-    "href": "loesungen/c-1-5.html#ausgabe",
-    "title": "Cornerstone Übung C.1.5: Javascript Basics",
-    "section": "Ausgabe",
-    "text": "Ausgabe\nAnna\nLukas\nTim\nRebecca"
+    "text": "Erklärung\n\nHier liegt ein Array mit Objekten vor, welches wir mit einer Schleife durchwandern können.\ndata[i] enthält bei jedem Schleifendurchlauf das Objekt an der Stelle i des Arrays.\nAuf die Attribute dieses jeweiligen Objekts können wir mit der dot-Notation zugreifen und ausgeben: console.log(data[i].vorname)."
   },
   {
     "objectID": "loesungen/c-1-4.html",

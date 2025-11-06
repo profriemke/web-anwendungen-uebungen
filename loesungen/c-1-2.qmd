@@ -18,6 +18,7 @@ for (let i = text.length - 1; i >= 0; i--) {
 
 Erklärung:
 
+- Wir können Strings als Arrays behandeln und dieses Array mit einer Schleife durchwandern.
 - `text.length - 1` letzter Index des Strings (da Indizes bei `0` beginnen).
 - `i >= 0` die Schleife läuft rückwärts bis zum ersten Zeichen.
 - `text[i]` greift auf das jeweilige Zeichen im String zu.

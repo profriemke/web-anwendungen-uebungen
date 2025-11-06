@@ -1,0 +1,44 @@
+---
+  title: "Cornerstone Übung C.1.8: Javascript Basics"
+---
+Erstellen Sie ein Objekt `auto`, das folgende Eigenschaften und Methoden enthält:
+
+- **Eigenschaften:**
+  - `marke` (z. B. "BMW")
+  - `modell` (z. B. "X3")
+  - `baujahr` (z. B. 2021)
+
+- **Methoden:**
+  1. `start()` → gibt `"Das Auto startet."` in der Konsole aus.  
+  2. `info()` → gibt eine Beschreibung des Autos aus, z. B. `"BMW X3, Baujahr 2021"`.
+
+Rufen Sie beide Methoden anschließend auf.
+
+**Lösung:** 
+
+```javascript
+const auto = {
+  marke: "BMW",
+  modell: "X3",
+  baujahr: 2021,
+
+  start() {
+    console.log("Das Auto startet.");
+  },
+
+  info() {
+    console.log(`${this.marke} ${this.modell}, Baujahr ${this.baujahr}`);
+  }
+};
+
+// Methodenaufrufe
+auto.start(); // Ausgabe: Das Auto startet.
+auto.info();  // Ausgabe: BMW X3, Baujahr 2021
+```
+
+## Erklärung
+
+- Das Objekt **`auto`** enthält sowohl **Attribute (Daten bze.Eigenschaften)** als auch **Methoden (Funktionalität)**.  
+- Die Methode `info()` greift mit **`this`** auf die Eigenschaften **dieses** Objekts zu, in dem es ausgeführt wird.  
+- Durch den Aufruf `auto.start()` und `auto.info()` werden die Methoden ausgeführt und Text in der Konsole ausgegeben.
+- Zu beachten: Die Methoden geben direkt aus und geben keinen Wert zurück.

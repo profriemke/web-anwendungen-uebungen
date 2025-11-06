@@ -42,7 +42,7 @@ function weisnicht(a, b, c) {
 [Lösung](loesungen/c-1-4.qmd)
 
 ## Aufgabe C.1.5
-Welche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie! 
+Gegeben ist der nachfolgende Code-Ausschnitt in Javascript. Erstellen Sie Code, der jeweils das Attribut `vorname` aller Objekte im Array data ausgibt. Der Code soll auch dann funktionieren, wenn weitere Objekte in das Array eingefügt werden. 
 
 ```javascript
 const  data = [
@@ -66,6 +66,24 @@ const namen = ['Malte', 'Svenja', 'Rebecca', 'Klaus']
 ```
 
 [Lösung](loesungen/c-1-7.qmd)
+
+
+## Aufgabe C.1.8
+Erstellen Sie ein Objekt `auto`, das folgende Eigenschaften und Methoden enthält:
+
+- **Eigenschaften:**
+  - `marke` (z. B. "BMW")
+  - `modell` (z. B. "X3")
+  - `baujahr` (z. B. 2021)
+
+- **Methoden:**
+  1. `start()` → gibt `"Das Auto startet."` in der Konsole aus.  
+  2. `info()` → gibt eine Beschreibung des Autos aus, z. B. `"BMW X3, Baujahr 2021"`.
+
+Rufen Sie beide Methoden anschließend auf.
+
+[Lösung](loesungen/c-1-8.qmd)
+
 
 ## Aufgabe C.1.9
 

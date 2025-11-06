@@ -154,7 +154,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#erklärung" id="toc-erklärung" class="nav-link active" data-scroll-target="#erklärung">Erklärung</a></li>
-  <li><a href="#ausgabe" id="toc-ausgabe" class="nav-link" data-scroll-target="#ausgabe">Ausgabe</a></li>
   </ul>
 </nav>
     </div>
@@ -186,38 +185,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">nachname</span><span class="op">:</span> <span class="st">"Klarsen"</span><span class="op">,</span> <span class="dt">vorname</span><span class="op">:</span> <span class="st">"Karla"</span> }</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Lösung:</strong></p>
-<p>Hier wird eine kompakte <strong>do-while-Schleife</strong> verwendet, die das gewünschte Verhalten ohne <code>if</code> erreicht:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> namen <span class="op">=</span> [<span class="st">"Anna"</span><span class="op">,</span> <span class="st">"Lukas"</span><span class="op">,</span> <span class="st">"Tim"</span><span class="op">,</span> <span class="st">"Rebecca"</span><span class="op">,</span> <span class="st">"Sophie"</span><span class="op">,</span> <span class="st">"Max"</span>]<span class="op">;</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">do</span>{</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">// while-Schleife ohne if</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> ( namen[i<span class="op">++</span>] <span class="op">!==</span> <span class="st">"Rebecca"</span> ){</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    cons</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    i<span class="op">++;</span></span>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span>  data <span class="op">=</span> [</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">nachname</span><span class="op">:</span> <span class="st">"Karlsen"</span><span class="op">,</span> <span class="dt">vorname</span><span class="op">:</span> <span class="st">"Karl"</span> }<span class="op">,</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">nachname</span><span class="op">:</span> <span class="st">"Klarsen"</span><span class="op">,</span> <span class="dt">vorname</span><span class="op">:</span> <span class="st">"Karla"</span> }</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(<span class="kw">let</span> i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span>data<span class="op">.</span><span class="at">length</span><span class="op">;</span> i<span class="op">++</span>){</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(data[i]<span class="op">.</span><span class="at">vorname</span>) </span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<hr>
 <section id="erklärung" class="level2">
 <h2 class="anchored" data-anchor-id="erklärung">Erklärung</h2>
 <ul>
-<li><strong><code>console.log(namen[i])</code></strong> gibt den aktuellen Namen aus.<br>
-</li>
-<li>Der Ausdruck <strong><code>namen[i++] !== "Rebecca"</code></strong> prüft, ob der aktuelle Name ungleich “Rebecca” ist.<br>
-</li>
-<li>Solange das Ergebnis <code>true</code> ist, läuft die Schleife weiter.<br>
-</li>
-<li>Sobald der Name “Rebecca” erreicht ist, ergibt der Ausdruck <code>false</code> → die Schleife stoppt.<br>
-</li>
-<li>Durch die Reihenfolge (<code>console.log</code> zuerst, dann der Vergleich) wird <em>Rebecca</em> <strong>noch ausgegeben</strong>, bevor der Abbruch erfolgt.</li>
+<li>Hier liegt ein Array mit Objekten vor, welches wir mit einer Schleife durchwandern können.</li>
+<li><code>data[i]</code> enthält bei jedem Schleifendurchlauf das Objekt an der Stelle <code>i</code> des Arrays.</li>
+<li>Auf die Attribute dieses jeweiligen Objekts können wir mit der dot-Notation zugreifen und ausgeben: <code>console.log(data[i].vorname)</code>.</li>
 </ul>
-<hr>
-</section>
-<section id="ausgabe" class="level2">
-<h2 class="anchored" data-anchor-id="ausgabe">Ausgabe</h2>
-<pre><code>Anna
-Lukas
-Tim
-Rebecca</code></pre>
 
 
 </section>

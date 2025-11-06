@@ -31,6 +31,7 @@ console.log(add(5, 7)) // Ausgabe: 12
 
 Erklärung:
 
-- `const add = (a, b) => a + b;` definiert eine kurze Arrow Function mit zwei Parametern (`a` und `b`).
+- `const add = (a, b) => a + b` definiert eine kurze Arrow Function mit zwei Parametern (`a` und `b`).
 - Der Ausdruck `a + b` wird automatisch zurückgegeben (kein return nötig, da es nur ein Ausdruck ist).
-- `console.log(add(5, 7));` gibt das Ergebnis `12` aus.
+- `console.log(add(5, 7))` gibt das Ergebnis `12` aus.
+- Es gibt keine Sonderfälle in diesem Beispiel. Bei anderen Funktion jedoch sehrwohl, Beispiel: Bei einer Division müsste immer geprüft werden, ob durch `0` geteilt wird und ggf. ein Fehler ausgegeben werden.
