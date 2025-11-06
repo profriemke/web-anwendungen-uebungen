@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Cornerstone Übung C.1.1: Javascript Basics – Web Anwendungen Übungen</title>
+<title>Cornerstone Übung C.1.5: Javascript Basics – Web Anwendungen Übungen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -148,15 +148,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#erklärung" id="toc-erklärung" class="nav-link active" data-scroll-target="#erklärung">Erklärung</a></li>
+  <li><a href="#ausgabe" id="toc-ausgabe" class="nav-link" data-scroll-target="#ausgabe">Ausgabe</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Cornerstone Übung C.1.1: Javascript Basics</h1>
+<h1 class="title">Cornerstone Übung C.1.5: Javascript Basics</h1>
 </div>
 
 
@@ -173,23 +180,47 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Gegeben ist der untenstehende String. Geben Sie mit Javascript die einzelnen Buchstaben des Strings in umgekehrter Reihenfolge <em>einzeln</em> aus.</p>
-<pre class="text"><code>Das Huhn frisst gerne Körner.</code></pre>
+<p>Welche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie!</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span>  data <span class="op">=</span> [</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">nachname</span><span class="op">:</span> <span class="st">"Karlsen"</span><span class="op">,</span> <span class="dt">vorname</span><span class="op">:</span> <span class="st">"Karl"</span> }<span class="op">,</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">nachname</span><span class="op">:</span> <span class="st">"Klarsen"</span><span class="op">,</span> <span class="dt">vorname</span><span class="op">:</span> <span class="st">"Karla"</span> }</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Lösung:</strong></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> text <span class="op">=</span> <span class="st">"Das Huhn frisst gerne Körner."</span><span class="op">;</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> text<span class="op">.</span><span class="at">length</span> <span class="op">-</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&gt;=</span> <span class="dv">0</span><span class="op">;</span> i<span class="op">--</span>) {</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(text[i])<span class="op">;</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Erklärung:</p>
+<p>Hier wird eine kompakte <strong>do-while-Schleife</strong> verwendet, die das gewünschte Verhalten ohne <code>if</code> erreicht:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> namen <span class="op">=</span> [<span class="st">"Anna"</span><span class="op">,</span> <span class="st">"Lukas"</span><span class="op">,</span> <span class="st">"Tim"</span><span class="op">,</span> <span class="st">"Rebecca"</span><span class="op">,</span> <span class="st">"Sophie"</span><span class="op">,</span> <span class="st">"Max"</span>]<span class="op">;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">do</span>{</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">// while-Schleife ohne if</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> ( namen[i<span class="op">++</span>] <span class="op">!==</span> <span class="st">"Rebecca"</span> ){</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    cons</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    i<span class="op">++;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+<section id="erklärung" class="level2">
+<h2 class="anchored" data-anchor-id="erklärung">Erklärung</h2>
 <ul>
-<li><code>text.length - 1</code> letzter Index des Strings (da Indizes bei <code>0</code> beginnen).</li>
-<li><code>i &gt;= 0</code> die Schleife läuft rückwärts bis zum ersten Zeichen.</li>
-<li><code>text[i]</code> greift auf das jeweilige Zeichen im String zu.</li>
-<li><code>console.log(text[i])</code> gibt jedes Zeichen einzeln in einer neuen Zeile aus.</li>
+<li><strong><code>console.log(namen[i])</code></strong> gibt den aktuellen Namen aus.<br>
+</li>
+<li>Der Ausdruck <strong><code>namen[i++] !== "Rebecca"</code></strong> prüft, ob der aktuelle Name ungleich “Rebecca” ist.<br>
+</li>
+<li>Solange das Ergebnis <code>true</code> ist, läuft die Schleife weiter.<br>
+</li>
+<li>Sobald der Name “Rebecca” erreicht ist, ergibt der Ausdruck <code>false</code> → die Schleife stoppt.<br>
+</li>
+<li>Durch die Reihenfolge (<code>console.log</code> zuerst, dann der Vergleich) wird <em>Rebecca</em> <strong>noch ausgegeben</strong>, bevor der Abbruch erfolgt.</li>
 </ul>
+<hr>
+</section>
+<section id="ausgabe" class="level2">
+<h2 class="anchored" data-anchor-id="ausgabe">Ausgabe</h2>
+<pre><code>Anna
+Lukas
+Tim
+Rebecca</code></pre>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

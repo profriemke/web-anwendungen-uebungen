@@ -1,0 +1,48 @@
+---
+  title: "Cornerstone Übung C.1.5: Javascript Basics"
+---
+Welche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie! 
+
+```javascript
+const  data = [
+    { nachname: "Karlsen", vorname: "Karl" },
+    { nachname: "Klarsen", vorname: "Karla" }
+]
+```
+
+**Lösung:** 
+
+Hier wird eine kompakte **do-while-Schleife** verwendet, die das gewünschte Verhalten ohne `if` erreicht:
+
+```javascript
+const namen = ["Anna", "Lukas", "Tim", "Rebecca", "Sophie", "Max"];
+let i = 0;
+do{
+// while-Schleife ohne if
+}
+while ( namen[i++] !== "Rebecca" ){
+    cons
+    i++;
+}
+```
+
+---
+
+## Erklärung
+
+- **`console.log(namen[i])`** gibt den aktuellen Namen aus.  
+- Der Ausdruck **`namen[i++] !== "Rebecca"`** prüft, ob der aktuelle Name ungleich "Rebecca" ist.  
+- Solange das Ergebnis `true` ist, läuft die Schleife weiter.  
+- Sobald der Name "Rebecca" erreicht ist, ergibt der Ausdruck `false` → die Schleife stoppt.  
+- Durch die Reihenfolge (`console.log` zuerst, dann der Vergleich) wird *Rebecca* **noch ausgegeben**, bevor der Abbruch erfolgt.
+
+---
+
+## Ausgabe
+
+```
+Anna
+Lukas
+Tim
+Rebecca
+```

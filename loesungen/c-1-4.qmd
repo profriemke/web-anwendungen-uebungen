@@ -1,0 +1,61 @@
+---
+  title: "Cornerstone Übung C.1.4: Javascript Basics"
+---
+Welche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie!
+   
+```javascript
+console.log(weisnicht(3, weisnicht(2, 2, 11), 47))
+
+function weisnicht(a, b, c) {
+    return a * b
+    console.log(a * a)    
+}
+```
+
+**Lösung:** 
+
+### Analyse
+
+1. **Verschachtelter Funktionsaufruf:**
+
+   Zuerst wird die innere Funktion ausgeführt:
+   ```javascript
+   weisnicht(2, 2, 11)
+   ```
+   - `a = 2`, `b = 2`, `c = 11`  
+   - Rückgabe: `a * b = 4`  
+   - Die Zeile `console.log(a * a)` wird **nicht ausgeführt**, da sie **nach** dem `return` steht.
+
+2. **Äußere Funktion:**
+   ```javascript
+   weisnicht(3, 4, 47)
+   ```
+   - `a = 3`, `b = 4`, `c = 47`
+   - `c` wird in der Funktion nicht verwendet und hat daher keinen Einfluss.
+   - Rückgabe: `3 * 4 = 12`
+
+3. **Endergebnis:**
+   ```javascript
+   console.log(12)
+   ```
+
+---
+
+### Ergebnis
+
+Die **Ausgabe** des Programms lautet:
+
+```
+12
+```
+
+---
+
+### Begründung
+
+- Der `return`-Befehl beendet die Funktion sofort.  
+- Code nach `return` (wie `console.log(a * a)`) wird **nicht mehr ausgeführt**.  
+- Es tritt **kein Fehler** auf.  
+- Die Berechnung erfolgt korrekt durch Verschachtelung der Funktionsaufrufe:
+  1. `weisnicht(2, 2, 11)` → `4`
+  2. `weisnicht(3, 4, 47)` → `12`

@@ -1,0 +1,62 @@
+---
+  title: "Cornerstone Übung C.1.7: Javascript Basics"
+---
+Schreiben Sie eine Schleife, die die Namen aus dem Array ausgibt und abbricht, sobald der Name Rebecca auftaucht. Dabei soll der name Rebecca noch ausgegeben werden. Der Code darf kein if-Statement enthalten.
+
+```javascript
+const namen = ['Malte', 'Svenja', 'Rebecca', 'Klaus'] 
+```
+
+**Lösung:** 
+
+### Lösungsansatz
+
+Hier wird eine kompakte **do-while-Schleife** verwendet, die das gewünschte Verhalten ohne `if` erreicht.
+
+### Erste Idee
+
+```javascript
+const namen = ["Anna", "Lukas", "Tim", "Rebecca", "Sophie", "Max"];
+let i = 0;
+do{
+// while-Schleife ohne if
+i++
+console.log(namen[i])
+}
+while ( namen[i] !== "Rebecca" )
+```
+Problem: Wir vergessen hierbei den 0. Eintrag `Anna`, da wir zwar bei `0` starten, aber dann sofort hoch.
+
+## Sonderfall lösen
+
+Lösung hierfür ist einfach "ein weiter unten" zu starten, nämlich bei `-1`.
+
+```javascript
+const namen = ["Anna", "Lukas", "Tim", "Rebecca", "Sophie", "Max"];
+let i = -1
+do{
+// while-Schleife ohne if
+i++;
+console.log(namen[i])
+}
+while ( namen[i] !== "Rebecca" )
+```
+
+## Erklärung
+
+- **`console.log(namen[i])`** gibt den aktuellen Namen aus.  
+- Der Ausdruck **`namen[i] !== "Rebecca"`** prüft, ob der aktuelle Name ungleich "Rebecca" ist.  
+- Solange das Ergebnis `true` ist, läuft die Schleife weiter.  
+- Sobald der Name "Rebecca" erreicht ist, ergibt der Ausdruck `false`, die Schleife stoppt.  
+- Durch die Reihenfolge (`console.log` zuerst, dann der Vergleich) wird *Rebecca* **noch ausgegeben**, bevor der Abbruch erfolgt.
+
+---
+
+## Ausgabe
+
+```
+Anna
+Lukas
+Tim
+Rebecca
+```

@@ -15,9 +15,10 @@ for (let i = text.length - 1; i >= 0; i--) {
   console.log(text[i]);
 }
 ```
+
 Erklärung:
 
-- `text.length - 1` Letzter Index des Strings (da Indizes bei `0` beginnen).
-- `i >= 0` Die Schleife läuft rückwärts bis zum ersten Zeichen.
-- `text[i]` Greift auf das jeweilige Zeichen im String zu.
-- `console.log(text[i])` Gibt jedes Zeichen einzeln in einer neuen Zeile aus.
+- `text.length - 1` letzter Index des Strings (da Indizes bei `0` beginnen).
+- `i >= 0` die Schleife läuft rückwärts bis zum ersten Zeichen.
+- `text[i]` greift auf das jeweilige Zeichen im String zu.
+- `console.log(text[i])` gibt jedes Zeichen einzeln in einer neuen Zeile aus.
