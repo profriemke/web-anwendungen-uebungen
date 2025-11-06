@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Web Anwendungen Übungen</title>
+<title>Übung 6: AdonisJS und Datenbanken – Web Anwendungen Übungen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-76b13546cc83bdca894379f4e87fb82e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-76b13546cc83bdca894379f4e87fb82e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Web Anwendungen Übungen</span>
     </a>
   </div>
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -98,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-cornerstone-übungen">    
         <li>
-    <a class="dropdown-item" href="./cornerstone-1.html">
+    <a class="dropdown-item" href="../cornerstone-1.html">
  <span class="dropdown-text">C.1: Javascript Basics</span></a>
   </li>  
     </ul>
@@ -114,15 +114,25 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#aufgabe-1-die-kundendatenbank" id="toc-aufgabe-1-die-kundendatenbank" class="nav-link active" data-scroll-target="#aufgabe-1-die-kundendatenbank">Aufgabe 1: Die Kundendatenbank</a></li>
+  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a>
+  <ul class="collapse">
+  <li><a href="#aufgabe-1-anmeldung-zum-workshop" id="toc-aufgabe-1-anmeldung-zum-workshop" class="nav-link" data-scroll-target="#aufgabe-1-anmeldung-zum-workshop">Aufgabe 1: Anmeldung zum Workshop</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Web Anwendungen Übungen</h1>
+<h1 class="title">Übung 6: AdonisJS und Datenbanken</h1>
 </div>
 
 
@@ -139,14 +149,37 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.</p>
-<ul>
-<li><a href="./u5/index.html">Übung 5: Objektorientierung und AdonisJS</a></li>
-<li><a href="./cornerstone-1.html">Cornerstone Übung 1: Javascript Basics</a></li>
-<li><a href="./u6/index.html">Übung 6: AdonisJS und DatenbankenS</a></li>
-</ul>
+<section id="aufgabe-1-die-kundendatenbank" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-1-die-kundendatenbank">Aufgabe 1: Die Kundendatenbank</h2>
+<blockquote class="blockquote">
+<p>Budget: 90 Minuten</p>
+</blockquote>
+<ol type="a">
+<li>Erstellen Sie eine AdonisJS-Anwendung, die Zugriff auf Ihre Kunden-Datenbank aus dem ersten Semester hat. Erstellen Sie hierfür ein neues Adonis-Projekt. Sie finden die Kunden-Datenbank im Moodle-Kurs im SQLite-Format. Kopieren Sie diese in das Projekt und konfigurieren Lucid so, dass diese Datenbank verwendet wird.</li>
+<li>Geben Sie alle Kunden aus Stuttgart jeweils in einem <code>&lt;div&gt;</code> pro Kunde aus. Legen Sie am Besten hierfür eine Route /stuttgart an. Legen Sie die <code>&lt;div&gt;</code> in einer Schleife an.</li>
+<li>Die <code>&lt;div&gt;</code> aus Aufgabe b. Sollen als Attribut des <code>&lt;div&gt;</code> eine id erhalten. Die id hat den Wert der Kundennummer des jeweiligen Kunden. Beachten Sie, dass der Wert von HTML-Attributen immer in doppelten Anführungszeichen steht.</li>
+<li>Geben Sie die Kunden aus Berlin mit Name, Vorname, Straße, Postleitzahl und Ort in einer Tabelle aus. Lösungsidee: Eine Schleife im Template, die jeweils pro Datensatz eine Tabellenzeile (<code>&lt;tr&gt;</code>) erzeugt. Auch hier eine neue Route: <code>/berlin</code>.</li>
+<li>Erweitern Sie Ihren Code um ein Formular, in das eine beliebige Stadt eingegeben werden kann. Auch hier eine neue Route: <code>/suche</code>. Nach Absenden des Formulars wird diese Stadt in der Datenbank gesucht und alle Kunden werden in einer Tabelle wie in Aufgabenteil d.&nbsp;ausgegeben.</li>
+<li>Erweitern Sie Aufgabe e. so, dass nach einem weiteren Attribut, nämlich der Kundennummer gesucht werden kann.</li>
+<li>Erstellen Sie ein Formular und eine Route, welches einen neuen Kundendatensatz erfasst und in der Datenbank speichert. Als Ergebnis wird der Primärschlüssel, also die Kundennummer zurückgegeben. Suchen Sie den Kunden mit der Suche aus f.</li>
+</ol>
+</section>
+<section id="homework" class="level2">
+<h2 class="anchored" data-anchor-id="homework">Homework</h2>
+<p>Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.</p>
+<section id="aufgabe-1-anmeldung-zum-workshop" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-1-anmeldung-zum-workshop">Aufgabe 1: Anmeldung zum Workshop</h3>
+<blockquote class="blockquote">
+<p>Budget: 40 Minuten</p>
+</blockquote>
+<ol type="a">
+<li>Überlegen Sie, welche Daten eine Anmeldung für einen Marketing-Workshop an der HdM benötigt. Erstellen Sie im DB Browser for SQLite oder im SQLite3 Editor-Plugin eine Tabelle für diese Daten in der Kunden-Datenbank.</li>
+<li>Erstellen Sie eine AdonisJS-Anwendung, die in einem Formular die Daten erfasst und in der Datenbank in dieser Tabelle speichert.</li>
+</ol>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -105,6 +105,27 @@
     "text": "Aufgabe C.1.9\nGegeben ist folgendes Objekt:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n};\n\nVerwenden Sie Object Destructuring, um die Werte der Eigenschaften vorname und beruf aus dem Objekt zu extrahieren.\n\nGeben Sie die Werte anschließend mit console.log() aus.\n\nLösung"
   },
   {
+    "objectID": "u6/index.html",
+    "href": "u6/index.html",
+    "title": "Übung 6: AdonisJS und Datenbanken",
+    "section": "",
+    "text": "Budget: 90 Minuten\n\n\nErstellen Sie eine AdonisJS-Anwendung, die Zugriff auf Ihre Kunden-Datenbank aus dem ersten Semester hat. Erstellen Sie hierfür ein neues Adonis-Projekt. Sie finden die Kunden-Datenbank im Moodle-Kurs im SQLite-Format. Kopieren Sie diese in das Projekt und konfigurieren Lucid so, dass diese Datenbank verwendet wird.\nGeben Sie alle Kunden aus Stuttgart jeweils in einem &lt;div&gt; pro Kunde aus. Legen Sie am Besten hierfür eine Route /stuttgart an. Legen Sie die &lt;div&gt; in einer Schleife an.\nDie &lt;div&gt; aus Aufgabe b. Sollen als Attribut des &lt;div&gt; eine id erhalten. Die id hat den Wert der Kundennummer des jeweiligen Kunden. Beachten Sie, dass der Wert von HTML-Attributen immer in doppelten Anführungszeichen steht.\nGeben Sie die Kunden aus Berlin mit Name, Vorname, Straße, Postleitzahl und Ort in einer Tabelle aus. Lösungsidee: Eine Schleife im Template, die jeweils pro Datensatz eine Tabellenzeile (&lt;tr&gt;) erzeugt. Auch hier eine neue Route: /berlin.\nErweitern Sie Ihren Code um ein Formular, in das eine beliebige Stadt eingegeben werden kann. Auch hier eine neue Route: /suche. Nach Absenden des Formulars wird diese Stadt in der Datenbank gesucht und alle Kunden werden in einer Tabelle wie in Aufgabenteil d. ausgegeben.\nErweitern Sie Aufgabe e. so, dass nach einem weiteren Attribut, nämlich der Kundennummer gesucht werden kann.\nErstellen Sie ein Formular und eine Route, welches einen neuen Kundendatensatz erfasst und in der Datenbank speichert. Als Ergebnis wird der Primärschlüssel, also die Kundennummer zurückgegeben. Suchen Sie den Kunden mit der Suche aus f."
+  },
+  {
+    "objectID": "u6/index.html#aufgabe-1-die-kundendatenbank",
+    "href": "u6/index.html#aufgabe-1-die-kundendatenbank",
+    "title": "Übung 6: AdonisJS und Datenbanken",
+    "section": "",
+    "text": "Budget: 90 Minuten\n\n\nErstellen Sie eine AdonisJS-Anwendung, die Zugriff auf Ihre Kunden-Datenbank aus dem ersten Semester hat. Erstellen Sie hierfür ein neues Adonis-Projekt. Sie finden die Kunden-Datenbank im Moodle-Kurs im SQLite-Format. Kopieren Sie diese in das Projekt und konfigurieren Lucid so, dass diese Datenbank verwendet wird.\nGeben Sie alle Kunden aus Stuttgart jeweils in einem &lt;div&gt; pro Kunde aus. Legen Sie am Besten hierfür eine Route /stuttgart an. Legen Sie die &lt;div&gt; in einer Schleife an.\nDie &lt;div&gt; aus Aufgabe b. Sollen als Attribut des &lt;div&gt; eine id erhalten. Die id hat den Wert der Kundennummer des jeweiligen Kunden. Beachten Sie, dass der Wert von HTML-Attributen immer in doppelten Anführungszeichen steht.\nGeben Sie die Kunden aus Berlin mit Name, Vorname, Straße, Postleitzahl und Ort in einer Tabelle aus. Lösungsidee: Eine Schleife im Template, die jeweils pro Datensatz eine Tabellenzeile (&lt;tr&gt;) erzeugt. Auch hier eine neue Route: /berlin.\nErweitern Sie Ihren Code um ein Formular, in das eine beliebige Stadt eingegeben werden kann. Auch hier eine neue Route: /suche. Nach Absenden des Formulars wird diese Stadt in der Datenbank gesucht und alle Kunden werden in einer Tabelle wie in Aufgabenteil d. ausgegeben.\nErweitern Sie Aufgabe e. so, dass nach einem weiteren Attribut, nämlich der Kundennummer gesucht werden kann.\nErstellen Sie ein Formular und eine Route, welches einen neuen Kundendatensatz erfasst und in der Datenbank speichert. Als Ergebnis wird der Primärschlüssel, also die Kundennummer zurückgegeben. Suchen Sie den Kunden mit der Suche aus f."
+  },
+  {
+    "objectID": "u6/index.html#homework",
+    "href": "u6/index.html#homework",
+    "title": "Übung 6: AdonisJS und Datenbanken",
+    "section": "Homework",
+    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Anmeldung zum Workshop\n\nBudget: 40 Minuten\n\n\nÜberlegen Sie, welche Daten eine Anmeldung für einen Marketing-Workshop an der HdM benötigt. Erstellen Sie im DB Browser for SQLite oder im SQLite3 Editor-Plugin eine Tabelle für diese Daten in der Kunden-Datenbank.\nErstellen Sie eine AdonisJS-Anwendung, die in einem Formular die Daten erfasst und in der Datenbank in dieser Tabelle speichert."
+  },
+  {
     "objectID": "u5/index.html",
     "href": "u5/index.html",
     "title": "Übung 5: Objektorientierung und AdonisJS",
@@ -144,7 +165,7 @@
     "href": "index.html",
     "title": "Web Anwendungen Übungen",
     "section": "",
-    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nÜbung 5: Objektorientierung und AdonisJS\nCornerstone Übung 1: Javascript Basics\nÜbung 5: Objektorientierung und AdonisJS"
+    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nÜbung 5: Objektorientierung und AdonisJS\nCornerstone Übung 1: Javascript Basics\nÜbung 6: AdonisJS und DatenbankenS"
   },
   {
     "objectID": "loesungen/c-1-3.html",

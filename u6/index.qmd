@@ -1,0 +1,30 @@
+---
+  title: "Übung 6: AdonisJS und Datenbanken"
+---
+
+## Aufgabe 1: Die Kundendatenbank
+> Budget: 90 Minuten
+
+a. Erstellen Sie eine AdonisJS-Anwendung, die Zugriff auf Ihre Kunden-Datenbank aus dem
+ersten Semester hat. Erstellen Sie hierfür ein neues Adonis-Projekt. Sie finden die Kunden-Datenbank im Moodle-Kurs im SQLite-Format. Kopieren Sie diese in das Projekt und konfigurieren Lucid so, dass diese Datenbank verwendet wird.
+b. Geben Sie alle Kunden aus Stuttgart jeweils in einem `<div>` pro Kunde aus. Legen Sie am
+Besten hierfür eine Route /stuttgart an. Legen Sie die `<div>` in einer Schleife an. 
+c. Die `<div>` aus Aufgabe b. Sollen als Attribut des `<div>` eine id erhalten. Die id hat den
+Wert der Kundennummer des jeweiligen Kunden. Beachten Sie, dass der Wert von
+HTML-Attributen immer in doppelten Anführungszeichen steht.
+d. Geben Sie die Kunden aus Berlin mit Name, Vorname, Straße, Postleitzahl und Ort in
+einer Tabelle aus. Lösungsidee: Eine Schleife im Template, die jeweils pro Datensatz eine
+Tabellenzeile (`<tr>`) erzeugt. Auch hier eine neue Route: `/berlin`. 
+e. Erweitern Sie Ihren Code um ein Formular, in das eine beliebige Stadt eingegeben werden kann. Auch hier eine neue Route: `/suche`.  Nach Absenden des Formulars wird diese Stadt in der Datenbank gesucht und alle Kunden werden in einer Tabelle wie in Aufgabenteil d. ausgegeben.
+f. Erweitern Sie Aufgabe e. so, dass nach einem weiteren Attribut, nämlich der Kundennummer gesucht werden kann.
+g. Erstellen Sie ein Formular und eine Route, welches einen neuen Kundendatensatz erfasst und in der Datenbank speichert. Als Ergebnis wird der Primärschlüssel, also die Kundennummer zurückgegeben. Suchen Sie den Kunden mit der Suche aus f.
+
+## Homework
+
+Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.
+
+### Aufgabe 1: Anmeldung zum Workshop
+>Budget: 40 Minuten
+
+a. Überlegen Sie, welche Daten eine Anmeldung für einen Marketing-Workshop an der HdM benötigt. Erstellen Sie im DB Browser for SQLite oder im SQLite3 Editor-Plugin eine Tabelle für diese Daten in der Kunden-Datenbank.
+b. Erstellen Sie eine AdonisJS-Anwendung, die in einem Formular die Daten erfasst und in der Datenbank in dieser Tabelle speichert.
