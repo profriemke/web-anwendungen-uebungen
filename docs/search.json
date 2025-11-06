@@ -2,8 +2,36 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Test",
+    "title": "Web Anwendungen Übungen",
+    "section": "",
+    "text": "Web Anwendungen Übungen\nDiese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nCornerstone Übung 1: Javascript Basics"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Web Anwendungen Übungen",
     "section": "",
     "text": "Test"
+  },
+  {
+    "objectID": "cornerstone-1.html",
+    "href": "cornerstone-1.html",
+    "title": "Cornerstone 1 Web Anwendungen Übungen",
+    "section": "",
+    "text": "Wichtig: Bearbeiten Sie die Übungen bevor Sie sich die Lösungen ansehen.\n\n\n\nErstellen Sie eine Schleife in Javascript, die die Zhalen von 10 bis 30 ausgibt.\n\n\n\nErstellen Sie eine Schleife in Javascript, die die Zhalen von 10 bis 30 ausgibt."
+  },
+  {
+    "objectID": "cornerstone-1.html#aufgabe-c.1.1",
+    "href": "cornerstone-1.html#aufgabe-c.1.1",
+    "title": "Cornerstone 1 Web Anwendungen Übungen",
+    "section": "",
+    "text": "Erstellen Sie eine Schleife in Javascript, die die Zhalen von 10 bis 30 ausgibt."
+  },
+  {
+    "objectID": "cornerstone-1.html#aufgabe-c.1.2",
+    "href": "cornerstone-1.html#aufgabe-c.1.2",
+    "title": "Cornerstone 1 Web Anwendungen Übungen",
+    "section": "",
+    "text": "Erstellen Sie eine Schleife in Javascript, die die Zhalen von 10 bis 30 ausgibt."
   }
 ]
