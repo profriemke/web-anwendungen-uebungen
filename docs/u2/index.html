@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Übung 1: Setup &amp; Basics – Web Anwendungen Übungen</title>
+<title>Übung 2: Node.js und Kommandozeile – Web Anwendungen Übungen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -119,11 +119,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#aufgabe-1-das-setup" id="toc-aufgabe-1-das-setup" class="nav-link active" data-scroll-target="#aufgabe-1-das-setup">Aufgabe 1: Das Setup</a></li>
-  <li><a href="#aufgabe-2-das-web" id="toc-aufgabe-2-das-web" class="nav-link" data-scroll-target="#aufgabe-2-das-web">Aufgabe 2: Das Web</a></li>
+  <li><a href="#aufgabe-1-die-kommandozeile" id="toc-aufgabe-1-die-kommandozeile" class="nav-link active" data-scroll-target="#aufgabe-1-die-kommandozeile">Aufgabe 1: Die Kommandozeile</a></li>
+  <li><a href="#aufgabe-2-node.js" id="toc-aufgabe-2-node.js" class="nav-link" data-scroll-target="#aufgabe-2-node.js">Aufgabe 2: Node.js</a></li>
+  <li><a href="#aufgabe-3-javascript-die-fallunterscheidung" id="toc-aufgabe-3-javascript-die-fallunterscheidung" class="nav-link" data-scroll-target="#aufgabe-3-javascript-die-fallunterscheidung">Aufgabe 3: Javascript: Die Fallunterscheidung</a></li>
+  <li><a href="#aufgabe-4-type-coercion" id="toc-aufgabe-4-type-coercion" class="nav-link" data-scroll-target="#aufgabe-4-type-coercion">Aufgabe 4: Type Coercion</a></li>
+  <li><a href="#aufgabe-5-schleifen" id="toc-aufgabe-5-schleifen" class="nav-link" data-scroll-target="#aufgabe-5-schleifen">Aufgabe 5: Schleifen</a></li>
   <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a>
   <ul class="collapse">
-  <li><a href="#aufgabe-1-anmeldung-zum-workshop" id="toc-aufgabe-1-anmeldung-zum-workshop" class="nav-link" data-scroll-target="#aufgabe-1-anmeldung-zum-workshop">Aufgabe 1: Anmeldung zum Workshop</a></li>
+  <li><a href="#aufgabe-1-die-wort-schleife" id="toc-aufgabe-1-die-wort-schleife" class="nav-link" data-scroll-target="#aufgabe-1-die-wort-schleife">Aufgabe 1: Die Wort-Schleife</a></li>
+  <li><a href="#aufgabe-2-happy-strings" id="toc-aufgabe-2-happy-strings" class="nav-link" data-scroll-target="#aufgabe-2-happy-strings">Aufgabe 2: Happy Strings</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -133,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Übung 1: Setup &amp; Basics</h1>
+<h1 class="title">Übung 2: Node.js und Kommandozeile</h1>
 </div>
 
 
@@ -150,55 +154,131 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="aufgabe-1-das-setup" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-1-das-setup">Aufgabe 1: Das Setup</h2>
+<section id="aufgabe-1-die-kommandozeile" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-1-die-kommandozeile">Aufgabe 1: Die Kommandozeile</h2>
 <blockquote class="blockquote">
-<p>Budget: 30 Minuten</p>
+<p>Budget: 25 Minuten</p>
 </blockquote>
-<p>Für die Lehrveranstaltung benötigen wir das richtige Tooling.</p>
+<ol type="a">
+<li>Was ist eine Kommandozeile, auch Shell oder genannt, und wozu werden Shells in der Praxis verwendet?</li>
+<li>Es gibt verschiedene Kommandozeilen. Manche Betriebssysteme erlauben verschiedene Shells, manche haben eine Standard-Shell. Was sind die Unterschiede zwischen den häufig genutzten Shells <strong>bash, zsh, cmd und Powershell</strong>. Welche Shell(s) hat Ihr System?</li>
+<li>Moderne Betriebssysteme verstecken mehr oder weniger die genaue Struktur des Dateisystems vor dem Nutzer. Wie sieht die Struktur Ihres Dateisystems in Wirklichkeit aus? Finden Sie Ihren Benutzerordner (Home-Verzeichnis). r</li>
+<li>Öffnen Sie Ihre Kommandozeile/Shell/Terminal. Windows: Verwenden Sie nicht Powershell, sondern die Command/<strong>cmd</strong> Shell.</li>
+<li>Listen Sie im Terminal alle vorhandenen Ordner auf. Die Anzeige erfolgt mit <code>ls</code> (= list auf MacOS und Linux) bzw. <code>dir</code> (= directory unter Windows).</li>
+<li>Wo wird Ihnen angezeigt in welchen Ordner Sie sich befinden?</li>
+<li>Wechseln Sie mit dem Befehl <code>cd</code> (change directory) in Ihr Home-Verzeichnis. Es gibt die unten dargestellten Befehle für den Wechsel.</li>
+<li>Legen Sie einen Ordner mit beliebigen Namen an. Wechseln Sie in diesen Ordner und lassen Sie sich den Inhalt anzeigen. Finden Sie den neuen Ordner im Finder oder Explorer.</li>
+</ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Aktion</th>
+<th>Befehl</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">in das Home-Verzeichnis wechseln</td>
+<td><code>cd ~</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">in das übergeordnete Verzeichnis wechseln</td>
+<td><code>cd ..</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">in den obersten Ordner (Wurzel/Root) wechseln</td>
+<td><code>cd /</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">n ein Verzeichnis wechseln</td>
+<td><code>cd verzeichnis</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Riemkes Tipp:</strong></p>
+<p>Zwei hilfreiche Tipps zum Umgang mit der Kommandozeile:</p>
 <ol type="1">
-<li>Github (Student) Account. Verwenden Sie einen sinnvollen Nutzernamen, da dieser im Business möglicherweise eine lebenslange Visitenkarte ist. Link: <a href="ttps://education.github.com/pack">https://education.github.com/pack</a></li>
-<li>ChatGPT Account. Link: <a href="ttps://chat.openai.com/auth/login">https://chat.openai.com/auth/login</a></li>
+<li>Bei Ordner- und Dateinamen muss meistens nur der Beginn eingegeben werden. Sobald der Name eindeutig ist lässt sich der Name durch das Drücken der Tab-Taste vervollständigen.</li>
+<li>Die letzten Befehle sind in der Regel über die Pfeiltaste nach oben erreichbar und müssen nicht immer neu getippt werden.</li>
 </ol>
-<p>Richten Sie die folgende Software ein:</p>
-<ol type="1">
-<li>DB Browser for SQLite Link:<a href="https://sqlitebrowser.org/">https://sqlitebrowser.org/</a></li>
-<li>Visual Studio Code Link: <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
-<li>NodeJS Link: <a href="https://nodejs.org/en">https://nodejs.org/en</a></li>
-</ol>
-<ul>
-<li>Wichtig: Installieren Sie die LTS (Long Term Support) Version</li>
-<li>Zu beachten: NodeJS erscheint nicht als Programm in der Übersicht der Programme. Sie können die Funktion im Terminal auf der Kommandozeite mit <code>node -v</code> überprüfen.</li>
-</ul>
-<ol start="4" type="1">
-<li>Folgende Visual Studio Code Erweiterungen</li>
-</ol>
-<ul>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=jripouteau.adonis-vscode-extension">https://marketplace.visualstudio.com/items?itemName=jripouteau.adonis-vscode-extension</a></li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=luongnd.edge">https://marketplace.visualstudio.com/items?itemName=luongnd.edge</a></li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot">https://marketplace.visualstudio.com/items?itemName=GitHub.copilot</a></li>
-</ul>
 </section>
-<section id="aufgabe-2-das-web" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-2-das-web">Aufgabe 2: Das Web</h2>
+<section id="aufgabe-2-node.js" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-2-node.js">Aufgabe 2: Node.js</h2>
 <blockquote class="blockquote">
-<p>Budget: 30 Minuten</p>
+<p>Budget: 15 Minuten</p>
 </blockquote>
-<ol type="1">
-<li>Erklären Sie gemeinsam im Team den Ablauf einer DNS-Auflösung. Stellen Sie den Ablauf grafisch dar.</li>
-<li>Und nun das Web: Erstellen Sie gemeinsam einen grafischen Ablauf eines Web-Seiten-Aufrufs von der Eingabe der URL in den Browser bis zur vollständigen Anzeige der Web-Seite. Die Grafik soll alle wichtigen Fachbegriffe enthalten. Vergessen Sie nicht TCP.</li>
+<p>Achten Sie bei den Antworten auf eine fachliche, gute Formulierung. Verwenden Sie keine Stichwörter.</p>
+<ol type="a">
+<li>Was ist Node.js?</li>
+<li>Wo liegt der Unterschied von Node.js und einem Javascript-Interpreter in einem Browser?</li>
+<li>Warum eignet sich Node.js besonders gut für Echtzeitanwendungen? r</li>
+</ol>
+</section>
+<section id="aufgabe-3-javascript-die-fallunterscheidung" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-3-javascript-die-fallunterscheidung">Aufgabe 3: Javascript: Die Fallunterscheidung</h2>
+<blockquote class="blockquote">
+<p>Budget: 10 Minuten</p>
+</blockquote>
+<ol type="a">
+<li>Was ist eine Modulo-Rechnung und wie kann ich diese für den Test auf gerade/ungerade nutzen? r</li>
+<li>Erstellen Sie ein Programm, welches den Inhalt der Variablen zahl testet und gerade/ungerade ausgibt. Verwenden Sie eine Fallunterscheidung mittels if-Statement.</li>
+<li>Verkürzen die das Programm mit einem ternären Operator.</li>
+</ol>
+</section>
+<section id="aufgabe-4-type-coercion" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-4-type-coercion">Aufgabe 4: Type Coercion</h2>
+<blockquote class="blockquote">
+<p>Budget: 10 Minuten</p>
+</blockquote>
+<p>Achten Sie bei den Antworten auf eine fachliche, gute Formulierung. Verwenden Sie keine Stichwörter.</p>
+<ol type="a">
+<li>Was versteht man unter Type Coercion?</li>
+<li>Warum ist diese notwendig?</li>
+<li>Erstellen Sie zwei Code-Beispiele für Type Coercion und probieren Sie diese aus.</li>
+<li>Wann benötigt eine Programmiersprache keine Type Coercion?</li>
+</ol>
+</section>
+<section id="aufgabe-5-schleifen" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-5-schleifen">Aufgabe 5: Schleifen</h2>
+<blockquote class="blockquote">
+<p>Budget: 10 Minuten</p>
+</blockquote>
+<p>Achten Sie bei den Antworten auf eine fachliche, gute Formulierung. Verwenden Sie keine Stichwörter.</p>
+<ol type="a">
+<li>Erstellen Sie eine for-Schleife, die die Zahlen von 1 bis 100 ausgibt. Überlegen Sie kurz vor dem Entwickeln in einer Skizze, wie der Ablauf aussehen muss.</li>
+<li>Erstellen Sie eine for-Schleife, die von 100 bis 0 zählt. Hierfür gibt es zwei Möglichkeiten die for-Schleife zu programmieren. Welche?</li>
+<li>Lösen Sie die Aufgabe aus b. mit einer do-while-Schleife.</li>
 </ol>
 </section>
 <section id="homework" class="level2">
 <h2 class="anchored" data-anchor-id="homework">Homework</h2>
 <p>Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.</p>
-<section id="aufgabe-1-anmeldung-zum-workshop" class="level3">
-<h3 class="anchored" data-anchor-id="aufgabe-1-anmeldung-zum-workshop">Aufgabe 1: Anmeldung zum Workshop</h3>
+<section id="aufgabe-1-die-wort-schleife" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-1-die-wort-schleife">Aufgabe 1: Die Wort-Schleife</h3>
 <blockquote class="blockquote">
-<p>Budget: 30 Minuten</p>
+<p>Budget: 15 Minuten</p>
 </blockquote>
-<p>Sie benötigen in der Veranstaltung Kenntnisse im Umgang mit der Kommandozeile Ihres Betriebssystems. Im Moodle-Kurs finden Sie Einführungskurse, die Sie absolvieren können. Die untenstehenden Playlists sind Vorschläge. Sie können sich das Wissen natürlich auch auf andere Art aneignen.</p>
-<p><a href="https://moodle.hdm-stuttgart.de/course/view.php?id=12697#coursecontentcollapse2">https://moodle.hdm-stuttgart.de/course/view.php?id=12697#coursecontentcollapse2</a></p>
+<p>Erstellen Sie eine for-Schleife, die die Zahlen von 1 bis 100 ausgibt. Allerdings sollen die Zahlen als Wörter ausgegeben werden, also:</p>
+<pre class="text"><code>eins
+zwei
+...</code></pre>
+<p>Dabei soll der Einfachheit halber statt “zweiundzwanzig” einfach nur “zweizwei” ausgegeben werden. Sie benötigen zum Zusammenbau der Wörter eine Schleife und am Besten ein <code>switch</code>.</p>
+</section>
+<section id="aufgabe-2-happy-strings" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-2-happy-strings">Aufgabe 2: Happy Strings</h3>
+<blockquote class="blockquote">
+<p>Budget: 10 Minuten</p>
+</blockquote>
+<p>Gegeben ist der folgende String:</p>
+<p><em>“Die schnelle braune Füchsin springt über den faulen Hund. Dabei beobachtet sie die grauen Wolken am Himmel, während der Wind sanft durch die grünen Blätter der Bäume weht. In der Ferne hört man das leise Rauschen eines Baches.”</em></p>
+<p>Geben Sie die folgenden Punkt jeweils in einem Javascript-Programm aus.</p>
+<ol type="a">
+<li>Die Länge des Strings.</li>
+<li>Überprüfen Sie, ob das Wort “Füchsin” im Satz vorkommt und geben Sie das Ergebnis aus</li>
+<li>Ersetzen Sie das Wort “braune” durch “rote” und geben den neuen String aus.</li>
+<li>Konvertieren Sie den gesamten Satz in Kleinbuchstaben und geben ihn aus.</li>
+<li>Speichern Sie alle Sätze einzeln in einem Array und geben dieses in einer Schleife aus.</li>
+</ol>
 
 
 </section>

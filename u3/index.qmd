@@ -1,0 +1,136 @@
+---
+  title: "Übung 3: Arrays, Funktionen und mehr"
+---
+## Aufgabe 1: Array anlegen und zugreifen
+>Budget: 15 Minuten
+
+Legen Sie ein Array in der Array-Literal-Schreibweise an. Enthalten sein sollen die folgenden Daten:
+
+- Hund
+- Katze
+- Maus
+- Niko
+- Laus
+
+1. Lassen Sie sich ausgeben, wie viele Elemente das Array enthält.
+2. Geben Sie den Inhalt des Arrays mit `console.log()` aus (ohne Schleife).
+3. Geben Sie den Inhalt in einer `for`-Schleife aus.
+4. Ergänzen Sie die Schleife so, dass die Einträge bei der Ausgabe von der Angabe `1.` (mit Punkt!) startend durchnummeriert werden.
+5. Entfernen Sie das erste Element des Arrays.
+6. Fügen Sie am Anfang des Arrays einen `Elefant` hinzu und lassen Sie sich das Array wieder ausgeben.
+7. Fügen Sie am Ende den Eintrag `Ende` hinzu.
+
+
+## Aufgabe 2: Zusammen geht es besser
+> Budget: 10 Minuten
+
+Für diese Aufgabe deaktivieren Sie bitte rechts unten in VSCode Github Copilot.
+
+Erstellen Sie eine Funktion zusammen, die zwei Strings entgegennimmt, diese zusammenfügt und den zusammengefügten String zurückgibt. Ein Aufruf könnte also wie folgt aussehen:
+
+```javascript	
+      console.log(zusammen(ˈHalloˈ, ˈKalleˈ); //Ergebnis: HalloKalle
+```
+
+Modifizieren Sie in einem zweiten Schritt die Funktion so, dass sie immer ein Leerzeichen zwischen den Strings einfügt und damit bei obigen Aufruf `Hallo Kalle` zurückgibt
+
+## Aufgabe 3: Der komische Vergleich
+> Budget: 10 Minuten
+
+Gegeben sind die folgenden zwei Variablen und die Zuweisungen:
+
+```javascript	
+let a = 5;
+let b = "5";
+```
+
+Wird mit diesen Belegungen der Variablen in den nachfolgenden `if`-Statements der Zweig für `true` oder `false` ausgeführt? Begründen Sie Ihr Ergebnis!
+
+
+| Statement	| ausgeführter Zweig |	Begründung |
+|:----------|:-------------------|:------------|
+| `if(a = b){ // Code } else { // Code }` |    |   |
+| `if(a == b){ // Code } else { // Code }` |   |    |		
+| `if(a === b){ // Code } else { // Code }` |  |    |		
+ 
+ 
+
+## Aufgabe 4: Mathe und so
+>Budget: 10 Minuten
+> Für diese Aufgabe deaktivieren Sie bitte rechts unten in VSCode Github Copilot.
+
+Eine Aufgabe aus einer vergangenen Klausur: Erstellen Sie eine Funktion `quadrat`, die eine Zahl entgegennimmt und das Quadrat dieser Zahl zurück gibt.
+
+Geben Sie die Quadratzahlen von `2`, `8` und `64` aus.
+
+Es gibt zwei Wege das Quadrat zu berechnen. Eine ist eine Notation in Javascript, die andere ist Ihnen aus der Schule bekannt.
+
+
+## Aufgabe 5: Noch mehr Mathe und so
+> Budget: 10 Minuten
+> Für diese Aufgabe deaktivieren Sie bitte rechts unten in VSCode Github Copilot.
+
+Erstellen Sie eine Funktion `oddOrEven`, die eine Zahl entgegennimmt und prüft, ob diese Zahl gerade oder ungerade ist. Ist sie gerade wird `true` zurück gegeben, `false` sonst. 
+
+Verwenden Sie hierzu den Modulo-Operator `%`. Dieser liefert den Rest einer Division zurück. 
+
+Beispiele:
+
+```javascript	
+6%3  = 0
+7%3  = 1
+```
+
+Wie können Sie diesen nutzen?
+
+
+## Aufgabe 6: Verkehrte Welt
+> Budget: 15 Minuten
+> Für diese Aufgabe deaktivieren Sie bitte rechts unten in VSCode Github Copilot.
+
+Schreiben Sie eine Funktion `reverse`, die einen String als Parameter entgegennimmt. Die Funktion kehrt den String um und gibt den gedrehten String zurück. Probieren Sie den Code mit dem String `Mit Tim` aus.
+Lösungshinweis: Sie können auf einzelne Zeichen eines Strings wie auf ein Array zugreifen.
+
+Beispiel:
+```text
+Eingabe:  Riemke
+Ausgabe:  ekmeiR
+```
+
+Aufgabe 7: Funktionen mit Funktionen aufrufen
+> Budget: 15 Minuten
+
+1. Erstellen Sie zwei Funktionen, die genau das machen, was der Name verspricht: `plus` und `multipliziere`. Diese Funktionen bekommen jeweils zwei Werte übergeben und geben einen Wert zurück. Definieren Sie die Funktionen aus Funktionsausdruck. Probieren Sie sie aus!
+2. Erstellen Sie die Funktion `berechne`. Die Funktion nimmt zwei Werte und eine Funktion als Parameter entgegen. Sie startet die Funktion und gibt deren Ergebnis zurück. Also z.B.`berechne(1,2, plus)`.
+
+
+## Aufgabe 7: Tieffliegende Pfeile
+> Budget: 5 Minuten
+
+1. Was sind Arrow-Functions? 
+2. Erstellen Sie eine Arrow-Function, die eine Zahl entgegennimmt und das Quadrat zurückgibt.
+3. Wie sieht diese Funktion auf die notwendigsten Zeichen reduziert aus. Hinweis: Probieren Sie ggf. aus! Es kann sehr viel weggelassen werden. 
+
+
+## Homework
+
+Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.
+
+### Aufgabe 1: Vornamenfunktion
+> Budget: 15 Minuten
+
+1. Erstellen Sie eine Funktion, welche einen String mit Vor- und Nachnamen, also z.B. `Thorsten Riemke` entgegennimmt. Die Funktion extrahiert den Vornamen aus dem String und gibt ihn als Rückgabewert zurück.
+2. Erstellen Sie ein Beispiel in dem Sie Ihre nagelneue Funktion anwenden.
+
+
+### Aufgabe 2: Fibonacci-Folge berechnen
+> Budget: 15 Minuten
+
+ 1. Was ist eine Fibonacci-Folge?
+ 2. Wie berechnet man sie?
+3. Erstellen Sie eine Funktion hierfür. Lassen Sie sich von KI nicht die Lösung vorgeben, nutzen Sie sie nur als Hilfestellung.
+
+### Aufgabe 3: Github Copilot verwenden
+> Budget: 15 Minuten
+
+Im Moodle-Kurs finden Sie ein Tutorial-Video über den Einsatz von Github Copilot. Bearbeiten Sie das Video.

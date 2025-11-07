@@ -23,13 +23,13 @@ printPersonInfo(person);
 
 a. Object Destructuring kommt in der Web-Entwicklung mit Javascript häufig vor. Erklären Sie den Begriff. Achten Sie dabei auf eine fachlich korrekte und vollständige Antwort.
 b. Ergänzen Sie den freien Platz bei der Funktion in der Parameter-Übergabe mittels Object Destructuring so, dass der Code funktioniert.
-c. Was sind die Vorteile von Object Destructuring? r
+c. Was sind die Vorteile von Object Destructuring?
 
 
 ## Aufgabe 2: Die erste Seite in AdonisJS
 > Budget: 20 Minuten
 
-a. Erstellen Sie eine Web-Anwendung in AdonisJS, die beim Aufruf  „Hallo, hier bin ich!“ ausgibt (ohne View/Template).
+a. Erstellen Sie eine Web-Anwendung in AdonisJS, die beim Aufruf  `Hallo, hier bin ich!` ausgibt (ohne View/Template).
 b. Web-Anwendungen benötigen einen Web-Server. Wo ist der in Ihrer AdonisJS-Anwendung?
 c. Was ist eine Route?
 d. Was haben HTTP-Verben mit der Route zu tun.
@@ -52,7 +52,7 @@ Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich
 ### Aufgabe 1: Formulare in AdonisJS
 > Budget: 30 Minuten
 
-a. Erstellen Sie ein Formular in AdonisJS, welches Name und Vorname unter der Route /liste/eingabe erfasst. Wird das Formular an die Route /liste/eingabe/danke abgesendet erscheint eine Seite, die sich für die Eingabe bedankt und die Daten ausgibt. Tipp: Zum Speichern einer Liste eignet sich ein Array.
-b. Erweitern Sie die Route /liste/eingabe/danke so, dass sie einen Link auf /liste enthält. Die Route sorgt jetzt auch dafür, dass die Daten als Objekt zu einem Array hinzugefügt werden. Wir merken uns die Daten also in einer Variablen im Hauptspeicher.
-c. Die Route /liste gibt alle eingegebenen Namen aus.
+a. Erstellen Sie ein Formular in AdonisJS, welches Name und Vorname unter der Route `/liste/eingabe` erfasst. Wird das Formular an die Route `/liste/eingabe/danke` abgesendet erscheint eine Seite, die sich für die Eingabe bedankt und die Daten ausgibt. Tipp: Zum Speichern einer Liste eignet sich ein Array.
+b. Erweitern Sie die Route `/liste/eingabe/danke` so, dass sie einen Link auf `/liste` enthält. Die Route sorgt jetzt auch dafür, dass die Daten als Objekt zu einem Array hinzugefügt werden. Wir merken uns die Daten also in einer Variablen im Hauptspeicher.
+c. Die Route `/liste` gibt alle eingegebenen Namen aus.
 

@@ -1,94 +1,227 @@
 [
   {
-    "objectID": "loesungen/c-1-1.html",
-    "href": "loesungen/c-1-1.html",
-    "title": "Capstone Übung C.1.1: Javascript Basics",
+    "objectID": "u4/index.html",
+    "href": "u4/index.html",
+    "title": "Übung 4: Strings, Datei und Datenbank",
     "section": "",
-    "text": "Erstellen Sie eine Schleife in Javascript, die die Zahlen von 10 bis 30 ausgibt.\n\nLösung:\nfor (let i = 10; i &lt;= 30; i++) {\n  console.log(i);\n}\n\nErklärung:\n\nlet i = 10; Startwert der Zählvariablen.\ni &lt;= 30; Bedingung: Die Schleife läuft, solange i kleiner oder gleich 30 ist.\ni++ Erhöht i nach jedem Durchlauf um 1.\nconsole.log(i); → Gibt die aktuelle Zahl in der Konsole aus."
+    "text": "Budget: 5 Minuten\n\nStrings werden immer wieder gebraucht.\nFügen Sie die Strings aus dem folgenden Code zusammen zu dem ganzen Namen. Vergessen Sie nicht ein Leerzeichen einzufügen:\nlet nachName = ˈMüllerˈ\nlet vorname = ˈAnnaˈ\nganzerName =        // Ihr Code hier\nconsole.log(ganzerName)"
   },
   {
-    "objectID": "loesungen/c-1-2.html",
-    "href": "loesungen/c-1-2.html",
-    "title": "Capstone Übung C.1.1: Javascript Basics",
+    "objectID": "u4/index.html#aufgabe-1-arbeiten-mit-strings",
+    "href": "u4/index.html#aufgabe-1-arbeiten-mit-strings",
+    "title": "Übung 4: Strings, Datei und Datenbank",
     "section": "",
-    "text": "Gegeben ist der untenstehende String. Geben Sie mit Javascript die einzelnen Buchstaben des Strings in umgekehrter Reihenfolge einzeln aus.\nDas Huhn frisst gerne Körner.\n\nLösung:\nconst text = \"Das Huhn frisst gerne Körner.\";\n\nfor (let i = text.length - 1; i &gt;= 0; i--) {\n  console.log(text[i]);\n}\n\nErklärung:\n\nWir können Strings als Arrays behandeln und dieses Array mit einer Schleife durchwandern.\ntext.length - 1 letzter Index des Strings (da Indizes bei 0 beginnen).\ni &gt;= 0 die Schleife läuft rückwärts bis zum ersten Zeichen.\ntext[i] greift auf das jeweilige Zeichen im String zu.\nconsole.log(text[i]) gibt jedes Zeichen einzeln in einer neuen Zeile aus."
+    "text": "Budget: 5 Minuten\n\nStrings werden immer wieder gebraucht.\nFügen Sie die Strings aus dem folgenden Code zusammen zu dem ganzen Namen. Vergessen Sie nicht ein Leerzeichen einzufügen:\nlet nachName = ˈMüllerˈ\nlet vorname = ˈAnnaˈ\nganzerName =        // Ihr Code hier\nconsole.log(ganzerName)"
   },
   {
-    "objectID": "loesungen/c-1-7.html",
-    "href": "loesungen/c-1-7.html",
-    "title": "Capstone Übung C.1.7: Javascript Basics",
-    "section": "",
-    "text": "Schreiben Sie eine Schleife, die die Namen aus dem Array ausgibt und abbricht, sobald der Name Rebecca auftaucht. Dabei soll der name Rebecca noch ausgegeben werden. Der Code darf kein if-Statement enthalten.\nconst namen = ['Malte', 'Svenja', 'Rebecca', 'Klaus'] \n\nLösung:\n\nLösungsansatz\nHier wird eine kompakte do-while-Schleife verwendet, die das gewünschte Verhalten ohne if erreicht.\n\n\nErste Idee\nconst namen = [\"Anna\", \"Lukas\", \"Tim\", \"Rebecca\", \"Sophie\", \"Max\"];\nlet i = 0;\ndo{\n// while-Schleife ohne if\ni++\nconsole.log(namen[i])\n}\nwhile ( namen[i] !== \"Rebecca\" )\nProblem: Wir vergessen hierbei den 0. Eintrag Anna, da wir zwar bei 0 starten, aber dann sofort hoch.\n\n\nSonderfall lösen\nLösung hierfür ist einfach “ein weiter unten” zu starten, nämlich bei -1.\nconst namen = [\"Anna\", \"Lukas\", \"Tim\", \"Rebecca\", \"Sophie\", \"Max\"];\nlet i = -1\ndo{\n// while-Schleife ohne if\ni++;\nconsole.log(namen[i])\n}\nwhile ( namen[i] !== \"Rebecca\" )\n\n\nErklärung\n\nconsole.log(namen[i]) gibt den aktuellen Namen aus.\n\nDer Ausdruck namen[i] !== \"Rebecca\" prüft, ob der aktuelle Name ungleich “Rebecca” ist.\n\nSolange das Ergebnis true ist, läuft die Schleife weiter.\n\nSobald der Name “Rebecca” erreicht ist, ergibt der Ausdruck false, die Schleife stoppt.\n\nDurch die Reihenfolge (console.log zuerst, dann der Vergleich) wird Rebecca noch ausgegeben, bevor der Abbruch erfolgt.\n\n\n\n\nAusgabe\nAnna\nLukas\nTim\nRebecca"
+    "objectID": "u4/index.html#aufgabe-2-strings-und-steuerzeichen",
+    "href": "u4/index.html#aufgabe-2-strings-und-steuerzeichen",
+    "title": "Übung 4: Strings, Datei und Datenbank",
+    "section": "Aufgabe 2: Strings und Steuerzeichen",
+    "text": "Aufgabe 2: Strings und Steuerzeichen\n\nBudget: 5 Minuten\n\nEs lassen sich auch Zeilenumbrüche zu einem String mittels \\n (new line) hinzufügen. Dies ist ein sogenanntes Steuerzeichen, welches die Ausgabe in diesem Fall zu einer neuen zeile steuert. Fassen Sie den Inhalt der beiden Variablen zu einer zusammen. Fügen Sie zwischen den Texten einen Zeilenumbruch ein. Geben Sie den ganzen Text aus.\nlet zeile1 = ˈDies ist die erste Zeileˈ;\nlet zeile2 = ˈDies ist die zweite Zeile.ˈ;\nganzerTextMitUmbruch ="
   },
   {
-    "objectID": "loesungen/c-1-8.html",
-    "href": "loesungen/c-1-8.html",
-    "title": "Capstone Übung C.1.8: Javascript Basics",
-    "section": "",
-    "text": "Erstellen Sie ein Objekt auto, das folgende Eigenschaften und Methoden enthält:\n\nEigenschaften:\n\nmarke (z. B. “BMW”)\nmodell (z. B. “X3”)\nbaujahr (z. B. 2021)\n\nMethoden:\n\nstart() → gibt \"Das Auto startet.\" in der Konsole aus.\n\ninfo() → gibt eine Beschreibung des Autos aus, z. B. \"BMW X3, Baujahr 2021\".\n\n\nRufen Sie beide Methoden anschließend auf.\n\nLösung:\nconst auto = {\n  marke: \"BMW\",\n  modell: \"X3\",\n  baujahr: 2021,\n\n  start() {\n    console.log(\"Das Auto startet.\");\n  },\n\n  info() {\n    console.log(`${this.marke} ${this.modell}, Baujahr ${this.baujahr}`);\n  }\n};\n\n// Methodenaufrufe\nauto.start(); // Ausgabe: Das Auto startet.\nauto.info();  // Ausgabe: BMW X3, Baujahr 2021\n\nErklärung:\n\nDas Objekt auto enthält sowohl Attribute (Daten bze.Eigenschaften) als auch Methoden (Funktionalität).\n\nDie Methode info() greift mit this auf die Eigenschaften dieses Objekts zu, in dem es ausgeführt wird.\n\nDurch den Aufruf auto.start() und auto.info() werden die Methoden ausgeführt und Text in der Konsole ausgegeben.\nZu beachten: Die Methoden geben direkt aus und geben keinen Wert zurück."
+    "objectID": "u4/index.html#aufgabe-3-probleme-mit-dynamischer-typisierung",
+    "href": "u4/index.html#aufgabe-3-probleme-mit-dynamischer-typisierung",
+    "title": "Übung 4: Strings, Datei und Datenbank",
+    "section": "Aufgabe 3: Probleme mit dynamischer Typisierung",
+    "text": "Aufgabe 3: Probleme mit dynamischer Typisierung\n\nBudget: 5 Minuten\n\nUnten stehen zwei Variablen, die durch die Zuweisung den Typ Number annehmen. Sie sollen zu einem String zusammengefügt werden, so dass das Ergebnis 42 (und nicht ausgerechnet 6) ist. Ein `+ würde die Zahlen zusammenrechnen. Sie können aber die Zahlen explizit in einen String umwandeln. Die Zahlen haben die Methode .toString(), die den Wert als String zurückgibt. Geben Sie den ganzen Text aus.\n        let zahl1 = 4;\n        let zahl2 = 2;\n        zusammen =        // Ihr Code hier"
   },
   {
-    "objectID": "loesungen/c-1-9.html",
-    "href": "loesungen/c-1-9.html",
-    "title": "Capstone Übung C.1.9: Javascript Basics",
+    "objectID": "u4/index.html#aufgabe-4-arbeiten-mit-objekten",
+    "href": "u4/index.html#aufgabe-4-arbeiten-mit-objekten",
+    "title": "Übung 4: Strings, Datei und Datenbank",
+    "section": "Aufgabe 4: Arbeiten mit Objekten",
+    "text": "Aufgabe 4: Arbeiten mit Objekten\n\nBudget: 35 Minuten\n\nconst kunde = {      vorname: ˈThorstenˈ, \n                             nachname: ˈRiemkeˈ,\n                             properties: [\n                                              { isLoggedIn : false },\n                                              { isRegistered: true }\n                                ]\n              }\n\nGegeben ist der nachfolgende Code. Was davon ist ein Objekt und was nicht? Warum bzw.warum nicht? Welche anderen Datentypen gibt es hier noch?\nErstellen Sie ein kleines Programm. In diesem Programm soll ein Javascript-Objekt riemke anlegt werden. Das riemke hat einen Studiengang, ein Fachgebiet (Web-Anwendungen) und natürlich Vor- und Nachname. Geben Sie die Attribute von riemke aus.\n\nEinzelne Professoren haben ein Amt/Funktion inne. Das riemke-Objekt bräuchte dahernoch das Attribut funktion mit dem Wert Ansprechpartner. Das Objekt mueller soll das nicht haben. Geht das? Können Sie das noch zu einem einzelnen Objekt hinzufügen? Wenn ja, schreiben Sie den Code, wenn nein begründen Sie warum das nicht möglich ist!\nErstellen Sie ein Array mit fünf Studierenden. Studierende sind jeweils Objekte und haben die Attribute name, vorname und studiengang. Geben Sie die Studierenden in einer for-Schleife aus. Die Objekte legen Sie einfach in der Objekt-Literal-Schreibweise an.\nNehmen Sie das Array mit den Objekten aus d. Entfernen Sie das letzte Element und fügen Sie einen weiteren Studierenden am Anfang hinzu. Geben Sie die Liste aus."
+  },
+  {
+    "objectID": "u4/index.html#aufgabe-5-daten-auslesen",
+    "href": "u4/index.html#aufgabe-5-daten-auslesen",
+    "title": "Übung 4: Strings, Datei und Datenbank",
+    "section": "Aufgabe 5: Daten auslesen",
+    "text": "Aufgabe 5: Daten auslesen\n\nBudget: 20 Minuten\n\nAus der Kunden-Datenbank des ersten Semesters sollen Daten ausgelesen werden. Realisieren Sie dies mit Javascript und SQLite.\n\nWas bedeutet Parameter Binding und warum ist es wichtig?\nGeben Sie alle Kunden aus.\nWie viele Kunden haben wir in Berlin?\nGeben Sie die Nachnamen aller Kunden, die mit Vorname Takuma heißen aus.\nGeben Sie alle Kunden aus, die in der Stadt wohnen, die in der Variablen stadt steht. Erstellen Sie hierzu eine Query mit Parameter Bindung. Setzen Sie die Variable auf Stuttgart und führen Sie Ihren Code aus.\nZählen Sie alle Kunden, die den Beruf haben, der in der Variablen position steht. Erstellen Sie hierzu eine Query mit Parameter Bindung. Setzen Sie die Variable auf Architects und führen Sie Ihren Code aus.\nIn den Variablen stadt und position können Werte eingetragen werden. Erstellen Sie eine Query mit Parameter Binding, die alle Kunden zurück gibt, die in der stadt wohnen und den Beruf position haben."
+  },
+  {
+    "objectID": "u4/index.html#aufgabe-6-mit-dateien-arbeiten",
+    "href": "u4/index.html#aufgabe-6-mit-dateien-arbeiten",
+    "title": "Übung 4: Strings, Datei und Datenbank",
+    "section": "Aufgabe 6: Mit Dateien arbeiten",
+    "text": "Aufgabe 6: Mit Dateien arbeiten\n\nBudget: 10 Minuten\n\n\nSchreiben Sie den Text Hallo in die Datei hallo.txt.\nLesen Sie Datei wieder und geben Sie den Text aus. Verwenden Sie hierfür die Funktion readfileSync."
+  },
+  {
+    "objectID": "u4/index.html#homework",
+    "href": "u4/index.html#homework",
+    "title": "Übung 4: Strings, Datei und Datenbank",
+    "section": "Homework",
+    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Das Marketing-Mailing\n\nBudget: 20 Minuten\n\nFür den Launch des neuen Produkts „mega-2000“ in Stuttgart sollen alle Kunden angemailt und zu dem Launch-Event eingeladen werden. Die E-Mail-Marketing-Software erwartet eine Datei im Comma Separated Values Format (CSV) mit den Daten Name, Vorname und E-Mail-Adresse.\nDaten haben in der Datei also das Format:\nMüller, Svenja, svenja@spammailhost.de\nMeier, Ottokar, otti@supermail.de\nDie Daten befinden sich jeweils in neuen Zeilen. Die Stadt, für die das Mailing erstellt werden soll, steht in der Variablen stadt, die von Ihrem Code verwendet wird.\nErstellen Sie eine Query mit Parameter Binding. Gehen Sie in einer Schleife über das Ergebnis und erstellen Sie einen „großen“ String mit den Daten durch Kommata und Zeilenumbrüche getrennt. Schreiben Sie diesen String in eine Datei mit dem Namen mailing.csv.\nKontrollieren Sie die Datei, ob sie richtig aufgebaut ist. Sie können die Datei in einer beliebigen Tabellenkalkulation (Libreoffice, Excel etc.) öffnen."
+  },
+  {
+    "objectID": "loesungen/c-1-4.html",
+    "href": "loesungen/c-1-4.html",
+    "title": "Capstone Übung C.1.4: Javascript Basics",
     "section": "",
-    "text": "Gegeben ist folgendes Objekt:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n};\n\nVerwenden Sie Object Destructuring, um die Werte der Eigenschaften vorname und beruf aus dem Objekt zu extrahieren.\n\nGeben Sie die Werte anschließend mit console.log() aus.\n\n\nLösung:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n}\n\n// Object Destructuring\nconst { vorname, beruf } = person\n\n// Ausgabe\nconsole.log(vorname) // Ausgabe: Lisa\nconsole.log(beruf)   // Ausgabe: Webentwicklerin\n\nErklärung:\n\nDurch Destructuring können Werte direkt aus einem Objekt in einzelne Variablen extrahiert werden.\n\nDie Syntax { vorname, beruf } = person weist die Werte der gleichnamigen Eigenschaften Variablen mit den Namen vorname und beruf zu.\n\nDas spart Code und verbessert die Lesbarkeit, besonders bei großen Objekten, von denen an dieser Stelle nicht alles verwendet werden soll."
+    "text": "Welche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie!\nconsole.log(weisnicht(3, weisnicht(2, 2, 11), 47))\n\nfunction weisnicht(a, b, c) {\n    return a * b\n    console.log(a * a)    \n}\n\nLösung:\n\nAnalyse\n\nVerschachtelter Funktionsaufruf:\nZuerst wird die innere Funktion ausgeführt:\nweisnicht(2, 2, 11)\n\na = 2, b = 2, c = 11\n\nRückgabe: a * b = 4\n\nDie Zeile console.log(a * a) wird nicht ausgeführt, da sie nach dem return steht.\n\nÄußere Funktion:\nweisnicht(3, 4, 47)\n\na = 3, b = 4, c = 47\nc wird in der Funktion nicht verwendet und hat daher keinen Einfluss.\nRückgabe: 3 * 4 = 12\n\nEndergebnis:\nconsole.log(12)\n\n\n\nErgebnis\nDie Ausgabe des Programms lautet:\n12\n\n\nBegründung\n\nDer return-Befehl beendet die Funktion sofort.\n\nCode nach return (wie console.log(a * a)) wird nicht mehr ausgeführt.\n\nEs tritt kein Fehler auf.\n\nDie Berechnung erfolgt korrekt durch Verschachtelung der Funktionsaufrufe:\n\nweisnicht(2, 2, 11) → 4\nweisnicht(3, 4, 47) → 12"
+  },
+  {
+    "objectID": "loesungen/c-1-5.html",
+    "href": "loesungen/c-1-5.html",
+    "title": "Capstone Übung C.1.5: Javascript Basics",
+    "section": "",
+    "text": "Welche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie!\nconst  data = [\n    { nachname: \"Karlsen\", vorname: \"Karl\" },\n    { nachname: \"Klarsen\", vorname: \"Karla\" }\n]\n\nLösung:\nconst  data = [\n    { nachname: \"Karlsen\", vorname: \"Karl\" },\n    { nachname: \"Klarsen\", vorname: \"Karla\" }\n]\n\nfor(let i=0; i&lt;data.length; i++){\n\n    console.log(data[i].vorname) \n}\n\nErklärung:\n\nHier liegt ein Array mit Objekten vor, welches wir mit einer Schleife durchwandern können.\ndata[i] enthält bei jedem Schleifendurchlauf das Objekt an der Stelle i des Arrays.\nAuf die Attribute dieses jeweiligen Objekts können wir mit der dot-Notation zugreifen und ausgeben: console.log(data[i].vorname)."
+  },
+  {
+    "objectID": "loesungen/c-1-6.html",
+    "href": "loesungen/c-1-6.html",
+    "title": "Capstone Übung C.1.6: Javascript Basics",
+    "section": "",
+    "text": "Schreiben Sie eine Arrow-Function, die zwei Zahlen entgegennimmt und die Summe der beiden Zahlen zurückgibt. Wenn Sonderfälle auftreten, behandeln Sie diese entsprechend. Geben Sie einen Beispiel-Aufruf an.\n\nLösung:\nconst add  = (a,b)  =&gt; {\n      return a+b \n}\n\n// Beispielaufruf\nconsole.log(add(5, 7)) // Ausgabe: 12\n\nErklärung:\n\nEs wird eine Arrow Function mit zwei Parametern (a und b) definiert und der Konstanten add zugewiesen.\nDas Ergebnis der Addition von a + b wird mit return zurückgegeben.\nconsole.log(add(5, 7)); gibt das Ergebnis 12 aus.\n\n\n\nAlternative Lösung in Kurzform\nconst add = (a, b) =&gt; a + b\n\n// Beispielaufruf:\nconsole.log(add(5, 7)) // Ausgabe: 12\nErklärung:\n\nconst add = (a, b) =&gt; a + b definiert eine kurze Arrow Function mit zwei Parametern (a und b).\nDer Ausdruck a + b wird automatisch zurückgegeben (kein return nötig, da es nur ein Ausdruck ist).\nconsole.log(add(5, 7)) gibt das Ergebnis 12 aus.\nEs gibt keine Sonderfälle in diesem Beispiel. Bei anderen Funktion jedoch sehrwohl, Beispiel: Bei einer Division müsste immer geprüft werden, ob durch 0 geteilt wird und ggf. ein Fehler ausgegeben werden."
+  },
+  {
+    "objectID": "loesungen/c-1-3.html",
+    "href": "loesungen/c-1-3.html",
+    "title": "Capstone Übung C.1.3: Javascript Basics",
+    "section": "",
+    "text": "Erstellen Sie eine Funktion mit dem Namen subtract, die als Parameter zwei Zahlen übergeben bekommt, die Zahl im zweiten Parameter von der Zahl im ersten Parameter subtrahiert und das Ergebnis dieser Subtraktion zurückgibt. Geben Sie einen Beispiel-Aufruf der Funktion an, der das Ergebnis ausgibt.\n\nLösung:\nfunction subtract(a, b) {\n  return a - b;\n}\n\n// Beispiel-Aufruf:\nconsole.log(subtract(10, 3)); // Ausgabe: 7\n\nErklärung:\n\nfunction subtract(a, b) definiert eine Funktion mit zwei Parametern.\nreturn a - b; führt die Subtraktion aus und gibt das Ergebnis zurück.\nconsole.log(subtract(10, 3)); ruft die Funktion auf und gibt das Ergebnis 7 in der Konsole aus."
+  },
+  {
+    "objectID": "u3/index.html",
+    "href": "u3/index.html",
+    "title": "Übung 3: Arrays, Funktionen und mehr",
+    "section": "",
+    "text": "Budget: 15 Minuten\n\nLegen Sie ein Array in der Array-Literal-Schreibweise an. Enthalten sein sollen die folgenden Daten:\n\nHund\nKatze\nMaus\nNiko\nLaus\n\n\nLassen Sie sich ausgeben, wie viele Elemente das Array enthält.\nGeben Sie den Inhalt des Arrays mit console.log() aus (ohne Schleife).\nGeben Sie den Inhalt in einer for-Schleife aus.\nErgänzen Sie die Schleife so, dass die Einträge bei der Ausgabe von der Angabe 1. (mit Punkt!) startend durchnummeriert werden.\nEntfernen Sie das erste Element des Arrays.\nFügen Sie am Anfang des Arrays einen Elefant hinzu und lassen Sie sich das Array wieder ausgeben.\nFügen Sie am Ende den Eintrag Ende hinzu."
+  },
+  {
+    "objectID": "u3/index.html#aufgabe-1-array-anlegen-und-zugreifen",
+    "href": "u3/index.html#aufgabe-1-array-anlegen-und-zugreifen",
+    "title": "Übung 3: Arrays, Funktionen und mehr",
+    "section": "",
+    "text": "Budget: 15 Minuten\n\nLegen Sie ein Array in der Array-Literal-Schreibweise an. Enthalten sein sollen die folgenden Daten:\n\nHund\nKatze\nMaus\nNiko\nLaus\n\n\nLassen Sie sich ausgeben, wie viele Elemente das Array enthält.\nGeben Sie den Inhalt des Arrays mit console.log() aus (ohne Schleife).\nGeben Sie den Inhalt in einer for-Schleife aus.\nErgänzen Sie die Schleife so, dass die Einträge bei der Ausgabe von der Angabe 1. (mit Punkt!) startend durchnummeriert werden.\nEntfernen Sie das erste Element des Arrays.\nFügen Sie am Anfang des Arrays einen Elefant hinzu und lassen Sie sich das Array wieder ausgeben.\nFügen Sie am Ende den Eintrag Ende hinzu."
+  },
+  {
+    "objectID": "u3/index.html#aufgabe-2-zusammen-geht-es-besser",
+    "href": "u3/index.html#aufgabe-2-zusammen-geht-es-besser",
+    "title": "Übung 3: Arrays, Funktionen und mehr",
+    "section": "Aufgabe 2: Zusammen geht es besser",
+    "text": "Aufgabe 2: Zusammen geht es besser\n\nBudget: 10 Minuten\n\nFür diese Aufgabe deaktivieren Sie bitte rechts unten in VSCode Github Copilot.\nErstellen Sie eine Funktion zusammen, die zwei Strings entgegennimmt, diese zusammenfügt und den zusammengefügten String zurückgibt. Ein Aufruf könnte also wie folgt aussehen:\n      console.log(zusammen(ˈHalloˈ, ˈKalleˈ); //Ergebnis: HalloKalle\nModifizieren Sie in einem zweiten Schritt die Funktion so, dass sie immer ein Leerzeichen zwischen den Strings einfügt und damit bei obigen Aufruf Hallo Kalle zurückgibt"
+  },
+  {
+    "objectID": "u3/index.html#aufgabe-3-der-komische-vergleich",
+    "href": "u3/index.html#aufgabe-3-der-komische-vergleich",
+    "title": "Übung 3: Arrays, Funktionen und mehr",
+    "section": "Aufgabe 3: Der komische Vergleich",
+    "text": "Aufgabe 3: Der komische Vergleich\n\nBudget: 10 Minuten\n\nGegeben sind die folgenden zwei Variablen und die Zuweisungen:\nlet a = 5;\nlet b = \"5\";\nWird mit diesen Belegungen der Variablen in den nachfolgenden if-Statements der Zweig für true oder false ausgeführt? Begründen Sie Ihr Ergebnis!\n\n\n\nStatement\nausgeführter Zweig\nBegründung\n\n\n\n\nif(a = b){ // Code } else { // Code }\n\n\n\n\nif(a == b){ // Code } else { // Code }\n\n\n\n\nif(a === b){ // Code } else { // Code }"
+  },
+  {
+    "objectID": "u3/index.html#aufgabe-4-mathe-und-so",
+    "href": "u3/index.html#aufgabe-4-mathe-und-so",
+    "title": "Übung 3: Arrays, Funktionen und mehr",
+    "section": "Aufgabe 4: Mathe und so",
+    "text": "Aufgabe 4: Mathe und so\n\nBudget: 10 Minuten Für diese Aufgabe deaktivieren Sie bitte rechts unten in VSCode Github Copilot.\n\nEine Aufgabe aus einer vergangenen Klausur: Erstellen Sie eine Funktion quadrat, die eine Zahl entgegennimmt und das Quadrat dieser Zahl zurück gibt.\nGeben Sie die Quadratzahlen von 2, 8 und 64 aus.\nEs gibt zwei Wege das Quadrat zu berechnen. Eine ist eine Notation in Javascript, die andere ist Ihnen aus der Schule bekannt."
+  },
+  {
+    "objectID": "u3/index.html#aufgabe-5-noch-mehr-mathe-und-so",
+    "href": "u3/index.html#aufgabe-5-noch-mehr-mathe-und-so",
+    "title": "Übung 3: Arrays, Funktionen und mehr",
+    "section": "Aufgabe 5: Noch mehr Mathe und so",
+    "text": "Aufgabe 5: Noch mehr Mathe und so\n\nBudget: 10 Minuten Für diese Aufgabe deaktivieren Sie bitte rechts unten in VSCode Github Copilot.\n\nErstellen Sie eine Funktion oddOrEven, die eine Zahl entgegennimmt und prüft, ob diese Zahl gerade oder ungerade ist. Ist sie gerade wird true zurück gegeben, false sonst.\nVerwenden Sie hierzu den Modulo-Operator %. Dieser liefert den Rest einer Division zurück.\nBeispiele:\n6%3  = 0\n7%3  = 1\nWie können Sie diesen nutzen?"
+  },
+  {
+    "objectID": "u3/index.html#aufgabe-6-verkehrte-welt",
+    "href": "u3/index.html#aufgabe-6-verkehrte-welt",
+    "title": "Übung 3: Arrays, Funktionen und mehr",
+    "section": "Aufgabe 6: Verkehrte Welt",
+    "text": "Aufgabe 6: Verkehrte Welt\n\nBudget: 15 Minuten Für diese Aufgabe deaktivieren Sie bitte rechts unten in VSCode Github Copilot.\n\nSchreiben Sie eine Funktion reverse, die einen String als Parameter entgegennimmt. Die Funktion kehrt den String um und gibt den gedrehten String zurück. Probieren Sie den Code mit dem String Mit Tim aus. Lösungshinweis: Sie können auf einzelne Zeichen eines Strings wie auf ein Array zugreifen.\nBeispiel:\nEingabe:  Riemke\nAusgabe:  ekmeiR\nAufgabe 7: Funktionen mit Funktionen aufrufen &gt; Budget: 15 Minuten\n\nErstellen Sie zwei Funktionen, die genau das machen, was der Name verspricht: plus und multipliziere. Diese Funktionen bekommen jeweils zwei Werte übergeben und geben einen Wert zurück. Definieren Sie die Funktionen aus Funktionsausdruck. Probieren Sie sie aus!\nErstellen Sie die Funktion berechne. Die Funktion nimmt zwei Werte und eine Funktion als Parameter entgegen. Sie startet die Funktion und gibt deren Ergebnis zurück. Also z.B.berechne(1,2, plus)."
+  },
+  {
+    "objectID": "u3/index.html#aufgabe-7-tieffliegende-pfeile",
+    "href": "u3/index.html#aufgabe-7-tieffliegende-pfeile",
+    "title": "Übung 3: Arrays, Funktionen und mehr",
+    "section": "Aufgabe 7: Tieffliegende Pfeile",
+    "text": "Aufgabe 7: Tieffliegende Pfeile\n\nBudget: 5 Minuten\n\n\nWas sind Arrow-Functions?\nErstellen Sie eine Arrow-Function, die eine Zahl entgegennimmt und das Quadrat zurückgibt.\nWie sieht diese Funktion auf die notwendigsten Zeichen reduziert aus. Hinweis: Probieren Sie ggf. aus! Es kann sehr viel weggelassen werden."
+  },
+  {
+    "objectID": "u3/index.html#homework",
+    "href": "u3/index.html#homework",
+    "title": "Übung 3: Arrays, Funktionen und mehr",
+    "section": "Homework",
+    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Vornamenfunktion\n\nBudget: 15 Minuten\n\n\nErstellen Sie eine Funktion, welche einen String mit Vor- und Nachnamen, also z.B. Thorsten Riemke entgegennimmt. Die Funktion extrahiert den Vornamen aus dem String und gibt ihn als Rückgabewert zurück.\nErstellen Sie ein Beispiel in dem Sie Ihre nagelneue Funktion anwenden.\n\n\n\nAufgabe 2: Fibonacci-Folge berechnen\n\nBudget: 15 Minuten\n\n\nWas ist eine Fibonacci-Folge?\nWie berechnet man sie?\nErstellen Sie eine Funktion hierfür. Lassen Sie sich von KI nicht die Lösung vorgeben, nutzen Sie sie nur als Hilfestellung.\n\n\n\nAufgabe 3: Github Copilot verwenden\n\nBudget: 15 Minuten\n\nIm Moodle-Kurs finden Sie ein Tutorial-Video über den Einsatz von Github Copilot. Bearbeiten Sie das Video."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Web Anwendungen Übungen",
     "section": "",
-    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nÜbung 1: Setup & Basics\nÜbung 2: Node.js und Kommandozeile\nÜbung 3\nÜbung 4\nÜbung 5: Objektorientierung und AdonisJS\nCapstone Übung 1: Javascript Basics\nÜbung 6: AdonisJS und Datenbanken\nÜbung 7: AdonisJS: Eine Todo-Liste\nÜbung 8+9: Interaktive Übung (Link siehe Vorlesung)\nCapstone Übung 2: AdonisJS Entwicklung\nÜbung 10\nÜbung 11\nÜbung 12\nÜbung 13\nCapstone Übung 3: CSS\nÜbung 14\nCapstone Übung 4: Client-seitiges Javascript"
+    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nÜbung 1: Setup & Basics\nÜbung 2: Node.js und Kommandozeile\nÜbung 3: Arrays, Funktionen und mehr\nÜbung 4: Strings, Datei und Datenbank\nÜbung 5: Objektorientierung und AdonisJS\nCapstone Übung 1: Javascript Basics\nÜbung 6: AdonisJS und Datenbanken\nÜbung 7: AdonisJS: Eine Todo-Liste\nÜbung 8+9: Interaktive Übung (Link siehe Vorlesung)\nCapstone Übung 2: AdonisJS Entwicklung\nÜbung 10\nÜbung 11\nÜbung 12\nÜbung 13\nCapstone Übung 3: CSS\nÜbung 14\nCapstone Übung 4: Client-seitiges Javascript"
   },
   {
     "objectID": "u2/index.html",
     "href": "u2/index.html",
-    "title": "Übung 1: Setup & Basics",
+    "title": "Übung 2: Node.js und Kommandozeile",
     "section": "",
-    "text": "Budget: 30 Minuten\n\nFür die Lehrveranstaltung benötigen wir das richtige Tooling.\n\nGithub (Student) Account. Verwenden Sie einen sinnvollen Nutzernamen, da dieser im Business möglicherweise eine lebenslange Visitenkarte ist. Link: https://education.github.com/pack\nChatGPT Account. Link: https://chat.openai.com/auth/login\n\nRichten Sie die folgende Software ein:\n\nDB Browser for SQLite Link:https://sqlitebrowser.org/\nVisual Studio Code Link: https://code.visualstudio.com/\nNodeJS Link: https://nodejs.org/en\n\n\nWichtig: Installieren Sie die LTS (Long Term Support) Version\nZu beachten: NodeJS erscheint nicht als Programm in der Übersicht der Programme. Sie können die Funktion im Terminal auf der Kommandozeite mit node -v überprüfen.\n\n\nFolgende Visual Studio Code Erweiterungen\n\n\nhttps://marketplace.visualstudio.com/items?itemName=jripouteau.adonis-vscode-extension\nhttps://marketplace.visualstudio.com/items?itemName=luongnd.edge\nhttps://marketplace.visualstudio.com/items?itemName=GitHub.copilot"
+    "text": "Budget: 25 Minuten\n\n\nWas ist eine Kommandozeile, auch Shell oder genannt, und wozu werden Shells in der Praxis verwendet?\nEs gibt verschiedene Kommandozeilen. Manche Betriebssysteme erlauben verschiedene Shells, manche haben eine Standard-Shell. Was sind die Unterschiede zwischen den häufig genutzten Shells bash, zsh, cmd und Powershell. Welche Shell(s) hat Ihr System?\nModerne Betriebssysteme verstecken mehr oder weniger die genaue Struktur des Dateisystems vor dem Nutzer. Wie sieht die Struktur Ihres Dateisystems in Wirklichkeit aus? Finden Sie Ihren Benutzerordner (Home-Verzeichnis). r\nÖffnen Sie Ihre Kommandozeile/Shell/Terminal. Windows: Verwenden Sie nicht Powershell, sondern die Command/cmd Shell.\nListen Sie im Terminal alle vorhandenen Ordner auf. Die Anzeige erfolgt mit ls (= list auf MacOS und Linux) bzw. dir (= directory unter Windows).\nWo wird Ihnen angezeigt in welchen Ordner Sie sich befinden?\nWechseln Sie mit dem Befehl cd (change directory) in Ihr Home-Verzeichnis. Es gibt die unten dargestellten Befehle für den Wechsel.\nLegen Sie einen Ordner mit beliebigen Namen an. Wechseln Sie in diesen Ordner und lassen Sie sich den Inhalt anzeigen. Finden Sie den neuen Ordner im Finder oder Explorer.\n\n\n\n\nAktion\nBefehl\n\n\n\n\nin das Home-Verzeichnis wechseln\ncd ~\n\n\nin das übergeordnete Verzeichnis wechseln\ncd ..\n\n\nin den obersten Ordner (Wurzel/Root) wechseln\ncd /\n\n\nn ein Verzeichnis wechseln\ncd verzeichnis\n\n\n\nRiemkes Tipp:\nZwei hilfreiche Tipps zum Umgang mit der Kommandozeile:\n\nBei Ordner- und Dateinamen muss meistens nur der Beginn eingegeben werden. Sobald der Name eindeutig ist lässt sich der Name durch das Drücken der Tab-Taste vervollständigen.\nDie letzten Befehle sind in der Regel über die Pfeiltaste nach oben erreichbar und müssen nicht immer neu getippt werden."
   },
   {
-    "objectID": "u2/index.html#aufgabe-1-das-setup",
-    "href": "u2/index.html#aufgabe-1-das-setup",
-    "title": "Übung 1: Setup & Basics",
+    "objectID": "u2/index.html#aufgabe-1-die-kommandozeile",
+    "href": "u2/index.html#aufgabe-1-die-kommandozeile",
+    "title": "Übung 2: Node.js und Kommandozeile",
     "section": "",
-    "text": "Budget: 30 Minuten\n\nFür die Lehrveranstaltung benötigen wir das richtige Tooling.\n\nGithub (Student) Account. Verwenden Sie einen sinnvollen Nutzernamen, da dieser im Business möglicherweise eine lebenslange Visitenkarte ist. Link: https://education.github.com/pack\nChatGPT Account. Link: https://chat.openai.com/auth/login\n\nRichten Sie die folgende Software ein:\n\nDB Browser for SQLite Link:https://sqlitebrowser.org/\nVisual Studio Code Link: https://code.visualstudio.com/\nNodeJS Link: https://nodejs.org/en\n\n\nWichtig: Installieren Sie die LTS (Long Term Support) Version\nZu beachten: NodeJS erscheint nicht als Programm in der Übersicht der Programme. Sie können die Funktion im Terminal auf der Kommandozeite mit node -v überprüfen.\n\n\nFolgende Visual Studio Code Erweiterungen\n\n\nhttps://marketplace.visualstudio.com/items?itemName=jripouteau.adonis-vscode-extension\nhttps://marketplace.visualstudio.com/items?itemName=luongnd.edge\nhttps://marketplace.visualstudio.com/items?itemName=GitHub.copilot"
+    "text": "Budget: 25 Minuten\n\n\nWas ist eine Kommandozeile, auch Shell oder genannt, und wozu werden Shells in der Praxis verwendet?\nEs gibt verschiedene Kommandozeilen. Manche Betriebssysteme erlauben verschiedene Shells, manche haben eine Standard-Shell. Was sind die Unterschiede zwischen den häufig genutzten Shells bash, zsh, cmd und Powershell. Welche Shell(s) hat Ihr System?\nModerne Betriebssysteme verstecken mehr oder weniger die genaue Struktur des Dateisystems vor dem Nutzer. Wie sieht die Struktur Ihres Dateisystems in Wirklichkeit aus? Finden Sie Ihren Benutzerordner (Home-Verzeichnis). r\nÖffnen Sie Ihre Kommandozeile/Shell/Terminal. Windows: Verwenden Sie nicht Powershell, sondern die Command/cmd Shell.\nListen Sie im Terminal alle vorhandenen Ordner auf. Die Anzeige erfolgt mit ls (= list auf MacOS und Linux) bzw. dir (= directory unter Windows).\nWo wird Ihnen angezeigt in welchen Ordner Sie sich befinden?\nWechseln Sie mit dem Befehl cd (change directory) in Ihr Home-Verzeichnis. Es gibt die unten dargestellten Befehle für den Wechsel.\nLegen Sie einen Ordner mit beliebigen Namen an. Wechseln Sie in diesen Ordner und lassen Sie sich den Inhalt anzeigen. Finden Sie den neuen Ordner im Finder oder Explorer.\n\n\n\n\nAktion\nBefehl\n\n\n\n\nin das Home-Verzeichnis wechseln\ncd ~\n\n\nin das übergeordnete Verzeichnis wechseln\ncd ..\n\n\nin den obersten Ordner (Wurzel/Root) wechseln\ncd /\n\n\nn ein Verzeichnis wechseln\ncd verzeichnis\n\n\n\nRiemkes Tipp:\nZwei hilfreiche Tipps zum Umgang mit der Kommandozeile:\n\nBei Ordner- und Dateinamen muss meistens nur der Beginn eingegeben werden. Sobald der Name eindeutig ist lässt sich der Name durch das Drücken der Tab-Taste vervollständigen.\nDie letzten Befehle sind in der Regel über die Pfeiltaste nach oben erreichbar und müssen nicht immer neu getippt werden."
   },
   {
-    "objectID": "u2/index.html#aufgabe-2-das-web",
-    "href": "u2/index.html#aufgabe-2-das-web",
-    "title": "Übung 1: Setup & Basics",
-    "section": "Aufgabe 2: Das Web",
-    "text": "Aufgabe 2: Das Web\n\nBudget: 30 Minuten\n\n\nErklären Sie gemeinsam im Team den Ablauf einer DNS-Auflösung. Stellen Sie den Ablauf grafisch dar.\nUnd nun das Web: Erstellen Sie gemeinsam einen grafischen Ablauf eines Web-Seiten-Aufrufs von der Eingabe der URL in den Browser bis zur vollständigen Anzeige der Web-Seite. Die Grafik soll alle wichtigen Fachbegriffe enthalten. Vergessen Sie nicht TCP."
+    "objectID": "u2/index.html#aufgabe-2-node.js",
+    "href": "u2/index.html#aufgabe-2-node.js",
+    "title": "Übung 2: Node.js und Kommandozeile",
+    "section": "Aufgabe 2: Node.js",
+    "text": "Aufgabe 2: Node.js\n\nBudget: 15 Minuten\n\nAchten Sie bei den Antworten auf eine fachliche, gute Formulierung. Verwenden Sie keine Stichwörter.\n\nWas ist Node.js?\nWo liegt der Unterschied von Node.js und einem Javascript-Interpreter in einem Browser?\nWarum eignet sich Node.js besonders gut für Echtzeitanwendungen? r"
+  },
+  {
+    "objectID": "u2/index.html#aufgabe-3-javascript-die-fallunterscheidung",
+    "href": "u2/index.html#aufgabe-3-javascript-die-fallunterscheidung",
+    "title": "Übung 2: Node.js und Kommandozeile",
+    "section": "Aufgabe 3: Javascript: Die Fallunterscheidung",
+    "text": "Aufgabe 3: Javascript: Die Fallunterscheidung\n\nBudget: 10 Minuten\n\n\nWas ist eine Modulo-Rechnung und wie kann ich diese für den Test auf gerade/ungerade nutzen? r\nErstellen Sie ein Programm, welches den Inhalt der Variablen zahl testet und gerade/ungerade ausgibt. Verwenden Sie eine Fallunterscheidung mittels if-Statement.\nVerkürzen die das Programm mit einem ternären Operator."
+  },
+  {
+    "objectID": "u2/index.html#aufgabe-4-type-coercion",
+    "href": "u2/index.html#aufgabe-4-type-coercion",
+    "title": "Übung 2: Node.js und Kommandozeile",
+    "section": "Aufgabe 4: Type Coercion",
+    "text": "Aufgabe 4: Type Coercion\n\nBudget: 10 Minuten\n\nAchten Sie bei den Antworten auf eine fachliche, gute Formulierung. Verwenden Sie keine Stichwörter.\n\nWas versteht man unter Type Coercion?\nWarum ist diese notwendig?\nErstellen Sie zwei Code-Beispiele für Type Coercion und probieren Sie diese aus.\nWann benötigt eine Programmiersprache keine Type Coercion?"
+  },
+  {
+    "objectID": "u2/index.html#aufgabe-5-schleifen",
+    "href": "u2/index.html#aufgabe-5-schleifen",
+    "title": "Übung 2: Node.js und Kommandozeile",
+    "section": "Aufgabe 5: Schleifen",
+    "text": "Aufgabe 5: Schleifen\n\nBudget: 10 Minuten\n\nAchten Sie bei den Antworten auf eine fachliche, gute Formulierung. Verwenden Sie keine Stichwörter.\n\nErstellen Sie eine for-Schleife, die die Zahlen von 1 bis 100 ausgibt. Überlegen Sie kurz vor dem Entwickeln in einer Skizze, wie der Ablauf aussehen muss.\nErstellen Sie eine for-Schleife, die von 100 bis 0 zählt. Hierfür gibt es zwei Möglichkeiten die for-Schleife zu programmieren. Welche?\nLösen Sie die Aufgabe aus b. mit einer do-while-Schleife."
   },
   {
     "objectID": "u2/index.html#homework",
     "href": "u2/index.html#homework",
-    "title": "Übung 1: Setup & Basics",
+    "title": "Übung 2: Node.js und Kommandozeile",
     "section": "Homework",
-    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Anmeldung zum Workshop\n\nBudget: 30 Minuten\n\nSie benötigen in der Veranstaltung Kenntnisse im Umgang mit der Kommandozeile Ihres Betriebssystems. Im Moodle-Kurs finden Sie Einführungskurse, die Sie absolvieren können. Die untenstehenden Playlists sind Vorschläge. Sie können sich das Wissen natürlich auch auf andere Art aneignen.\nhttps://moodle.hdm-stuttgart.de/course/view.php?id=12697#coursecontentcollapse2"
+    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Die Wort-Schleife\n\nBudget: 15 Minuten\n\nErstellen Sie eine for-Schleife, die die Zahlen von 1 bis 100 ausgibt. Allerdings sollen die Zahlen als Wörter ausgegeben werden, also:\neins\nzwei\n...\nDabei soll der Einfachheit halber statt “zweiundzwanzig” einfach nur “zweizwei” ausgegeben werden. Sie benötigen zum Zusammenbau der Wörter eine Schleife und am Besten ein switch.\n\n\nAufgabe 2: Happy Strings\n\nBudget: 10 Minuten\n\nGegeben ist der folgende String:\n“Die schnelle braune Füchsin springt über den faulen Hund. Dabei beobachtet sie die grauen Wolken am Himmel, während der Wind sanft durch die grünen Blätter der Bäume weht. In der Ferne hört man das leise Rauschen eines Baches.”\nGeben Sie die folgenden Punkt jeweils in einem Javascript-Programm aus.\n\nDie Länge des Strings.\nÜberprüfen Sie, ob das Wort “Füchsin” im Satz vorkommt und geben Sie das Ergebnis aus\nErsetzen Sie das Wort “braune” durch “rote” und geben den neuen String aus.\nKonvertieren Sie den gesamten Satz in Kleinbuchstaben und geben ihn aus.\nSpeichern Sie alle Sätze einzeln in einem Array und geben dieses in einer Schleife aus."
   },
   {
     "objectID": "u5/index.html",
     "href": "u5/index.html",
     "title": "Übung 5: Objektorientierung und AdonisJS",
     "section": "",
-    "text": "Budget: 10 Minuten\n\nGegeben ist folgende Code:\nfunction printPerson(_________________________________) {\n  console.log(`Name: ${firstName} ${lastName}`);\n}\n\nconst person = {\n  firstName: 'Jane',\n  lastName: 'Doe',\n  age: 25,\n  country: 'Germany'\n};\n\nprintPersonInfo(person);\n\nObject Destructuring kommt in der Web-Entwicklung mit Javascript häufig vor. Erklären Sie den Begriff. Achten Sie dabei auf eine fachlich korrekte und vollständige Antwort.\nErgänzen Sie den freien Platz bei der Funktion in der Parameter-Übergabe mittels Object Destructuring so, dass der Code funktioniert.\nWas sind die Vorteile von Object Destructuring? r"
+    "text": "Budget: 10 Minuten\n\nGegeben ist folgende Code:\nfunction printPerson(_________________________________) {\n  console.log(`Name: ${firstName} ${lastName}`);\n}\n\nconst person = {\n  firstName: 'Jane',\n  lastName: 'Doe',\n  age: 25,\n  country: 'Germany'\n};\n\nprintPersonInfo(person);\n\nObject Destructuring kommt in der Web-Entwicklung mit Javascript häufig vor. Erklären Sie den Begriff. Achten Sie dabei auf eine fachlich korrekte und vollständige Antwort.\nErgänzen Sie den freien Platz bei der Funktion in der Parameter-Übergabe mittels Object Destructuring so, dass der Code funktioniert.\nWas sind die Vorteile von Object Destructuring?"
   },
   {
     "objectID": "u5/index.html#aufgabe-1-object-destructuring",
     "href": "u5/index.html#aufgabe-1-object-destructuring",
     "title": "Übung 5: Objektorientierung und AdonisJS",
     "section": "",
-    "text": "Budget: 10 Minuten\n\nGegeben ist folgende Code:\nfunction printPerson(_________________________________) {\n  console.log(`Name: ${firstName} ${lastName}`);\n}\n\nconst person = {\n  firstName: 'Jane',\n  lastName: 'Doe',\n  age: 25,\n  country: 'Germany'\n};\n\nprintPersonInfo(person);\n\nObject Destructuring kommt in der Web-Entwicklung mit Javascript häufig vor. Erklären Sie den Begriff. Achten Sie dabei auf eine fachlich korrekte und vollständige Antwort.\nErgänzen Sie den freien Platz bei der Funktion in der Parameter-Übergabe mittels Object Destructuring so, dass der Code funktioniert.\nWas sind die Vorteile von Object Destructuring? r"
+    "text": "Budget: 10 Minuten\n\nGegeben ist folgende Code:\nfunction printPerson(_________________________________) {\n  console.log(`Name: ${firstName} ${lastName}`);\n}\n\nconst person = {\n  firstName: 'Jane',\n  lastName: 'Doe',\n  age: 25,\n  country: 'Germany'\n};\n\nprintPersonInfo(person);\n\nObject Destructuring kommt in der Web-Entwicklung mit Javascript häufig vor. Erklären Sie den Begriff. Achten Sie dabei auf eine fachlich korrekte und vollständige Antwort.\nErgänzen Sie den freien Platz bei der Funktion in der Parameter-Übergabe mittels Object Destructuring so, dass der Code funktioniert.\nWas sind die Vorteile von Object Destructuring?"
   },
   {
     "objectID": "u5/index.html#aufgabe-2-die-erste-seite-in-adonisjs",
     "href": "u5/index.html#aufgabe-2-die-erste-seite-in-adonisjs",
     "title": "Übung 5: Objektorientierung und AdonisJS",
     "section": "Aufgabe 2: Die erste Seite in AdonisJS",
-    "text": "Aufgabe 2: Die erste Seite in AdonisJS\n\nBudget: 20 Minuten\n\n\nErstellen Sie eine Web-Anwendung in AdonisJS, die beim Aufruf „Hallo, hier bin ich!“ ausgibt (ohne View/Template).\nWeb-Anwendungen benötigen einen Web-Server. Wo ist der in Ihrer AdonisJS-Anwendung?\nWas ist eine Route?\nWas haben HTTP-Verben mit der Route zu tun."
+    "text": "Aufgabe 2: Die erste Seite in AdonisJS\n\nBudget: 20 Minuten\n\n\nErstellen Sie eine Web-Anwendung in AdonisJS, die beim Aufruf Hallo, hier bin ich! ausgibt (ohne View/Template).\nWeb-Anwendungen benötigen einen Web-Server. Wo ist der in Ihrer AdonisJS-Anwendung?\nWas ist eine Route?\nWas haben HTTP-Verben mit der Route zu tun."
   },
   {
     "objectID": "u5/index.html#aufgabe-3-der-plus-taschenrechner",
@@ -128,51 +261,30 @@
   {
     "objectID": "u1/index.html",
     "href": "u1/index.html",
-    "title": "Übung 2: Node.js und Kommandozeile",
+    "title": "Übung 1: Setup & Basics",
     "section": "",
-    "text": "Budget: 25 Minuten\n\n\nWas ist eine Kommandozeile, auch Shell oder genannt, und wozu werden Shells in der Praxis verwendet?\nEs gibt verschiedene Kommandozeilen. Manche Betriebssysteme erlauben verschiedene Shells, manche haben eine Standard-Shell. Was sind die Unterschiede zwischen den häufig genutzten Shells bash, zsh, cmd und Powershell. Welche Shell(s) hat Ihr System?\nModerne Betriebssysteme verstecken mehr oder weniger die genaue Struktur des Dateisystems vor dem Nutzer. Wie sieht die Struktur Ihres Dateisystems in Wirklichkeit aus? Finden Sie Ihren Benutzerordner (Home-Verzeichnis). r\nÖffnen Sie Ihre Kommandozeile/Shell/Terminal. Windows: Verwenden Sie nicht Powershell, sondern die Command/cmd Shell.\nListen Sie im Terminal alle vorhandenen Ordner auf. Die Anzeige erfolgt mit ls (= list auf MacOS und Linux) bzw. dir (= directory unter Windows).\nWo wird Ihnen angezeigt in welchen Ordner Sie sich befinden?\nWechseln Sie mit dem Befehl cd (change directory) in Ihr Home-Verzeichnis. Es gibt die unten dargestellten Befehle für den Wechsel.\nLegen Sie einen Ordner mit beliebigen Namen an. Wechseln Sie in diesen Ordner und lassen Sie sich den Inhalt anzeigen. Finden Sie den neuen Ordner im Finder oder Explorer.\n\n\n\n\nAktion\nBefehl\n\n\n\n\nin das Home-Verzeichnis wechseln\ncd ~\n\n\nin das übergeordnete Verzeichnis wechseln\ncd ..\n\n\nin den obersten Ordner (Wurzel/Root) wechseln\ncd /\n\n\nn ein Verzeichnis wechseln\ncd verzeichnis\n\n\n\nRiemkes Tipp:\nZwei hilfreiche Tipps zum Umgang mit der Kommandozeile:\n\nBei Ordner- und Dateinamen muss meistens nur der Beginn eingegeben werden. Sobald der Name eindeutig ist lässt sich der Name durch das Drücken der Tab-Taste vervollständigen.\nDie letzten Befehle sind in der Regel über die Pfeiltaste nach oben erreichbar und müssen nicht immer neu getippt werden."
+    "text": "Budget: 30 Minuten\n\nFür die Lehrveranstaltung benötigen wir das richtige Tooling.\n\nGithub (Student) Account. Verwenden Sie einen sinnvollen Nutzernamen, da dieser im Business möglicherweise eine lebenslange Visitenkarte ist. Link: https://education.github.com/pack\nChatGPT Account. Link: https://chat.openai.com/auth/login\n\nRichten Sie die folgende Software ein:\n\nDB Browser for SQLite Link:https://sqlitebrowser.org/\nVisual Studio Code Link: https://code.visualstudio.com/\nNodeJS Link: https://nodejs.org/en\n\n\nWichtig: Installieren Sie die LTS (Long Term Support) Version\nZu beachten: NodeJS erscheint nicht als Programm in der Übersicht der Programme. Sie können die Funktion im Terminal auf der Kommandozeite mit node -v überprüfen.\n\n\nFolgende Visual Studio Code Erweiterungen\n\n\nhttps://marketplace.visualstudio.com/items?itemName=jripouteau.adonis-vscode-extension\nhttps://marketplace.visualstudio.com/items?itemName=luongnd.edge\nhttps://marketplace.visualstudio.com/items?itemName=GitHub.copilot"
   },
   {
-    "objectID": "u1/index.html#aufgabe-1-die-kommandozeile",
-    "href": "u1/index.html#aufgabe-1-die-kommandozeile",
-    "title": "Übung 2: Node.js und Kommandozeile",
+    "objectID": "u1/index.html#aufgabe-1-das-setup",
+    "href": "u1/index.html#aufgabe-1-das-setup",
+    "title": "Übung 1: Setup & Basics",
     "section": "",
-    "text": "Budget: 25 Minuten\n\n\nWas ist eine Kommandozeile, auch Shell oder genannt, und wozu werden Shells in der Praxis verwendet?\nEs gibt verschiedene Kommandozeilen. Manche Betriebssysteme erlauben verschiedene Shells, manche haben eine Standard-Shell. Was sind die Unterschiede zwischen den häufig genutzten Shells bash, zsh, cmd und Powershell. Welche Shell(s) hat Ihr System?\nModerne Betriebssysteme verstecken mehr oder weniger die genaue Struktur des Dateisystems vor dem Nutzer. Wie sieht die Struktur Ihres Dateisystems in Wirklichkeit aus? Finden Sie Ihren Benutzerordner (Home-Verzeichnis). r\nÖffnen Sie Ihre Kommandozeile/Shell/Terminal. Windows: Verwenden Sie nicht Powershell, sondern die Command/cmd Shell.\nListen Sie im Terminal alle vorhandenen Ordner auf. Die Anzeige erfolgt mit ls (= list auf MacOS und Linux) bzw. dir (= directory unter Windows).\nWo wird Ihnen angezeigt in welchen Ordner Sie sich befinden?\nWechseln Sie mit dem Befehl cd (change directory) in Ihr Home-Verzeichnis. Es gibt die unten dargestellten Befehle für den Wechsel.\nLegen Sie einen Ordner mit beliebigen Namen an. Wechseln Sie in diesen Ordner und lassen Sie sich den Inhalt anzeigen. Finden Sie den neuen Ordner im Finder oder Explorer.\n\n\n\n\nAktion\nBefehl\n\n\n\n\nin das Home-Verzeichnis wechseln\ncd ~\n\n\nin das übergeordnete Verzeichnis wechseln\ncd ..\n\n\nin den obersten Ordner (Wurzel/Root) wechseln\ncd /\n\n\nn ein Verzeichnis wechseln\ncd verzeichnis\n\n\n\nRiemkes Tipp:\nZwei hilfreiche Tipps zum Umgang mit der Kommandozeile:\n\nBei Ordner- und Dateinamen muss meistens nur der Beginn eingegeben werden. Sobald der Name eindeutig ist lässt sich der Name durch das Drücken der Tab-Taste vervollständigen.\nDie letzten Befehle sind in der Regel über die Pfeiltaste nach oben erreichbar und müssen nicht immer neu getippt werden."
+    "text": "Budget: 30 Minuten\n\nFür die Lehrveranstaltung benötigen wir das richtige Tooling.\n\nGithub (Student) Account. Verwenden Sie einen sinnvollen Nutzernamen, da dieser im Business möglicherweise eine lebenslange Visitenkarte ist. Link: https://education.github.com/pack\nChatGPT Account. Link: https://chat.openai.com/auth/login\n\nRichten Sie die folgende Software ein:\n\nDB Browser for SQLite Link:https://sqlitebrowser.org/\nVisual Studio Code Link: https://code.visualstudio.com/\nNodeJS Link: https://nodejs.org/en\n\n\nWichtig: Installieren Sie die LTS (Long Term Support) Version\nZu beachten: NodeJS erscheint nicht als Programm in der Übersicht der Programme. Sie können die Funktion im Terminal auf der Kommandozeite mit node -v überprüfen.\n\n\nFolgende Visual Studio Code Erweiterungen\n\n\nhttps://marketplace.visualstudio.com/items?itemName=jripouteau.adonis-vscode-extension\nhttps://marketplace.visualstudio.com/items?itemName=luongnd.edge\nhttps://marketplace.visualstudio.com/items?itemName=GitHub.copilot"
   },
   {
-    "objectID": "u1/index.html#aufgabe-2-node.js",
-    "href": "u1/index.html#aufgabe-2-node.js",
-    "title": "Übung 2: Node.js und Kommandozeile",
-    "section": "Aufgabe 2: Node.js",
-    "text": "Aufgabe 2: Node.js\n\nBudget: 15 Minuten\n\nAchten Sie bei den Antworten auf eine fachliche, gute Formulierung. Verwenden Sie keine Stichwörter.\n\nWas ist Node.js?\nWo liegt der Unterschied von Node.js und einem Javascript-Interpreter in einem Browser?\nWarum eignet sich Node.js besonders gut für Echtzeitanwendungen? r"
-  },
-  {
-    "objectID": "u1/index.html#aufgabe-3-javascript-die-fallunterscheidung",
-    "href": "u1/index.html#aufgabe-3-javascript-die-fallunterscheidung",
-    "title": "Übung 2: Node.js und Kommandozeile",
-    "section": "Aufgabe 3: Javascript: Die Fallunterscheidung",
-    "text": "Aufgabe 3: Javascript: Die Fallunterscheidung\n\nBudget: 10 Minuten\n\n\nWas ist eine Modulo-Rechnung und wie kann ich diese für den Test auf gerade/ungerade nutzen? r\nErstellen Sie ein Programm, welches den Inhalt der Variablen zahl testet und gerade/ungerade ausgibt. Verwenden Sie eine Fallunterscheidung mittels if-Statement.\nVerkürzen die das Programm mit einem ternären Operator."
-  },
-  {
-    "objectID": "u1/index.html#aufgabe-4-type-coercion",
-    "href": "u1/index.html#aufgabe-4-type-coercion",
-    "title": "Übung 2: Node.js und Kommandozeile",
-    "section": "Aufgabe 4: Type Coercion",
-    "text": "Aufgabe 4: Type Coercion\n\nBudget: 10 Minuten\n\nAchten Sie bei den Antworten auf eine fachliche, gute Formulierung. Verwenden Sie keine Stichwörter.\n\nWas versteht man unter Type Coercion?\nWarum ist diese notwendig?\nErstellen Sie zwei Code-Beispiele für Type Coercion und probieren Sie diese aus.\nWann benötigt eine Programmiersprache keine Type Coercion?"
-  },
-  {
-    "objectID": "u1/index.html#aufgabe-5-schleifen",
-    "href": "u1/index.html#aufgabe-5-schleifen",
-    "title": "Übung 2: Node.js und Kommandozeile",
-    "section": "Aufgabe 5: Schleifen",
-    "text": "Aufgabe 5: Schleifen\n\nBudget: 10 Minuten\n\nAchten Sie bei den Antworten auf eine fachliche, gute Formulierung. Verwenden Sie keine Stichwörter.\n\nErstellen Sie eine for-Schleife, die die Zahlen von 1 bis 100 ausgibt. Überlegen Sie kurz vor dem Entwickeln in einer Skizze, wie der Ablauf aussehen muss.\nErstellen Sie eine for-Schleife, die von 100 bis 0 zählt. Hierfür gibt es zwei Möglichkeiten die for-Schleife zu programmieren. Welche?\nLösen Sie die Aufgabe aus b. mit einer do-while-Schleife."
+    "objectID": "u1/index.html#aufgabe-2-das-web",
+    "href": "u1/index.html#aufgabe-2-das-web",
+    "title": "Übung 1: Setup & Basics",
+    "section": "Aufgabe 2: Das Web",
+    "text": "Aufgabe 2: Das Web\n\nBudget: 30 Minuten\n\n\nErklären Sie gemeinsam im Team den Ablauf einer DNS-Auflösung. Stellen Sie den Ablauf grafisch dar.\nUnd nun das Web: Erstellen Sie gemeinsam einen grafischen Ablauf eines Web-Seiten-Aufrufs von der Eingabe der URL in den Browser bis zur vollständigen Anzeige der Web-Seite. Die Grafik soll alle wichtigen Fachbegriffe enthalten. Vergessen Sie nicht TCP."
   },
   {
     "objectID": "u1/index.html#homework",
     "href": "u1/index.html#homework",
-    "title": "Übung 2: Node.js und Kommandozeile",
+    "title": "Übung 1: Setup & Basics",
     "section": "Homework",
-    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Die Wort-Schleife\n\nBudget: 15 Minuten\n\nErstellen Sie eine for-Schleife, die die Zahlen von 1 bis 100 ausgibt. Allerdings sollen die Zahlen als Wörter ausgegeben werden, also:\neins\nzwei\n...\nDabei soll der Einfachheit halber statt “zweiundzwanzig” einfach nur “zweizwei” ausgegeben werden. Sie benötigen zum Zusammenbau der Wörter eine Schleife und am Besten ein switch.\n\n\nAufgabe 2: Happy Strings\n\nBudget: 10 Minuten\n\nGegeben ist der folgende String:\n“Die schnelle braune Füchsin springt über den faulen Hund. Dabei beobachtet sie die grauen Wolken am Himmel, während der Wind sanft durch die grünen Blätter der Bäume weht. In der Ferne hört man das leise Rauschen eines Baches.”\nGeben Sie die folgenden Punkt jeweils in einem Javascript-Programm aus.\n\nDie Länge des Strings.\nÜberprüfen Sie, ob das Wort “Füchsin” im Satz vorkommt und geben Sie das Ergebnis aus\nErsetzen Sie das Wort “braune” durch “rote” und geben den neuen String aus.\nKonvertieren Sie den gesamten Satz in Kleinbuchstaben und geben ihn aus.\nSpeichern Sie alle Sätze einzeln in einem Array und geben dieses in einer Schleife aus."
+    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Anmeldung zum Workshop\n\nBudget: 30 Minuten\n\nSie benötigen in der Veranstaltung Kenntnisse im Umgang mit der Kommandozeile Ihres Betriebssystems. Im Moodle-Kurs finden Sie Einführungskurse, die Sie absolvieren können. Die untenstehenden Playlists sind Vorschläge. Sie können sich das Wissen natürlich auch auf andere Art aneignen.\nhttps://moodle.hdm-stuttgart.de/course/view.php?id=12697#coursecontentcollapse2"
   },
   {
     "objectID": "u7/index.html",
@@ -266,31 +378,38 @@
     "text": "Aufgabe C.1.9\nGegeben ist folgendes Objekt:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n};\n\nVerwenden Sie Object Destructuring, um die Werte der Eigenschaften vorname und beruf aus dem Objekt zu extrahieren.\n\nGeben Sie die Werte anschließend mit console.log() aus.\n\nLösung"
   },
   {
-    "objectID": "loesungen/c-1-3.html",
-    "href": "loesungen/c-1-3.html",
-    "title": "Capstone Übung C.1.3: Javascript Basics",
+    "objectID": "loesungen/c-1-9.html",
+    "href": "loesungen/c-1-9.html",
+    "title": "Capstone Übung C.1.9: Javascript Basics",
     "section": "",
-    "text": "Erstellen Sie eine Funktion mit dem Namen subtract, die als Parameter zwei Zahlen übergeben bekommt, die Zahl im zweiten Parameter von der Zahl im ersten Parameter subtrahiert und das Ergebnis dieser Subtraktion zurückgibt. Geben Sie einen Beispiel-Aufruf der Funktion an, der das Ergebnis ausgibt.\n\nLösung:\nfunction subtract(a, b) {\n  return a - b;\n}\n\n// Beispiel-Aufruf:\nconsole.log(subtract(10, 3)); // Ausgabe: 7\n\nErklärung:\n\nfunction subtract(a, b) definiert eine Funktion mit zwei Parametern.\nreturn a - b; führt die Subtraktion aus und gibt das Ergebnis zurück.\nconsole.log(subtract(10, 3)); ruft die Funktion auf und gibt das Ergebnis 7 in der Konsole aus."
+    "text": "Gegeben ist folgendes Objekt:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n};\n\nVerwenden Sie Object Destructuring, um die Werte der Eigenschaften vorname und beruf aus dem Objekt zu extrahieren.\n\nGeben Sie die Werte anschließend mit console.log() aus.\n\n\nLösung:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n}\n\n// Object Destructuring\nconst { vorname, beruf } = person\n\n// Ausgabe\nconsole.log(vorname) // Ausgabe: Lisa\nconsole.log(beruf)   // Ausgabe: Webentwicklerin\n\nErklärung:\n\nDurch Destructuring können Werte direkt aus einem Objekt in einzelne Variablen extrahiert werden.\n\nDie Syntax { vorname, beruf } = person weist die Werte der gleichnamigen Eigenschaften Variablen mit den Namen vorname und beruf zu.\n\nDas spart Code und verbessert die Lesbarkeit, besonders bei großen Objekten, von denen an dieser Stelle nicht alles verwendet werden soll."
   },
   {
-    "objectID": "loesungen/c-1-6.html",
-    "href": "loesungen/c-1-6.html",
-    "title": "Capstone Übung C.1.6: Javascript Basics",
+    "objectID": "loesungen/c-1-8.html",
+    "href": "loesungen/c-1-8.html",
+    "title": "Capstone Übung C.1.8: Javascript Basics",
     "section": "",
-    "text": "Schreiben Sie eine Arrow-Function, die zwei Zahlen entgegennimmt und die Summe der beiden Zahlen zurückgibt. Wenn Sonderfälle auftreten, behandeln Sie diese entsprechend. Geben Sie einen Beispiel-Aufruf an.\n\nLösung:\nconst add  = (a,b)  =&gt; {\n      return a+b \n}\n\n// Beispielaufruf\nconsole.log(add(5, 7)) // Ausgabe: 12\n\nErklärung:\n\nEs wird eine Arrow Function mit zwei Parametern (a und b) definiert und der Konstanten add zugewiesen.\nDas Ergebnis der Addition von a + b wird mit return zurückgegeben.\nconsole.log(add(5, 7)); gibt das Ergebnis 12 aus.\n\n\n\nAlternative Lösung in Kurzform\nconst add = (a, b) =&gt; a + b\n\n// Beispielaufruf:\nconsole.log(add(5, 7)) // Ausgabe: 12\nErklärung:\n\nconst add = (a, b) =&gt; a + b definiert eine kurze Arrow Function mit zwei Parametern (a und b).\nDer Ausdruck a + b wird automatisch zurückgegeben (kein return nötig, da es nur ein Ausdruck ist).\nconsole.log(add(5, 7)) gibt das Ergebnis 12 aus.\nEs gibt keine Sonderfälle in diesem Beispiel. Bei anderen Funktion jedoch sehrwohl, Beispiel: Bei einer Division müsste immer geprüft werden, ob durch 0 geteilt wird und ggf. ein Fehler ausgegeben werden."
+    "text": "Erstellen Sie ein Objekt auto, das folgende Eigenschaften und Methoden enthält:\n\nEigenschaften:\n\nmarke (z. B. “BMW”)\nmodell (z. B. “X3”)\nbaujahr (z. B. 2021)\n\nMethoden:\n\nstart() → gibt \"Das Auto startet.\" in der Konsole aus.\n\ninfo() → gibt eine Beschreibung des Autos aus, z. B. \"BMW X3, Baujahr 2021\".\n\n\nRufen Sie beide Methoden anschließend auf.\n\nLösung:\nconst auto = {\n  marke: \"BMW\",\n  modell: \"X3\",\n  baujahr: 2021,\n\n  start() {\n    console.log(\"Das Auto startet.\");\n  },\n\n  info() {\n    console.log(`${this.marke} ${this.modell}, Baujahr ${this.baujahr}`);\n  }\n};\n\n// Methodenaufrufe\nauto.start(); // Ausgabe: Das Auto startet.\nauto.info();  // Ausgabe: BMW X3, Baujahr 2021\n\nErklärung:\n\nDas Objekt auto enthält sowohl Attribute (Daten bze.Eigenschaften) als auch Methoden (Funktionalität).\n\nDie Methode info() greift mit this auf die Eigenschaften dieses Objekts zu, in dem es ausgeführt wird.\n\nDurch den Aufruf auto.start() und auto.info() werden die Methoden ausgeführt und Text in der Konsole ausgegeben.\nZu beachten: Die Methoden geben direkt aus und geben keinen Wert zurück."
   },
   {
-    "objectID": "loesungen/c-1-5.html",
-    "href": "loesungen/c-1-5.html",
-    "title": "Capstone Übung C.1.5: Javascript Basics",
+    "objectID": "loesungen/c-1-7.html",
+    "href": "loesungen/c-1-7.html",
+    "title": "Capstone Übung C.1.7: Javascript Basics",
     "section": "",
-    "text": "Welche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie!\nconst  data = [\n    { nachname: \"Karlsen\", vorname: \"Karl\" },\n    { nachname: \"Klarsen\", vorname: \"Karla\" }\n]\n\nLösung:\nconst  data = [\n    { nachname: \"Karlsen\", vorname: \"Karl\" },\n    { nachname: \"Klarsen\", vorname: \"Karla\" }\n]\n\nfor(let i=0; i&lt;data.length; i++){\n\n    console.log(data[i].vorname) \n}\n\nErklärung:\n\nHier liegt ein Array mit Objekten vor, welches wir mit einer Schleife durchwandern können.\ndata[i] enthält bei jedem Schleifendurchlauf das Objekt an der Stelle i des Arrays.\nAuf die Attribute dieses jeweiligen Objekts können wir mit der dot-Notation zugreifen und ausgeben: console.log(data[i].vorname)."
+    "text": "Schreiben Sie eine Schleife, die die Namen aus dem Array ausgibt und abbricht, sobald der Name Rebecca auftaucht. Dabei soll der name Rebecca noch ausgegeben werden. Der Code darf kein if-Statement enthalten.\nconst namen = ['Malte', 'Svenja', 'Rebecca', 'Klaus'] \n\nLösung:\n\nLösungsansatz\nHier wird eine kompakte do-while-Schleife verwendet, die das gewünschte Verhalten ohne if erreicht.\n\n\nErste Idee\nconst namen = [\"Anna\", \"Lukas\", \"Tim\", \"Rebecca\", \"Sophie\", \"Max\"];\nlet i = 0;\ndo{\n// while-Schleife ohne if\ni++\nconsole.log(namen[i])\n}\nwhile ( namen[i] !== \"Rebecca\" )\nProblem: Wir vergessen hierbei den 0. Eintrag Anna, da wir zwar bei 0 starten, aber dann sofort hoch.\n\n\nSonderfall lösen\nLösung hierfür ist einfach “ein weiter unten” zu starten, nämlich bei -1.\nconst namen = [\"Anna\", \"Lukas\", \"Tim\", \"Rebecca\", \"Sophie\", \"Max\"];\nlet i = -1\ndo{\n// while-Schleife ohne if\ni++;\nconsole.log(namen[i])\n}\nwhile ( namen[i] !== \"Rebecca\" )\n\n\nErklärung\n\nconsole.log(namen[i]) gibt den aktuellen Namen aus.\n\nDer Ausdruck namen[i] !== \"Rebecca\" prüft, ob der aktuelle Name ungleich “Rebecca” ist.\n\nSolange das Ergebnis true ist, läuft die Schleife weiter.\n\nSobald der Name “Rebecca” erreicht ist, ergibt der Ausdruck false, die Schleife stoppt.\n\nDurch die Reihenfolge (console.log zuerst, dann der Vergleich) wird Rebecca noch ausgegeben, bevor der Abbruch erfolgt.\n\n\n\n\nAusgabe\nAnna\nLukas\nTim\nRebecca"
   },
   {
-    "objectID": "loesungen/c-1-4.html",
-    "href": "loesungen/c-1-4.html",
-    "title": "Capstone Übung C.1.4: Javascript Basics",
+    "objectID": "loesungen/c-1-2.html",
+    "href": "loesungen/c-1-2.html",
+    "title": "Capstone Übung C.1.1: Javascript Basics",
     "section": "",
-    "text": "Welche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie!\nconsole.log(weisnicht(3, weisnicht(2, 2, 11), 47))\n\nfunction weisnicht(a, b, c) {\n    return a * b\n    console.log(a * a)    \n}\n\nLösung:\n\nAnalyse\n\nVerschachtelter Funktionsaufruf:\nZuerst wird die innere Funktion ausgeführt:\nweisnicht(2, 2, 11)\n\na = 2, b = 2, c = 11\n\nRückgabe: a * b = 4\n\nDie Zeile console.log(a * a) wird nicht ausgeführt, da sie nach dem return steht.\n\nÄußere Funktion:\nweisnicht(3, 4, 47)\n\na = 3, b = 4, c = 47\nc wird in der Funktion nicht verwendet und hat daher keinen Einfluss.\nRückgabe: 3 * 4 = 12\n\nEndergebnis:\nconsole.log(12)\n\n\n\nErgebnis\nDie Ausgabe des Programms lautet:\n12\n\n\nBegründung\n\nDer return-Befehl beendet die Funktion sofort.\n\nCode nach return (wie console.log(a * a)) wird nicht mehr ausgeführt.\n\nEs tritt kein Fehler auf.\n\nDie Berechnung erfolgt korrekt durch Verschachtelung der Funktionsaufrufe:\n\nweisnicht(2, 2, 11) → 4\nweisnicht(3, 4, 47) → 12"
+    "text": "Gegeben ist der untenstehende String. Geben Sie mit Javascript die einzelnen Buchstaben des Strings in umgekehrter Reihenfolge einzeln aus.\nDas Huhn frisst gerne Körner.\n\nLösung:\nconst text = \"Das Huhn frisst gerne Körner.\";\n\nfor (let i = text.length - 1; i &gt;= 0; i--) {\n  console.log(text[i]);\n}\n\nErklärung:\n\nWir können Strings als Arrays behandeln und dieses Array mit einer Schleife durchwandern.\ntext.length - 1 letzter Index des Strings (da Indizes bei 0 beginnen).\ni &gt;= 0 die Schleife läuft rückwärts bis zum ersten Zeichen.\ntext[i] greift auf das jeweilige Zeichen im String zu.\nconsole.log(text[i]) gibt jedes Zeichen einzeln in einer neuen Zeile aus."
+  },
+  {
+    "objectID": "loesungen/c-1-1.html",
+    "href": "loesungen/c-1-1.html",
+    "title": "Capstone Übung C.1.1: Javascript Basics",
+    "section": "",
+    "text": "Erstellen Sie eine Schleife in Javascript, die die Zahlen von 10 bis 30 ausgibt.\n\nLösung:\nfor (let i = 10; i &lt;= 30; i++) {\n  console.log(i);\n}\n\nErklärung:\n\nlet i = 10; Startwert der Zählvariablen.\ni &lt;= 30; Bedingung: Die Schleife läuft, solange i kleiner oder gleich 30 ist.\ni++ Erhöht i nach jedem Durchlauf um 1.\nconsole.log(i); → Gibt die aktuelle Zahl in der Konsole aus."
   }
 ]

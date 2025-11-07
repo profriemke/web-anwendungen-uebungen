@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Übung 5: Objektorientierung und AdonisJS – Web Anwendungen Übungen</title>
+<title>Übung 4: Strings, Datei und Datenbank – Web Anwendungen Übungen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -153,12 +153,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#aufgabe-1-object-destructuring" id="toc-aufgabe-1-object-destructuring" class="nav-link active" data-scroll-target="#aufgabe-1-object-destructuring">Aufgabe 1: Object Destructuring</a></li>
-  <li><a href="#aufgabe-2-die-erste-seite-in-adonisjs" id="toc-aufgabe-2-die-erste-seite-in-adonisjs" class="nav-link" data-scroll-target="#aufgabe-2-die-erste-seite-in-adonisjs">Aufgabe 2: Die erste Seite in AdonisJS</a></li>
-  <li><a href="#aufgabe-3-der-plus-taschenrechner" id="toc-aufgabe-3-der-plus-taschenrechner" class="nav-link" data-scroll-target="#aufgabe-3-der-plus-taschenrechner">Aufgabe 3: Der Plus-Taschenrechner</a></li>
+  <li><a href="#aufgabe-1-arbeiten-mit-strings" id="toc-aufgabe-1-arbeiten-mit-strings" class="nav-link active" data-scroll-target="#aufgabe-1-arbeiten-mit-strings">Aufgabe 1: Arbeiten mit Strings</a></li>
+  <li><a href="#aufgabe-2-strings-und-steuerzeichen" id="toc-aufgabe-2-strings-und-steuerzeichen" class="nav-link" data-scroll-target="#aufgabe-2-strings-und-steuerzeichen">Aufgabe 2: Strings und Steuerzeichen</a></li>
+  <li><a href="#aufgabe-3-probleme-mit-dynamischer-typisierung" id="toc-aufgabe-3-probleme-mit-dynamischer-typisierung" class="nav-link" data-scroll-target="#aufgabe-3-probleme-mit-dynamischer-typisierung">Aufgabe 3: Probleme mit dynamischer Typisierung</a></li>
+  <li><a href="#aufgabe-4-arbeiten-mit-objekten" id="toc-aufgabe-4-arbeiten-mit-objekten" class="nav-link" data-scroll-target="#aufgabe-4-arbeiten-mit-objekten">Aufgabe 4: Arbeiten mit Objekten</a></li>
+  <li><a href="#aufgabe-5-daten-auslesen" id="toc-aufgabe-5-daten-auslesen" class="nav-link" data-scroll-target="#aufgabe-5-daten-auslesen">Aufgabe 5: Daten auslesen</a></li>
+  <li><a href="#aufgabe-6-mit-dateien-arbeiten" id="toc-aufgabe-6-mit-dateien-arbeiten" class="nav-link" data-scroll-target="#aufgabe-6-mit-dateien-arbeiten">Aufgabe 6: Mit Dateien arbeiten</a></li>
   <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a>
   <ul class="collapse">
-  <li><a href="#aufgabe-1-formulare-in-adonisjs" id="toc-aufgabe-1-formulare-in-adonisjs" class="nav-link" data-scroll-target="#aufgabe-1-formulare-in-adonisjs">Aufgabe 1: Formulare in AdonisJS</a></li>
+  <li><a href="#aufgabe-1-das-marketing-mailing" id="toc-aufgabe-1-das-marketing-mailing" class="nav-link" data-scroll-target="#aufgabe-1-das-marketing-mailing">Aufgabe 1: Das Marketing-Mailing</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -168,7 +171,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Übung 5: Objektorientierung und AdonisJS</h1>
+<h1 class="title">Übung 4: Strings, Datei und Datenbank</h1>
 </div>
 
 
@@ -185,63 +188,100 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="aufgabe-1-object-destructuring" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-1-object-destructuring">Aufgabe 1: Object Destructuring</h2>
+<section id="aufgabe-1-arbeiten-mit-strings" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-1-arbeiten-mit-strings">Aufgabe 1: Arbeiten mit Strings</h2>
+<blockquote class="blockquote">
+<p>Budget: 5 Minuten</p>
+</blockquote>
+<p>Strings werden immer wieder gebraucht.</p>
+<p>Fügen Sie die Strings aus dem folgenden Code zusammen zu dem ganzen Namen. Vergessen Sie nicht ein Leerzeichen einzufügen:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> nachName <span class="op">=</span> ˈMüllerˈ</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> vorname <span class="op">=</span> ˈAnnaˈ</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>ganzerName <span class="op">=</span>        <span class="co">// Ihr Code hier</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(ganzerName)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="aufgabe-2-strings-und-steuerzeichen" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-2-strings-und-steuerzeichen">Aufgabe 2: Strings und Steuerzeichen</h2>
+<blockquote class="blockquote">
+<p>Budget: 5 Minuten</p>
+</blockquote>
+<p>Es lassen sich auch Zeilenumbrüche zu einem String mittels <code>\n</code> (new line) hinzufügen. Dies ist ein sogenanntes Steuerzeichen, welches die Ausgabe in diesem Fall zu einer neuen zeile steuert. Fassen Sie den Inhalt der beiden Variablen zu einer zusammen. Fügen Sie zwischen den Texten einen Zeilenumbruch ein. Geben Sie den ganzen Text aus.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> zeile1 <span class="op">=</span> ˈDies ist die erste Zeileˈ<span class="op">;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> zeile2 <span class="op">=</span> ˈDies ist die zweite Zeile<span class="op">.</span><span class="at">ˈ</span><span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>ganzerTextMitUmbruch <span class="op">=</span>        </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="aufgabe-3-probleme-mit-dynamischer-typisierung" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-3-probleme-mit-dynamischer-typisierung">Aufgabe 3: Probleme mit dynamischer Typisierung</h2>
+<blockquote class="blockquote">
+<p>Budget: 5 Minuten</p>
+</blockquote>
+<p>Unten stehen zwei Variablen, die durch die Zuweisung den Typ <code>Number</code> annehmen. Sie sollen zu einem String zusammengefügt werden, so dass das Ergebnis <code>42</code> (und nicht ausgerechnet <code>6</code>) ist. Ein `<code>+</code> würde die Zahlen zusammenrechnen. Sie können aber die Zahlen explizit in einen String umwandeln. Die Zahlen haben die Methode <code>.toString()</code>, die den Wert als String zurückgibt. Geben Sie den ganzen Text aus.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>        <span class="kw">let</span> zahl1 <span class="op">=</span> <span class="dv">4</span><span class="op">;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>        <span class="kw">let</span> zahl2 <span class="op">=</span> <span class="dv">2</span><span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        zusammen <span class="op">=</span>        <span class="co">// Ihr Code hier</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="aufgabe-4-arbeiten-mit-objekten" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-4-arbeiten-mit-objekten">Aufgabe 4: Arbeiten mit Objekten</h2>
+<blockquote class="blockquote">
+<p>Budget: 35 Minuten</p>
+</blockquote>
+<div class="sourceCode" id="cb4"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> kunde <span class="op">=</span> {      <span class="dt">vorname</span><span class="op">:</span> ˈThorstenˈ<span class="op">,</span> </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>                             <span class="dt">nachname</span><span class="op">:</span> ˈRiemkeˈ<span class="op">,</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                             <span class="dt">properties</span><span class="op">:</span> [</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                                              { <span class="dt">isLoggedIn</span> <span class="op">:</span> <span class="kw">false</span> }<span class="op">,</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>                                              { <span class="dt">isRegistered</span><span class="op">:</span> <span class="kw">true</span> }</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>                                ]</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>              }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol type="a">
+<li>Gegeben ist der nachfolgende Code. Was davon ist ein Objekt und was nicht? Warum bzw.warum nicht? Welche anderen Datentypen gibt es hier noch?</li>
+<li>Erstellen Sie ein kleines Programm. In diesem Programm soll ein Javascript-Objekt <code>riemke</code> anlegt werden. Das <code>riemke</code> hat einen Studiengang, ein Fachgebiet (Web-Anwendungen) und natürlich Vor- und Nachname. Geben Sie die Attribute von <code>riemke</code> aus.<br>
+</li>
+<li>Einzelne Professoren haben ein Amt/Funktion inne. Das <code>riemke</code>-Objekt bräuchte dahernoch das Attribut <code>funktion</code> mit dem Wert <code>Ansprechpartner</code>. Das Objekt <code>mueller</code> soll das nicht haben. Geht das? Können Sie das noch zu einem einzelnen Objekt hinzufügen? Wenn ja, schreiben Sie den Code, wenn nein begründen Sie warum das nicht möglich ist!</li>
+<li>Erstellen Sie ein Array mit fünf Studierenden. Studierende sind jeweils Objekte und haben die Attribute <code>name</code>, <code>vorname</code> und <code>studiengang</code>. Geben Sie die Studierenden in einer <code>for</code>-Schleife aus. Die Objekte legen Sie einfach in der Objekt-Literal-Schreibweise an.</li>
+<li>Nehmen Sie das Array mit den Objekten aus d.&nbsp;Entfernen Sie das letzte Element und fügen Sie einen weiteren Studierenden am Anfang hinzu. Geben Sie die Liste aus.</li>
+</ol>
+</section>
+<section id="aufgabe-5-daten-auslesen" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-5-daten-auslesen">Aufgabe 5: Daten auslesen</h2>
+<blockquote class="blockquote">
+<p>Budget: 20 Minuten</p>
+</blockquote>
+<p>Aus der Kunden-Datenbank des ersten Semesters sollen Daten ausgelesen werden. Realisieren Sie dies mit Javascript und SQLite.</p>
+<ol type="a">
+<li>Was bedeutet Parameter Binding und warum ist es wichtig?</li>
+<li>Geben Sie alle Kunden aus.</li>
+<li>Wie viele Kunden haben wir in <code>Berlin</code>?</li>
+<li>Geben Sie die Nachnamen aller Kunden, die mit Vorname <code>Takuma</code> heißen aus.</li>
+<li>Geben Sie alle Kunden aus, die in der Stadt wohnen, die in der Variablen stadt steht. Erstellen Sie hierzu eine Query mit Parameter Bindung. Setzen Sie die Variable auf <code>Stuttgart</code> und führen Sie Ihren Code aus.</li>
+<li>Zählen Sie alle Kunden, die den Beruf haben, der in der Variablen position steht. Erstellen Sie hierzu eine Query mit Parameter Bindung. Setzen Sie die Variable auf <code>Architects</code> und führen Sie Ihren Code aus.</li>
+<li>In den Variablen <code>stadt</code> und <code>position</code> können Werte eingetragen werden. Erstellen Sie eine Query mit Parameter Binding, die alle Kunden zurück gibt, die in der <code>stadt</code> wohnen und den Beruf <code>position</code> haben.</li>
+</ol>
+</section>
+<section id="aufgabe-6-mit-dateien-arbeiten" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-6-mit-dateien-arbeiten">Aufgabe 6: Mit Dateien arbeiten</h2>
 <blockquote class="blockquote">
 <p>Budget: 10 Minuten</p>
 </blockquote>
-<p>Gegeben ist folgende Code:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">printPerson</span>(_________________________________) {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="vs">`Name: </span><span class="sc">${</span>firstName<span class="sc">}</span><span class="vs"> </span><span class="sc">${</span>lastName<span class="sc">}</span><span class="vs">`</span>)<span class="op">;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> person <span class="op">=</span> {</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">firstName</span><span class="op">:</span> <span class="st">'Jane'</span><span class="op">,</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">lastName</span><span class="op">:</span> <span class="st">'Doe'</span><span class="op">,</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">age</span><span class="op">:</span> <span class="dv">25</span><span class="op">,</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="dt">country</span><span class="op">:</span> <span class="st">'Germany'</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">printPersonInfo</span>(person)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol type="a">
-<li>Object Destructuring kommt in der Web-Entwicklung mit Javascript häufig vor. Erklären Sie den Begriff. Achten Sie dabei auf eine fachlich korrekte und vollständige Antwort.</li>
-<li>Ergänzen Sie den freien Platz bei der Funktion in der Parameter-Übergabe mittels Object Destructuring so, dass der Code funktioniert.</li>
-<li>Was sind die Vorteile von Object Destructuring?</li>
+<li>Schreiben Sie den Text <code>Hallo</code> in die Datei <code>hallo.txt</code>.</li>
+<li>Lesen Sie Datei wieder und geben Sie den Text aus. Verwenden Sie hierfür die Funktion <code>readfileSync</code>.</li>
 </ol>
-</section>
-<section id="aufgabe-2-die-erste-seite-in-adonisjs" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-2-die-erste-seite-in-adonisjs">Aufgabe 2: Die erste Seite in AdonisJS</h2>
-<blockquote class="blockquote">
-<p>Budget: 20 Minuten</p>
-</blockquote>
-<ol type="a">
-<li>Erstellen Sie eine Web-Anwendung in AdonisJS, die beim Aufruf <code>Hallo, hier bin ich!</code> ausgibt (ohne View/Template).</li>
-<li>Web-Anwendungen benötigen einen Web-Server. Wo ist der in Ihrer AdonisJS-Anwendung?</li>
-<li>Was ist eine Route?</li>
-<li>Was haben HTTP-Verben mit der Route zu tun.</li>
-</ol>
-</section>
-<section id="aufgabe-3-der-plus-taschenrechner" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-3-der-plus-taschenrechner">Aufgabe 3: Der Plus-Taschenrechner</h2>
-<blockquote class="blockquote">
-<p>Budget: 20 Minuten</p>
-</blockquote>
-<p>Erstellen Sie eine AdonisJS-Anwendung, die zwei Zahlen in einem Formular entgegennimmt und das Ergebnis addiert ausgibt.</p>
-<p>Bevor Sie beginnen, überlegen Sie sich die einzelnen Schritte in einem Rezept, welches Sie dann abarbeiten.</p>
 </section>
 <section id="homework" class="level2">
 <h2 class="anchored" data-anchor-id="homework">Homework</h2>
 <p>Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.</p>
-<section id="aufgabe-1-formulare-in-adonisjs" class="level3">
-<h3 class="anchored" data-anchor-id="aufgabe-1-formulare-in-adonisjs">Aufgabe 1: Formulare in AdonisJS</h3>
+<section id="aufgabe-1-das-marketing-mailing" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-1-das-marketing-mailing">Aufgabe 1: Das Marketing-Mailing</h3>
 <blockquote class="blockquote">
-<p>Budget: 30 Minuten</p>
+<p>Budget: 20 Minuten</p>
 </blockquote>
-<ol type="a">
-<li>Erstellen Sie ein Formular in AdonisJS, welches Name und Vorname unter der Route <code>/liste/eingabe</code> erfasst. Wird das Formular an die Route <code>/liste/eingabe/danke</code> abgesendet erscheint eine Seite, die sich für die Eingabe bedankt und die Daten ausgibt. Tipp: Zum Speichern einer Liste eignet sich ein Array.</li>
-<li>Erweitern Sie die Route <code>/liste/eingabe/danke</code> so, dass sie einen Link auf <code>/liste</code> enthält. Die Route sorgt jetzt auch dafür, dass die Daten als Objekt zu einem Array hinzugefügt werden. Wir merken uns die Daten also in einer Variablen im Hauptspeicher.</li>
-<li>Die Route <code>/liste</code> gibt alle eingegebenen Namen aus.</li>
-</ol>
+<p>Für den Launch des neuen Produkts „mega-2000“ in Stuttgart sollen alle Kunden angemailt und zu dem Launch-Event eingeladen werden. Die E-Mail-Marketing-Software erwartet eine Datei im <strong>Comma Separated Values Format (CSV)</strong> mit den Daten Name, Vorname und E-Mail-Adresse.</p>
+<p>Daten haben in der Datei also das Format:</p>
+<pre class="text"><code>Müller, Svenja, svenja@spammailhost.de
+Meier, Ottokar, otti@supermail.de</code></pre>
+<p>Die Daten befinden sich jeweils in neuen Zeilen. Die Stadt, für die das Mailing erstellt werden soll, steht in der Variablen <code>stadt</code>, die von Ihrem Code verwendet wird.</p>
+<p>Erstellen Sie eine Query mit Parameter Binding. Gehen Sie in einer Schleife über das Ergebnis und erstellen Sie einen „großen“ String mit den Daten durch Kommata und Zeilenumbrüche getrennt. Schreiben Sie diesen String in eine Datei mit dem Namen <code>mailing.csv</code>.</p>
+<p>Kontrollieren Sie die Datei, ob sie richtig aufgebaut ist. Sie können die Datei in einer beliebigen Tabellenkalkulation (Libreoffice, Excel etc.) öffnen.</p>
 
 
 </section>

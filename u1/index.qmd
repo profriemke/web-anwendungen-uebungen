@@ -1,100 +1,40 @@
 ---
-  title: "Übung 2: Node.js und Kommandozeile"
+  title: "Übung 1: Setup & Basics"
 ---
-## Aufgabe 1: Die Kommandozeile
-> Budget: 25 Minuten
-  
-a. Was ist eine Kommandozeile, auch Shell oder genannt, und wozu werden Shells in der Praxis verwendet?
-b. Es gibt verschiedene Kommandozeilen. Manche Betriebssysteme erlauben verschiedene Shells, manche haben eine Standard-Shell. Was sind die Unterschiede zwischen den häufig genutzten Shells **bash, zsh, cmd und Powershell**. Welche Shell(s) hat Ihr System? 
-c. Moderne Betriebssysteme verstecken mehr oder weniger die genaue Struktur des Dateisystems vor dem Nutzer. Wie sieht die Struktur Ihres Dateisystems in Wirklichkeit aus? Finden Sie Ihren Benutzerordner (Home-Verzeichnis). r
-d. Öffnen Sie Ihre Kommandozeile/Shell/Terminal. Windows: Verwenden Sie nicht Powershell, sondern die Command/**cmd** Shell.
-e. Listen Sie im Terminal alle vorhandenen Ordner auf. Die Anzeige erfolgt mit `ls` (= list auf MacOS und Linux) bzw. `dir` (= directory unter Windows).
-f. Wo wird Ihnen angezeigt in welchen Ordner Sie sich befinden?
-g. Wechseln Sie mit dem Befehl `cd` (change directory) in Ihr Home-Verzeichnis. Es gibt die unten dargestellten Befehle für den Wechsel.
-h. Legen Sie einen Ordner mit beliebigen Namen an. Wechseln Sie in diesen Ordner und lassen Sie sich den Inhalt anzeigen. Finden Sie den neuen Ordner im Finder oder Explorer.
+## Aufgabe 1: Das Setup
+> Budget: 30 Minuten
 
-| Aktion   | Befehl |  
-|:-----------------------------------|--------------------|
-| in das Home-Verzeichnis wechseln | `cd ~` |
-| in das übergeordnete Verzeichnis wechseln | `cd ..` |
-| in den obersten Ordner (Wurzel/Root) wechseln | `cd /` |
-| n ein Verzeichnis wechseln | `cd verzeichnis` |
+Für die Lehrveranstaltung benötigen wir das richtige Tooling. 
 
-**Riemkes Tipp:**
+1. Github (Student) Account. Verwenden Sie einen sinnvollen Nutzernamen, da dieser im Business möglicherweise eine lebenslange Visitenkarte ist. Link: [https://education.github.com/pack](ttps://education.github.com/pack)
+2. ChatGPT Account. Link: [https://chat.openai.com/auth/login](ttps://chat.openai.com/auth/login)
 
-Zwei hilfreiche Tipps zum Umgang mit der Kommandozeile:
+Richten Sie die folgende Software ein:
 
-1. Bei Ordner- und Dateinamen muss meistens nur der Beginn eingegeben werden. Sobald der Name eindeutig ist lässt sich der Name durch das Drücken der Tab-Taste vervollständigen.
-2. Die letzten Befehle sind in der Regel über die Pfeiltaste nach oben erreichbar und müssen nicht immer neu getippt werden.
+1. DB Browser for SQLite Link:[https://sqlitebrowser.org/](https://sqlitebrowser.org/) 
+2. Visual Studio Code Link: [https://code.visualstudio.com/](https://code.visualstudio.com/) 
+3. NodeJS Link: [https://nodejs.org/en](https://nodejs.org/en) 
+  * Wichtig: Installieren Sie die LTS (Long Term Support) Version
+  * Zu beachten: NodeJS erscheint nicht als Programm in der Übersicht der Programme. Sie können die Funktion im Terminal auf der Kommandozeite mit `node -v` überprüfen.
+4. Folgende Visual Studio Code Erweiterungen
+  * [https://marketplace.visualstudio.com/items?itemName=jripouteau.adonis-vscode-extension](https://marketplace.visualstudio.com/items?itemName=jripouteau.adonis-vscode-extension) 
+  * [https://marketplace.visualstudio.com/items?itemName=luongnd.edge](https://marketplace.visualstudio.com/items?itemName=luongnd.edge) 
+  * [https://marketplace.visualstudio.com/items?itemName=GitHub.copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) 
 
 
-## Aufgabe 2: Node.js 
-> Budget: 15 Minuten
+## Aufgabe 2: Das Web
+> Budget: 30 Minuten
 
-Achten Sie bei den Antworten auf eine fachliche, gute Formulierung. Verwenden Sie keine Stichwörter.
-
-a. Was ist Node.js?
-b. Wo liegt der Unterschied von Node.js und einem Javascript-Interpreter in einem Browser?
-c. Warum eignet sich Node.js besonders gut für Echtzeitanwendungen? r
-
-
-## Aufgabe 3: Javascript: Die Fallunterscheidung
-> Budget: 10 Minuten
-
-a. Was ist eine Modulo-Rechnung und wie kann ich diese für den Test auf gerade/ungerade nutzen? r
-b. Erstellen Sie ein Programm, welches den Inhalt der Variablen zahl testet und gerade/ungerade ausgibt. Verwenden Sie eine Fallunterscheidung mittels if-Statement.
-c. Verkürzen die das Programm mit einem ternären Operator.
-
-
-## Aufgabe 4: Type Coercion
-> Budget: 10 Minuten
-
-Achten Sie bei den Antworten auf eine fachliche, gute Formulierung. Verwenden Sie keine Stichwörter.
-
-a. Was versteht man unter Type Coercion?
-b. Warum ist diese notwendig?
-c. Erstellen Sie zwei Code-Beispiele für Type Coercion und probieren Sie diese aus.
-d. Wann benötigt eine Programmiersprache keine Type Coercion?
-
-
-## Aufgabe 5: Schleifen
-> Budget: 10 Minuten
-
-Achten Sie bei den Antworten auf eine fachliche, gute Formulierung. Verwenden Sie keine Stichwörter.
-
-a. Erstellen Sie eine for-Schleife, die die Zahlen von 1 bis 100 ausgibt. Überlegen Sie kurz vor dem Entwickeln in einer Skizze, wie der Ablauf aussehen muss.
-b. Erstellen Sie eine for-Schleife, die von 100 bis 0 zählt. Hierfür gibt es zwei Möglichkeiten die for-Schleife zu programmieren. Welche?
-c. Lösen Sie die Aufgabe aus b. mit einer do-while-Schleife.
-
+1. Erklären Sie gemeinsam im Team den Ablauf einer DNS-Auflösung. Stellen Sie den Ablauf grafisch dar.
+2. Und nun das Web: Erstellen Sie gemeinsam einen grafischen Ablauf eines Web-Seiten-Aufrufs von der Eingabe der URL in den Browser bis zur vollständigen Anzeige der Web-Seite. Die Grafik soll alle wichtigen Fachbegriffe enthalten. Vergessen Sie nicht TCP.
 
 ## Homework
 
 Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.
 
-### Aufgabe 1: Die Wort-Schleife
-> Budget: 15 Minuten
+### Aufgabe 1: Anmeldung zum Workshop
+> Budget: 30 Minuten
 
-Erstellen Sie eine for-Schleife, die die Zahlen von 1 bis 100 ausgibt. Allerdings sollen die Zahlen als Wörter ausgegeben werden, also: 
+Sie benötigen in der Veranstaltung Kenntnisse im Umgang mit der Kommandozeile Ihres Betriebssystems. Im Moodle-Kurs finden Sie Einführungskurse, die Sie absolvieren können. Die untenstehenden Playlists sind Vorschläge. Sie können sich das Wissen natürlich auch auf andere Art aneignen.
 
-```text
-eins
-zwei
-...
-```
-
-Dabei soll der Einfachheit halber statt “zweiundzwanzig” einfach nur “zweizwei” ausgegeben werden. Sie benötigen zum Zusammenbau der Wörter eine Schleife und am Besten ein `switch`.
-
-### Aufgabe 2: Happy Strings
-> Budget: 10 Minuten
-
-Gegeben ist der folgende String:
-
-_"Die schnelle braune Füchsin springt über den faulen Hund. Dabei beobachtet sie die grauen Wolken am Himmel, während der Wind sanft durch die grünen Blätter der Bäume weht. In der Ferne hört man das leise Rauschen eines Baches."_
-
-Geben Sie die folgenden Punkt jeweils in einem Javascript-Programm aus.
-
-a. Die Länge des Strings.
-b. Überprüfen Sie, ob das Wort "Füchsin" im Satz vorkommt und geben Sie das Ergebnis aus
-c. Ersetzen Sie das Wort "braune" durch "rote" und geben den neuen String aus.
-d. Konvertieren Sie den gesamten Satz in Kleinbuchstaben und geben ihn aus.
-e. Speichern Sie alle Sätze einzeln in einem Array und geben dieses in einer Schleife aus.
+[https://moodle.hdm-stuttgart.de/course/view.php?id=12697#coursecontentcollapse2](https://moodle.hdm-stuttgart.de/course/view.php?id=12697#coursecontentcollapse2) 

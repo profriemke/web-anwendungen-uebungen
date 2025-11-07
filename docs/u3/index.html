@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Übung 5: Objektorientierung und AdonisJS – Web Anwendungen Übungen</title>
+<title>Übung 3: Arrays, Funktionen und mehr – Web Anwendungen Übungen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -153,12 +153,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#aufgabe-1-object-destructuring" id="toc-aufgabe-1-object-destructuring" class="nav-link active" data-scroll-target="#aufgabe-1-object-destructuring">Aufgabe 1: Object Destructuring</a></li>
-  <li><a href="#aufgabe-2-die-erste-seite-in-adonisjs" id="toc-aufgabe-2-die-erste-seite-in-adonisjs" class="nav-link" data-scroll-target="#aufgabe-2-die-erste-seite-in-adonisjs">Aufgabe 2: Die erste Seite in AdonisJS</a></li>
-  <li><a href="#aufgabe-3-der-plus-taschenrechner" id="toc-aufgabe-3-der-plus-taschenrechner" class="nav-link" data-scroll-target="#aufgabe-3-der-plus-taschenrechner">Aufgabe 3: Der Plus-Taschenrechner</a></li>
+  <li><a href="#aufgabe-1-array-anlegen-und-zugreifen" id="toc-aufgabe-1-array-anlegen-und-zugreifen" class="nav-link active" data-scroll-target="#aufgabe-1-array-anlegen-und-zugreifen">Aufgabe 1: Array anlegen und zugreifen</a></li>
+  <li><a href="#aufgabe-2-zusammen-geht-es-besser" id="toc-aufgabe-2-zusammen-geht-es-besser" class="nav-link" data-scroll-target="#aufgabe-2-zusammen-geht-es-besser">Aufgabe 2: Zusammen geht es besser</a></li>
+  <li><a href="#aufgabe-3-der-komische-vergleich" id="toc-aufgabe-3-der-komische-vergleich" class="nav-link" data-scroll-target="#aufgabe-3-der-komische-vergleich">Aufgabe 3: Der komische Vergleich</a></li>
+  <li><a href="#aufgabe-4-mathe-und-so" id="toc-aufgabe-4-mathe-und-so" class="nav-link" data-scroll-target="#aufgabe-4-mathe-und-so">Aufgabe 4: Mathe und so</a></li>
+  <li><a href="#aufgabe-5-noch-mehr-mathe-und-so" id="toc-aufgabe-5-noch-mehr-mathe-und-so" class="nav-link" data-scroll-target="#aufgabe-5-noch-mehr-mathe-und-so">Aufgabe 5: Noch mehr Mathe und so</a></li>
+  <li><a href="#aufgabe-6-verkehrte-welt" id="toc-aufgabe-6-verkehrte-welt" class="nav-link" data-scroll-target="#aufgabe-6-verkehrte-welt">Aufgabe 6: Verkehrte Welt</a></li>
+  <li><a href="#aufgabe-7-tieffliegende-pfeile" id="toc-aufgabe-7-tieffliegende-pfeile" class="nav-link" data-scroll-target="#aufgabe-7-tieffliegende-pfeile">Aufgabe 7: Tieffliegende Pfeile</a></li>
   <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a>
   <ul class="collapse">
-  <li><a href="#aufgabe-1-formulare-in-adonisjs" id="toc-aufgabe-1-formulare-in-adonisjs" class="nav-link" data-scroll-target="#aufgabe-1-formulare-in-adonisjs">Aufgabe 1: Formulare in AdonisJS</a></li>
+  <li><a href="#aufgabe-1-vornamenfunktion" id="toc-aufgabe-1-vornamenfunktion" class="nav-link" data-scroll-target="#aufgabe-1-vornamenfunktion">Aufgabe 1: Vornamenfunktion</a></li>
+  <li><a href="#aufgabe-2-fibonacci-folge-berechnen" id="toc-aufgabe-2-fibonacci-folge-berechnen" class="nav-link" data-scroll-target="#aufgabe-2-fibonacci-folge-berechnen">Aufgabe 2: Fibonacci-Folge berechnen</a></li>
+  <li><a href="#aufgabe-3-github-copilot-verwenden" id="toc-aufgabe-3-github-copilot-verwenden" class="nav-link" data-scroll-target="#aufgabe-3-github-copilot-verwenden">Aufgabe 3: Github Copilot verwenden</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -168,7 +174,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Übung 5: Objektorientierung und AdonisJS</h1>
+<h1 class="title">Übung 3: Arrays, Funktionen und mehr</h1>
 </div>
 
 
@@ -185,63 +191,153 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="aufgabe-1-object-destructuring" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-1-object-destructuring">Aufgabe 1: Object Destructuring</h2>
+<section id="aufgabe-1-array-anlegen-und-zugreifen" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-1-array-anlegen-und-zugreifen">Aufgabe 1: Array anlegen und zugreifen</h2>
+<blockquote class="blockquote">
+<p>Budget: 15 Minuten</p>
+</blockquote>
+<p>Legen Sie ein Array in der Array-Literal-Schreibweise an. Enthalten sein sollen die folgenden Daten:</p>
+<ul>
+<li>Hund</li>
+<li>Katze</li>
+<li>Maus</li>
+<li>Niko</li>
+<li>Laus</li>
+</ul>
+<ol type="1">
+<li>Lassen Sie sich ausgeben, wie viele Elemente das Array enthält.</li>
+<li>Geben Sie den Inhalt des Arrays mit <code>console.log()</code> aus (ohne Schleife).</li>
+<li>Geben Sie den Inhalt in einer <code>for</code>-Schleife aus.</li>
+<li>Ergänzen Sie die Schleife so, dass die Einträge bei der Ausgabe von der Angabe <code>1.</code> (mit Punkt!) startend durchnummeriert werden.</li>
+<li>Entfernen Sie das erste Element des Arrays.</li>
+<li>Fügen Sie am Anfang des Arrays einen <code>Elefant</code> hinzu und lassen Sie sich das Array wieder ausgeben.</li>
+<li>Fügen Sie am Ende den Eintrag <code>Ende</code> hinzu.</li>
+</ol>
+</section>
+<section id="aufgabe-2-zusammen-geht-es-besser" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-2-zusammen-geht-es-besser">Aufgabe 2: Zusammen geht es besser</h2>
 <blockquote class="blockquote">
 <p>Budget: 10 Minuten</p>
 </blockquote>
-<p>Gegeben ist folgende Code:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">printPerson</span>(_________________________________) {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="vs">`Name: </span><span class="sc">${</span>firstName<span class="sc">}</span><span class="vs"> </span><span class="sc">${</span>lastName<span class="sc">}</span><span class="vs">`</span>)<span class="op">;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> person <span class="op">=</span> {</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">firstName</span><span class="op">:</span> <span class="st">'Jane'</span><span class="op">,</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">lastName</span><span class="op">:</span> <span class="st">'Doe'</span><span class="op">,</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">age</span><span class="op">:</span> <span class="dv">25</span><span class="op">,</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="dt">country</span><span class="op">:</span> <span class="st">'Germany'</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">printPersonInfo</span>(person)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol type="a">
-<li>Object Destructuring kommt in der Web-Entwicklung mit Javascript häufig vor. Erklären Sie den Begriff. Achten Sie dabei auf eine fachlich korrekte und vollständige Antwort.</li>
-<li>Ergänzen Sie den freien Platz bei der Funktion in der Parameter-Übergabe mittels Object Destructuring so, dass der Code funktioniert.</li>
-<li>Was sind die Vorteile von Object Destructuring?</li>
+<p>Für diese Aufgabe deaktivieren Sie bitte rechts unten in VSCode Github Copilot.</p>
+<p>Erstellen Sie eine Funktion zusammen, die zwei Strings entgegennimmt, diese zusammenfügt und den zusammengefügten String zurückgibt. Ein Aufruf könnte also wie folgt aussehen:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">zusammen</span>(ˈHalloˈ<span class="op">,</span> ˈKalleˈ)<span class="op">;</span> <span class="co">//Ergebnis: HalloKalle</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Modifizieren Sie in einem zweiten Schritt die Funktion so, dass sie immer ein Leerzeichen zwischen den Strings einfügt und damit bei obigen Aufruf <code>Hallo Kalle</code> zurückgibt</p>
+</section>
+<section id="aufgabe-3-der-komische-vergleich" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-3-der-komische-vergleich">Aufgabe 3: Der komische Vergleich</h2>
+<blockquote class="blockquote">
+<p>Budget: 10 Minuten</p>
+</blockquote>
+<p>Gegeben sind die folgenden zwei Variablen und die Zuweisungen:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> a <span class="op">=</span> <span class="dv">5</span><span class="op">;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> b <span class="op">=</span> <span class="st">"5"</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Wird mit diesen Belegungen der Variablen in den nachfolgenden <code>if</code>-Statements der Zweig für <code>true</code> oder <code>false</code> ausgeführt? Begründen Sie Ihr Ergebnis!</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Statement</th>
+<th style="text-align: left;">ausgeführter Zweig</th>
+<th style="text-align: left;">Begründung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>if(a = b){ // Code } else { // Code }</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>if(a == b){ // Code } else { // Code }</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>if(a === b){ // Code } else { // Code }</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp; &nbsp;</p>
+</section>
+<section id="aufgabe-4-mathe-und-so" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-4-mathe-und-so">Aufgabe 4: Mathe und so</h2>
+<blockquote class="blockquote">
+<p>Budget: 10 Minuten Für diese Aufgabe deaktivieren Sie bitte rechts unten in VSCode Github Copilot.</p>
+</blockquote>
+<p>Eine Aufgabe aus einer vergangenen Klausur: Erstellen Sie eine Funktion <code>quadrat</code>, die eine Zahl entgegennimmt und das Quadrat dieser Zahl zurück gibt.</p>
+<p>Geben Sie die Quadratzahlen von <code>2</code>, <code>8</code> und <code>64</code> aus.</p>
+<p>Es gibt zwei Wege das Quadrat zu berechnen. Eine ist eine Notation in Javascript, die andere ist Ihnen aus der Schule bekannt.</p>
+</section>
+<section id="aufgabe-5-noch-mehr-mathe-und-so" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-5-noch-mehr-mathe-und-so">Aufgabe 5: Noch mehr Mathe und so</h2>
+<blockquote class="blockquote">
+<p>Budget: 10 Minuten Für diese Aufgabe deaktivieren Sie bitte rechts unten in VSCode Github Copilot.</p>
+</blockquote>
+<p>Erstellen Sie eine Funktion <code>oddOrEven</code>, die eine Zahl entgegennimmt und prüft, ob diese Zahl gerade oder ungerade ist. Ist sie gerade wird <code>true</code> zurück gegeben, <code>false</code> sonst.</p>
+<p>Verwenden Sie hierzu den Modulo-Operator <code>%</code>. Dieser liefert den Rest einer Division zurück.</p>
+<p>Beispiele:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span><span class="op">%</span><span class="dv">3</span>  <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="dv">7</span><span class="op">%</span><span class="dv">3</span>  <span class="op">=</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Wie können Sie diesen nutzen?</p>
+</section>
+<section id="aufgabe-6-verkehrte-welt" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-6-verkehrte-welt">Aufgabe 6: Verkehrte Welt</h2>
+<blockquote class="blockquote">
+<p>Budget: 15 Minuten Für diese Aufgabe deaktivieren Sie bitte rechts unten in VSCode Github Copilot.</p>
+</blockquote>
+<p>Schreiben Sie eine Funktion <code>reverse</code>, die einen String als Parameter entgegennimmt. Die Funktion kehrt den String um und gibt den gedrehten String zurück. Probieren Sie den Code mit dem String <code>Mit Tim</code> aus. Lösungshinweis: Sie können auf einzelne Zeichen eines Strings wie auf ein Array zugreifen.</p>
+<p>Beispiel:</p>
+<pre class="text"><code>Eingabe:  Riemke
+Ausgabe:  ekmeiR</code></pre>
+<p>Aufgabe 7: Funktionen mit Funktionen aufrufen &gt; Budget: 15 Minuten</p>
+<ol type="1">
+<li>Erstellen Sie zwei Funktionen, die genau das machen, was der Name verspricht: <code>plus</code> und <code>multipliziere</code>. Diese Funktionen bekommen jeweils zwei Werte übergeben und geben einen Wert zurück. Definieren Sie die Funktionen aus Funktionsausdruck. Probieren Sie sie aus!</li>
+<li>Erstellen Sie die Funktion <code>berechne</code>. Die Funktion nimmt zwei Werte und eine Funktion als Parameter entgegen. Sie startet die Funktion und gibt deren Ergebnis zurück. Also z.B.<code>berechne(1,2, plus)</code>.</li>
 </ol>
 </section>
-<section id="aufgabe-2-die-erste-seite-in-adonisjs" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-2-die-erste-seite-in-adonisjs">Aufgabe 2: Die erste Seite in AdonisJS</h2>
+<section id="aufgabe-7-tieffliegende-pfeile" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-7-tieffliegende-pfeile">Aufgabe 7: Tieffliegende Pfeile</h2>
 <blockquote class="blockquote">
-<p>Budget: 20 Minuten</p>
+<p>Budget: 5 Minuten</p>
 </blockquote>
-<ol type="a">
-<li>Erstellen Sie eine Web-Anwendung in AdonisJS, die beim Aufruf <code>Hallo, hier bin ich!</code> ausgibt (ohne View/Template).</li>
-<li>Web-Anwendungen benötigen einen Web-Server. Wo ist der in Ihrer AdonisJS-Anwendung?</li>
-<li>Was ist eine Route?</li>
-<li>Was haben HTTP-Verben mit der Route zu tun.</li>
+<ol type="1">
+<li>Was sind Arrow-Functions?</li>
+<li>Erstellen Sie eine Arrow-Function, die eine Zahl entgegennimmt und das Quadrat zurückgibt.</li>
+<li>Wie sieht diese Funktion auf die notwendigsten Zeichen reduziert aus. Hinweis: Probieren Sie ggf. aus! Es kann sehr viel weggelassen werden.</li>
 </ol>
-</section>
-<section id="aufgabe-3-der-plus-taschenrechner" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-3-der-plus-taschenrechner">Aufgabe 3: Der Plus-Taschenrechner</h2>
-<blockquote class="blockquote">
-<p>Budget: 20 Minuten</p>
-</blockquote>
-<p>Erstellen Sie eine AdonisJS-Anwendung, die zwei Zahlen in einem Formular entgegennimmt und das Ergebnis addiert ausgibt.</p>
-<p>Bevor Sie beginnen, überlegen Sie sich die einzelnen Schritte in einem Rezept, welches Sie dann abarbeiten.</p>
 </section>
 <section id="homework" class="level2">
 <h2 class="anchored" data-anchor-id="homework">Homework</h2>
 <p>Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.</p>
-<section id="aufgabe-1-formulare-in-adonisjs" class="level3">
-<h3 class="anchored" data-anchor-id="aufgabe-1-formulare-in-adonisjs">Aufgabe 1: Formulare in AdonisJS</h3>
+<section id="aufgabe-1-vornamenfunktion" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-1-vornamenfunktion">Aufgabe 1: Vornamenfunktion</h3>
 <blockquote class="blockquote">
-<p>Budget: 30 Minuten</p>
+<p>Budget: 15 Minuten</p>
 </blockquote>
-<ol type="a">
-<li>Erstellen Sie ein Formular in AdonisJS, welches Name und Vorname unter der Route <code>/liste/eingabe</code> erfasst. Wird das Formular an die Route <code>/liste/eingabe/danke</code> abgesendet erscheint eine Seite, die sich für die Eingabe bedankt und die Daten ausgibt. Tipp: Zum Speichern einer Liste eignet sich ein Array.</li>
-<li>Erweitern Sie die Route <code>/liste/eingabe/danke</code> so, dass sie einen Link auf <code>/liste</code> enthält. Die Route sorgt jetzt auch dafür, dass die Daten als Objekt zu einem Array hinzugefügt werden. Wir merken uns die Daten also in einer Variablen im Hauptspeicher.</li>
-<li>Die Route <code>/liste</code> gibt alle eingegebenen Namen aus.</li>
+<ol type="1">
+<li>Erstellen Sie eine Funktion, welche einen String mit Vor- und Nachnamen, also z.B. <code>Thorsten Riemke</code> entgegennimmt. Die Funktion extrahiert den Vornamen aus dem String und gibt ihn als Rückgabewert zurück.</li>
+<li>Erstellen Sie ein Beispiel in dem Sie Ihre nagelneue Funktion anwenden.</li>
 </ol>
+</section>
+<section id="aufgabe-2-fibonacci-folge-berechnen" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-2-fibonacci-folge-berechnen">Aufgabe 2: Fibonacci-Folge berechnen</h3>
+<blockquote class="blockquote">
+<p>Budget: 15 Minuten</p>
+</blockquote>
+<ol type="1">
+<li>Was ist eine Fibonacci-Folge?</li>
+<li>Wie berechnet man sie?</li>
+<li>Erstellen Sie eine Funktion hierfür. Lassen Sie sich von KI nicht die Lösung vorgeben, nutzen Sie sie nur als Hilfestellung.</li>
+</ol>
+</section>
+<section id="aufgabe-3-github-copilot-verwenden" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-3-github-copilot-verwenden">Aufgabe 3: Github Copilot verwenden</h3>
+<blockquote class="blockquote">
+<p>Budget: 15 Minuten</p>
+</blockquote>
+<p>Im Moodle-Kurs finden Sie ein Tutorial-Video über den Einsatz von Github Copilot. Bearbeiten Sie das Video.</p>
 
 
 </section>

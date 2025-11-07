@@ -1,0 +1,102 @@
+---
+  title: "Übung 4: Strings, Datei und Datenbank"
+---
+## Aufgabe 1: Arbeiten mit Strings 
+> Budget: 5 Minuten
+
+Strings werden immer wieder gebraucht.
+
+Fügen Sie die Strings aus dem folgenden Code zusammen zu dem ganzen Namen. Vergessen Sie nicht ein Leerzeichen einzufügen:
+
+```javascript
+let nachName = ˈMüllerˈ
+let vorname = ˈAnnaˈ
+ganzerName =        // Ihr Code hier
+console.log(ganzerName)
+```
+
+## Aufgabe 2: Strings und Steuerzeichen 
+> Budget: 5 Minuten
+
+Es lassen sich auch Zeilenumbrüche zu einem String mittels `\n` (new line) hinzufügen. Dies ist ein sogenanntes Steuerzeichen, welches die Ausgabe in diesem Fall zu einer neuen zeile steuert. Fassen Sie den Inhalt der beiden Variablen zu einer zusammen. Fügen Sie zwischen den Texten einen Zeilenumbruch ein. Geben Sie den ganzen Text aus.
+
+```javascript
+let zeile1 = ˈDies ist die erste Zeileˈ;
+let zeile2 = ˈDies ist die zweite Zeile.ˈ;
+ganzerTextMitUmbruch =        
+```
+
+## Aufgabe 3: Probleme mit dynamischer Typisierung
+> Budget: 5 Minuten
+
+Unten stehen zwei Variablen, die durch die Zuweisung den Typ `Number` annehmen. Sie sollen zu einem String zusammengefügt werden, so dass das Ergebnis `42` (und nicht ausgerechnet `6`) ist. Ein ``+` würde die Zahlen zusammenrechnen. Sie können aber die Zahlen explizit in einen String umwandeln. Die Zahlen haben die Methode `.toString()`, die den Wert als String zurückgibt. Geben Sie den ganzen Text aus.
+
+```javascript
+		let zahl1 = 4;
+		let zahl2 = 2;
+		zusammen =        // Ihr Code hier
+```
+
+## Aufgabe 4: Arbeiten mit Objekten 
+> Budget: 35 Minuten
+
+```javascript
+const kunde = { 	 vorname: ˈThorstenˈ, 
+        					 nachname: ˈRiemkeˈ,
+				        	 properties: [
+						                      { isLoggedIn : false },
+						                      { isRegistered: true }
+                                ]
+              }
+```
+
+a. Gegeben ist der nachfolgende Code. Was davon ist ein Objekt und was nicht? Warum bzw.warum nicht? Welche anderen Datentypen gibt es hier noch?
+b.  Erstellen Sie ein kleines Programm. In diesem Programm soll ein Javascript-Objekt `riemke` anlegt werden. Das `riemke` hat einen Studiengang, ein Fachgebiet (Web-Anwendungen) und natürlich Vor- und Nachname. Geben Sie die Attribute von `riemke` aus.   
+c.  Einzelne Professoren haben ein Amt/Funktion inne. Das `riemke`-Objekt bräuchte dahernoch das Attribut `funktion` mit dem Wert `Ansprechpartner`. Das Objekt `mueller` soll das nicht haben. Geht das? Können Sie das noch zu einem einzelnen Objekt hinzufügen? Wenn ja, schreiben Sie den Code, wenn nein begründen Sie warum das nicht möglich ist!
+d. Erstellen Sie ein Array mit fünf Studierenden. Studierende sind jeweils Objekte und haben die Attribute `name`, `vorname` und `studiengang`. Geben Sie die Studierenden in einer `for`-Schleife aus. Die Objekte legen Sie einfach in der Objekt-Literal-Schreibweise an.
+e. Nehmen Sie das Array mit den Objekten aus d. Entfernen Sie das letzte Element und fügen Sie einen weiteren Studierenden am Anfang hinzu. Geben Sie die Liste aus.
+
+
+## Aufgabe 5: Daten auslesen
+>Budget: 20 Minuten
+
+Aus der Kunden-Datenbank des ersten Semesters sollen Daten ausgelesen werden. 
+Realisieren Sie dies mit Javascript und SQLite.
+
+a. Was bedeutet Parameter Binding und warum ist es wichtig?
+b. Geben Sie alle Kunden aus.
+c. Wie viele Kunden haben wir in `Berlin`?
+d. Geben Sie die Nachnamen aller Kunden, die mit Vorname `Takuma` heißen aus.
+e. Geben Sie alle Kunden aus, die in der Stadt wohnen, die in der Variablen stadt steht. Erstellen Sie hierzu eine Query mit Parameter Bindung. Setzen Sie die Variable auf `Stuttgart` und führen Sie Ihren Code aus.
+f. Zählen Sie alle Kunden, die den Beruf haben, der in der Variablen position steht. Erstellen Sie hierzu eine Query mit Parameter Bindung. Setzen Sie die Variable auf `Architects` und führen Sie Ihren Code aus.
+g. In den Variablen `stadt` und `position` können Werte eingetragen werden. Erstellen Sie eine Query mit Parameter Binding, die alle Kunden zurück gibt, die in der `stadt` wohnen und den Beruf `position` haben.
+
+
+## Aufgabe 6: Mit Dateien arbeiten
+> Budget: 10 Minuten
+
+a. Schreiben Sie den Text `Hallo` in die Datei `hallo.txt`.
+b. Lesen Sie Datei wieder und geben Sie den Text aus. Verwenden Sie hierfür die Funktion `readfileSync`.
+
+
+## Homework
+
+Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.
+
+### Aufgabe 1: Das Marketing-Mailing
+> Budget: 20 Minuten
+
+Für den Launch des neuen Produkts „mega-2000“ in Stuttgart sollen alle Kunden angemailt und zu dem Launch-Event eingeladen werden. Die E-Mail-Marketing-Software erwartet eine Datei im **Comma Separated Values Format (CSV)** mit den Daten Name, Vorname und E-Mail-Adresse. 
+
+Daten haben in der Datei also das Format:
+
+```text
+Müller, Svenja, svenja@spammailhost.de
+Meier, Ottokar, otti@supermail.de
+```
+
+Die Daten befinden sich jeweils in neuen Zeilen. Die Stadt, für die das Mailing erstellt werden soll, steht in der Variablen `stadt`, die von Ihrem Code verwendet wird.
+
+Erstellen Sie eine Query mit Parameter Binding. Gehen Sie in einer Schleife über das Ergebnis und erstellen Sie einen „großen“ String mit den Daten durch Kommata und Zeilenumbrüche getrennt. Schreiben Sie diesen String in eine Datei mit dem Namen `mailing.csv`. 
+
+Kontrollieren Sie die Datei, ob sie richtig aufgebaut ist. Sie können die Datei in einer beliebigen Tabellenkalkulation (Libreoffice, Excel etc.) öffnen.
