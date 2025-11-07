@@ -1,5 +1,5 @@
 ---
-  title: "Cornerstone Übung C.1.8: Javascript Basics"
+  title: "Capstone Übung C.1.8: Javascript Basics"
 ---
 Erstellen Sie ein Objekt `auto`, das folgende Eigenschaften und Methoden enthält:
 

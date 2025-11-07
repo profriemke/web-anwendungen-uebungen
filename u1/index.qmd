@@ -18,9 +18,9 @@ h. Legen Sie einen Ordner mit beliebigen Namen an. Wechseln Sie in diesen Ordner
 | in das Home-Verzeichnis wechseln | `cd ~` |
 | in das übergeordnete Verzeichnis wechseln | `cd ..` |
 | in den obersten Ordner (Wurzel/Root) wechseln | `cd /` |
-| n ein Verzeichnis wechseln | `cd verzeichnis |
+| n ein Verzeichnis wechseln | `cd verzeichnis` |
 
-**Riemkes Tipp:*
+**Riemkes Tipp:**
 
 Zwei hilfreiche Tipps zum Umgang mit der Kommandozeile:
 
@@ -82,7 +82,7 @@ zwei
 ...
 ```
 
-Dabei soll der Einfachheit halber statt “zweiundzwanzig” einfach nur “zweizwei” ausgegeben werden. Sie benötigen zum Zusammenbau der Wörter eine Schleife und am Besten ein switch.
+Dabei soll der Einfachheit halber statt “zweiundzwanzig” einfach nur “zweizwei” ausgegeben werden. Sie benötigen zum Zusammenbau der Wörter eine Schleife und am Besten ein `switch`.
 
 ### Aufgabe 2: Happy Strings
 > Budget: 10 Minuten

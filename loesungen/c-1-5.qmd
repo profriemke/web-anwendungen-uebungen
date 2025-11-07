@@ -1,5 +1,5 @@
 ---
-  title: "Cornerstone Übung C.1.5: Javascript Basics"
+  title: "Capstone Übung C.1.5: Javascript Basics"
 ---
 Welche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie! 
 

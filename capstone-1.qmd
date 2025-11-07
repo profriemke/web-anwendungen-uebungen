@@ -1,5 +1,5 @@
 ---
-  title: "Cornerstone Übung C.1: Javascript Basics"
+  title: "Capstone Übung C.1: Javascript Basics"
 ---
 
 > Wichtig: Bearbeiten Sie die Übungen **bevor** Sie sich die Lösungen ansehen.

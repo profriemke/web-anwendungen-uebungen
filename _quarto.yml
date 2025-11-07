@@ -8,9 +8,9 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - text: "Cornerstone Übungen"
+      - text: "Capstone Übungen"
         menu:
-          - href: cornerstone-1.qmd
+          - href: capstone-1.qmd
             text: "C.1: Javascript Basics"
 
 format:

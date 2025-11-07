@@ -2,58 +2,44 @@
   {
     "objectID": "loesungen/c-1-1.html",
     "href": "loesungen/c-1-1.html",
-    "title": "Cornerstone Übung C.1.1: Javascript Basics",
+    "title": "Capstone Übung C.1.1: Javascript Basics",
     "section": "",
     "text": "Erstellen Sie eine Schleife in Javascript, die die Zahlen von 10 bis 30 ausgibt.\n\nLösung:\nfor (let i = 10; i &lt;= 30; i++) {\n  console.log(i);\n}\n\nErklärung:\n\nlet i = 10; Startwert der Zählvariablen.\ni &lt;= 30; Bedingung: Die Schleife läuft, solange i kleiner oder gleich 30 ist.\ni++ Erhöht i nach jedem Durchlauf um 1.\nconsole.log(i); → Gibt die aktuelle Zahl in der Konsole aus."
   },
   {
     "objectID": "loesungen/c-1-2.html",
     "href": "loesungen/c-1-2.html",
-    "title": "Cornerstone Übung C.1.1: Javascript Basics",
+    "title": "Capstone Übung C.1.1: Javascript Basics",
     "section": "",
     "text": "Gegeben ist der untenstehende String. Geben Sie mit Javascript die einzelnen Buchstaben des Strings in umgekehrter Reihenfolge einzeln aus.\nDas Huhn frisst gerne Körner.\n\nLösung:\nconst text = \"Das Huhn frisst gerne Körner.\";\n\nfor (let i = text.length - 1; i &gt;= 0; i--) {\n  console.log(text[i]);\n}\n\nErklärung:\n\nWir können Strings als Arrays behandeln und dieses Array mit einer Schleife durchwandern.\ntext.length - 1 letzter Index des Strings (da Indizes bei 0 beginnen).\ni &gt;= 0 die Schleife läuft rückwärts bis zum ersten Zeichen.\ntext[i] greift auf das jeweilige Zeichen im String zu.\nconsole.log(text[i]) gibt jedes Zeichen einzeln in einer neuen Zeile aus."
   },
   {
     "objectID": "loesungen/c-1-7.html",
     "href": "loesungen/c-1-7.html",
-    "title": "Cornerstone Übung C.1.7: Javascript Basics",
+    "title": "Capstone Übung C.1.7: Javascript Basics",
     "section": "",
     "text": "Schreiben Sie eine Schleife, die die Namen aus dem Array ausgibt und abbricht, sobald der Name Rebecca auftaucht. Dabei soll der name Rebecca noch ausgegeben werden. Der Code darf kein if-Statement enthalten.\nconst namen = ['Malte', 'Svenja', 'Rebecca', 'Klaus'] \n\nLösung:\n\nLösungsansatz\nHier wird eine kompakte do-while-Schleife verwendet, die das gewünschte Verhalten ohne if erreicht.\n\n\nErste Idee\nconst namen = [\"Anna\", \"Lukas\", \"Tim\", \"Rebecca\", \"Sophie\", \"Max\"];\nlet i = 0;\ndo{\n// while-Schleife ohne if\ni++\nconsole.log(namen[i])\n}\nwhile ( namen[i] !== \"Rebecca\" )\nProblem: Wir vergessen hierbei den 0. Eintrag Anna, da wir zwar bei 0 starten, aber dann sofort hoch.\n\n\nSonderfall lösen\nLösung hierfür ist einfach “ein weiter unten” zu starten, nämlich bei -1.\nconst namen = [\"Anna\", \"Lukas\", \"Tim\", \"Rebecca\", \"Sophie\", \"Max\"];\nlet i = -1\ndo{\n// while-Schleife ohne if\ni++;\nconsole.log(namen[i])\n}\nwhile ( namen[i] !== \"Rebecca\" )\n\n\nErklärung\n\nconsole.log(namen[i]) gibt den aktuellen Namen aus.\n\nDer Ausdruck namen[i] !== \"Rebecca\" prüft, ob der aktuelle Name ungleich “Rebecca” ist.\n\nSolange das Ergebnis true ist, läuft die Schleife weiter.\n\nSobald der Name “Rebecca” erreicht ist, ergibt der Ausdruck false, die Schleife stoppt.\n\nDurch die Reihenfolge (console.log zuerst, dann der Vergleich) wird Rebecca noch ausgegeben, bevor der Abbruch erfolgt.\n\n\n\n\nAusgabe\nAnna\nLukas\nTim\nRebecca"
   },
   {
     "objectID": "loesungen/c-1-8.html",
     "href": "loesungen/c-1-8.html",
-    "title": "Cornerstone Übung C.1.8: Javascript Basics",
+    "title": "Capstone Übung C.1.8: Javascript Basics",
     "section": "",
     "text": "Erstellen Sie ein Objekt auto, das folgende Eigenschaften und Methoden enthält:\n\nEigenschaften:\n\nmarke (z. B. “BMW”)\nmodell (z. B. “X3”)\nbaujahr (z. B. 2021)\n\nMethoden:\n\nstart() → gibt \"Das Auto startet.\" in der Konsole aus.\n\ninfo() → gibt eine Beschreibung des Autos aus, z. B. \"BMW X3, Baujahr 2021\".\n\n\nRufen Sie beide Methoden anschließend auf.\n\nLösung:\nconst auto = {\n  marke: \"BMW\",\n  modell: \"X3\",\n  baujahr: 2021,\n\n  start() {\n    console.log(\"Das Auto startet.\");\n  },\n\n  info() {\n    console.log(`${this.marke} ${this.modell}, Baujahr ${this.baujahr}`);\n  }\n};\n\n// Methodenaufrufe\nauto.start(); // Ausgabe: Das Auto startet.\nauto.info();  // Ausgabe: BMW X3, Baujahr 2021\n\nErklärung:\n\nDas Objekt auto enthält sowohl Attribute (Daten bze.Eigenschaften) als auch Methoden (Funktionalität).\n\nDie Methode info() greift mit this auf die Eigenschaften dieses Objekts zu, in dem es ausgeführt wird.\n\nDurch den Aufruf auto.start() und auto.info() werden die Methoden ausgeführt und Text in der Konsole ausgegeben.\nZu beachten: Die Methoden geben direkt aus und geben keinen Wert zurück."
   },
   {
     "objectID": "loesungen/c-1-9.html",
     "href": "loesungen/c-1-9.html",
-    "title": "Cornerstone Übung C.1.9: Javascript Basics",
+    "title": "Capstone Übung C.1.9: Javascript Basics",
     "section": "",
     "text": "Gegeben ist folgendes Objekt:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n};\n\nVerwenden Sie Object Destructuring, um die Werte der Eigenschaften vorname und beruf aus dem Objekt zu extrahieren.\n\nGeben Sie die Werte anschließend mit console.log() aus.\n\n\nLösung:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n}\n\n// Object Destructuring\nconst { vorname, beruf } = person\n\n// Ausgabe\nconsole.log(vorname) // Ausgabe: Lisa\nconsole.log(beruf)   // Ausgabe: Webentwicklerin\n\nErklärung:\n\nDurch Destructuring können Werte direkt aus einem Objekt in einzelne Variablen extrahiert werden.\n\nDie Syntax { vorname, beruf } = person weist die Werte der gleichnamigen Eigenschaften Variablen mit den Namen vorname und beruf zu.\n\nDas spart Code und verbessert die Lesbarkeit, besonders bei großen Objekten, von denen an dieser Stelle nicht alles verwendet werden soll."
   },
   {
-    "objectID": "u7/index.html",
-    "href": "u7/index.html",
-    "title": "Übung 7: AdonisJS: Eine Todo-Liste",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Web Anwendungen Übungen",
     "section": "",
-    "text": "Budget: 90 Minuten\n\nIn dieser Woche soll Step-by-Step eine Todo-Liste-App entstehen, die ToDos verwaltet. Das natürlich in AdonisJS.\nUnsere Schritte:\n\nErstellen Sie eine neue AdonisJS Anwendung an. Konfigurieren Sie entsprechend des Vorgehens aus der Vorlesung das Projekt, insbesondere die Datenbank-Verbindung.\nLegeb Sie eine Datenbank mit einer Tabelle mit dem Namen todos und den Attributen id, text an. Am Besten fügen Sie ein paar Beispiel-Todos gleich ein.\nModifizieren Sie die Route / so, dass sie die Todos alle vollständig anzeigt. Legen Sie dafür ein geeignetes Template an.\nMit einem Formular können neue Todos angelegt werden. Hierzu brauchen Sie eine Route mit Formular und eine Route, die dieses verarbeitet.\nTodos lassen sich löschen. Fügen Sie hierzu auf der Startseite bei den Todos einen individuellen Löschlink ein."
-  },
-  {
-    "objectID": "u7/index.html#aufgabe-1-die-todo-liste",
-    "href": "u7/index.html#aufgabe-1-die-todo-liste",
-    "title": "Übung 7: AdonisJS: Eine Todo-Liste",
-    "section": "",
-    "text": "Budget: 90 Minuten\n\nIn dieser Woche soll Step-by-Step eine Todo-Liste-App entstehen, die ToDos verwaltet. Das natürlich in AdonisJS.\nUnsere Schritte:\n\nErstellen Sie eine neue AdonisJS Anwendung an. Konfigurieren Sie entsprechend des Vorgehens aus der Vorlesung das Projekt, insbesondere die Datenbank-Verbindung.\nLegeb Sie eine Datenbank mit einer Tabelle mit dem Namen todos und den Attributen id, text an. Am Besten fügen Sie ein paar Beispiel-Todos gleich ein.\nModifizieren Sie die Route / so, dass sie die Todos alle vollständig anzeigt. Legen Sie dafür ein geeignetes Template an.\nMit einem Formular können neue Todos angelegt werden. Hierzu brauchen Sie eine Route mit Formular und eine Route, die dieses verarbeitet.\nTodos lassen sich löschen. Fügen Sie hierzu auf der Startseite bei den Todos einen individuellen Löschlink ein."
-  },
-  {
-    "objectID": "u7/index.html#homework-woche",
-    "href": "u7/index.html#homework-woche",
-    "title": "Übung 7: AdonisJS: Eine Todo-Liste",
-    "section": "Homework Woche",
-    "text": "Homework Woche\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Eine bessere Todo-Liste\n\nBudget: 15 Minuten\n\n\nErweitern Sie die Todo-App um die Möglichkeit Todos zu kategorisieren. Jedem Todo kann keine oder eine Kategorie zugewiesen werden.\nErweitern Sie hierzu in geeigneter Weise (siehe Datenbank-Vorlesung!) das Datenbank-Schema.\nSetzen Sie Zuweisung in Code um – hier gibt es verschiedene Möglichkeiten und wenn es funktioniert haben Sie eine richtige Lösung! Hier muss man knobeln!"
+    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nÜbung 1: Setup & Basics\nÜbung 2: Node.js und Kommandozeile\nÜbung 3\nÜbung 4\nÜbung 5: Objektorientierung und AdonisJS\nCapstone Übung 1: Javascript Basics\nÜbung 6: AdonisJS und Datenbanken\nÜbung 7: AdonisJS: Eine Todo-Liste\nÜbung 8+9: Interaktive Übung (Link siehe Vorlesung)\nCapstone Übung 2: AdonisJS Entwicklung\nÜbung 10\nÜbung 11\nÜbung 12\nÜbung 13\nCapstone Übung 3: CSS\nÜbung 14\nCapstone Übung 4: Client-seitiges Javascript"
   },
   {
     "objectID": "u2/index.html",
@@ -144,14 +130,14 @@
     "href": "u1/index.html",
     "title": "Übung 2: Node.js und Kommandozeile",
     "section": "",
-    "text": "Budget: 25 Minuten\n\n\nWas ist eine Kommandozeile, auch Shell oder genannt, und wozu werden Shells in der Praxis verwendet?\nEs gibt verschiedene Kommandozeilen. Manche Betriebssysteme erlauben verschiedene Shells, manche haben eine Standard-Shell. Was sind die Unterschiede zwischen den häufig genutzten Shells bash, zsh, cmd und Powershell. Welche Shell(s) hat Ihr System?\nModerne Betriebssysteme verstecken mehr oder weniger die genaue Struktur des Dateisystems vor dem Nutzer. Wie sieht die Struktur Ihres Dateisystems in Wirklichkeit aus? Finden Sie Ihren Benutzerordner (Home-Verzeichnis). r\nÖffnen Sie Ihre Kommandozeile/Shell/Terminal. Windows: Verwenden Sie nicht Powershell, sondern die Command/cmd Shell.\nListen Sie im Terminal alle vorhandenen Ordner auf. Die Anzeige erfolgt mit ls (= list auf MacOS und Linux) bzw. dir (= directory unter Windows).\nWo wird Ihnen angezeigt in welchen Ordner Sie sich befinden?\nWechseln Sie mit dem Befehl cd (change directory) in Ihr Home-Verzeichnis. Es gibt die unten dargestellten Befehle für den Wechsel.\nLegen Sie einen Ordner mit beliebigen Namen an. Wechseln Sie in diesen Ordner und lassen Sie sich den Inhalt anzeigen. Finden Sie den neuen Ordner im Finder oder Explorer.\n\n\n\n\nAktion\nBefehl\n\n\n\n\nin das Home-Verzeichnis wechseln\ncd ~\n\n\nin das übergeordnete Verzeichnis wechseln\ncd ..\n\n\nin den obersten Ordner (Wurzel/Root) wechseln\ncd /\n\n\nn ein Verzeichnis wechseln\n`cd verzeichnis\n\n\n\n**Riemkes Tipp:*\nZwei hilfreiche Tipps zum Umgang mit der Kommandozeile:\n\nBei Ordner- und Dateinamen muss meistens nur der Beginn eingegeben werden. Sobald der Name eindeutig ist lässt sich der Name durch das Drücken der Tab-Taste vervollständigen.\nDie letzten Befehle sind in der Regel über die Pfeiltaste nach oben erreichbar und müssen nicht immer neu getippt werden."
+    "text": "Budget: 25 Minuten\n\n\nWas ist eine Kommandozeile, auch Shell oder genannt, und wozu werden Shells in der Praxis verwendet?\nEs gibt verschiedene Kommandozeilen. Manche Betriebssysteme erlauben verschiedene Shells, manche haben eine Standard-Shell. Was sind die Unterschiede zwischen den häufig genutzten Shells bash, zsh, cmd und Powershell. Welche Shell(s) hat Ihr System?\nModerne Betriebssysteme verstecken mehr oder weniger die genaue Struktur des Dateisystems vor dem Nutzer. Wie sieht die Struktur Ihres Dateisystems in Wirklichkeit aus? Finden Sie Ihren Benutzerordner (Home-Verzeichnis). r\nÖffnen Sie Ihre Kommandozeile/Shell/Terminal. Windows: Verwenden Sie nicht Powershell, sondern die Command/cmd Shell.\nListen Sie im Terminal alle vorhandenen Ordner auf. Die Anzeige erfolgt mit ls (= list auf MacOS und Linux) bzw. dir (= directory unter Windows).\nWo wird Ihnen angezeigt in welchen Ordner Sie sich befinden?\nWechseln Sie mit dem Befehl cd (change directory) in Ihr Home-Verzeichnis. Es gibt die unten dargestellten Befehle für den Wechsel.\nLegen Sie einen Ordner mit beliebigen Namen an. Wechseln Sie in diesen Ordner und lassen Sie sich den Inhalt anzeigen. Finden Sie den neuen Ordner im Finder oder Explorer.\n\n\n\n\nAktion\nBefehl\n\n\n\n\nin das Home-Verzeichnis wechseln\ncd ~\n\n\nin das übergeordnete Verzeichnis wechseln\ncd ..\n\n\nin den obersten Ordner (Wurzel/Root) wechseln\ncd /\n\n\nn ein Verzeichnis wechseln\ncd verzeichnis\n\n\n\nRiemkes Tipp:\nZwei hilfreiche Tipps zum Umgang mit der Kommandozeile:\n\nBei Ordner- und Dateinamen muss meistens nur der Beginn eingegeben werden. Sobald der Name eindeutig ist lässt sich der Name durch das Drücken der Tab-Taste vervollständigen.\nDie letzten Befehle sind in der Regel über die Pfeiltaste nach oben erreichbar und müssen nicht immer neu getippt werden."
   },
   {
     "objectID": "u1/index.html#aufgabe-1-die-kommandozeile",
     "href": "u1/index.html#aufgabe-1-die-kommandozeile",
     "title": "Übung 2: Node.js und Kommandozeile",
     "section": "",
-    "text": "Budget: 25 Minuten\n\n\nWas ist eine Kommandozeile, auch Shell oder genannt, und wozu werden Shells in der Praxis verwendet?\nEs gibt verschiedene Kommandozeilen. Manche Betriebssysteme erlauben verschiedene Shells, manche haben eine Standard-Shell. Was sind die Unterschiede zwischen den häufig genutzten Shells bash, zsh, cmd und Powershell. Welche Shell(s) hat Ihr System?\nModerne Betriebssysteme verstecken mehr oder weniger die genaue Struktur des Dateisystems vor dem Nutzer. Wie sieht die Struktur Ihres Dateisystems in Wirklichkeit aus? Finden Sie Ihren Benutzerordner (Home-Verzeichnis). r\nÖffnen Sie Ihre Kommandozeile/Shell/Terminal. Windows: Verwenden Sie nicht Powershell, sondern die Command/cmd Shell.\nListen Sie im Terminal alle vorhandenen Ordner auf. Die Anzeige erfolgt mit ls (= list auf MacOS und Linux) bzw. dir (= directory unter Windows).\nWo wird Ihnen angezeigt in welchen Ordner Sie sich befinden?\nWechseln Sie mit dem Befehl cd (change directory) in Ihr Home-Verzeichnis. Es gibt die unten dargestellten Befehle für den Wechsel.\nLegen Sie einen Ordner mit beliebigen Namen an. Wechseln Sie in diesen Ordner und lassen Sie sich den Inhalt anzeigen. Finden Sie den neuen Ordner im Finder oder Explorer.\n\n\n\n\nAktion\nBefehl\n\n\n\n\nin das Home-Verzeichnis wechseln\ncd ~\n\n\nin das übergeordnete Verzeichnis wechseln\ncd ..\n\n\nin den obersten Ordner (Wurzel/Root) wechseln\ncd /\n\n\nn ein Verzeichnis wechseln\n`cd verzeichnis\n\n\n\n**Riemkes Tipp:*\nZwei hilfreiche Tipps zum Umgang mit der Kommandozeile:\n\nBei Ordner- und Dateinamen muss meistens nur der Beginn eingegeben werden. Sobald der Name eindeutig ist lässt sich der Name durch das Drücken der Tab-Taste vervollständigen.\nDie letzten Befehle sind in der Regel über die Pfeiltaste nach oben erreichbar und müssen nicht immer neu getippt werden."
+    "text": "Budget: 25 Minuten\n\n\nWas ist eine Kommandozeile, auch Shell oder genannt, und wozu werden Shells in der Praxis verwendet?\nEs gibt verschiedene Kommandozeilen. Manche Betriebssysteme erlauben verschiedene Shells, manche haben eine Standard-Shell. Was sind die Unterschiede zwischen den häufig genutzten Shells bash, zsh, cmd und Powershell. Welche Shell(s) hat Ihr System?\nModerne Betriebssysteme verstecken mehr oder weniger die genaue Struktur des Dateisystems vor dem Nutzer. Wie sieht die Struktur Ihres Dateisystems in Wirklichkeit aus? Finden Sie Ihren Benutzerordner (Home-Verzeichnis). r\nÖffnen Sie Ihre Kommandozeile/Shell/Terminal. Windows: Verwenden Sie nicht Powershell, sondern die Command/cmd Shell.\nListen Sie im Terminal alle vorhandenen Ordner auf. Die Anzeige erfolgt mit ls (= list auf MacOS und Linux) bzw. dir (= directory unter Windows).\nWo wird Ihnen angezeigt in welchen Ordner Sie sich befinden?\nWechseln Sie mit dem Befehl cd (change directory) in Ihr Home-Verzeichnis. Es gibt die unten dargestellten Befehle für den Wechsel.\nLegen Sie einen Ordner mit beliebigen Namen an. Wechseln Sie in diesen Ordner und lassen Sie sich den Inhalt anzeigen. Finden Sie den neuen Ordner im Finder oder Explorer.\n\n\n\n\nAktion\nBefehl\n\n\n\n\nin das Home-Verzeichnis wechseln\ncd ~\n\n\nin das übergeordnete Verzeichnis wechseln\ncd ..\n\n\nin den obersten Ordner (Wurzel/Root) wechseln\ncd /\n\n\nn ein Verzeichnis wechseln\ncd verzeichnis\n\n\n\nRiemkes Tipp:\nZwei hilfreiche Tipps zum Umgang mit der Kommandozeile:\n\nBei Ordner- und Dateinamen muss meistens nur der Beginn eingegeben werden. Sobald der Name eindeutig ist lässt sich der Name durch das Drücken der Tab-Taste vervollständigen.\nDie letzten Befehle sind in der Regel über die Pfeiltaste nach oben erreichbar und müssen nicht immer neu getippt werden."
   },
   {
     "objectID": "u1/index.html#aufgabe-2-node.js",
@@ -189,107 +175,121 @@
     "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Die Wort-Schleife\n\nBudget: 15 Minuten\n\nErstellen Sie eine for-Schleife, die die Zahlen von 1 bis 100 ausgibt. Allerdings sollen die Zahlen als Wörter ausgegeben werden, also:\neins\nzwei\n...\nDabei soll der Einfachheit halber statt “zweiundzwanzig” einfach nur “zweizwei” ausgegeben werden. Sie benötigen zum Zusammenbau der Wörter eine Schleife und am Besten ein switch.\n\n\nAufgabe 2: Happy Strings\n\nBudget: 10 Minuten\n\nGegeben ist der folgende String:\n“Die schnelle braune Füchsin springt über den faulen Hund. Dabei beobachtet sie die grauen Wolken am Himmel, während der Wind sanft durch die grünen Blätter der Bäume weht. In der Ferne hört man das leise Rauschen eines Baches.”\nGeben Sie die folgenden Punkt jeweils in einem Javascript-Programm aus.\n\nDie Länge des Strings.\nÜberprüfen Sie, ob das Wort “Füchsin” im Satz vorkommt und geben Sie das Ergebnis aus\nErsetzen Sie das Wort “braune” durch “rote” und geben den neuen String aus.\nKonvertieren Sie den gesamten Satz in Kleinbuchstaben und geben ihn aus.\nSpeichern Sie alle Sätze einzeln in einem Array und geben dieses in einer Schleife aus."
   },
   {
-    "objectID": "cornerstone-1.html",
-    "href": "cornerstone-1.html",
-    "title": "Cornerstone Übung C.1: Javascript Basics",
+    "objectID": "u7/index.html",
+    "href": "u7/index.html",
+    "title": "Übung 7: AdonisJS: Eine Todo-Liste",
+    "section": "",
+    "text": "Budget: 90 Minuten\n\nIn dieser Woche soll Step-by-Step eine Todo-Liste-App entstehen, die ToDos verwaltet. Das natürlich in AdonisJS.\nUnsere Schritte:\n\nErstellen Sie eine neue AdonisJS Anwendung an. Konfigurieren Sie entsprechend des Vorgehens aus der Vorlesung das Projekt, insbesondere die Datenbank-Verbindung.\nLegeb Sie eine Datenbank mit einer Tabelle mit dem Namen todos und den Attributen id, text an. Am Besten fügen Sie ein paar Beispiel-Todos gleich ein.\nModifizieren Sie die Route / so, dass sie die Todos alle vollständig anzeigt. Legen Sie dafür ein geeignetes Template an.\nMit einem Formular können neue Todos angelegt werden. Hierzu brauchen Sie eine Route mit Formular und eine Route, die dieses verarbeitet.\nTodos lassen sich löschen. Fügen Sie hierzu auf der Startseite bei den Todos einen individuellen Löschlink ein."
+  },
+  {
+    "objectID": "u7/index.html#aufgabe-1-die-todo-liste",
+    "href": "u7/index.html#aufgabe-1-die-todo-liste",
+    "title": "Übung 7: AdonisJS: Eine Todo-Liste",
+    "section": "",
+    "text": "Budget: 90 Minuten\n\nIn dieser Woche soll Step-by-Step eine Todo-Liste-App entstehen, die ToDos verwaltet. Das natürlich in AdonisJS.\nUnsere Schritte:\n\nErstellen Sie eine neue AdonisJS Anwendung an. Konfigurieren Sie entsprechend des Vorgehens aus der Vorlesung das Projekt, insbesondere die Datenbank-Verbindung.\nLegeb Sie eine Datenbank mit einer Tabelle mit dem Namen todos und den Attributen id, text an. Am Besten fügen Sie ein paar Beispiel-Todos gleich ein.\nModifizieren Sie die Route / so, dass sie die Todos alle vollständig anzeigt. Legen Sie dafür ein geeignetes Template an.\nMit einem Formular können neue Todos angelegt werden. Hierzu brauchen Sie eine Route mit Formular und eine Route, die dieses verarbeitet.\nTodos lassen sich löschen. Fügen Sie hierzu auf der Startseite bei den Todos einen individuellen Löschlink ein."
+  },
+  {
+    "objectID": "u7/index.html#homework-woche",
+    "href": "u7/index.html#homework-woche",
+    "title": "Übung 7: AdonisJS: Eine Todo-Liste",
+    "section": "Homework Woche",
+    "text": "Homework Woche\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Eine bessere Todo-Liste\n\nBudget: 15 Minuten\n\n\nErweitern Sie die Todo-App um die Möglichkeit Todos zu kategorisieren. Jedem Todo kann keine oder eine Kategorie zugewiesen werden.\nErweitern Sie hierzu in geeigneter Weise (siehe Datenbank-Vorlesung!) das Datenbank-Schema.\nSetzen Sie Zuweisung in Code um – hier gibt es verschiedene Möglichkeiten und wenn es funktioniert haben Sie eine richtige Lösung! Hier muss man knobeln!"
+  },
+  {
+    "objectID": "capstone-1.html",
+    "href": "capstone-1.html",
+    "title": "Capstone Übung C.1: Javascript Basics",
     "section": "",
     "text": "Wichtig: Bearbeiten Sie die Übungen bevor Sie sich die Lösungen ansehen."
   },
   {
-    "objectID": "cornerstone-1.html#aufgabe-c.1.1",
-    "href": "cornerstone-1.html#aufgabe-c.1.1",
-    "title": "Cornerstone Übung C.1: Javascript Basics",
+    "objectID": "capstone-1.html#aufgabe-c.1.1",
+    "href": "capstone-1.html#aufgabe-c.1.1",
+    "title": "Capstone Übung C.1: Javascript Basics",
     "section": "Aufgabe C.1.1",
     "text": "Aufgabe C.1.1\nErstellen Sie eine Schleife in Javascript, die die Zahlen von 10 bis 30 ausgibt.\nLösung"
   },
   {
-    "objectID": "cornerstone-1.html#aufgabe-c.1.2",
-    "href": "cornerstone-1.html#aufgabe-c.1.2",
-    "title": "Cornerstone Übung C.1: Javascript Basics",
+    "objectID": "capstone-1.html#aufgabe-c.1.2",
+    "href": "capstone-1.html#aufgabe-c.1.2",
+    "title": "Capstone Übung C.1: Javascript Basics",
     "section": "Aufgabe C.1.2",
     "text": "Aufgabe C.1.2\nGegeben ist der untenstehende String. Geben Sie mit Javascript die einzelnen Buchstaben des Strings in umgekehrter Reihenfolge einzeln aus.\nDas Huhn frisst gerne Körner.\nLösung"
   },
   {
-    "objectID": "cornerstone-1.html#aufgabe-c.1.3",
-    "href": "cornerstone-1.html#aufgabe-c.1.3",
-    "title": "Cornerstone Übung C.1: Javascript Basics",
+    "objectID": "capstone-1.html#aufgabe-c.1.3",
+    "href": "capstone-1.html#aufgabe-c.1.3",
+    "title": "Capstone Übung C.1: Javascript Basics",
     "section": "Aufgabe C.1.3",
     "text": "Aufgabe C.1.3\nErstellen Sie eine Funktion mit dem Namen subtract, die als Parameter zwei Zahlen übergeben bekommt, die Zahl im zweiten Parameter von der Zahl im ersten Parameter subtrahiert und das Ergebnis dieser Subtraktion zurückgibt. Geben Sie einen Beispiel-Aufruf der Funktion an, der das Ergebnis ausgibt.\nLösung"
   },
   {
-    "objectID": "cornerstone-1.html#aufgabe-c.1.4",
-    "href": "cornerstone-1.html#aufgabe-c.1.4",
-    "title": "Cornerstone Übung C.1: Javascript Basics",
+    "objectID": "capstone-1.html#aufgabe-c.1.4",
+    "href": "capstone-1.html#aufgabe-c.1.4",
+    "title": "Capstone Übung C.1: Javascript Basics",
     "section": "Aufgabe C.1.4",
     "text": "Aufgabe C.1.4\nWelche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie!\nconsole.log(weisnicht(3, weisnicht(2, 2, 11), 47))\n\nfunction weisnicht(a, b, c) {\n    return a * b\n    console.log(a * a)    \n}\nLösung"
   },
   {
-    "objectID": "cornerstone-1.html#aufgabe-c.1.5",
-    "href": "cornerstone-1.html#aufgabe-c.1.5",
-    "title": "Cornerstone Übung C.1: Javascript Basics",
+    "objectID": "capstone-1.html#aufgabe-c.1.5",
+    "href": "capstone-1.html#aufgabe-c.1.5",
+    "title": "Capstone Übung C.1: Javascript Basics",
     "section": "Aufgabe C.1.5",
     "text": "Aufgabe C.1.5\nGegeben ist der nachfolgende Code-Ausschnitt in Javascript. Erstellen Sie Code, der jeweils das Attribut vorname aller Objekte im Array data ausgibt. Der Code soll auch dann funktionieren, wenn weitere Objekte in das Array eingefügt werden.\nconst  data = [\n    { nachname: \"Karlsen\", vorname: \"Karl\" },\n    { nachname: \"Klarsen\", vorname: \"Karla\" }\n]\nLösung"
   },
   {
-    "objectID": "cornerstone-1.html#aufgabe-c.1.6",
-    "href": "cornerstone-1.html#aufgabe-c.1.6",
-    "title": "Cornerstone Übung C.1: Javascript Basics",
+    "objectID": "capstone-1.html#aufgabe-c.1.6",
+    "href": "capstone-1.html#aufgabe-c.1.6",
+    "title": "Capstone Übung C.1: Javascript Basics",
     "section": "Aufgabe C.1.6",
     "text": "Aufgabe C.1.6\nSchreiben Sie eine Arrow-Function, die zwei Zahlen entgegennimmt und die Summe der beiden Zahlen zurückgibt. Wenn Sonderfälle auftreten, behandeln Sie diese entsprechend.\nLösung"
   },
   {
-    "objectID": "cornerstone-1.html#aufgabe-c.1.7",
-    "href": "cornerstone-1.html#aufgabe-c.1.7",
-    "title": "Cornerstone Übung C.1: Javascript Basics",
+    "objectID": "capstone-1.html#aufgabe-c.1.7",
+    "href": "capstone-1.html#aufgabe-c.1.7",
+    "title": "Capstone Übung C.1: Javascript Basics",
     "section": "Aufgabe C.1.7",
     "text": "Aufgabe C.1.7\nSchreiben Sie eine Schleife, die die Namen aus dem Array ausgibt und abbricht, sobald der Name Rebecca auftaucht. Dabei soll der name Rebecca noch ausgegeben werden. Der Code darf kein if-Statement enthalten.\nconst namen = ['Malte', 'Svenja', 'Rebecca', 'Klaus'] \nLösung"
   },
   {
-    "objectID": "cornerstone-1.html#aufgabe-c.1.8",
-    "href": "cornerstone-1.html#aufgabe-c.1.8",
-    "title": "Cornerstone Übung C.1: Javascript Basics",
+    "objectID": "capstone-1.html#aufgabe-c.1.8",
+    "href": "capstone-1.html#aufgabe-c.1.8",
+    "title": "Capstone Übung C.1: Javascript Basics",
     "section": "Aufgabe C.1.8",
     "text": "Aufgabe C.1.8\nErstellen Sie ein Objekt auto, das folgende Eigenschaften und Methoden enthält:\n\nEigenschaften:\n\nmarke (z. B. “BMW”)\nmodell (z. B. “X3”)\nbaujahr (z. B. 2021)\n\nMethoden:\n\nstart() → gibt \"Das Auto startet.\" in der Konsole aus.\n\ninfo() → gibt eine Beschreibung des Autos aus, z. B. \"BMW X3, Baujahr 2021\".\n\n\nRufen Sie beide Methoden anschließend auf.\nLösung"
   },
   {
-    "objectID": "cornerstone-1.html#aufgabe-c.1.9",
-    "href": "cornerstone-1.html#aufgabe-c.1.9",
-    "title": "Cornerstone Übung C.1: Javascript Basics",
+    "objectID": "capstone-1.html#aufgabe-c.1.9",
+    "href": "capstone-1.html#aufgabe-c.1.9",
+    "title": "Capstone Übung C.1: Javascript Basics",
     "section": "Aufgabe C.1.9",
     "text": "Aufgabe C.1.9\nGegeben ist folgendes Objekt:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n};\n\nVerwenden Sie Object Destructuring, um die Werte der Eigenschaften vorname und beruf aus dem Objekt zu extrahieren.\n\nGeben Sie die Werte anschließend mit console.log() aus.\n\nLösung"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Web Anwendungen Übungen",
-    "section": "",
-    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nÜbung 1: Setup & Basics\nÜbung 2: Node.js und Kommandozeile\nÜbung 3\nÜbung 4\nÜbung 5: Objektorientierung und AdonisJS\nCornerstone Übung 1: Javascript Basics\nÜbung 6: AdonisJS und Datenbanken\nÜbung 7: AdonisJS: Eine Todo-Liste\nÜbung 8+9: Interaktive Übung (Link siehe Vorlesung)\nCornerstone Übung 2: AdonisJS Entwicklung\nÜbung 10\nÜbung 11\nÜbung 12\nÜbung 13\nCornerstone Übung 3: CSS\nÜbung 14\nCornerstone Übung 4: Client-seitiges Javascript"
-  },
-  {
     "objectID": "loesungen/c-1-3.html",
     "href": "loesungen/c-1-3.html",
-    "title": "Cornerstone Übung C.1.3: Javascript Basics",
+    "title": "Capstone Übung C.1.3: Javascript Basics",
     "section": "",
     "text": "Erstellen Sie eine Funktion mit dem Namen subtract, die als Parameter zwei Zahlen übergeben bekommt, die Zahl im zweiten Parameter von der Zahl im ersten Parameter subtrahiert und das Ergebnis dieser Subtraktion zurückgibt. Geben Sie einen Beispiel-Aufruf der Funktion an, der das Ergebnis ausgibt.\n\nLösung:\nfunction subtract(a, b) {\n  return a - b;\n}\n\n// Beispiel-Aufruf:\nconsole.log(subtract(10, 3)); // Ausgabe: 7\n\nErklärung:\n\nfunction subtract(a, b) definiert eine Funktion mit zwei Parametern.\nreturn a - b; führt die Subtraktion aus und gibt das Ergebnis zurück.\nconsole.log(subtract(10, 3)); ruft die Funktion auf und gibt das Ergebnis 7 in der Konsole aus."
   },
   {
     "objectID": "loesungen/c-1-6.html",
     "href": "loesungen/c-1-6.html",
-    "title": "Cornerstone Übung C.1.6: Javascript Basics",
+    "title": "Capstone Übung C.1.6: Javascript Basics",
     "section": "",
     "text": "Schreiben Sie eine Arrow-Function, die zwei Zahlen entgegennimmt und die Summe der beiden Zahlen zurückgibt. Wenn Sonderfälle auftreten, behandeln Sie diese entsprechend. Geben Sie einen Beispiel-Aufruf an.\n\nLösung:\nconst add  = (a,b)  =&gt; {\n      return a+b \n}\n\n// Beispielaufruf\nconsole.log(add(5, 7)) // Ausgabe: 12\n\nErklärung:\n\nEs wird eine Arrow Function mit zwei Parametern (a und b) definiert und der Konstanten add zugewiesen.\nDas Ergebnis der Addition von a + b wird mit return zurückgegeben.\nconsole.log(add(5, 7)); gibt das Ergebnis 12 aus.\n\n\n\nAlternative Lösung in Kurzform\nconst add = (a, b) =&gt; a + b\n\n// Beispielaufruf:\nconsole.log(add(5, 7)) // Ausgabe: 12\nErklärung:\n\nconst add = (a, b) =&gt; a + b definiert eine kurze Arrow Function mit zwei Parametern (a und b).\nDer Ausdruck a + b wird automatisch zurückgegeben (kein return nötig, da es nur ein Ausdruck ist).\nconsole.log(add(5, 7)) gibt das Ergebnis 12 aus.\nEs gibt keine Sonderfälle in diesem Beispiel. Bei anderen Funktion jedoch sehrwohl, Beispiel: Bei einer Division müsste immer geprüft werden, ob durch 0 geteilt wird und ggf. ein Fehler ausgegeben werden."
   },
   {
     "objectID": "loesungen/c-1-5.html",
     "href": "loesungen/c-1-5.html",
-    "title": "Cornerstone Übung C.1.5: Javascript Basics",
+    "title": "Capstone Übung C.1.5: Javascript Basics",
     "section": "",
     "text": "Welche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie!\nconst  data = [\n    { nachname: \"Karlsen\", vorname: \"Karl\" },\n    { nachname: \"Klarsen\", vorname: \"Karla\" }\n]\n\nLösung:\nconst  data = [\n    { nachname: \"Karlsen\", vorname: \"Karl\" },\n    { nachname: \"Klarsen\", vorname: \"Karla\" }\n]\n\nfor(let i=0; i&lt;data.length; i++){\n\n    console.log(data[i].vorname) \n}\n\nErklärung:\n\nHier liegt ein Array mit Objekten vor, welches wir mit einer Schleife durchwandern können.\ndata[i] enthält bei jedem Schleifendurchlauf das Objekt an der Stelle i des Arrays.\nAuf die Attribute dieses jeweiligen Objekts können wir mit der dot-Notation zugreifen und ausgeben: console.log(data[i].vorname)."
   },
   {
     "objectID": "loesungen/c-1-4.html",
     "href": "loesungen/c-1-4.html",
-    "title": "Cornerstone Übung C.1.4: Javascript Basics",
+    "title": "Capstone Übung C.1.4: Javascript Basics",
     "section": "",
     "text": "Welche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie!\nconsole.log(weisnicht(3, weisnicht(2, 2, 11), 47))\n\nfunction weisnicht(a, b, c) {\n    return a * b\n    console.log(a * a)    \n}\n\nLösung:\n\nAnalyse\n\nVerschachtelter Funktionsaufruf:\nZuerst wird die innere Funktion ausgeführt:\nweisnicht(2, 2, 11)\n\na = 2, b = 2, c = 11\n\nRückgabe: a * b = 4\n\nDie Zeile console.log(a * a) wird nicht ausgeführt, da sie nach dem return steht.\n\nÄußere Funktion:\nweisnicht(3, 4, 47)\n\na = 3, b = 4, c = 47\nc wird in der Funktion nicht verwendet und hat daher keinen Einfluss.\nRückgabe: 3 * 4 = 12\n\nEndergebnis:\nconsole.log(12)\n\n\n\nErgebnis\nDie Ausgabe des Programms lautet:\n12\n\n\nBegründung\n\nDer return-Befehl beendet die Funktion sofort.\n\nCode nach return (wie console.log(a * a)) wird nicht mehr ausgeführt.\n\nEs tritt kein Fehler auf.\n\nDie Berechnung erfolgt korrekt durch Verschachtelung der Funktionsaufrufe:\n\nweisnicht(2, 2, 11) → 4\nweisnicht(3, 4, 47) → 12"
   }

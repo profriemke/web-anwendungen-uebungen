@@ -1,5 +1,5 @@
 ---
-  title: "Cornerstone Übung C.1.9: Javascript Basics"
+  title: "Capstone Übung C.1.9: Javascript Basics"
 ---
 
 Gegeben ist folgendes Objekt:

@@ -1,5 +1,5 @@
 ---
-  title: "Cornerstone Übung C.1.1: Javascript Basics"
+  title: "Capstone Übung C.1.1: Javascript Basics"
 ---
 Gegeben ist der untenstehende String. Geben Sie mit Javascript die einzelnen Buchstaben des Strings in umgekehrter Reihenfolge _einzeln_ aus.
 ```text
