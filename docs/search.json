@@ -417,14 +417,14 @@
     "href": "u5/index.html",
     "title": "Übung 5: Objektorientierung und AdonisJS",
     "section": "",
-    "text": "Budget: 10 Minuten\n\nGegeben ist folgende Code:\nfunction printPerson(_________________________________) {\n  console.log(`Name: ${firstName} ${lastName}`);\n}\n\nconst person = {\n  firstName: 'Jane',\n  lastName: 'Doe',\n  age: 25,\n  country: 'Germany'\n};\n\nprintPersonInfo(person);\n\nObject Destructuring kommt in der Web-Entwicklung mit Javascript häufig vor. Erklären Sie den Begriff. Achten Sie dabei auf eine fachlich korrekte und vollständige Antwort.\nErgänzen Sie den freien Platz bei der Funktion in der Parameter-Übergabe mittels Object Destructuring so, dass der Code funktioniert.\nWas sind die Vorteile von Object Destructuring?"
+    "text": "Budget: 10 Minuten\n\nGegeben ist folgende Code:\nfunction printPersonInfo(_________________________________) {\n  console.log(`Name: ${firstName} ${lastName}`);\n}\n\nconst person = {\n  firstName: 'Jane',\n  lastName: 'Doe',\n  age: 25,\n  country: 'Germany'\n};\n\nprintPersonInfo(person);\n\nObject Destructuring kommt in der Web-Entwicklung mit Javascript häufig vor. Erklären Sie den Begriff. Achten Sie dabei auf eine fachlich korrekte und vollständige Antwort.\nErgänzen Sie den freien Platz bei der Funktion in der Parameter-Übergabe mittels Object Destructuring so, dass der Code funktioniert.\nWas sind die Vorteile von Object Destructuring?"
   },
   {
     "objectID": "u5/index.html#aufgabe-1-object-destructuring",
     "href": "u5/index.html#aufgabe-1-object-destructuring",
     "title": "Übung 5: Objektorientierung und AdonisJS",
     "section": "",
-    "text": "Budget: 10 Minuten\n\nGegeben ist folgende Code:\nfunction printPerson(_________________________________) {\n  console.log(`Name: ${firstName} ${lastName}`);\n}\n\nconst person = {\n  firstName: 'Jane',\n  lastName: 'Doe',\n  age: 25,\n  country: 'Germany'\n};\n\nprintPersonInfo(person);\n\nObject Destructuring kommt in der Web-Entwicklung mit Javascript häufig vor. Erklären Sie den Begriff. Achten Sie dabei auf eine fachlich korrekte und vollständige Antwort.\nErgänzen Sie den freien Platz bei der Funktion in der Parameter-Übergabe mittels Object Destructuring so, dass der Code funktioniert.\nWas sind die Vorteile von Object Destructuring?"
+    "text": "Budget: 10 Minuten\n\nGegeben ist folgende Code:\nfunction printPersonInfo(_________________________________) {\n  console.log(`Name: ${firstName} ${lastName}`);\n}\n\nconst person = {\n  firstName: 'Jane',\n  lastName: 'Doe',\n  age: 25,\n  country: 'Germany'\n};\n\nprintPersonInfo(person);\n\nObject Destructuring kommt in der Web-Entwicklung mit Javascript häufig vor. Erklären Sie den Begriff. Achten Sie dabei auf eine fachlich korrekte und vollständige Antwort.\nErgänzen Sie den freien Platz bei der Funktion in der Parameter-Übergabe mittels Object Destructuring so, dass der Code funktioniert.\nWas sind die Vorteile von Object Destructuring?"
   },
   {
     "objectID": "u5/index.html#aufgabe-2-die-erste-seite-in-adonisjs",

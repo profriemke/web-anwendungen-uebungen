@@ -7,7 +7,7 @@
 
 Gegeben ist folgende Code:
 ```javascript
-function printPerson(_________________________________) {
+function printPersonInfo(_________________________________) {
   console.log(`Name: ${firstName} ${lastName}`);
 }
 
