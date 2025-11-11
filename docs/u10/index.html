@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Capstone Übung C.1.3: Javascript Basics – Web Anwendungen Übungen</title>
+<title>Übung 10: Mehr CSS – Web Anwendungen Übungen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -127,13 +127,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-wöchentliche-übungen" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">wöchentliche Übungen</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-wöchentliche-übungen">    
+        <li>
+    <a class="dropdown-item" href="../u1/index.html">
+ <span class="dropdown-text">Übung 1: Setup &amp; Basics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u2/index.html">
+ <span class="dropdown-text">Übung 2: Node.js und Kommandozeile</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u3/index.html">
+ <span class="dropdown-text">Übung 3: Arrays, Funktionen und mehr</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u4/index.html">
+ <span class="dropdown-text">Übung 4: Strings, Datei und Datenbank</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u5/index.html">
+ <span class="dropdown-text">Übung 5: Objektorientierung und AdonisJS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u6/index.html">
+ <span class="dropdown-text">Übung 6: AdonisJS und Datenbanken</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u7/index.html">
+ <span class="dropdown-text">Übung 7: AdonisJS: Eine Todo-Liste</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-capstone-übungen" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Capstone Übungen</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-capstone-übungen">    
         <li>
-    <a class="dropdown-item" href="../capstone-1.html">
+    <a class="dropdown-item" href="../c1/index.html">
  <span class="dropdown-text">C.1: Javascript Basics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../c2/index.html">
+ <span class="dropdown-text">C.2: AdonisdJS</span></a>
   </li>  
     </ul>
   </li>
@@ -153,7 +192,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lösung" id="toc-lösung" class="nav-link active" data-scroll-target="#lösung">Lösung:</a></li>
+  <li><a href="#aufgabe-1-css-verstehen" id="toc-aufgabe-1-css-verstehen" class="nav-link active" data-scroll-target="#aufgabe-1-css-verstehen">Aufgabe 1: CSS verstehen</a></li>
+  <li><a href="#aufgabe-2-css-dialogbox-in-budget-oder-luxus" id="toc-aufgabe-2-css-dialogbox-in-budget-oder-luxus" class="nav-link" data-scroll-target="#aufgabe-2-css-dialogbox-in-budget-oder-luxus">Aufgabe 2: CSS Dialogbox in Budget oder Luxus</a></li>
+  <li><a href="#aufgabe-3-css-fonts" id="toc-aufgabe-3-css-fonts" class="nav-link" data-scroll-target="#aufgabe-3-css-fonts">Aufgabe 3: CSS Fonts</a></li>
+  <li><a href="#aufgabe-4-das-menü-bitte" id="toc-aufgabe-4-das-menü-bitte" class="nav-link" data-scroll-target="#aufgabe-4-das-menü-bitte">Aufgabe 4: Das Menü bitte!</a></li>
+  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a>
+  <ul class="collapse">
+  <li><a href="#aufgabe-1-die-tabelle" id="toc-aufgabe-1-die-tabelle" class="nav-link" data-scroll-target="#aufgabe-1-die-tabelle">Aufgabe 1: Die Tabelle</a></li>
+  <li><a href="#aufgabe-2-spurensuche" id="toc-aufgabe-2-spurensuche" class="nav-link" data-scroll-target="#aufgabe-2-spurensuche">Aufgabe 2: Spurensuche</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -162,7 +209,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Capstone Übung C.1.3: Javascript Basics</h1>
+<h1 class="title">Übung 10: Mehr CSS</h1>
 </div>
 
 
@@ -179,22 +226,133 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Erstellen Sie eine Funktion mit dem Namen <code>subtract</code>, die als Parameter zwei Zahlen übergeben bekommt, die Zahl im zweiten Parameter von der Zahl im ersten Parameter subtrahiert und das Ergebnis dieser Subtraktion zurückgibt. Geben Sie einen Beispiel-Aufruf der Funktion an, der das Ergebnis ausgibt.</p>
-<section id="lösung" class="level3">
-<h3 class="anchored" data-anchor-id="lösung">Lösung:</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">subtract</span>(a<span class="op">,</span> b) {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> a <span class="op">-</span> b<span class="op">;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">// Beispiel-Aufruf:</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">subtract</span>(<span class="dv">10</span><span class="op">,</span> <span class="dv">3</span>))<span class="op">;</span> <span class="co">// Ausgabe: 7</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<section id="erklärung" class="level4">
-<h4 class="anchored" data-anchor-id="erklärung">Erklärung:</h4>
-<ul>
-<li><code>function subtract(a, b)</code> definiert eine Funktion mit zwei Parametern.</li>
-<li><code>return a - b;</code> führt die Subtraktion aus und gibt das Ergebnis zurück.</li>
-<li><code>console.log(subtract(10, 3));</code> ruft die Funktion auf und gibt das Ergebnis <code>7</code> in der Konsole aus.</li>
-</ul>
+<section id="aufgabe-1-css-verstehen" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-1-css-verstehen">Aufgabe 1: CSS verstehen</h2>
+<blockquote class="blockquote">
+<p>Budget: 10 Minuten</p>
+</blockquote>
+<p>Untenstehend sehen Sie einen Ausschnitt aus einem CSS-Stylesheet.</p>
+<ol type="a">
+<li>Zeichnen Sie ein leeres Browser-Fenster und dort hinein die aus diesem Code entstehende Aufteilung.</li>
+<li>Beschriften Sie das Ergebnis mit Pfeilen, bei denen Sie angeben, welche Farbe und welchen Rand das dargestellte Element hat.</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!doctype</span> html<span class="dt">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"de"</span><span class="dt">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> charset</span><span class="op">=</span><span class="st">"utf-8"</span><span class="dt">&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Prüfung<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">style</span><span class="dt">&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">.zweite</span> {</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="kw">width</span><span class="ch">:</span> <span class="dv">50</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="kw">height</span><span class="ch">:</span> <span class="dv">50</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        <span class="kw">background-color</span><span class="ch">:</span> <span class="cn">green</span><span class="op">;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        <span class="kw">border</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        <span class="kw">border-style</span><span class="ch">:</span> <span class="dv">solid</span><span class="op">;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="kw">float</span><span class="ch">:</span> <span class="dv">left</span><span class="op">;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>      <span class="pp">#zweiter</span> {</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        <span class="kw">width</span><span class="ch">:</span> <span class="dv">100</span><span class="dt">vw</span><span class="op">;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        <span class="kw">height</span><span class="ch">:</span> <span class="dv">50</span><span class="dt">vh</span><span class="op">;</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        <span class="kw">background-color</span><span class="ch">:</span> <span class="cn">red</span><span class="op">;</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">style</span><span class="dt">&gt;</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id</span><span class="op">=</span><span class="st">"zweiter"</span><span class="dt">&gt;</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"zweite"</span><span class="dt">&gt;</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"zweite"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="aufgabe-2-css-dialogbox-in-budget-oder-luxus" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-2-css-dialogbox-in-budget-oder-luxus">Aufgabe 2: CSS Dialogbox in Budget oder Luxus</h2>
+<blockquote class="blockquote">
+<p>Budget: 30 Minuten</p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="2.png" class="img-fluid figure-img"></p>
+<figcaption>Budget-Vaiante links Luxus-Variante rechts</figcaption>
+</figure>
+</div>
+<ol type="a">
+<li>Erstellen Sie eine Dialogbox mit 500x300 Pixel, die Sie wie nachstehend abgebildet gestalten. Entweder in der einfachen Budget-Variante (links) oder der Luxusvariante (rechts) oder gar noch viel schöner (nicht abgebildet)– wie Sie möchten. Lösungshinweis: Es handelt sich hier um drei <code>div</code>, wovon zwei positioniert sind und eine Schachtelung.</li>
+<li>Erstellen Sie in einem beliebigen AdonisJS-Projekt eine Route /dialog mit einer Seite, die diese Dialogbox anzeigt.</li>
+</ol>
+</section>
+<section id="aufgabe-3-css-fonts" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-3-css-fonts">Aufgabe 3: CSS Fonts</h2>
+<blockquote class="blockquote">
+<p>Budget: 25 Minuten</p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="3-1.png" class="img-fluid figure-img"></p>
+<figcaption>Abbildungen für Aufgaben a., b. und c.</figcaption>
+</figure>
+</div>
+<ol type="a">
+<li>Erstellen Sie HTML und CSS für die obige Darstellung. Die erste Abbildung zeigt den ungestylten Text, die zweite den gestylten Hinweis.</li>
+<li>Setzen Sie einen Font Ihrer Wahl von Ihrem lokalen Rechner.</li>
+<li>Binden Sie einen Web-Font von <a href="https://fonts.google.com">https://fonts.google.com</a> ein und verwenden Sie diesen.</li>
+<li>Ergänzen Sie den Code so, dass nur die Überschrift erscheint und bei Hovern der Überschrift der Text runter (Siehe Abblidung unten). Dies lässt sich realisieren indem der Text mit <code>display: none</code> zuerst ausgeblendet wird und bei <code>:hover</code> des Titels eingeblendet wird. Hier muss man knobeln!</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="3-2.png" class="img-fluid figure-img"></p>
+<figcaption>Abbildungen für Aufgabe d.</figcaption>
+</figure>
+</div>
+</section>
+<section id="aufgabe-4-das-menü-bitte" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-4-das-menü-bitte">Aufgabe 4: Das Menü bitte!</h2>
+<blockquote class="blockquote">
+<p>Budget: 20 Minuten</p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="4.png" class="img-fluid figure-img"></p>
+<figcaption>Das Design des Menus</figcaption>
+</figure>
+</div>
+<p>Gegeben ist das untenstehende HTML. Es soll das oben abgebildete Menu daraus erstellt werden. Geben Sie das dafür erforderliche CSS an. Sofern Sie Maßangaben benötigen, schätzen Sie diese. Außerhalb des Styles soll nichts geändert werden und es soll keine Positionierung mit <code>relative</code>, <code>absolute</code> oder <code>fixed</code> verwendet werden. Menüpunkte sollen in hellblau hovern.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"de"</span><span class="dt">&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Aufgabe<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">style</span><span class="dt">&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">style</span><span class="dt">&gt;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"navi"</span><span class="dt">&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"menuitem"</span><span class="dt">&gt;</span>Home<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"menuitem"</span><span class="dt">&gt;</span>Shop<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"menuitem"</span><span class="dt">&gt;</span>Impressum<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="homework" class="level2">
+<h2 class="anchored" data-anchor-id="homework">Homework</h2>
+<p>Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.</p>
+<section id="aufgabe-1-die-tabelle" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-1-die-tabelle">Aufgabe 1: Die Tabelle</h3>
+<blockquote class="blockquote">
+<p>Budget: 15 Minuten</p>
+</blockquote>
+<p>Erstellen Sie eine Tabelle in HTML mit fünf Zeilen und einer Überschrift-Zeile. Die Überschrift- Zeile soll dunkelblau hinterlegt sein. Gerade Zeilen sind hellblau und ungerade Zeilen werden weiß hinterlegt. Hinweis: Stichwort <code>odd</code>/<code>even</code>.</p>
+</section>
+<section id="aufgabe-2-spurensuche" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-2-spurensuche">Aufgabe 2: Spurensuche</h3>
+<blockquote class="blockquote">
+<p>Budget: 10 Minuten</p>
+</blockquote>
+<p>Wie groß ist die Box eines Elements, das keine Größenangabe hat? Testen Sie dies, indem Sie ein Beispiel mit <code>h1</code>, <code>h2</code>, <code>a</code>, <code>div</code> und <code>p</code> erstellen und dies mit dem Inspektor der Entwicklungswerkzeuge untersuchen. Klären Sie in diesem Zusammenhang was Inline und Block Elemente sind. Welche der oben genannten Elemente sind nach Ihren Untersuchungen <code>inline</code> und welche <code>block</code>?</p>
 
 
 </section>

@@ -8,10 +8,28 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - text: "wöchentliche Übungen"
+        menu:
+          - href: u1/index.qmd
+            text: "Übung 1: Setup & Basics"
+          - href: u2/index.qmd
+            text: "Übung 2: Node.js und Kommandozeile"
+          - href: u3/index.qmd    
+            text: "Übung 3: Arrays, Funktionen und mehr"
+          - href: u4/index.qmd    
+            text: "Übung 4: Strings, Datei und Datenbank"
+          - href: u5/index.qmd    
+            text: "Übung 5: Objektorientierung und AdonisJS"
+          - href: u6/index.qmd    
+            text: "Übung 6: AdonisJS und Datenbanken"
+          - href: u7/index.qmd    
+            text: "Übung 7: AdonisJS: Eine Todo-Liste"
       - text: "Capstone Übungen"
         menu:
-          - href: capstone-1.qmd
+          - href: c1/index.qmd
             text: "C.1: Javascript Basics"
+          - href: c2/index.qmd
+            text: "C.2: AdonisdJS"
 
 format:
   html:

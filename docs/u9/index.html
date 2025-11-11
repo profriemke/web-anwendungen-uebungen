@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Capstone Übung C.1.1: Javascript Basics – Web Anwendungen Übungen</title>
+<title>Übung 9: Grundlagen CSS – Web Anwendungen Übungen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -127,13 +127,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-wöchentliche-übungen" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">wöchentliche Übungen</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-wöchentliche-übungen">    
+        <li>
+    <a class="dropdown-item" href="../u1/index.html">
+ <span class="dropdown-text">Übung 1: Setup &amp; Basics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u2/index.html">
+ <span class="dropdown-text">Übung 2: Node.js und Kommandozeile</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u3/index.html">
+ <span class="dropdown-text">Übung 3: Arrays, Funktionen und mehr</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u4/index.html">
+ <span class="dropdown-text">Übung 4: Strings, Datei und Datenbank</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u5/index.html">
+ <span class="dropdown-text">Übung 5: Objektorientierung und AdonisJS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u6/index.html">
+ <span class="dropdown-text">Übung 6: AdonisJS und Datenbanken</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u7/index.html">
+ <span class="dropdown-text">Übung 7: AdonisJS: Eine Todo-Liste</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-capstone-übungen" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Capstone Übungen</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-capstone-übungen">    
         <li>
-    <a class="dropdown-item" href="../capstone-1.html">
+    <a class="dropdown-item" href="../c1/index.html">
  <span class="dropdown-text">C.1: Javascript Basics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../c2/index.html">
+ <span class="dropdown-text">C.2: AdonisdJS</span></a>
   </li>  
     </ul>
   </li>
@@ -153,7 +192,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lösung" id="toc-lösung" class="nav-link active" data-scroll-target="#lösung">Lösung:</a></li>
+  <li><a href="#aufgabe-1-einfaches-css-styling" id="toc-aufgabe-1-einfaches-css-styling" class="nav-link active" data-scroll-target="#aufgabe-1-einfaches-css-styling">Aufgabe 1: Einfaches CSS-Styling</a></li>
+  <li><a href="#aufgabe-2-ein-magisches-rechteck" id="toc-aufgabe-2-ein-magisches-rechteck" class="nav-link" data-scroll-target="#aufgabe-2-ein-magisches-rechteck">Aufgabe 2: Ein magisches Rechteck</a></li>
+  <li><a href="#aufgabe-3-mehr-magie-bei-berührung-wechselt-die-farbe" id="toc-aufgabe-3-mehr-magie-bei-berührung-wechselt-die-farbe" class="nav-link" data-scroll-target="#aufgabe-3-mehr-magie-bei-berührung-wechselt-die-farbe">Aufgabe 3: Mehr Magie: Bei Berührung wechselt die Farbe</a></li>
+  <li><a href="#aufgabe-4-eine-box-in-der-box" id="toc-aufgabe-4-eine-box-in-der-box" class="nav-link" data-scroll-target="#aufgabe-4-eine-box-in-der-box">Aufgabe 4: Eine Box in der Box</a></li>
+  <li><a href="#aufgabe-5-bunt-bunt-sind-die-css-boxen" id="toc-aufgabe-5-bunt-bunt-sind-die-css-boxen" class="nav-link" data-scroll-target="#aufgabe-5-bunt-bunt-sind-die-css-boxen">Aufgabe 5: Bunt, bunt sind die CSS-Boxen</a></li>
+  <li><a href="#aufgabe-6-css-mit-abstand-betrachtet" id="toc-aufgabe-6-css-mit-abstand-betrachtet" class="nav-link" data-scroll-target="#aufgabe-6-css-mit-abstand-betrachtet">Aufgabe 6: CSS mit Abstand betrachtet</a></li>
+  <li><a href="#aufgabe-7-zeigen-sie-position" id="toc-aufgabe-7-zeigen-sie-position" class="nav-link" data-scroll-target="#aufgabe-7-zeigen-sie-position">Aufgabe 7: Zeigen Sie Position!</a></li>
+  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a>
+  <ul class="collapse">
+  <li><a href="#aufgabe-1-boxen" id="toc-aufgabe-1-boxen" class="nav-link" data-scroll-target="#aufgabe-1-boxen">Aufgabe 1: Boxen</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -162,7 +211,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Capstone Übung C.1.1: Javascript Basics</h1>
+<h1 class="title">Übung 9: Grundlagen CSS</h1>
 </div>
 
 
@@ -179,24 +228,165 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Gegeben ist der untenstehende String. Geben Sie mit Javascript die einzelnen Buchstaben des Strings in umgekehrter Reihenfolge <em>einzeln</em> aus.</p>
-<pre class="text"><code>Das Huhn frisst gerne Körner.</code></pre>
-<section id="lösung" class="level3">
-<h3 class="anchored" data-anchor-id="lösung">Lösung:</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> text <span class="op">=</span> <span class="st">"Das Huhn frisst gerne Körner."</span><span class="op">;</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> text<span class="op">.</span><span class="at">length</span> <span class="op">-</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&gt;=</span> <span class="dv">0</span><span class="op">;</span> i<span class="op">--</span>) {</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(text[i])<span class="op">;</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<section id="erklärung" class="level4">
-<h4 class="anchored" data-anchor-id="erklärung">Erklärung:</h4>
-<ul>
-<li>Wir können Strings als Arrays behandeln und dieses Array mit einer Schleife durchwandern.</li>
-<li><code>text.length - 1</code> letzter Index des Strings (da Indizes bei <code>0</code> beginnen).</li>
-<li><code>i &gt;= 0</code> die Schleife läuft rückwärts bis zum ersten Zeichen.</li>
-<li><code>text[i]</code> greift auf das jeweilige Zeichen im String zu.</li>
-<li><code>console.log(text[i])</code> gibt jedes Zeichen einzeln in einer neuen Zeile aus.</li>
-</ul>
+<section id="aufgabe-1-einfaches-css-styling" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-1-einfaches-css-styling">Aufgabe 1: Einfaches CSS-Styling</h2>
+<blockquote class="blockquote">
+<p>Budget: 15 Minuten</p>
+</blockquote>
+<p>Gegeben ist der folgende Code-Ausschnitt, der noch in ein HTML-Dokument eingefügt werden muss. Wir verwenden dazu einfach Visual Studio Code mit seiner Vorschau-Funktion.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a> <span class="dt">&lt;</span><span class="kw">h2</span><span class="dt">&gt;</span>Erstes Kapitel<span class="dt">&lt;/</span><span class="kw">h2</span><span class="dt">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a> <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Dies ist ein Absatz<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a> <span class="dt">&lt;</span><span class="kw">h2</span><span class="dt">&gt;</span>Zweites Kapitel<span class="dt">&lt;/</span><span class="kw">h2</span><span class="dt">&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a> <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Dies ist ein Absatz<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol type="1">
+<li>Wir färben im ersten Stylesheet die Überschrift im folgenden Code rot und hinterlegen den Absatz mit einem hellgrauen Hintergrund. Das Stylesheet wird in den Header eingefügt.</li>
+<li>Was passiert mit dem zweiten Kapitel und seiner Überschrift?</li>
+<li>Schreiben Sie rechts neben den Code eine Alternative auf Basis von Individualformaten (`id).</li>
+</ol>
+</section>
+<section id="aufgabe-2-ein-magisches-rechteck" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-2-ein-magisches-rechteck">Aufgabe 2: Ein magisches Rechteck</h2>
+<blockquote class="blockquote">
+<p>Budget: 15 Minuten</p>
+</blockquote>
+<p>Simsalabim! Wir zaubern ein blaues Rechteck auf die HTML-Seite</p>
+<p>Unsere Schritte:</p>
+<ol type="1">
+<li>Erstellen Sie eine HTML-Datei und fügen in den Body ein <code>div</code> mit der <code>id</code> `box ein.</li>
+<li>Im Head legen Sie ein Style-Tag an.</li>
+<li>Stylen Sie dort das <code>div</code> mit der gegebenen <code>id</code> und geben Sie ihm –simsalabim- eine Höhe, Breite und natürlich eine zauberhafte Hintergrundfarbe!</li>
+</ol>
+</section>
+<section id="aufgabe-3-mehr-magie-bei-berührung-wechselt-die-farbe" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-3-mehr-magie-bei-berührung-wechselt-die-farbe">Aufgabe 3: Mehr Magie: Bei Berührung wechselt die Farbe</h2>
+<blockquote class="blockquote">
+<p>Budget: 15 Minuten</p>
+</blockquote>
+<p>Ziel: Ein grünes Rechteck mit 100x100 Pixeln, welches bei Berührung mit der Maus rot wird.</p>
+<p>Unsere Schritte:</p>
+<ol type="1">
+<li>Wir legen wieder eine HTML-Datei mit einem <code>div</code> an und geben dem <code>div</code> eine id.</li>
+<li>Im Style-Tag im Head stylen wir die <code>id</code> blau und geben die Abmessungen vor.</li>
+<li>Wir legen die <code>id</code> nochmals an und fügen ein <code>:hover</code> hinzu. In diesem Style vergeben wir die Hintergrundfarbe rot.</li>
+</ol>
+</section>
+<section id="aufgabe-4-eine-box-in-der-box" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-4-eine-box-in-der-box">Aufgabe 4: Eine Box in der Box</h2>
+<blockquote class="blockquote">
+<p>Budget: 15 Minuten</p>
+</blockquote>
+<p>Erzeugen Sie mittels CSS und HTML-Code die abgebildete Darstellung. Die äußere Box soll dabei 200 Pixel breit sein.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="4.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot der Darstellung</figcaption>
+</figure>
+</div>
+<p>Unsere Schritte:</p>
+<ol type="1">
+<li>Wir legen das HTML an. Hierzu nehmen wir ein <code>div</code> und geben diesem eine <code>id</code>.</li>
+<li>In das <code>div</code>-Tag setzen wir ein weiteres <code>div</code> mit einer anderen <code>id</code>.</li>
+<li>Wir stylen das äußere und innere <code>div</code>. Beachten Sie dabei, dass die Breite und Höhe des inneren <code>div</code> bei 50% des äußeren <code>div</code> liegt.</li>
+</ol>
+</section>
+<section id="aufgabe-5-bunt-bunt-sind-die-css-boxen" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-5-bunt-bunt-sind-die-css-boxen">Aufgabe 5: Bunt, bunt sind die CSS-Boxen</h2>
+<blockquote class="blockquote">
+<p>Budget: 15 Minuten</p>
+</blockquote>
+<p>Erzeugen Sie mittels CSS aus dem gegebenen HTML-Code die abgebildete Darstellung.</p>
+<p>Die äußere Box soll dabei 200 Pixel breit sein.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="5.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot der Darstellung</figcaption>
+</figure>
+</div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"de"</span><span class="dt">&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> charset</span><span class="op">=</span><span class="st">"UTF-8"</span><span class="dt">&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Bunt, bunt sind die CSS-Boxen<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"box"</span><span class="dt">&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id</span><span class="op">=</span><span class="st">"box1"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id</span><span class="op">=</span><span class="st">"box2"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="aufgabe-6-css-mit-abstand-betrachtet" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-6-css-mit-abstand-betrachtet">Aufgabe 6: CSS mit Abstand betrachtet</h2>
+<blockquote class="blockquote">
+<p>Budget: 15 Minuten</p>
+</blockquote>
+<p>Erzeugen Sie mittels CSS aus dem gegebenen HTML-Code die abgebildete Darstellung.</p>
+<p>Die Boxen sollen dabei 200 Pixel breit sein. Es soll für die Lösung keine Positionierung verwendet werden. Sie benötigen hier die Eigenschaften margin und border.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="6.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot der Darstellung</figcaption>
+</figure>
+</div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"de"</span><span class="dt">&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> charset</span><span class="op">=</span><span class="st">"UTF-8"</span><span class="dt">&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Bunt, bunt sind die CSS-Boxen<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id</span><span class="op">=</span><span class="st">"box1"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id</span><span class="op">=</span><span class="st">"box2"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="aufgabe-7-zeigen-sie-position" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-7-zeigen-sie-position">Aufgabe 7: Zeigen Sie Position!</h2>
+<blockquote class="blockquote">
+<p>Budget: 15 Minuten</p>
+</blockquote>
+<p>Erzeugen Sie mittels CSS aus dem gegebenen HTML-Code die abgebildeten Darstellungen jeweils separat. Verwenden Sie hierzu Positionierung. Welche Art der Positionierung ist hier geeignet: <code>fixed</code>, <code>relative und/oder</code>absolute. (Tipp: es sind zwei der drei).</p>
+<p>Erste Darstellung:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="7-1.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot der ersten Darstellung</figcaption>
+</figure>
+</div>
+<p>Zweite Darstellung:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="7-2.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot der zweiten Darstellung</figcaption>
+</figure>
+</div>
+</section>
+<section id="homework" class="level2">
+<h2 class="anchored" data-anchor-id="homework">Homework</h2>
+<p>Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.</p>
+<section id="aufgabe-1-boxen" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-1-boxen">Aufgabe 1: Boxen</h3>
+<p>Erstelle Sie ein Stylesheet, dass aus dem unten angegebenen HTML die folgende Darstellung erzeugt.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="home_1.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot der Darstellung</figcaption>
+</figure>
+</div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"de"</span><span class="dt">&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a> <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> charset</span><span class="op">=</span><span class="st">"UTF-8"</span><span class="dt">&gt;</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a> <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Title<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id</span><span class="op">=</span><span class="st">"box1"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id</span><span class="op">=</span><span class="st">"box2"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id</span><span class="op">=</span><span class="st">"box3"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>

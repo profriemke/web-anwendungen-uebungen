@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Übung 6: AdonisJS und Datenbanken – Web Anwendungen Übungen</title>
+<title>Übung 8: AdonisJS Sessions – Web Anwendungen Übungen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -158,10 +158,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#aufgabe-1-die-kundendatenbank" id="toc-aufgabe-1-die-kundendatenbank" class="nav-link active" data-scroll-target="#aufgabe-1-die-kundendatenbank">Aufgabe 1: Die Kundendatenbank</a></li>
-  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a>
+  <li><a href="#aufgabe-1-die-todo-liste" id="toc-aufgabe-1-die-todo-liste" class="nav-link active" data-scroll-target="#aufgabe-1-die-todo-liste">Aufgabe 1: Die Todo-Liste</a></li>
+  <li><a href="#homework-woche" id="toc-homework-woche" class="nav-link" data-scroll-target="#homework-woche">Homework Woche</a>
   <ul class="collapse">
-  <li><a href="#aufgabe-1-anmeldung-zum-workshop" id="toc-aufgabe-1-anmeldung-zum-workshop" class="nav-link" data-scroll-target="#aufgabe-1-anmeldung-zum-workshop">Aufgabe 1: Anmeldung zum Workshop</a></li>
+  <li><a href="#aufgabe-1-eine-bessere-todo-liste" id="toc-aufgabe-1-eine-bessere-todo-liste" class="nav-link" data-scroll-target="#aufgabe-1-eine-bessere-todo-liste">Aufgabe 1: Eine bessere Todo-Liste</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -171,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Übung 6: AdonisJS und Datenbanken</h1>
+<h1 class="title">Übung 8: AdonisJS Sessions</h1>
 </div>
 
 
@@ -188,32 +188,33 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="aufgabe-1-die-kundendatenbank" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-1-die-kundendatenbank">Aufgabe 1: Die Kundendatenbank</h2>
+<section id="aufgabe-1-die-todo-liste" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-1-die-todo-liste">Aufgabe 1: Die Todo-Liste</h2>
 <blockquote class="blockquote">
 <p>Budget: 90 Minuten</p>
 </blockquote>
-<ol type="a">
-<li>Erstellen Sie eine AdonisJS-Anwendung, die Zugriff auf Ihre Kunden-Datenbank aus dem ersten Semester hat. Erstellen Sie hierfür ein neues Adonis-Projekt. Sie finden die Kunden-Datenbank im Moodle-Kurs im SQLite-Format. Kopieren Sie diese in das Projekt und konfigurieren Lucid so, dass diese Datenbank verwendet wird.</li>
-<li>Geben Sie alle Kunden aus Stuttgart jeweils in einem <code>&lt;div&gt;</code> pro Kunde aus. Legen Sie am Besten hierfür eine Route /stuttgart an. Legen Sie die <code>&lt;div&gt;</code> in einer Schleife an.</li>
-<li>Die <code>&lt;div&gt;</code> aus Aufgabe b. Sollen als Attribut des <code>&lt;div&gt;</code> eine id erhalten. Die id hat den Wert der Kundennummer des jeweiligen Kunden. Beachten Sie, dass der Wert von HTML-Attributen immer in doppelten Anführungszeichen steht.</li>
-<li>Geben Sie die Kunden aus Berlin mit Name, Vorname, Straße, Postleitzahl und Ort in einer Tabelle aus. Lösungsidee: Eine Schleife im Template, die jeweils pro Datensatz eine Tabellenzeile (<code>&lt;tr&gt;</code>) erzeugt. Auch hier eine neue Route: <code>/berlin</code>.</li>
-<li>Erweitern Sie Ihren Code um ein Formular, in das eine beliebige Stadt eingegeben werden kann. Auch hier eine neue Route: <code>/suche</code>. Nach Absenden des Formulars wird diese Stadt in der Datenbank gesucht und alle Kunden werden in einer Tabelle wie in Aufgabenteil d.&nbsp;ausgegeben.</li>
-<li>Erweitern Sie Aufgabe e. so, dass nach einem weiteren Attribut, nämlich der Kundennummer gesucht werden kann.</li>
-<li>Erstellen Sie ein Formular und eine Route, welches einen neuen Kundendatensatz erfasst und in der Datenbank speichert. Als Ergebnis wird der Primärschlüssel, also die Kundennummer zurückgegeben. Suchen Sie den Kunden mit der Suche aus f.</li>
+<p>In dieser Woche soll Step-by-Step eine Todo-Liste-App entstehen, die ToDos verwaltet. Das natürlich in AdonisJS.</p>
+<p>Unsere Schritte:</p>
+<ol type="1">
+<li>Erstellen Sie eine neue AdonisJS Anwendung an. Konfigurieren Sie entsprechend des Vorgehens aus der Vorlesung das Projekt, insbesondere die Datenbank-Verbindung.</li>
+<li>Legeb Sie eine Datenbank mit einer Tabelle mit dem Namen <code>todos</code> und den Attributen <code>id, text</code> an. Am Besten fügen Sie ein paar Beispiel-Todos gleich ein.</li>
+<li>Modifizieren Sie die Route <code>/</code> so, dass sie die Todos alle vollständig anzeigt. Legen Sie dafür ein geeignetes Template an.</li>
+<li>Mit einem Formular können neue Todos angelegt werden. Hierzu brauchen Sie eine Route mit Formular und eine Route, die dieses verarbeitet.</li>
+<li>Todos lassen sich löschen. Fügen Sie hierzu auf der Startseite bei den Todos einen individuellen Löschlink ein.</li>
 </ol>
 </section>
-<section id="homework" class="level2">
-<h2 class="anchored" data-anchor-id="homework">Homework</h2>
+<section id="homework-woche" class="level2">
+<h2 class="anchored" data-anchor-id="homework-woche">Homework Woche</h2>
 <p>Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.</p>
-<section id="aufgabe-1-anmeldung-zum-workshop" class="level3">
-<h3 class="anchored" data-anchor-id="aufgabe-1-anmeldung-zum-workshop">Aufgabe 1: Anmeldung zum Workshop</h3>
+<section id="aufgabe-1-eine-bessere-todo-liste" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-1-eine-bessere-todo-liste">Aufgabe 1: Eine bessere Todo-Liste</h3>
 <blockquote class="blockquote">
-<p>Budget: 40 Minuten</p>
+<p>Budget: 15 Minuten</p>
 </blockquote>
-<ol type="a">
-<li>Überlegen Sie, welche Daten eine Anmeldung für einen Marketing-Workshop an der HdM benötigt. Erstellen Sie im DB Browser for SQLite oder im SQLite3 Editor-Plugin eine Tabelle für diese Daten in der Kunden-Datenbank.</li>
-<li>Erstellen Sie eine AdonisJS-Anwendung, die in einem Formular die Daten erfasst und in der Datenbank in dieser Tabelle speichert.</li>
+<ol type="1">
+<li>Erweitern Sie die Todo-App um die Möglichkeit Todos zu kategorisieren. Jedem Todo kann keine oder eine Kategorie zugewiesen werden.</li>
+<li>Erweitern Sie hierzu in geeigneter Weise (siehe Datenbank-Vorlesung!) das Datenbank-Schema.</li>
+<li>Setzen Sie Zuweisung in Code um – hier gibt es verschiedene Möglichkeiten und wenn es funktioniert haben Sie eine richtige Lösung! Hier muss man knobeln!</li>
 </ol>
 
 

@@ -1,0 +1,16 @@
+---
+  title: "Capstone Übung C.3: CSS"
+---
+
+# Aufgabe 3.1: Ein CSS Logo
+> Budget: 20 Minuten
+
+![Das Logo](1.png)
+
+a. Der Bogensportverein Brausbach an der Donner (B-BAD) möchte seine Vereins-Website 
+    komplett ohne eingebundene Bilder und alle Grafiken nur mit CSS gestalten. Sie erhalten 
+    den Auftrag hierfür. Beginnen Sie mit dem obigen Logo, welches Sie in HTML und CSS 
+    umsetzen. Lösungshinweis: Erinnern Sie sich an den Border-Radius und wann am Ende ein 
+    Kreis dabei herauskommt. 
+
+[Lösung](loesungen/c-3-1.qmd)

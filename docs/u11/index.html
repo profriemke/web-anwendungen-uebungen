@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Capstone Übung C.1.5: Javascript Basics – Web Anwendungen Übungen</title>
+<title>Übung 11:Adaptive und Responsive Web Design – Web Anwendungen Übungen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -127,13 +93,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-wöchentliche-übungen" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">wöchentliche Übungen</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-wöchentliche-übungen">    
+        <li>
+    <a class="dropdown-item" href="../u1/index.html">
+ <span class="dropdown-text">Übung 1: Setup &amp; Basics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u2/index.html">
+ <span class="dropdown-text">Übung 2: Node.js und Kommandozeile</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u3/index.html">
+ <span class="dropdown-text">Übung 3: Arrays, Funktionen und mehr</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u4/index.html">
+ <span class="dropdown-text">Übung 4: Strings, Datei und Datenbank</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u5/index.html">
+ <span class="dropdown-text">Übung 5: Objektorientierung und AdonisJS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u6/index.html">
+ <span class="dropdown-text">Übung 6: AdonisJS und Datenbanken</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u7/index.html">
+ <span class="dropdown-text">Übung 7: AdonisJS: Eine Todo-Liste</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-capstone-übungen" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Capstone Übungen</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-capstone-übungen">    
         <li>
-    <a class="dropdown-item" href="../capstone-1.html">
+    <a class="dropdown-item" href="../c1/index.html">
  <span class="dropdown-text">C.1: Javascript Basics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../c2/index.html">
+ <span class="dropdown-text">C.2: AdonisdJS</span></a>
   </li>  
     </ul>
   </li>
@@ -153,7 +158,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lösung" id="toc-lösung" class="nav-link active" data-scroll-target="#lösung">Lösung:</a></li>
+  <li><a href="#aufgabe-1-die-news-seite-eines-studiengangs" id="toc-aufgabe-1-die-news-seite-eines-studiengangs" class="nav-link active" data-scroll-target="#aufgabe-1-die-news-seite-eines-studiengangs">Aufgabe 1: Die News-Seite eines Studiengangs</a></li>
+  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a>
+  <ul class="collapse">
+  <li><a href="#aufgabe-1-adaptives-fluides-design-für-eine-produktseite" id="toc-aufgabe-1-adaptives-fluides-design-für-eine-produktseite" class="nav-link" data-scroll-target="#aufgabe-1-adaptives-fluides-design-für-eine-produktseite">Aufgabe 1: Adaptives Fluides Design für eine Produktseite</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -162,7 +171,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Capstone Übung C.1.5: Javascript Basics</h1>
+<h1 class="title">Übung 11:Adaptive und Responsive Web Design</h1>
 </div>
 
 
@@ -179,28 +188,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Welche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie!</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span>  data <span class="op">=</span> [</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">nachname</span><span class="op">:</span> <span class="st">"Karlsen"</span><span class="op">,</span> <span class="dt">vorname</span><span class="op">:</span> <span class="st">"Karl"</span> }<span class="op">,</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">nachname</span><span class="op">:</span> <span class="st">"Klarsen"</span><span class="op">,</span> <span class="dt">vorname</span><span class="op">:</span> <span class="st">"Karla"</span> }</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<section id="lösung" class="level3">
-<h3 class="anchored" data-anchor-id="lösung">Lösung:</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span>  data <span class="op">=</span> [</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">nachname</span><span class="op">:</span> <span class="st">"Karlsen"</span><span class="op">,</span> <span class="dt">vorname</span><span class="op">:</span> <span class="st">"Karl"</span> }<span class="op">,</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">nachname</span><span class="op">:</span> <span class="st">"Klarsen"</span><span class="op">,</span> <span class="dt">vorname</span><span class="op">:</span> <span class="st">"Karla"</span> }</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(<span class="kw">let</span> i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span>data<span class="op">.</span><span class="at">length</span><span class="op">;</span> i<span class="op">++</span>){</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(data[i]<span class="op">.</span><span class="at">vorname</span>) </span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<section id="erklärung" class="level4">
-<h4 class="anchored" data-anchor-id="erklärung">Erklärung:</h4>
+<section id="aufgabe-1-die-news-seite-eines-studiengangs" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-1-die-news-seite-eines-studiengangs">Aufgabe 1: Die News-Seite eines Studiengangs</h2>
+<blockquote class="blockquote">
+<p>Budget: 70 Minuten</p>
+</blockquote>
+<p>Für einen völlig fiktiven Studiengang mit dem Namen „Online Medien Management“ (nicht zu verwechseln mit dem Original Online-Medien-Management, der nur mit Bindestrichen echt ist), soll eine News-Seite erstellt werden.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="1.png" class="img-fluid figure-img"></p>
+<figcaption>Entwurf der Seiten</figcaption>
+</figure>
+</div>
+<ol type="a">
+<li>Realisieren Sie das in der Abbildung links dargestellte Design. Arbeiten Sie hierzu das Design aus, d.h. statt der Skizze aus der Abbildung soll eine vollständige Seite mit echten Bildern entstehen. Das menü darf natürlich auch viel schöner sein und auch ein Hover unterstützen. Ihrer Kreativität ist hier keine Grenze gesetzt. Der Text darf natürlich Blindtext sein.</li>
+<li>Setzen Sie im zweiten Schritt das rechte Layout als adaptive Version des Designs aus a. um. Überlegen Sie vorher welchen Breakpoint Sie nehmen. Begründen Sie diesen. Als Hilfestellung können Sie die in der Übung gezeigten Entwicklertools verwenden. Verwenden Sie Lazy Loading für die Bilder.</li>
+<li>Überlegen Sie in einer Skizze wie ein Design für ein Tablet im Querformat aussehen könnte. Legen Sie hierfür einen weiteren Breakpoint fest. Beziehen Sie in Ihre Überlegungen ein, dass Sie Elemente anzeigen oder ausblenden können. Integrieren Sie diesen Entwurf in die bestehende Lösung.</li>
+<li>Die Seite soll auch schön formatiert gedruckt werden. Das machen vor allem Studieninteressierte. Überlegen Sie, wie ein Print-Layout aussehen könnte. Beziehen Sie auch hier in Ihre Überlegungen ein, dass Sie Elemente anzeigen oder ausblenden können.</li>
+</ol>
+</section>
+<section id="homework" class="level2">
+<h2 class="anchored" data-anchor-id="homework">Homework</h2>
+<p>Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.</p>
+<section id="aufgabe-1-adaptives-fluides-design-für-eine-produktseite" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-1-adaptives-fluides-design-für-eine-produktseite">Aufgabe 1: Adaptives Fluides Design für eine Produktseite</h3>
+<blockquote class="blockquote">
+<p>Budget: 90 Minuten</p>
+</blockquote>
+<p>Erstellen Sie eine Produktseite, die ein adaptives und fluides Design nutzt, um sich nahtlos an verschiedene Bildschirmgrößen und -verhältnisse anzupassen.</p>
+<p>Die Seite hat folgende Anforderungen:</p>
+<p><strong>Seitenstruktur</strong></p>
 <ul>
-<li>Hier liegt ein Array mit Objekten vor, welches wir mit einer Schleife durchwandern können.</li>
-<li><code>data[i]</code> enthält bei jedem Schleifendurchlauf das Objekt an der Stelle <code>i</code> des Arrays.</li>
-<li>Auf die Attribute dieses jeweiligen Objekts können wir mit der dot-Notation zugreifen und ausgeben: <code>console.log(data[i].vorname)</code>.</li>
+<li>Header mit Logo und Navigation.</li>
+<li>Hauptbereich mit einem großen Produktbild, Produktbeschreibung und Kaufoptionen.</li>
+<li>Footer mit Kontaktinformationen und Social Media Links.</li>
+</ul>
+<p><strong>Fluides Layout</strong></p>
+<p>-Verwenden Sie prozentuale Breiten und relative Einheiten (em, rem) anstelle von festen Pixelwerten für das Layout. - Sorgen Sie dafür, dass alle Bilder und Medieninhalte skalierbar sind und sich proportional zur Bildschirmgröße anpassen. Adaptive Typografie - Implementieren Sie eine skalierbare Typografie, die sich an die Bildschirmgröße anpasst. Verwenden Sie dazu relative Einheiten wie em und rem. - Sorgen Sie dafür, dass die Schriftgrößen bei großen Bildschirmen größer und bei kleinen Bildschirmen kleiner sind.</p>
+<p><strong>Responsive Bilder</strong> - Das Hauptproduktbild sollte sich flexibel an die verfügbare Breite des Containers anpassen. - Nutzen Sie das srcset-Attribut, um verschiedene Bildauflösungen für unterschiedliche Bildschirmgrößen bereitzustellen.</p>
+<p><strong>Medienabfragen</strong></p>
+<ul>
+<li>Verwenden Sie <code>@media</code>-Queries, um Layout-Änderungen für spezifische Bildschirmgrößen vorzunehmen:</li>
+<li>Bei einer Bildschirmbreite über 1200px sollte der Inhalt in drei Spalten (Bild, Beschreibung, Kaufoptionen) angezeigt werden.</li>
+<li>Bei einer Bildschirmbreite zwischen 768px und 1200px sollte der Inhalt in zwei Spalten (Bild, Beschreibung/Kaufoptionen) angezeigt werden.</li>
+<li>Unter 768px sollte der gesamte Inhalt untereinander in einer Spalte angezeigt werden. Fluide Abstände und Padding</li>
+<li>Verwenden Sie relative Einheiten für Margins und Padding, um sicherzustellen, dass Abstände proportional zur Bildschirmgröße bleiben.</li>
+</ul>
+<p><strong>Hinweise</strong></p>
+<ul>
+<li>Nutzen Sie prozentuale Breiten (z.B. <code>width: 50%</code>) und relative Einheiten (z.B. <code>padding: 2em</code>) für das Layout.</li>
+<li>Implementieren Sie responsive Bilder mit dem <code>srcset</code>-Attribut, um verschiedene Bildgrößen für unterschiedliche Geräte zu laden.</li>
+<li>Verwenden Sie freie Bilder von entsprechenden Anbietern.</li>
 </ul>
 
 

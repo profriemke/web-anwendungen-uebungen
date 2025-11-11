@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Capstone Übung C.1.6: Javascript Basics – Web Anwendungen Übungen</title>
+<title>Capstone Übung C.1: Javascript Basics – Web Anwendungen Übungen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -127,13 +127,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-wöchentliche-übungen" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">wöchentliche Übungen</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-wöchentliche-übungen">    
+        <li>
+    <a class="dropdown-item" href="../u1/index.html">
+ <span class="dropdown-text">Übung 1: Setup &amp; Basics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u2/index.html">
+ <span class="dropdown-text">Übung 2: Node.js und Kommandozeile</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u3/index.html">
+ <span class="dropdown-text">Übung 3: Arrays, Funktionen und mehr</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u4/index.html">
+ <span class="dropdown-text">Übung 4: Strings, Datei und Datenbank</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u5/index.html">
+ <span class="dropdown-text">Übung 5: Objektorientierung und AdonisJS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u6/index.html">
+ <span class="dropdown-text">Übung 6: AdonisJS und Datenbanken</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../u7/index.html">
+ <span class="dropdown-text">Übung 7: AdonisJS: Eine Todo-Liste</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-capstone-übungen" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Capstone Übungen</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-capstone-übungen">    
         <li>
-    <a class="dropdown-item" href="../capstone-1.html">
+    <a class="dropdown-item" href="../c1/index.html">
  <span class="dropdown-text">C.1: Javascript Basics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../c2/index.html">
+ <span class="dropdown-text">C.2: AdonisdJS</span></a>
   </li>  
     </ul>
   </li>
@@ -153,7 +192,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lösung" id="toc-lösung" class="nav-link active" data-scroll-target="#lösung">Lösung:</a></li>
+  <li><a href="#aufgabe-c.1.1" id="toc-aufgabe-c.1.1" class="nav-link active" data-scroll-target="#aufgabe-c.1.1">Aufgabe C.1.1</a></li>
+  <li><a href="#aufgabe-c.1.2" id="toc-aufgabe-c.1.2" class="nav-link" data-scroll-target="#aufgabe-c.1.2">Aufgabe C.1.2</a></li>
+  <li><a href="#aufgabe-c.1.3" id="toc-aufgabe-c.1.3" class="nav-link" data-scroll-target="#aufgabe-c.1.3">Aufgabe C.1.3</a></li>
+  <li><a href="#aufgabe-c.1.4" id="toc-aufgabe-c.1.4" class="nav-link" data-scroll-target="#aufgabe-c.1.4">Aufgabe C.1.4</a></li>
+  <li><a href="#aufgabe-c.1.5" id="toc-aufgabe-c.1.5" class="nav-link" data-scroll-target="#aufgabe-c.1.5">Aufgabe C.1.5</a></li>
+  <li><a href="#aufgabe-c.1.6" id="toc-aufgabe-c.1.6" class="nav-link" data-scroll-target="#aufgabe-c.1.6">Aufgabe C.1.6</a></li>
+  <li><a href="#aufgabe-c.1.7" id="toc-aufgabe-c.1.7" class="nav-link" data-scroll-target="#aufgabe-c.1.7">Aufgabe C.1.7</a></li>
+  <li><a href="#aufgabe-c.1.8" id="toc-aufgabe-c.1.8" class="nav-link" data-scroll-target="#aufgabe-c.1.8">Aufgabe C.1.8</a></li>
+  <li><a href="#aufgabe-c.1.9" id="toc-aufgabe-c.1.9" class="nav-link" data-scroll-target="#aufgabe-c.1.9">Aufgabe C.1.9</a></li>
   </ul>
 </nav>
     </div>
@@ -162,7 +209,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Capstone Übung C.1.6: Javascript Basics</h1>
+<h1 class="title">Capstone Übung C.1: Javascript Basics</h1>
 </div>
 
 
@@ -179,39 +226,93 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Schreiben Sie eine Arrow-Function, die zwei Zahlen entgegennimmt und die Summe der beiden Zahlen zurückgibt. Wenn Sonderfälle auftreten, behandeln Sie diese entsprechend. Geben Sie einen Beispiel-Aufruf an.</p>
-<section id="lösung" class="level3">
-<h3 class="anchored" data-anchor-id="lösung">Lösung:</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> add  <span class="op">=</span> (a<span class="op">,</span>b)  <span class="kw">=&gt;</span> {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> a<span class="op">+</span>b </span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">// Beispielaufruf</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">add</span>(<span class="dv">5</span><span class="op">,</span> <span class="dv">7</span>)) <span class="co">// Ausgabe: 12</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<section id="erklärung" class="level4">
-<h4 class="anchored" data-anchor-id="erklärung">Erklärung:</h4>
-<ul>
-<li>Es wird eine Arrow Function mit zwei Parametern (<code>a</code> und <code>b</code>) definiert und der Konstanten <code>add</code> zugewiesen.</li>
-<li>Das Ergebnis der Addition von <code>a + b</code> wird mit <code>return</code> zurückgegeben.</li>
-<li><code>console.log(add(5, 7));</code> gibt das Ergebnis <code>12</code> aus.</li>
-</ul>
+<blockquote class="blockquote">
+<p>Wichtig: Bearbeiten Sie die Übungen <strong>bevor</strong> Sie sich die Lösungen ansehen.</p>
+</blockquote>
+<section id="aufgabe-c.1.1" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-c.1.1">Aufgabe C.1.1</h2>
+<p>Erstellen Sie eine Schleife in Javascript, die die Zahlen von 10 bis 30 ausgibt.</p>
+<p><a href="../c1/loesungen/c-1-1.html">Lösung</a></p>
 </section>
-<section id="alternative-lösung-in-kurzform" class="level4">
-<h4 class="anchored" data-anchor-id="alternative-lösung-in-kurzform">Alternative Lösung in Kurzform</h4>
-<div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> add <span class="op">=</span> (a<span class="op">,</span> b) <span class="kw">=&gt;</span> a <span class="op">+</span> b</span>
+<section id="aufgabe-c.1.2" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-c.1.2">Aufgabe C.1.2</h2>
+<p>Gegeben ist der untenstehende String. Geben Sie mit Javascript die einzelnen Buchstaben des Strings in umgekehrter Reihenfolge <em>einzeln</em> aus.</p>
+<pre class="text"><code>Das Huhn frisst gerne Körner.</code></pre>
+<p><a href="../c1/loesungen/c-1-2.html">Lösung</a></p>
+</section>
+<section id="aufgabe-c.1.3" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-c.1.3">Aufgabe C.1.3</h2>
+<p>Erstellen Sie eine Funktion mit dem Namen <code>subtract</code>, die als Parameter zwei Zahlen übergeben bekommt, die Zahl im zweiten Parameter von der Zahl im ersten Parameter subtrahiert und das Ergebnis dieser Subtraktion zurückgibt. Geben Sie einen Beispiel-Aufruf der Funktion an, der das Ergebnis ausgibt.</p>
+<p><a href="../c1/loesungen/c-1-3.html">Lösung</a></p>
+</section>
+<section id="aufgabe-c.1.4" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-c.1.4">Aufgabe C.1.4</h2>
+<p>Welche Ausgabe (Berechnung oder Fehler) erzeugt der folgende JavaScript-Code? Begründen Sie!</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">weisnicht</span>(<span class="dv">3</span><span class="op">,</span> <span class="fu">weisnicht</span>(<span class="dv">2</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">11</span>)<span class="op">,</span> <span class="dv">47</span>))</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">// Beispielaufruf:</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">add</span>(<span class="dv">5</span><span class="op">,</span> <span class="dv">7</span>)) <span class="co">// Ausgabe: 12</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Erklärung:</p>
-<ul>
-<li><code>const add = (a, b) =&gt; a + b</code> definiert eine kurze Arrow Function mit zwei Parametern (<code>a</code> und <code>b</code>).</li>
-<li>Der Ausdruck <code>a + b</code> wird automatisch zurückgegeben (kein return nötig, da es nur ein Ausdruck ist).</li>
-<li><code>console.log(add(5, 7))</code> gibt das Ergebnis <code>12</code> aus.</li>
-<li>Es gibt keine Sonderfälle in diesem Beispiel. Bei anderen Funktion jedoch sehrwohl, Beispiel: Bei einer Division müsste immer geprüft werden, ob durch <code>0</code> geteilt wird und ggf. ein Fehler ausgegeben werden.</li>
-</ul>
-
-
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">weisnicht</span>(a<span class="op">,</span> b<span class="op">,</span> c) {</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">*</span> b</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(a <span class="op">*</span> a)    </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><a href="../c1/loesungen/c-1-4.html">Lösung</a></p>
 </section>
+<section id="aufgabe-c.1.5" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-c.1.5">Aufgabe C.1.5</h2>
+<p>Gegeben ist der nachfolgende Code-Ausschnitt in Javascript. Erstellen Sie Code, der jeweils das Attribut <code>vorname</code> aller Objekte im Array data ausgibt. Der Code soll auch dann funktionieren, wenn weitere Objekte in das Array eingefügt werden.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span>  data <span class="op">=</span> [</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">nachname</span><span class="op">:</span> <span class="st">"Karlsen"</span><span class="op">,</span> <span class="dt">vorname</span><span class="op">:</span> <span class="st">"Karl"</span> }<span class="op">,</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">nachname</span><span class="op">:</span> <span class="st">"Klarsen"</span><span class="op">,</span> <span class="dt">vorname</span><span class="op">:</span> <span class="st">"Karla"</span> }</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><a href="../c1/loesungen/c-1-5.html">Lösung</a></p>
+</section>
+<section id="aufgabe-c.1.6" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-c.1.6">Aufgabe C.1.6</h2>
+<p>Schreiben Sie eine Arrow-Function, die zwei Zahlen entgegennimmt und die Summe der beiden Zahlen zurückgibt. Wenn Sonderfälle auftreten, behandeln Sie diese entsprechend.</p>
+<p><a href="../c1/loesungen/c-1-6.html">Lösung</a></p>
+</section>
+<section id="aufgabe-c.1.7" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-c.1.7">Aufgabe C.1.7</h2>
+<p>Schreiben Sie eine Schleife, die die Namen aus dem Array ausgibt und abbricht, sobald der Name Rebecca auftaucht. Dabei soll der name Rebecca noch ausgegeben werden. Der Code darf kein <code>if</code>-Statement enthalten.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> namen <span class="op">=</span> [<span class="st">'Malte'</span><span class="op">,</span> <span class="st">'Svenja'</span><span class="op">,</span> <span class="st">'Rebecca'</span><span class="op">,</span> <span class="st">'Klaus'</span>] </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><a href="../c1/loesungen/c-1-7.html">Lösung</a></p>
+</section>
+<section id="aufgabe-c.1.8" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-c.1.8">Aufgabe C.1.8</h2>
+<p>Erstellen Sie ein Objekt <code>auto</code>, das folgende Eigenschaften und Methoden enthält:</p>
+<ul>
+<li><strong>Eigenschaften:</strong>
+<ul>
+<li><code>marke</code> (z. B. “BMW”)</li>
+<li><code>modell</code> (z. B. “X3”)</li>
+<li><code>baujahr</code> (z. B. 2021)</li>
+</ul></li>
+<li><strong>Methoden:</strong>
+<ol type="1">
+<li><code>start()</code> → gibt <code>"Das Auto startet."</code> in der Konsole aus.<br>
+</li>
+<li><code>info()</code> → gibt eine Beschreibung des Autos aus, z. B. <code>"BMW X3, Baujahr 2021"</code>.</li>
+</ol></li>
+</ul>
+<p>Rufen Sie beide Methoden anschließend auf.</p>
+<p><a href="../c1/loesungen/c-1-8.html">Lösung</a></p>
+</section>
+<section id="aufgabe-c.1.9" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-c.1.9">Aufgabe C.1.9</h2>
+<p>Gegeben ist folgendes Objekt:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> person <span class="op">=</span> {</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">vorname</span><span class="op">:</span> <span class="st">"Lisa"</span><span class="op">,</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">nachname</span><span class="op">:</span> <span class="st">"Meyer"</span><span class="op">,</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">alter</span><span class="op">:</span> <span class="dv">28</span><span class="op">,</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">beruf</span><span class="op">:</span> <span class="st">"Webentwicklerin"</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol type="1">
+<li>Verwenden Sie <strong>Object Destructuring</strong>, um die Werte der Eigenschaften <code>vorname</code> und <code>beruf</code> aus dem Objekt zu extrahieren.<br>
+</li>
+<li>Geben Sie die Werte anschließend mit <code>console.log()</code> aus.</li>
+</ol>
+<p><a href="../c1/loesungen/c-1-9.html">Lösung</a></p>
+
+
 </section>
 
 </main> <!-- /main -->

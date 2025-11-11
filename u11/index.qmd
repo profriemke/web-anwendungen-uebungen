@@ -1,0 +1,63 @@
+---
+  title: "Übung 11:Adaptive und Responsive Web Design"
+---
+
+## Aufgabe 1: Die News-Seite eines Studiengangs
+> Budget: 70 Minuten
+
+Für einen völlig fiktiven Studiengang mit dem Namen „Online Medien Management“ (nicht zu verwechseln mit dem Original Online-Medien-Management, der nur mit Bindestrichen echt ist), soll eine News-Seite erstellt werden.
+
+![Entwurf der Seiten](1.png)
+
+a. Realisieren Sie das in der Abbildung links dargestellte Design. Arbeiten Sie hierzu das Design aus, d.h. statt der Skizze aus der Abbildung soll eine vollständige Seite mit echten Bildern entstehen. Das menü darf natürlich auch viel schöner sein und auch ein Hover unterstützen. Ihrer Kreativität ist hier keine Grenze gesetzt. Der Text darf natürlich Blindtext sein.
+b. Setzen Sie im zweiten Schritt das rechte Layout als adaptive Version des Designs aus a. um. Überlegen Sie vorher welchen Breakpoint Sie nehmen. Begründen Sie diesen. Als Hilfestellung können Sie die in der Übung gezeigten Entwicklertools verwenden. Verwenden Sie Lazy Loading für die Bilder. 
+c. Überlegen Sie in einer Skizze wie ein Design für ein Tablet im Querformat aussehen könnte. Legen Sie hierfür einen weiteren Breakpoint fest. Beziehen Sie in Ihre Überlegungen ein, dass Sie Elemente anzeigen oder ausblenden können. Integrieren Sie diesen Entwurf in die bestehende Lösung.
+d. Die Seite soll auch schön formatiert gedruckt werden. Das machen vor allem Studieninteressierte. Überlegen Sie, wie ein Print-Layout aussehen könnte. Beziehen Sie auch hier in Ihre Überlegungen ein, dass Sie Elemente anzeigen oder ausblenden können.
+
+
+## Homework
+
+Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.
+
+
+### Aufgabe 1: Adaptives Fluides Design für eine Produktseite
+> Budget: 90 Minuten
+
+Erstellen Sie eine Produktseite, die ein adaptives und fluides Design nutzt, um sich nahtlos an verschiedene Bildschirmgrößen und -verhältnisse anzupassen.
+
+Die Seite hat folgende Anforderungen:
+
+**Seitenstruktur**
+
+- Header mit Logo und Navigation.
+- Hauptbereich mit einem großen Produktbild, Produktbeschreibung und Kaufoptionen.
+- Footer mit Kontaktinformationen und Social Media Links.
+
+**Fluides Layout**
+
+-Verwenden Sie prozentuale Breiten und relative Einheiten (em, rem) anstelle von festen Pixelwerten für das Layout.
+- Sorgen Sie dafür, dass alle Bilder und Medieninhalte skalierbar sind und sich proportional zur Bildschirmgröße anpassen.
+Adaptive Typografie
+- Implementieren Sie eine skalierbare Typografie, die sich an die Bildschirmgröße anpasst. Verwenden Sie dazu relative Einheiten wie em und rem.
+- Sorgen Sie dafür, dass die Schriftgrößen bei großen Bildschirmen größer und bei kleinen
+      Bildschirmen kleiner sind.
+
+**Responsive Bilder**
+- Das Hauptproduktbild sollte sich flexibel an die verfügbare Breite des Containers anpassen.
+- Nutzen Sie das srcset-Attribut, um verschiedene Bildauflösungen für unterschiedliche Bildschirmgrößen bereitzustellen.
+
+**Medienabfragen**
+
+- Verwenden Sie `@media`-Queries, um Layout-Änderungen für spezifische Bildschirmgrößen vorzunehmen:
+- Bei einer Bildschirmbreite über 1200px sollte der Inhalt in drei Spalten (Bild, Beschreibung, Kaufoptionen) angezeigt werden.
+- Bei einer Bildschirmbreite zwischen 768px und 1200px sollte der Inhalt in zwei Spalten (Bild, Beschreibung/Kaufoptionen) angezeigt werden.
+- Unter 768px sollte der gesamte Inhalt untereinander in einer Spalte angezeigt werden.
+Fluide Abstände und Padding
+- Verwenden Sie relative Einheiten für Margins und Padding, um sicherzustellen, dass Abstände proportional zur Bildschirmgröße bleiben.
+
+**Hinweise**
+
+- Nutzen Sie prozentuale Breiten (z.B. `width: 50%`) und relative Einheiten (z.B. `padding: 2em`) für das Layout.
+- Implementieren Sie responsive Bilder mit dem `srcset`-Attribut, um verschiedene Bildgrößen für unterschiedliche Geräte zu laden.
+- Verwenden Sie freie Bilder von entsprechenden Anbietern.
+   

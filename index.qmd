@@ -9,17 +9,18 @@ Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.
 - [Übung 3: Arrays, Funktionen und mehr](u3/index.qmd)
 - [Übung 4: Strings, Datei und Datenbank](u4/index.qmd)
 - [Übung 5: Objektorientierung und AdonisJS](u5/index.qmd)
-- [Capstone Übung 1: Javascript Basics](capstone-1.qmd)
+- [Capstone Übung 1: Javascript Basics](c1/index.qmd)
 - [Übung 6: AdonisJS und Datenbanken](u6/index.qmd)
 - [Übung 7: AdonisJS: Eine Todo-Liste](u7/index.qmd)
-- Übung 8+9: Interaktive Übung (Link siehe Vorlesung)
-- Capstone Übung 2: AdonisJS Entwicklung
-- Übung 10
-- Übung 11
-- Übung 12
-- Übung 13
+- [Übung 8: AdonisJS: Sessions](u8/index.qmd)
+- [Capstone Übung 2: Kuchen backen mit AdonisJS](c2/index.qmd)
+- [Übung 9: Grundlagen CSS](u9/index.qmd)
+- [Übung 10: Mehr CSS](u10/index.qmd)
+- [Übung 11: Adaptive und Responsive Web Design](u11/index.qmd)
+- Übung 12: Eine Klausur
+- [Capstone Übung 3: CSS](c3/index.qmd)
 - Capstone Übung 3: CSS
-- Übung 14
+- Übung 13
 - Capstone Übung 4: Client-seitiges Javascript
 
 

@@ -1,0 +1,108 @@
+---
+  title: "Übung 10: Mehr CSS"
+---
+## Aufgabe 1: CSS verstehen
+> Budget: 10 Minuten
+
+Untenstehend sehen Sie einen Ausschnitt aus einem CSS-Stylesheet. 
+
+a. Zeichnen Sie ein leeres Browser-Fenster und dort hinein die aus diesem Code entstehende Aufteilung. 
+b. Beschriften Sie das Ergebnis mit Pfeilen, bei denen Sie angeben, welche Farbe und welchen Rand das dargestellte Element hat.
+
+```html
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title>Prüfung</title>
+    <style>
+      .zweite {
+        width: 50%;
+        height: 50%;
+        background-color: green;
+        border: 1px;
+        border-style: solid;
+        float: left;
+      }
+
+      #zweiter {
+        width: 100vw;
+        height: 50vh;
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="zweiter">
+      <div class="zweite">
+        <div class="zweite"></div>
+      </div>
+    </div>
+  </body>
+</html>
+```
+
+## Aufgabe 2: CSS Dialogbox in Budget oder Luxus
+> Budget: 30 Minuten
+
+![Budget-Vaiante links Luxus-Variante rechts](2.png)
+
+a. Erstellen Sie eine Dialogbox mit 500x300 Pixel, die Sie wie nachstehend abgebildet gestalten. Entweder in der einfachen Budget-Variante (links) oder der Luxusvariante (rechts) oder gar noch viel schöner (nicht abgebildet)– wie Sie möchten. Lösungshinweis: Es handelt sich hier um drei `div`, wovon zwei positioniert sind und eine Schachtelung.
+b. Erstellen Sie in einem beliebigen AdonisJS-Projekt eine Route /dialog mit einer Seite, die diese Dialogbox anzeigt.
+
+## Aufgabe 3: CSS Fonts
+> Budget: 25 Minuten
+
+![Abbildungen für Aufgaben a., b. und c.](3-1.png)
+
+a. Erstellen Sie HTML und CSS für die obige Darstellung. Die erste Abbildung zeigt den ungestylten Text, die zweite den gestylten Hinweis.
+b. Setzen Sie einen Font Ihrer Wahl von Ihrem lokalen Rechner.
+c. Binden Sie einen Web-Font von [https://fonts.google.com](https://fonts.google.com) ein und verwenden Sie diesen. 
+d. Ergänzen Sie den Code so, dass nur die Überschrift erscheint und bei Hovern der Überschrift der Text runter (Siehe Abblidung unten). Dies lässt sich realisieren indem der Text mit `display: none` zuerst ausgeblendet wird und bei `:hover` des Titels eingeblendet wird. Hier muss man knobeln! 
+
+![Abbildungen für Aufgabe d.](3-2.png)
+
+## Aufgabe 4: Das Menü bitte!
+> Budget: 20 Minuten
+
+![Das Design des Menus](4.png)
+
+Gegeben ist das untenstehende HTML. Es soll das oben abgebildete Menu daraus erstellt werden. Geben Sie das dafür erforderliche CSS an. Sofern Sie Maßangaben benötigen, schätzen Sie diese. Außerhalb des Styles soll nichts geändert werden und es soll keine Positionierung mit `relative`, `absolute` oder `fixed` verwendet werden. Menüpunkte sollen in hellblau hovern.
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Aufgabe</title>
+  <style>
+
+  </style>
+</head>
+<body>
+<div class="navi">
+    <div class="menuitem">Home</div>
+    <div class="menuitem">Shop</div>
+    <div class="menuitem">Impressum</div>
+</div>
+</body>
+</html>
+```
+
+## Homework
+
+Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.
+
+### Aufgabe 1: Die Tabelle
+>Budget: 15 Minuten
+
+Erstellen Sie eine Tabelle in HTML mit fünf Zeilen und einer Überschrift-Zeile. Die Überschrift-
+Zeile soll dunkelblau hinterlegt sein. Gerade Zeilen sind hellblau und ungerade Zeilen werden 
+weiß hinterlegt. Hinweis: Stichwort `odd`/`even`. 
+
+
+### Aufgabe 2: Spurensuche
+> Budget: 10 Minuten
+
+Wie groß ist die Box eines Elements, das keine Größenangabe hat? Testen Sie dies, indem Sie
+ein Beispiel mit `h1`, `h2`, `a`, `div` und `p` erstellen und dies mit dem Inspektor der Entwicklungswerkzeuge untersuchen. Klären Sie in diesem Zusammenhang was Inline und Block Elemente sind. Welche der oben genannten Elemente sind nach Ihren Untersuchungen `inline` und welche `block`?

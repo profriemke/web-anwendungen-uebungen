@@ -1,0 +1,9 @@
+---
+  title: "Capstone Übung C.2: Kuchen backen mit AdonisJS"
+---
+
+> Wichtig: Bearbeiten Sie die Übungen **bevor** Sie sich die Lösungen ansehen.
+
+Dies ist eine interaktive Capstone Übung mit begleitenden Videos. 
+
+Die Zugangsdaten erhalten Sie in der Übung.
