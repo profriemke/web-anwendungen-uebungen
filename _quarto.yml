@@ -24,12 +24,22 @@ website:
             text: "Übung 6: AdonisJS und Datenbanken"
           - href: u7/index.qmd    
             text: "Übung 7: AdonisJS: Eine Todo-Liste"
+          - href: u8/index.qmd    
+            text: "Übung 8: AdonisJS: Sessions"
+          - href: u9/index.qmd    
+            text: "Übung 9: Grundlagen CSS"
+          - href: u10/index.qmd    
+            text: "Übung 10: Mehr CSS"
+          - href: u11/index.qmd    
+            text: "Übung 11: Adaptive und Responsive Web Design"
       - text: "Capstone Übungen"
         menu:
           - href: c1/index.qmd
             text: "C.1: Javascript Basics"
           - href: c2/index.qmd
-            text: "C.2: AdonisdJS"
+            text: "C.2: AdonisJS"
+          - href: c3/index.qmd
+            text: "C.3: CSS"
 
 format:
   html:

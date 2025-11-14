@@ -32,7 +32,7 @@ c. Was sind die Vorteile von Object Destructuring?
 a. Erstellen Sie eine Web-Anwendung in AdonisJS, die beim Aufruf  `Hallo, hier bin ich!` ausgibt (ohne View/Template).
 b. Web-Anwendungen benötigen einen Web-Server. Wo ist der in Ihrer AdonisJS-Anwendung?
 c. Was ist eine Route?
-d. Was haben HTTP-Verben mit der Route zu tun.
+d. Was haben HTTP-Verben mit der Route zu tun?
 
 
 

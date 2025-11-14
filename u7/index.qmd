@@ -10,7 +10,7 @@ In dieser Woche soll Step-by-Step eine Todo-Liste-App entstehen, die ToDos verwa
 Unsere Schritte:
   
 1. Erstellen Sie eine neue AdonisJS Anwendung an. Konfigurieren Sie entsprechend des Vorgehens aus der Vorlesung das Projekt, insbesondere die Datenbank-Verbindung.
-2.  Legeb Sie eine Datenbank mit einer Tabelle mit dem Namen `todos` und den Attributen `id, text` an. Am Besten fügen Sie ein paar Beispiel-Todos gleich ein.
+2.  Legen Sie eine Datenbank mit einer Tabelle mit dem Namen `todos` und den Attributen `id, text` an. Am Besten fügen Sie ein paar Beispiel-Todos gleich ein.
 3. Modifizieren Sie die Route `/` so, dass sie die Todos alle vollständig anzeigt. Legen Sie dafür ein geeignetes Template an.
 4. Mit einem Formular können neue Todos angelegt werden. Hierzu brauchen Sie eine Route mit Formular und eine Route, die dieses verarbeitet.
 5. Todos lassen sich löschen. Fügen Sie hierzu auf der Startseite bei den Todos einen individuellen Löschlink ein.
