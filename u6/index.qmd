@@ -5,6 +5,8 @@
 ## Aufgabe 1: Die Kundendatenbank
 > Budget: 90 Minuten
 
+![](adonis-kundin.png)
+
 a. Erstellen Sie eine AdonisJS-Anwendung, die Zugriff auf Ihre Kunden-Datenbank aus dem
 ersten Semester hat. Erstellen Sie hierfür ein neues Adonis-Projekt. Sie finden die Kunden-Datenbank im Moodle-Kurs im SQLite-Format. Kopieren Sie diese in das Projekt und konfigurieren Lucid so, dass diese Datenbank verwendet wird.
 b. Geben Sie alle Kunden aus Stuttgart jeweils in einem `<div>` pro Kunde aus. Legen Sie am

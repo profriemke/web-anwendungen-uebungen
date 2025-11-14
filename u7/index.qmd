@@ -5,6 +5,8 @@
 ## Aufgabe 1: Die Todo-Liste
 >Budget: 90 Minuten
 
+![](adonis-notizen.png)
+
 In dieser Woche soll Step-by-Step eine Todo-Liste-App entstehen, die ToDos verwaltet. Das natürlich in AdonisJS.
 
 Unsere Schritte:

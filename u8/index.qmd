@@ -5,6 +5,8 @@
 ## Aufgabe 1: Sichere Kundendaten
 > Budget: 90 Minuten
 
+![](security-session.png)
+
 Wir nehmen wieder unsere Kunden-Datenbank. In dieser Übung entsteht eine Passwort-geschütze Anwendung, in der die Kundendaten angezeigt werden können.
 
 Unsere Schritte:
