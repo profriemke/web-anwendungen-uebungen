@@ -63,7 +63,7 @@ Wenn das Bild mit der Maus überfahren wird, dann vergrößert es sich etwas. De
 Sie können aus drei Produktabbildungen wählen:
 
 - [Action Figur OMM Studentin](student-1.png)
-- [Action Figur OMM Student](student-1.png)
+- [Action Figur OMM Student](student-2.png)
 - [Action Figur Extra Hero Edition](student-3.png)
 
 [Lösung](loesungen/c-3-3.qmd)
