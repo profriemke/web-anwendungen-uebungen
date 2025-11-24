@@ -1,22 +1,6 @@
 ---
-  title: "Capstone Übung C.3: CSS"
+  title: "Capstone Übung C.3.2: Nachrichten-Teaser mit CSS"
 ---
-
-## Aufgabe 3.1: Ein CSS Logo
-> Budget: 20 Minuten
-
-![Das Logo](1.png)
-
-Der Bogensportverein Brausbach an der Donner (B-BAD) möchte seine Vereins-Website komplett ohne eingebundene Bilder und alle Grafiken nur mit CSS gestalten. Sie erhalten den Auftrag hierfür. Beginnen Sie mit dem obigen Logo, welches Sie in HTML und CSS umsetzen. 
-
-Lösungshinweis: Erinnern Sie sich an den Border-Radius und wann am Ende ein Kreis dabei herauskommt. 
-
-[Lösung](loesungen/c-3-1.qmd)
-
-
-## Aufgabe 3.2: Nachrichten-Teaser mit CSS
-> Budget: 20 Minuten
-
 ```text
 +------------------------------------------------------+
 |                       .teaser (max 800px)            |
@@ -48,37 +32,52 @@ Das Layout entspricht der folgenden Skizze:
 
 Setzen Sie dieses Layout um. Sie können hierzu Floating, Grid oder Flexbox verwenden. Die Musterlösung verwendet Flexbox.
 
-[Lösung](loesungen/c-3-2.qmd)
+
+### Lösung:
+
+#### 1. Entwicklung der Idee 
+
+- Das Layout hat offensichtlich zwei Spalten: links und rechts.
+- Hierfür erstellen wir zwei `div` mit den Klassen `.container-left` und `.container-right`, in den wir den Seiteninhalt packen. Wir könnten alternativ auch `id` verwenden, da diese nur einmalig vorkommen.
+- Diese beiden Container flexen wir in einer `row`. Als umgebende flex-root verwenden wir hier einfach den `body`.
+- `.teaser` und `.content` könnten wir in einem weiteren Flex untereinander (also als `column`) in der Spalte `.container-right` flexen. Da beide aber `div` sind, stehen sie sowieso untereinander.
+- Das Bild `.teaser-image` packen wir einfach in `.container-left`. Ein Flex ist hier nicht notwendig, da dies das einzige Element in dieser Spalte ist.
+- Im `.teaser` stehen `.teaser-title` und `.teaser-text` untereinander. Hier gilt das gleiche wie oben: Wir könnten `.teaser` als flex-root verwenden, aber da die Inhalte in `div` stehen, ist kein weiterer Flex zwingend erforderlich.
+- Damit `.container-left` und `.container-right` die volle Breite nutzen, setzen wir `flex: 1` bei beiden.
 
 
-## Aufgabe 3.3: Produktbild
-> Budget: 15 Minuten
+#### 2. Lösung: HTML-Grundstruktur
 
-Sie sollen die folgende Darstellung einer Produktabbildung erzeugen.
+```html
+<!DOCTYPE html>
+<html lang="de">
 
-![Produktabbildung](6.png)
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riemkes Lösung</title>
+</head>
 
-Wenn das Bild mit der Maus überfahren wird, dann vergrößert es sich etwas. Der Clou: Die anderen Elemente verschieben sich dabei nicht. Verwenden Sie Floating für das Layout.
+<body>
+    <div class="container-left"><img src="image.png"></div>
+    <div class="container-right">
+        <div class="teaser">
+            <div class="teaser-title">Stadt testet neues ...  </div>
+            <div class="teaser-text">In der Innenstadt ... </div>
+        </div>
+        <div class="content">
+            weiterer Seiteninhalt
+        </div>
+    </div>
+</body>
 
-Sie können aus drei Produktabbildungen wählen:
+</html>
+```
 
-- [Action Figur OMM Studentin](student-1.png)
-- [Action Figur OMM Student](student-1.png)
-- [Action Figur Extra Hero Edition](student-3.png)
 
-[Lösung](loesungen/c-3-3.qmd)
+#### 3. Lösung: HTML und CSS
 
-## Aufgabe 3.4: Die Rechnung zum Selbstdruck
-> Budget: 45 Minuten
-
-![Die Rechnung auf dem Bildschirm](2.png)
-
-Gegegeben ist das folgende HTML-Dokument einer Online-Rechnung mit CSS-Layout. Es ergibt die obige Darstellung. 
-
-Passen Sie das Dokument so an, dass es beim Drucken im Browser besser dargestellt wird (Screenshot unten). Es gibt hier vielfältige Möglichkeiten für Verbesserungen. 
-
-![Die Rechnung auf dem Bildschirm](3.png)
-
+Der nachfolgende Code enthält noch ein paar kleinere Verbesserungen mit `margin`.
 
 ```html
 <!DOCTYPE html>
@@ -92,10 +91,14 @@ Passen Sie das Dokument so an, dass es beim Drucken im Browser besser dargestell
         body {
             display: flex;
             flex-direction: row;
-
         }
 
-        .container-right,
+        .container-right
+        {
+            margin: 20px;
+            flex: 1;
+        }
+
         .container-left {
             margin: 20px;
             flex: 1;
@@ -137,10 +140,3 @@ Passen Sie das Dokument so an, dass es beim Drucken im Browser besser dargestell
 
 </html>
 ```
-
-
-[Hinweis zum Tooling](c-3-4-tooling.md)
-
-[Lösung](loesungen/c-3-4.qmd)
-
-

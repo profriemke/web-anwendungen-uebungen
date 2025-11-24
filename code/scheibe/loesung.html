@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Rechnung – Beispielagentur Web & Media</title>
+    <style>
+        :root {
+            --primary: #0057a3;
+            --accent: #fbbf24;
+            --bg: #f3f4f6;
+            --text: #111827;
+            --muted: #6b7280;
+            font-size: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        .page {
+            min-height: 100vh;
+            padding: 32px 16px;
+        }
+
+        .invoice-shell {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(15, 23, 42, 0.25);
+            overflow: hidden;
+        }
+
+        /* Kopfbereich */
+
+        .header-bar {
+            background: var(--primary);
+            color: #ffffff;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+        }
+
+        .logo span {
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .nav {
+            display: flex;
+            gap: 16px;
+            font-size: 0.85rem;
+        }
+
+        .nav a {
+            color: rgba(255, 255, 255, 0.85);
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Toolbar */
+
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 24px;
+            border-bottom: 1px solid #e5e7eb;
+            background: #f9fafb;
+            font-size: 0.9rem;
+        }
+
+        .badge {
+            background: var(--accent);
+            color: #92400e;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 999px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .toolbar-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .button {
+            padding: 8px 14px;
+            border-radius: 999px;
+            border: none;
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+
+        .button-primary {
+            background: var(--primary);
+            color: #ffffff;
+        }
+
+        .button-ghost {
+            background: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+
+        /* Rechnungsdaten */
+
+        .main {
+            padding: 24px;
+            display: grid;
+            grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+            gap: 32px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .section-title {
+            font-size: 0.8rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 4px;
+        }
+
+        .address-block h2 {
+            margin: 0 0 4px;
+            font-size: 1.1rem;
+        }
+
+        .muted {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            font-size: 0.9rem;
+        }
+
+        .meta-label {
+            color: var(--muted);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .meta-value {
+            font-weight: 500;
+        }
+
+        .issuer {
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+
+        .issuer-strong {
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        /* Position: Artikel-Tabelle */
+
+        .items {
+            padding: 24px;
+        }
+
+        .items table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .items thead th {
+            text-align: left;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e5e7eb;
+            color: var(--muted);
+        }
+
+        .items tbody td {
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+            vertical-align: top;
+        }
+
+        .items tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-muted {
+            color: var(--muted);
+        }
+
+        .totals {
+            margin-top: 16px;
+            max-width: 260px;
+            margin-left: auto;
+            font-size: 0.9rem;
+        }
+
+        .totals-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 4px 0;
+        }
+
+        .totals-row--grand {
+            border-top: 2px solid #e5e7eb;
+            margin-top: 4px;
+            padding-top: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        /* Fußbereich */
+
+        .footer {
+            padding: 16px 24px 20px;
+            font-size: 0.8rem;
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            color: var(--muted);
+            background: #f9fafb;
+        }
+
+        .badge-late {
+            color: #991b1b;
+            background: #fee2e2;
+            padding: 2px 6px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .hint {
+            max-width: 900px;
+            margin: 16px auto 0;
+            font-size: 0.8rem;
+            color: #4b5563;
+        }
+
+        .screen-only {
+            /* Klasse für Elemente, die im Print ausgeblendet werden sollen */
+        }
+
+        @supports (color: color-mix(in srgb, black 10%, white)) {
+            body {
+                background: color-mix(in srgb, #e5e7eb 40%, white 60%);
+            }
+        }
+
+    /* =========================================================
+       PRINT-LAYOUT – ALLE ÄNDERUNGEN / ERGÄNZUNGEN SIND MARKIERT
+       ========================================================= */
+
+
+
+        @page {
+            margin: 15mm 18mm;
+            /* Seitenränder für den Druck */
+        }
+
+        @media print {
+            :root {
+                font-size: 11pt;
+                /* etwas größere, druckfreundliche Schrift */
+            }
+
+            body {
+                background: #ffffff;
+                /* kein grauer Seitenhintergrund */
+                margin: 0;
+                /* Browser kümmert sich um @page-Rand */
+            }
+
+            .page {
+                padding: 0;
+                /* keine zusätzlichen Außenabstände */
+            }
+
+            .invoice-shell {
+                max-width: 100%;
+                /* volle Seitenbreite nutzen */
+                margin: 0;
+                box-shadow: none;
+                /* Schatten entfernen */
+                border-radius: 0;
+                /* keine abgerundeten Ecken */
+                border: none;
+                /* sauberes A4-Layout */
+            }
+
+            /* Navigation, Toolbar, Hinweise, Buttons im Druck ausblenden */
+
+            .screen-only {
+                display: none;
+                /* Kopfzeile, Toolbar, Hinweis ausblenden */
+            }
+
+            .button,
+            .toolbar-actions {
+                display: none;
+                /* Buttons nicht drucken */
+            }
+
+            .hint {
+                display: none;
+                /* Hinweis unter der Rechnung nicht drucken */
+            }
+
+            /* Farben und Badges vereinfachen */
+
+            .badge,
+            .badge-late {
+                background: transparent;
+                color: #000000;
+                border: 1px solid #000000;
+                /* einfache Rahmen-Badge */
+            }
+
+            .section-title {
+                color: #000000;
+                /* bessere Lesbarkeit im Druck */
+            }
+
+            /* Tabellen und Footer nicht über Seiten umbrechen */
+
+            .items table {
+                page-break-inside: avoid;
+            }
+
+            .footer,
+            .totals {
+                page-break-inside: avoid;
+            }
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="invoice-shell">
+            <header class="header-bar screen-only">
+                <div class="logo">
+                    WEB &amp; MEDIA <span>Studio</span>
+                </div>
+                <nav class="nav">
+                    <a href="#">Dashboard</a>
+                    <a href="#">Rechnungen</a>
+                    <a href="#">Kunden</a>
+                </nav>
+            </header>
+
+            <div class="toolbar screen-only">
+                <div>
+                    <span class="badge">Entwurf</span>
+                    <span class="muted" style="margin-left:8px;">
+                        Nur zur internen Abstimmung – noch nicht versendet
+                    </span>
+                </div>
+                <div class="toolbar-actions">
+                    <button class="button button-ghost">Drucken</button>
+                    <button class="button button-primary">Als PDF speichern</button>
+                </div>
+            </div>
+
+            <main class="main">
+                <section class="address-block">
+                    <div class="section-title">Rechnung an</div>
+                    <h2>Musterfirma GmbH</h2>
+                    <p class="muted">
+                        Frau Erika Muster<br>
+                        Musterstraße 12<br>
+                        70174 Stuttgart<br>
+                        Deutschland
+                    </p>
+
+                    <p class="muted" style="margin-top:18px;">
+                        <strong>Leistungszeitraum:</strong> 01.03.2025 – 31.03.2025<br>
+                        <strong>Projekt:</strong> Relaunch Unternehmenswebsite
+                    </p>
+                </section>
+
+                <section>
+                    <div class="section-title">Rechnungsdetails</div>
+                    <div class="meta-grid">
+                        <div>
+                            <div class="meta-label">Rechnungsnummer</div>
+                            <div class="meta-value">2025-0342</div>
+                        </div>
+                        <div>
+                            <div class="meta-label">Rechnungsdatum</div>
+                            <div class="meta-value">15.04.2025</div>
+                        </div>
+                        <div>
+                            <div class="meta-label">Fällig bis</div>
+                            <div class="meta-value">
+                                29.04.2025
+                                <span class="badge-late">14 Tage</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="meta-label">Kundennummer</div>
+                            <div class="meta-value">KM-1187</div>
+                        </div>
+                    </div>
+
+                    <p class="issuer" style="margin-top:18px;">
+                        Ausgestellt von<br>
+                        <span class="issuer-strong">Web &amp; Media Studio</span><br>
+                        Rotebühlplatz 1 • 70178 Stuttgart<br>
+                        USt-IdNr.: DE123456789
+                    </p>
+                </section>
+            </main>
+
+            <section class="items">
+                <div class="section-title">Leistungen</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 45%;">Beschreibung</th>
+                            <th style="width: 15%;">Menge</th>
+                            <th style="width: 20%;">Einzelpreis</th>
+                            <th style="width: 20%;" class="text-right">Gesamt</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Konzept &amp; Informationsarchitektur<br>
+                                <span class="text-muted">
+                                    Workshop, Personas, Content-Struktur
+                                </span>
+                            </td>
+                            <td>1 Paket</td>
+                            <td>1.400,00&nbsp;€</td>
+                            <td class="text-right">1.400,00&nbsp;€</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Screendesign Startseite &amp; Unterseiten<br>
+                                <span class="text-muted">inkl. zwei Feedbackschleifen</span>
+                            </td>
+                            <td>18 Std.</td>
+                            <td>95,00&nbsp;€</td>
+                            <td class="text-right">1.710,00&nbsp;€</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Frontend-Implementierung (Responsive HTML/CSS/JS)<br>
+                                <span class="text-muted">
+                                    Umsetzung in bestehendes CMS, Testing
+                                </span>
+                            </td>
+                            <td>32 Std.</td>
+                            <td>95,00&nbsp;€</td>
+                            <td class="text-right">3.040,00&nbsp;€</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Content-Einpflege &amp; Qualitätssicherung
+                            </td>
+                            <td>8 Std.</td>
+                            <td>85,00&nbsp;€</td>
+                            <td class="text-right">680,00&nbsp;€</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="totals">
+                    <div class="totals-row">
+                        <span>Zwischensumme (netto)</span>
+                        <span>6.830,00&nbsp;€</span>
+                    </div>
+                    <div class="totals-row">
+                        <span>zzgl. 19&nbsp;% MwSt.</span>
+                        <span>1.297,70&nbsp;€</span>
+                    </div>
+                    <div class="totals-row totals-row--grand">
+                        <span>Gesamtbetrag</span>
+                        <span>8.127,70&nbsp;€</span>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div>
+                    <strong>Zahlungsinformationen</strong><br>
+                    Bitte überweisen Sie den Gesamtbetrag unter Angabe der
+                    Rechnungsnummer auf folgendes Konto:<br>
+                    IBAN: DE12 3456 7890 1234 5678 00 • BIC: GENODEF1S01
+                </div>
+                <div>
+                    <strong>Kontakt</strong><br>
+                    hello@web-media-studio.de<br>
+                    +49 (0)711 123456-0<br>
+                    www.web-media-studio.de
+                </div>
+            </footer>
+        </div>
+
+        <p class="hint screen-only">
+            Hinweis: Dieses Layout ist für die Darstellung im Browser optimiert
+            (Farben, Schatten, Navigation, Buttons). Für eine saubere
+            Druckausgabe wurden oben <code>@page</code> und
+            <code>@media print</code> ergänzt, die z.&nbsp;B. Navigation,
+            Toolbar und diesen Hinweis ausblenden und das Layout auf A4
+            anpassen.
+        </p>
+    </div>
+</body>
+
+</html>

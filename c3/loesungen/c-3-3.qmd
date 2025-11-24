@@ -1,0 +1,112 @@
+---
+  title: "Capstone Übung C.3.3: Produktbild"
+---
+Sie sollen die folgende Darstellung einer Produktabbildung erzeugen.
+
+![Produktabbildung](../6.png)
+
+Wenn das Bild mit der Maus überfahren wird, dann vergrößert es sich etwas. Der Clou: Die anderen Elemente verschieben sich dabei nicht. Verwenden Sie Floating für das Layout.
+
+Sie können aus drei Produktabbildungen wählen:
+
+- [Action Figur OMM Studentin](../student-1.png)
+- [Action Figur OMM Student](../student-1.png)
+- [Action Figur Extra Hero Edition](../student-3.png)
+
+## Lösung
+
+
+### Lösungsidee
+
+#### HTML-Struktur
+Auch hier beginnen wir wie immer mit der HTML-Struktur. Wir brauchen:
+ 
+- Einen Container für das gesamte Produkt `product-container`.
+- Einen Container für das Bild `image-container`.
+- Einen Container für den Text `description-container`.
+
+Diese sind wie folgt verschachtelt:
+
+```html
+    <div class="product-container">
+        <div class="image-container">
+            <img src="action-1.png" alt="Action Figur">
+        </div>
+        <div class="description-container">
+            <h3>Action Figur</h3>
+            Das ideale Spielzeug für Kinder ab 5 Jahren.
+            Achtung enthält verschluckbare Kleinteile!
+        </div>
+    </div>
+```
+
+#### CSS
+
+Das zentrale Problem, welches sich durch den `hover` mit Vergrößerung des Bildes ergibt ist, dass sich der Text daneben verschiebt. Die Lösung ist, dem 
+`.product-container`, `.description-container` und dem `.image-container` eine feste Breite und Höhe zu geben (zumindest mindestens eine Breite). Beim `.image-container` müssen diese größer sein als das Bild beim `hover`.
+
+Anschließend wird gefloatet. `.product-container` ist der `flow-root` (alternativ ist ein Clearfix möglich). Die Container `.image-container` und `.description-container` werden `left` gefloatet.
+
+
+### Umsetzung
+
+Damit ergibt sich der folgende Gesamtcode.
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riemke hat eine Lösung</title>
+    <style>
+        .product-container {
+            width: 500px;
+            height: 200px;
+            padding: 10px;
+            border: 2px solid black;
+            display: flow-root;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .image-container {
+            width: 160px;
+            float: left;
+
+        }
+
+        .description-container {
+            width: 320px;
+            float: left;
+        }
+
+        .product-container div img {
+            width: 120px;
+            border-radius: 10px;
+        }
+
+        .product-container div img:hover {
+            width: 130px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="product-container">
+        <div class="image-container">
+            <img src="action-1.png" alt="Action Figur">
+        </div>
+        <div class="description-container">
+            <h3>Action Figur</h3>
+            Das ideale Spielzeug für Kinder ab 5 Jahren.
+            Achtung enthält verschluckbare Kleinteile!
+        </div>
+    </div>
+</body>
+
+</html>
+```
+

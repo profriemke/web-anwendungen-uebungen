@@ -1,0 +1,183 @@
+---
+  title: "Capstone Übung C.3.1: Ein CSS Logo"
+---
+![Das Logo](../1.png)
+
+Der Bogensportverein Brausbach an der Donner (B-BAD) möchte seine Vereins-Website komplett ohne eingebundene Bilder und alle Grafiken nur mit CSS gestalten. Sie erhalten den Auftrag hierfür. Beginnen Sie mit dem obigen Logo, welches Sie in HTML und CSS umsetzen. 
+
+Lösungshinweis: Erinnern Sie sich an den Border-Radius und wann am Ende ein Kreis dabei herauskommt. 
+
+
+### Lösung:
+
+#### 1. Entwicklung der Idee 
+
+Im ersten Schritt entwerfen wir die HTML-Struktur.
+
+a. Wir brauchen vier HTML-Elemente, die wir ansprechen und stylen können.
+b. Hierzu eignen sich `div`, die wir mit `id` mit den Farbnamen versehen.
+c. Wie strukturieren wir die `div`? Wir können sie 
+    - untereinander schreiben oder
+    - ineinander verschachteln 
+    Der erste Ansatz führt zu einer Positionierung gegenüber einem weiteren Container-`div`, welches wir anlegen müssten. Da sie nachher ineinander liegen erscheint sinnvoller, dass wir die `div` ineinander schachteln.
+
+Im zweiten Schritt stylen wir die Elemente grundlegend.
+
+a. Wir geben stylen die obigen Elemente über die `id` in ihren Farben.
+b. Da sie verschieden groß sein sollen und ineinander liegen, werden sie nach innen immer kleiner, d.h `width` und `height` müssen nach innen kleiner werden. Nehmen wir die Größen `400px, 300px, 200px, 100px`.
+c. Sie müssen rund sein. Dies erreichen wir, wenn `border-radius > width` ist. Hierzu nehmen wir einfach Prozent, z.B. `60%`.
+
+
+Im dritten Schritt positionieren wir die Elemente.
+
+a. Wir wollen sie zu ihrer eigentlichen Erscheinungsposition relativ positionieren. Dies geht mit `position: relative`.
+b. Jeder Ring ist `100px` kleiner als der umgebende. Damit dies mittig angeordnet wird, positionieren wir `100px : 2 = 50px` (links und rechts sind `50px` frei = mittig) jeweils von oben `top` und links `left`.
+
+Jetzt können wir die Idee umsetzen.
+
+
+#### Schritt 1 aus der Idee ausführen: HTML
+
+```html
+    <div id="blau">
+        <div id="rot">
+            <div id="gelb">
+                <div id="schwarz"></div>
+            </div>
+        </div>
+    </div>
+```
+
+#### Schritt 2 aus der Idee ausführen: Grundlegendes Styling
+```css
+       #blau{
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            border-radius: 60%;
+
+                   }
+        #rot{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+             border-radius: 60%;
+                   }
+        #gelb{
+            width: 200px;
+            height: 200px;
+            background-color: yellow; 
+             border-radius: 60%;   
+
+                   }
+        #schwarz{                              
+            width: 100px;
+            height: 100px;
+            background-color: black;  border-radius: 60%;      
+        }
+```
+
+#### Schritt 3 aus der Idee ausführen: Positionierung
+```css
+       #blau {
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            border-radius: 60%;
+            /** nicht positioniert, da außen */
+        }
+
+        #rot {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            border-radius: 60%;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+
+        #gelb {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border-radius: 60%;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+
+        #schwarz {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 60%;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+```
+
+
+### Finale Lösung
+```html
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Übung vom Riemke</title>
+    <style>
+        #blau {
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            border-radius: 60%;
+
+        }
+
+        #rot {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            border-radius: 60%;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+
+        #gelb {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border-radius: 60%;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+
+        #schwarz {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 60%;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="blau">
+        <div id="rot">
+            <div id="gelb">
+                <div id="schwarz"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+```
