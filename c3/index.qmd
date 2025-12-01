@@ -2,7 +2,7 @@
   title: "Capstone Übung C.3: CSS"
 ---
 
-## Aufgabe 3.1: Ein CSS Logo
+## Aufgabe C.3.1: Ein CSS Logo
 > Budget: 20 Minuten
 
 ![Das Logo](1.png)
@@ -14,7 +14,7 @@ Lösungshinweis: Erinnern Sie sich an den Border-Radius und wann am Ende ein Kre
 [Lösung](loesungen/c-3-1.qmd)
 
 
-## Aufgabe 3.2: Nachrichten-Teaser mit CSS
+## Aufgabe C.3.2: Nachrichten-Teaser mit CSS
 > Budget: 20 Minuten
 
 ```text
@@ -51,7 +51,7 @@ Setzen Sie dieses Layout um. Sie können hierzu Floating, Grid oder Flexbox verw
 [Lösung](loesungen/c-3-2.qmd)
 
 
-## Aufgabe 3.3: Produktbild
+## Aufgabe C.3.3: Produktbild
 > Budget: 15 Minuten
 
 Sie sollen die folgende Darstellung einer Produktabbildung erzeugen.
@@ -68,7 +68,7 @@ Sie können aus drei Produktabbildungen wählen:
 
 [Lösung](loesungen/c-3-3.qmd)
 
-## Aufgabe 3.4: Die Rechnung zum Selbstdruck
+## Aufgabe C.3.4: Die Rechnung zum Selbstdruck
 > Budget: 45 Minuten
 
 ![Die Rechnung auf dem Bildschirm](2.png)

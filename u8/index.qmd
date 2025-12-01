@@ -26,6 +26,6 @@ Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich
 ### Aufgabe 1: Verbesserte Anwendung
 > Budget: 60 Minuten
 
-Aktuell kann sich jeder regsitrieren. Das muss anders werden. Weg mit dem Registrierungsformular! Nur Administratoren können nach Login weitere Nutzer anlegen - und auch wieder löschen.
+Aktuell kann sich jeder registrieren. Das muss anders werden. Weg mit dem Registrierungsformular! Nur Administratoren können nach Login weitere Nutzer anlegen - und auch wieder löschen.
 
 Erweitern Sie die Kundendaten-App entsprechend. Überlegen Sie sich, welche Seiten mit Formulare und Daten Sie benötigen. 
