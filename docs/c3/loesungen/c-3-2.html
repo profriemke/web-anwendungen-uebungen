@@ -271,10 +271,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Das Layout hat offensichtlich zwei Spalten: links und rechts.</li>
 <li>Hierfür erstellen wir zwei <code>div</code> mit den Klassen <code>.container-left</code> und <code>.container-right</code>, in den wir den Seiteninhalt packen. Wir könnten alternativ auch <code>id</code> verwenden, da diese nur einmalig vorkommen.</li>
-<li>Diese beiden Container flexen wir in einer <code>row</code>. Als umgebende flex-root verwenden wir hier einfach den <code>body</code>.</li>
+<li>Diese beiden Container flexen wir in einer <code>row</code>. Als umgebende <code>flex-root</code> verwenden wir hier einfach den <code>body</code>.</li>
 <li><code>.teaser</code> und <code>.content</code> könnten wir in einem weiteren Flex untereinander (also als <code>column</code>) in der Spalte <code>.container-right</code> flexen. Da beide aber <code>div</code> sind, stehen sie sowieso untereinander.</li>
 <li>Das Bild <code>.teaser-image</code> packen wir einfach in <code>.container-left</code>. Ein Flex ist hier nicht notwendig, da dies das einzige Element in dieser Spalte ist.</li>
-<li>Im <code>.teaser</code> stehen <code>.teaser-title</code> und <code>.teaser-text</code> untereinander. Hier gilt das gleiche wie oben: Wir könnten <code>.teaser</code> als flex-root verwenden, aber da die Inhalte in <code>div</code> stehen, ist kein weiterer Flex zwingend erforderlich.</li>
+<li>Im <code>.teaser</code> stehen <code>.teaser-title</code> und <code>.teaser-text</code> untereinander. Hier gilt das gleiche wie oben: Wir könnten <code>.teaser</code> als <code>flex-root</code> verwenden, aber da die Inhalte in <code>div</code> stehen, ist kein weiterer Flex zwingend erforderlich.</li>
 <li>Damit <code>.container-left</code> und <code>.container-right</code> die volle Breite nutzen, setzen wir <code>flex: 1</code> bei beiden.</li>
 </ul>
 </section>

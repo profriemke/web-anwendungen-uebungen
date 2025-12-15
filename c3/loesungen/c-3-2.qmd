@@ -39,10 +39,10 @@ Setzen Sie dieses Layout um. Sie können hierzu Floating, Grid oder Flexbox verw
 
 - Das Layout hat offensichtlich zwei Spalten: links und rechts.
 - Hierfür erstellen wir zwei `div` mit den Klassen `.container-left` und `.container-right`, in den wir den Seiteninhalt packen. Wir könnten alternativ auch `id` verwenden, da diese nur einmalig vorkommen.
-- Diese beiden Container flexen wir in einer `row`. Als umgebende flex-root verwenden wir hier einfach den `body`.
+- Diese beiden Container flexen wir in einer `row`. Als umgebende `flex-root` verwenden wir hier einfach den `body`.
 - `.teaser` und `.content` könnten wir in einem weiteren Flex untereinander (also als `column`) in der Spalte `.container-right` flexen. Da beide aber `div` sind, stehen sie sowieso untereinander.
 - Das Bild `.teaser-image` packen wir einfach in `.container-left`. Ein Flex ist hier nicht notwendig, da dies das einzige Element in dieser Spalte ist.
-- Im `.teaser` stehen `.teaser-title` und `.teaser-text` untereinander. Hier gilt das gleiche wie oben: Wir könnten `.teaser` als flex-root verwenden, aber da die Inhalte in `div` stehen, ist kein weiterer Flex zwingend erforderlich.
+- Im `.teaser` stehen `.teaser-title` und `.teaser-text` untereinander. Hier gilt das gleiche wie oben: Wir könnten `.teaser` als `flex-root` verwenden, aber da die Inhalte in `div` stehen, ist kein weiterer Flex zwingend erforderlich.
 - Damit `.container-left` und `.container-right` die volle Breite nutzen, setzen wir `flex: 1` bei beiden.
 
 
