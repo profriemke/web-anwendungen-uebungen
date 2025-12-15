@@ -60,14 +60,14 @@
     "href": "u9/index.html",
     "title": "Übung 9: Grundlagen CSS",
     "section": "",
-    "text": "Budget: 15 Minuten\n\nGegeben ist der folgende Code-Ausschnitt, der noch in ein HTML-Dokument eingefügt werden muss. Wir verwenden dazu einfach Visual Studio Code mit seiner Vorschau-Funktion.\n &lt;h2&gt;Erstes Kapitel&lt;/h2&gt;\n &lt;p&gt;Dies ist ein Absatz&lt;/p&gt;\n\n &lt;h2&gt;Zweites Kapitel&lt;/h2&gt;\n &lt;p&gt;Dies ist ein Absatz&lt;/p&gt;\n\nWir färben im ersten Stylesheet die Überschrift im folgenden Code rot und hinterlegen den Absatz mit einem hellgrauen Hintergrund. Das Stylesheet wird in den Header eingefügt.\nWas passiert mit dem zweiten Kapitel und seiner Überschrift?\nSchreiben Sie rechts neben den Code eine Alternative auf Basis von Individualformaten (`id)."
+    "text": "Budget: 15 Minuten\n\nGegeben ist der folgende Code-Ausschnitt, der noch in ein HTML-Dokument eingefügt werden muss. Wir verwenden dazu einfach Visual Studio Code mit seiner Vorschau-Funktion.\n &lt;h2&gt;Erstes Kapitel&lt;/h2&gt;\n &lt;p&gt;Dies ist ein Absatz&lt;/p&gt;\n\n &lt;h2&gt;Zweites Kapitel&lt;/h2&gt;\n &lt;p&gt;Dies ist ein Absatz&lt;/p&gt;\n\nWir färben im ersten Stylesheet die Überschrift im folgenden Code rot und hinterlegen den Absatz mit einem hellgrauen Hintergrund. Das Stylesheet wird in den Header eingefügt.\nWas passiert mit dem zweiten Kapitel und seiner Überschrift?\nSchreiben Sie rechts neben den Code eine Alternative auf Basis von Individualformaten (id)."
   },
   {
     "objectID": "u9/index.html#aufgabe-1-einfaches-css-styling",
     "href": "u9/index.html#aufgabe-1-einfaches-css-styling",
     "title": "Übung 9: Grundlagen CSS",
     "section": "",
-    "text": "Budget: 15 Minuten\n\nGegeben ist der folgende Code-Ausschnitt, der noch in ein HTML-Dokument eingefügt werden muss. Wir verwenden dazu einfach Visual Studio Code mit seiner Vorschau-Funktion.\n &lt;h2&gt;Erstes Kapitel&lt;/h2&gt;\n &lt;p&gt;Dies ist ein Absatz&lt;/p&gt;\n\n &lt;h2&gt;Zweites Kapitel&lt;/h2&gt;\n &lt;p&gt;Dies ist ein Absatz&lt;/p&gt;\n\nWir färben im ersten Stylesheet die Überschrift im folgenden Code rot und hinterlegen den Absatz mit einem hellgrauen Hintergrund. Das Stylesheet wird in den Header eingefügt.\nWas passiert mit dem zweiten Kapitel und seiner Überschrift?\nSchreiben Sie rechts neben den Code eine Alternative auf Basis von Individualformaten (`id)."
+    "text": "Budget: 15 Minuten\n\nGegeben ist der folgende Code-Ausschnitt, der noch in ein HTML-Dokument eingefügt werden muss. Wir verwenden dazu einfach Visual Studio Code mit seiner Vorschau-Funktion.\n &lt;h2&gt;Erstes Kapitel&lt;/h2&gt;\n &lt;p&gt;Dies ist ein Absatz&lt;/p&gt;\n\n &lt;h2&gt;Zweites Kapitel&lt;/h2&gt;\n &lt;p&gt;Dies ist ein Absatz&lt;/p&gt;\n\nWir färben im ersten Stylesheet die Überschrift im folgenden Code rot und hinterlegen den Absatz mit einem hellgrauen Hintergrund. Das Stylesheet wird in den Header eingefügt.\nWas passiert mit dem zweiten Kapitel und seiner Überschrift?\nSchreiben Sie rechts neben den Code eine Alternative auf Basis von Individualformaten (id)."
   },
   {
     "objectID": "u9/index.html#aufgabe-2-ein-magisches-rechteck",
@@ -109,14 +109,14 @@
     "href": "u9/index.html#aufgabe-7-zeigen-sie-position",
     "title": "Übung 9: Grundlagen CSS",
     "section": "Aufgabe 7: Zeigen Sie Position!",
-    "text": "Aufgabe 7: Zeigen Sie Position!\n\nBudget: 15 Minuten\n\nErzeugen Sie mittels CSS aus dem gegebenen HTML-Code die abgebildeten Darstellungen jeweils separat. Verwenden Sie hierzu Positionierung. Welche Art der Positionierung ist hier geeignet: fixed, relative und/oderabsolute. (Tipp: es sind zwei der drei).\nErste Darstellung:\n\n\n\nScreenshot der ersten Darstellung\n\n\nZweite Darstellung:\n\n\n\nScreenshot der zweiten Darstellung"
+    "text": "Aufgabe 7: Zeigen Sie Position!\n\nBudget: 15 Minuten\n\nErzeugen Sie mittels CSS aus dem gegebenen HTML-Code die abgebildeten Darstellungen jeweils separat. Verwenden Sie hierzu Positionierung. Welche Art der Positionierung ist hier geeignet: fixed, relative und/oder absolute. (Tipp: es sind zwei der drei).\nErste Darstellung:\n\n\n\nScreenshot der ersten Darstellung\n\n\nZweite Darstellung:\n\n\n\nScreenshot der zweiten Darstellung"
   },
   {
     "objectID": "u9/index.html#homework",
     "href": "u9/index.html#homework",
     "title": "Übung 9: Grundlagen CSS",
     "section": "Homework",
-    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Boxen\nErstelle Sie ein Stylesheet, dass aus dem unten angegebenen HTML die folgende Darstellung erzeugt.\n\n\n\nScreenshot der Darstellung\n\n\n&lt;!DOCTYPE html&gt;\n&lt;html lang=\"de\"&gt;\n&lt;head&gt;\n &lt;meta charset=\"UTF-8\"&gt;\n &lt;title&gt;Title&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n  &lt;div id=\"box1\"&gt;&lt;/div&gt;\n  &lt;div id=\"box2\"&gt;&lt;/div&gt;\n  &lt;div id=\"box3\"&gt;&lt;/div&gt;\n&lt;/body&gt;\n&lt;/html&gt;"
+    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Boxen\nErstellen Sie ein Stylesheet, dass aus dem unten angegebenen HTML die folgende Darstellung erzeugt. Verwenden Sie keine Positionierung.\n\n\n\nScreenshot der Darstellung\n\n\n&lt;!DOCTYPE html&gt;\n&lt;html lang=\"de\"&gt;\n&lt;head&gt;\n &lt;meta charset=\"UTF-8\"&gt;\n &lt;title&gt;Title&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n  &lt;div id=\"box1\"&gt;&lt;/div&gt;\n  &lt;div id=\"box2\"&gt;&lt;/div&gt;\n  &lt;div id=\"box3\"&gt;&lt;/div&gt;\n&lt;/body&gt;\n&lt;/html&gt;"
   },
   {
     "objectID": "u3/index.html",
@@ -606,7 +606,7 @@
     "href": "u10/index.html#aufgabe-2-css-dialogbox-in-budget-oder-luxus",
     "title": "Übung 10: Mehr CSS",
     "section": "Aufgabe 2: CSS Dialogbox in Budget oder Luxus",
-    "text": "Aufgabe 2: CSS Dialogbox in Budget oder Luxus\n\nBudget: 30 Minuten\n\n\n\n\nBudget-Vaiante links Luxus-Variante rechts\n\n\n\nErstellen Sie eine Dialogbox mit 500x300 Pixel, die Sie wie nachstehend abgebildet gestalten. Entweder in der einfachen Budget-Variante (links) oder der Luxusvariante (rechts) oder gar noch viel schöner (nicht abgebildet)– wie Sie möchten. Lösungshinweis: Es handelt sich hier um drei div, wovon zwei positioniert sind und eine Schachtelung.\nErstellen Sie in einem beliebigen AdonisJS-Projekt eine Route /dialog mit einer Seite, die diese Dialogbox anzeigt."
+    "text": "Aufgabe 2: CSS Dialogbox in Budget oder Luxus\n\nBudget: 30 Minuten\n\n\n\n\nBudget-Vaiante links Luxus-Variante rechts\n\n\n\nErstellen Sie eine Dialogbox mit 500x300 Pixel, die Sie wie nachstehend abgebildet gestalten. Entweder in der einfachen Budget-Variante (links) oder der Luxusvariante (rechts) oder gar noch viel schöner (nicht abgebildet)– wie Sie möchten. Lösungshinweis: Es handelt sich hier um drei div, wovon zwei positioniert sind und eine Schachtelung.\nErstellen Sie in einem beliebigen AdonisJS-Projekt eine Route /dialog mit einem Template welches diese Dialogbox anzeigt."
   },
   {
     "objectID": "u10/index.html#aufgabe-3-css-fonts",
@@ -620,14 +620,14 @@
     "href": "u10/index.html#aufgabe-4-das-menü-bitte",
     "title": "Übung 10: Mehr CSS",
     "section": "Aufgabe 4: Das Menü bitte!",
-    "text": "Aufgabe 4: Das Menü bitte!\n\nBudget: 20 Minuten\n\n\n\n\nDas Design des Menus\n\n\nGegeben ist das untenstehende HTML. Es soll das oben abgebildete Menu daraus erstellt werden. Geben Sie das dafür erforderliche CSS an. Sofern Sie Maßangaben benötigen, schätzen Sie diese. Außerhalb des Styles soll nichts geändert werden und es soll keine Positionierung mit relative, absolute oder fixed verwendet werden. Menüpunkte sollen in hellblau hovern.\n&lt;!DOCTYPE html&gt;\n&lt;html lang=\"de\"&gt;\n&lt;head&gt;\n  &lt;title&gt;Aufgabe&lt;/title&gt;\n  &lt;style&gt;\n\n  &lt;/style&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;div class=\"navi\"&gt;\n    &lt;div class=\"menuitem\"&gt;Home&lt;/div&gt;\n    &lt;div class=\"menuitem\"&gt;Shop&lt;/div&gt;\n    &lt;div class=\"menuitem\"&gt;Impressum&lt;/div&gt;\n&lt;/div&gt;\n&lt;/body&gt;\n&lt;/html&gt;"
+    "text": "Aufgabe 4: Das Menü bitte!\n\nBudget: 20 Minuten\n\n\n\n\nDas Design des Menus\n\n\nHier eine ehemalige Klausuraufgabe: Gegeben ist das untenstehende HTML. Es soll das oben abgebildete Menu daraus erstellt werden. Geben Sie das dafür erforderliche CSS an. Sofern Sie Maßangaben benötigen, schätzen Sie diese. Außerhalb des Styles soll nichts geändert werden und es soll keine Positionierung mit relative, absolute oder fixed verwendet werden. Menüpunkte sollen in hellblau hovern.\n&lt;!DOCTYPE html&gt;\n&lt;html lang=\"de\"&gt;\n&lt;head&gt;\n  &lt;title&gt;Aufgabe&lt;/title&gt;\n  &lt;style&gt;\n\n  &lt;/style&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;div class=\"navi\"&gt;\n    &lt;div class=\"menuitem\"&gt;Home&lt;/div&gt;\n    &lt;div class=\"menuitem\"&gt;Shop&lt;/div&gt;\n    &lt;div class=\"menuitem\"&gt;Impressum&lt;/div&gt;\n&lt;/div&gt;\n&lt;/body&gt;\n&lt;/html&gt;"
   },
   {
     "objectID": "u10/index.html#homework",
     "href": "u10/index.html#homework",
     "title": "Übung 10: Mehr CSS",
     "section": "Homework",
-    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Die Tabelle\n\nBudget: 15 Minuten\n\nErstellen Sie eine Tabelle in HTML mit fünf Zeilen und einer Überschrift-Zeile. Die Überschrift- Zeile soll dunkelblau hinterlegt sein. Gerade Zeilen sind hellblau und ungerade Zeilen werden weiß hinterlegt. Hinweis: Stichwort odd/even.\n\n\nAufgabe 2: Spurensuche\n\nBudget: 10 Minuten\n\nWie groß ist die Box eines Elements, das keine Größenangabe hat? Testen Sie dies, indem Sie ein Beispiel mit h1, h2, a, div und p erstellen und dies mit dem Inspektor der Entwicklungswerkzeuge untersuchen. Klären Sie in diesem Zusammenhang was Inline und Block Elemente sind. Welche der oben genannten Elemente sind nach Ihren Untersuchungen inline und welche block?"
+    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Die Tabelle\n\nBudget: 15 Minuten\n\nErstellen Sie eine Tabelle in HTML mit fünf Zeilen und einer Überschrift-Zeile. Die Überschrift-Zeile soll dunkelblau hinterlegt sein. Gerade Zeilen sind hellblau und ungerade Zeilen werden weiß hinterlegt. Hinweis zum Nachschlagen: Stichwort odd/even.\n\n\nAufgabe 2: Spurensuche\n\nBudget: 10 Minuten\n\nWie groß ist die Box eines Elements, das keine Größenangabe hat? Testen Sie dies, indem Sie ein Beispiel mit h1, h2, a, div und p erstellen und dies mit dem Inspektor der Entwicklungswerkzeuge untersuchen. Klären Sie in diesem Zusammenhang was inline und block Elemente sind. Welche der oben genannten Elemente sind nach Ihren Untersuchungen inline und welche block?"
   },
   {
     "objectID": "u8/index.html",

@@ -16,7 +16,7 @@ Gegeben ist der folgende Code-Ausschnitt, der noch in ein HTML-Dokument eingefü
 ```
 1. Wir färben im ersten Stylesheet die Überschrift im folgenden Code rot und hinterlegen den Absatz mit einem hellgrauen Hintergrund. Das Stylesheet wird in den Header eingefügt.
 2. Was passiert mit dem zweiten Kapitel und seiner Überschrift?
-3. Schreiben Sie rechts neben den Code eine Alternative auf Basis von Individualformaten (`id).
+3. Schreiben Sie rechts neben den Code eine Alternative auf Basis von Individualformaten (`id`).
 
 
 ## Aufgabe 2: Ein magisches Rechteck
@@ -44,7 +44,7 @@ Unsere Schritte:
 ## Aufgabe 4: Eine Box in der Box
 > Budget: 15 Minuten
 
-Erzeugen Sie mittels CSS und HTML-Code die abgebildete Darstellung. Die äußere Box soll dabei 200 Pixel breit sein.
+Erzeugen Sie mittels CSS und HTML-Code die abgebildete Darstellung. Die äußere Box soll dabei `200` Pixel breit sein.
 
 ![Screenshot der Darstellung ](4.png)
 
@@ -59,7 +59,7 @@ Unsere Schritte:
 
 Erzeugen Sie mittels CSS aus dem gegebenen HTML-Code die abgebildete Darstellung.  
 
-Die äußere Box soll dabei 200 Pixel breit sein. 
+Die äußere Box soll dabei `200` Pixel breit sein. 
 
 ![Screenshot der Darstellung ](5.png)
                            
@@ -84,7 +84,7 @@ Die äußere Box soll dabei 200 Pixel breit sein.
 
 Erzeugen Sie mittels CSS aus dem gegebenen HTML-Code die abgebildete Darstellung.
 
-Die Boxen sollen dabei 200 Pixel breit sein. Es soll für die Lösung keine Positionierung verwendet werden. Sie benötigen hier die Eigenschaften margin und border.
+Die Boxen sollen dabei `200` Pixel breit sein. Es soll für die Lösung keine Positionierung verwendet werden. Sie benötigen hier die Eigenschaften `margin` und `border`.
 
 ![Screenshot der Darstellung ](6.png)
 
@@ -108,7 +108,7 @@ Die Boxen sollen dabei 200 Pixel breit sein. Es soll für die Lösung keine Posi
 ## Aufgabe 7: Zeigen Sie Position!
 > Budget: 15 Minuten
 
-Erzeugen Sie mittels CSS aus dem gegebenen HTML-Code die abgebildeten Darstellungen jeweils separat. Verwenden Sie hierzu Positionierung. Welche Art der Positionierung ist hier geeignet: `fixed`, `relative und/oder `absolute. (Tipp: es sind zwei der drei).
+Erzeugen Sie mittels CSS aus dem gegebenen HTML-Code die abgebildeten Darstellungen jeweils separat. Verwenden Sie hierzu Positionierung. Welche Art der Positionierung ist hier geeignet: `fixed`, `relative` und/oder `absolute`. (Tipp: es sind zwei der drei).
 
 Erste Darstellung: 
 
@@ -127,7 +127,7 @@ Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich
 
 ### Aufgabe 1: Boxen
 
-Erstelle Sie ein Stylesheet, dass aus dem unten angegebenen HTML die folgende Darstellung erzeugt.
+Erstellen Sie ein Stylesheet, dass aus dem unten angegebenen HTML die folgende Darstellung erzeugt. Verwenden Sie keine Positionierung.
 
 ![Screenshot der Darstellung ](home_1.png)
 

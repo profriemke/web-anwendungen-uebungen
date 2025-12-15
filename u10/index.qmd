@@ -49,7 +49,7 @@ b. Beschriften Sie das Ergebnis mit Pfeilen, bei denen Sie angeben, welche Farbe
 ![Budget-Vaiante links Luxus-Variante rechts](2.png)
 
 a. Erstellen Sie eine Dialogbox mit 500x300 Pixel, die Sie wie nachstehend abgebildet gestalten. Entweder in der einfachen Budget-Variante (links) oder der Luxusvariante (rechts) oder gar noch viel schöner (nicht abgebildet)– wie Sie möchten. Lösungshinweis: Es handelt sich hier um drei `div`, wovon zwei positioniert sind und eine Schachtelung.
-b. Erstellen Sie in einem beliebigen AdonisJS-Projekt eine Route /dialog mit einer Seite, die diese Dialogbox anzeigt.
+b. Erstellen Sie in einem beliebigen AdonisJS-Projekt eine Route `/dialog` mit einem Template welches diese Dialogbox anzeigt.
 
 ## Aufgabe 3: CSS Fonts
 > Budget: 25 Minuten
@@ -68,7 +68,7 @@ d. Ergänzen Sie den Code so, dass nur die Überschrift erscheint und bei Hovern
 
 ![Das Design des Menus](4.png)
 
-Gegeben ist das untenstehende HTML. Es soll das oben abgebildete Menu daraus erstellt werden. Geben Sie das dafür erforderliche CSS an. Sofern Sie Maßangaben benötigen, schätzen Sie diese. Außerhalb des Styles soll nichts geändert werden und es soll keine Positionierung mit `relative`, `absolute` oder `fixed` verwendet werden. Menüpunkte sollen in hellblau hovern.
+Hier eine ehemalige Klausuraufgabe: Gegeben ist das untenstehende HTML. Es soll das oben abgebildete Menu daraus erstellt werden. Geben Sie das dafür erforderliche CSS an. Sofern Sie Maßangaben benötigen, schätzen Sie diese. Außerhalb des Styles soll nichts geändert werden und es soll keine Positionierung mit `relative`, `absolute` oder `fixed` verwendet werden. Menüpunkte sollen in hellblau hovern.
 
 ```html
 <!DOCTYPE html>
@@ -96,13 +96,11 @@ Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich
 ### Aufgabe 1: Die Tabelle
 >Budget: 15 Minuten
 
-Erstellen Sie eine Tabelle in HTML mit fünf Zeilen und einer Überschrift-Zeile. Die Überschrift-
-Zeile soll dunkelblau hinterlegt sein. Gerade Zeilen sind hellblau und ungerade Zeilen werden 
-weiß hinterlegt. Hinweis: Stichwort `odd`/`even`. 
+Erstellen Sie eine Tabelle in HTML mit fünf Zeilen und einer Überschrift-Zeile. Die Überschrift-Zeile soll dunkelblau hinterlegt sein. Gerade Zeilen sind hellblau und ungerade Zeilen werden 
+weiß hinterlegt. Hinweis zum Nachschlagen: Stichwort `odd`/`even`. 
 
 
 ### Aufgabe 2: Spurensuche
 > Budget: 10 Minuten
 
-Wie groß ist die Box eines Elements, das keine Größenangabe hat? Testen Sie dies, indem Sie
-ein Beispiel mit `h1`, `h2`, `a`, `div` und `p` erstellen und dies mit dem Inspektor der Entwicklungswerkzeuge untersuchen. Klären Sie in diesem Zusammenhang was Inline und Block Elemente sind. Welche der oben genannten Elemente sind nach Ihren Untersuchungen `inline` und welche `block`?
+Wie groß ist die Box eines Elements, das keine Größenangabe hat? Testen Sie dies, indem Sie ein Beispiel mit `h1`, `h2`, `a`, `div` und `p` erstellen und dies mit dem Inspektor der Entwicklungswerkzeuge untersuchen. Klären Sie in diesem Zusammenhang was `inline` und `block` Elemente sind. Welche der oben genannten Elemente sind nach Ihren Untersuchungen `inline` und welche `block`?
