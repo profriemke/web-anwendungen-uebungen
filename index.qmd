@@ -17,10 +17,7 @@ Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.
 - [Übung 9: Grundlagen CSS](u9/index.qmd)
 - [Übung 10: Mehr CSS](u10/index.qmd)
 - [Übung 11: Adaptive und Responsive Web Design](u11/index.qmd)
-- Übung 12: Eine Klausur
 - [Capstone Übung 3: CSS](c3/index.qmd)
-- Capstone Übung 3: CSS
-- Übung 13
 - Capstone Übung 4: Client-seitiges Javascript
 
 
