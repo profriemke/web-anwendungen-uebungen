@@ -13,7 +13,7 @@ d. Lagern Sie Ihren Code in eine externe Datei aus und führen Sie alle notwendi
 ## Aufgabe 2: Der Klick-Zähler
 > Budget: 20 Minuten
 
-a. Entwickeln Sie einen Klick-Zähler, der die Klicks auf einen Button zählt und in einem `div` über dem Button anzeigt. Wie merken Sie sich den Zustand desd Zählers?
+a. Entwickeln Sie einen Klick-Zähler, der die Klicks auf einen Button zählt und in einem `div` über dem Button anzeigt. Wie merken Sie sich den Zustand des Zählers?
 b. Die Zahl der Klicks soll im Button angezeigt werden.
 
 ## Aufgabe 3: Der Initialen-Ausgeber

@@ -417,7 +417,7 @@
     "href": "u12/index.html#aufgabe-2-der-klick-zähler",
     "title": "Übung 12: Client-seitiges Javascript",
     "section": "Aufgabe 2: Der Klick-Zähler",
-    "text": "Aufgabe 2: Der Klick-Zähler\n\nBudget: 20 Minuten\n\n\nEntwickeln Sie einen Klick-Zähler, der die Klicks auf einen Button zählt und in einem div über dem Button anzeigt. Wie merken Sie sich den Zustand desd Zählers?\nDie Zahl der Klicks soll im Button angezeigt werden."
+    "text": "Aufgabe 2: Der Klick-Zähler\n\nBudget: 20 Minuten\n\n\nEntwickeln Sie einen Klick-Zähler, der die Klicks auf einen Button zählt und in einem div über dem Button anzeigt. Wie merken Sie sich den Zustand des Zählers?\nDie Zahl der Klicks soll im Button angezeigt werden."
   },
   {
     "objectID": "u12/index.html#aufgabe-3-der-initialen-ausgeber",
