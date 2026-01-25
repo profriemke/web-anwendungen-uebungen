@@ -1,5 +1,5 @@
 ---
-  title: "Übung 11:Adaptive und Responsive Web Design"
+  title: "Übung 11: Adaptive und Responsive Web Design"
 ---
 
 ## Aufgabe 1: Die News-Seite eines Studiengangs

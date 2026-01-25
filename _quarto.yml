@@ -32,6 +32,8 @@ website:
             text: "Übung 10: Mehr CSS"
           - href: u11/index.qmd    
             text: "Übung 11: Adaptive und Responsive Web Design"
+          - href: u12/index.qmd    
+            text: "Übung 12: Client-seitiges Javascript"
       - text: "Capstone Übungen"
         menu:
           - href: c1/index.qmd

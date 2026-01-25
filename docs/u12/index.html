@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Web Anwendungen Übungen</title>
+<title>Übung 12: Client-seitiges Javascript – Web Anwendungen Übungen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +20,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-76b13546cc83bdca894379f4e87fb82e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-76b13546cc83bdca894379f4e87fb82e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Web Anwendungen Übungen</span>
     </a>
   </div>
@@ -89,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -98,51 +132,51 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-wöchentliche-übungen">    
         <li>
-    <a class="dropdown-item" href="./u1/index.html">
+    <a class="dropdown-item" href="../u1/index.html">
  <span class="dropdown-text">Übung 1: Setup &amp; Basics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./u2/index.html">
+    <a class="dropdown-item" href="../u2/index.html">
  <span class="dropdown-text">Übung 2: Node.js und Kommandozeile</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./u3/index.html">
+    <a class="dropdown-item" href="../u3/index.html">
  <span class="dropdown-text">Übung 3: Arrays, Funktionen und mehr</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./u4/index.html">
+    <a class="dropdown-item" href="../u4/index.html">
  <span class="dropdown-text">Übung 4: Strings, Datei und Datenbank</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./u5/index.html">
+    <a class="dropdown-item" href="../u5/index.html">
  <span class="dropdown-text">Übung 5: Objektorientierung und AdonisJS</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./u6/index.html">
+    <a class="dropdown-item" href="../u6/index.html">
  <span class="dropdown-text">Übung 6: AdonisJS und Datenbanken</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./u7/index.html">
+    <a class="dropdown-item" href="../u7/index.html">
  <span class="dropdown-text">Übung 7: AdonisJS: Eine Todo-Liste</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./u8/index.html">
+    <a class="dropdown-item" href="../u8/index.html">
  <span class="dropdown-text">Übung 8: AdonisJS: Sessions</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./u9/index.html">
+    <a class="dropdown-item" href="../u9/index.html">
  <span class="dropdown-text">Übung 9: Grundlagen CSS</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./u10/index.html">
+    <a class="dropdown-item" href="../u10/index.html">
  <span class="dropdown-text">Übung 10: Mehr CSS</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./u11/index.html">
+    <a class="dropdown-item" href="../u11/index.html">
  <span class="dropdown-text">Übung 11: Adaptive und Responsive Web Design</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./u12/index.html">
+    <a class="dropdown-item" href="../u12/index.html">
  <span class="dropdown-text">Übung 12: Client-seitiges Javascript</span></a>
   </li>  
     </ul>
@@ -153,15 +187,15 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-capstone-übungen">    
         <li>
-    <a class="dropdown-item" href="./c1/index.html">
+    <a class="dropdown-item" href="../c1/index.html">
  <span class="dropdown-text">C.1: Javascript Basics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./c2/index.html">
+    <a class="dropdown-item" href="../c2/index.html">
  <span class="dropdown-text">C.2: AdonisJS</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./c3/index.html">
+    <a class="dropdown-item" href="../c3/index.html">
  <span class="dropdown-text">C.3: CSS</span></a>
   </li>  
     </ul>
@@ -177,15 +211,28 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#aufgabe-1-die-news-seite-eines-studiengangs" id="toc-aufgabe-1-die-news-seite-eines-studiengangs" class="nav-link active" data-scroll-target="#aufgabe-1-die-news-seite-eines-studiengangs">Aufgabe 1: Die News-Seite eines Studiengangs</a></li>
+  <li><a href="#aufgabe-2-der-klick-zähler" id="toc-aufgabe-2-der-klick-zähler" class="nav-link" data-scroll-target="#aufgabe-2-der-klick-zähler">Aufgabe 2: Der Klick-Zähler</a></li>
+  <li><a href="#aufgabe-3-der-initialen-ausgeber" id="toc-aufgabe-3-der-initialen-ausgeber" class="nav-link" data-scroll-target="#aufgabe-3-der-initialen-ausgeber">Aufgabe 3: Der Initialen-Ausgeber</a></li>
+  <li><a href="#aufgabe-4-light-dark-mode" id="toc-aufgabe-4-light-dark-mode" class="nav-link" data-scroll-target="#aufgabe-4-light-dark-mode">Aufgabe 4: Light &amp; Dark Mode</a></li>
+  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a>
+  <ul class="collapse">
+  <li><a href="#aufgabe-1-interaktiver-produktfilter-für-einen-shop" id="toc-aufgabe-1-interaktiver-produktfilter-für-einen-shop" class="nav-link" data-scroll-target="#aufgabe-1-interaktiver-produktfilter-für-einen-shop">Aufgabe 1: Interaktiver Produktfilter für einen Shop</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Web Anwendungen Übungen</h1>
+<h1 class="title">Übung 12: Client-seitiges Javascript</h1>
 </div>
 
 
@@ -202,26 +249,97 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.</p>
-<ul>
-<li><a href="./u1/index.html">Übung 1: Setup &amp; Basics</a></li>
-<li><a href="./u2/index.html">Übung 2: Node.js und Kommandozeile</a></li>
-<li><a href="./u3/index.html">Übung 3: Arrays, Funktionen und mehr</a></li>
-<li><a href="./u4/index.html">Übung 4: Strings, Datei und Datenbank</a></li>
-<li><a href="./u5/index.html">Übung 5: Objektorientierung und AdonisJS</a></li>
-<li><a href="./c1/index.html">Capstone Übung 1: Javascript Basics</a></li>
-<li><a href="./u6/index.html">Übung 6: AdonisJS und Datenbanken</a></li>
-<li><a href="./u7/index.html">Übung 7: AdonisJS: Eine Todo-Liste</a></li>
-<li><a href="./u8/index.html">Übung 8: AdonisJS: Sessions</a></li>
-<li><a href="./c2/index.html">Capstone Übung 2: Kuchen backen mit AdonisJS</a></li>
-<li><a href="./u9/index.html">Übung 9: Grundlagen CSS</a></li>
-<li><a href="./u10/index.html">Übung 10: Mehr CSS</a></li>
-<li><a href="./u11/index.html">Übung 11: Adaptive und Responsive Web Design</a></li>
-<li><a href="./c3/index.html">Capstone Übung 3: CSS</a></li>
-<li><a href="./u12/index.html">Übung 12: Client-seitiges Javascript</a></li>
-</ul>
+<section id="aufgabe-1-die-news-seite-eines-studiengangs" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-1-die-news-seite-eines-studiengangs">Aufgabe 1: Die News-Seite eines Studiengangs</h2>
+<blockquote class="blockquote">
+<p>Budget: 20 Minuten</p>
+</blockquote>
+<ol type="a">
+<li>Erstellen Sie HTML-Code, der eine Überschrift mit dem Text „Hallo OMM!“ und einen Button umfasst. Ergänzen Sie die Seite mit jQuery-Code in Javascript so, dass der Button die Überschrift bei Klick ausblendet.</li>
+<li>Erstellen Sie einen zweiten Button, der den Text der Überschrift in „Hallo Nutzer!“ ändert.</li>
+<li>Ein dritter Button ändert die Farbe auf „rot“.</li>
+<li>Lagern Sie Ihren Code in eine externe Datei aus und führen Sie alle notwendige Schritte aus um den Code in die Seite zu laden.</li>
+</ol>
+</section>
+<section id="aufgabe-2-der-klick-zähler" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-2-der-klick-zähler">Aufgabe 2: Der Klick-Zähler</h2>
+<blockquote class="blockquote">
+<p>Budget: 20 Minuten</p>
+</blockquote>
+<ol type="a">
+<li>Entwickeln Sie einen Klick-Zähler, der die Klicks auf einen Button zählt und in einem <code>div</code> über dem Button anzeigt. Wie merken Sie sich den Zustand desd Zählers?</li>
+<li>Die Zahl der Klicks soll im Button angezeigt werden.</li>
+</ol>
+</section>
+<section id="aufgabe-3-der-initialen-ausgeber" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-3-der-initialen-ausgeber">Aufgabe 3: Der Initialen-Ausgeber</h2>
+<blockquote class="blockquote">
+<p>Budget: 20 Minuten</p>
+</blockquote>
+<ol type="a">
+<li>Erstellen Sie ein Formular in HTML, welches Vor- und Nachname entgegennimmt. Entwickeln Sie Javascript-Code mit jQuery, welcher die Inhalte des Formulars ausliest und die Initialen (also jeweils der erste Buchstabe des Vor- und Nachnamens) ausgibt. Die Eingabe von „Thorsten“ und „Riemke“ ergibt als Ausgabe „T.R.“.</li>
+</ol>
+</section>
+<section id="aufgabe-4-light-dark-mode" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-4-light-dark-mode">Aufgabe 4: Light &amp; Dark Mode</h2>
+<blockquote class="blockquote">
+<p>Budget: 30 Minuten</p>
+</blockquote>
+<p>In modernen Webanwendungen ist ein “Dark Mode” Standard. Ihre Aufgabe ist es, eine einfache Umschaltfunktion zu implementieren, die das Design der Seite dynamisch verändert.</p>
+<ol type="a">
+<li>Erstellen Sie eine kleine Website in HTML.</li>
+<li>Definieren Sie die CSS-Klassen <code>.light-theme</code> und <code>.dark-theme</code>, die ein Light und Dark-Grunddesign mit Background und Schriftfarbe definieren. Weisen Sie dem <code>body</code> die Klasse für das Light-Theme zu.</li>
+<li>Bauen Sie einen Umschalter (z.B. Button) ein.</li>
+<li>Implementieren Sie eine Logik mit jQuery, die das Theme umschaltet. Dies passiert durch das Entfernen der Light-Klasse aus dem <code>body</code> und das Hinzufügen der Dark-Klasse. Entsprechend auch in umgekehrter Richtung.</li>
+</ol>
+</section>
+<section id="homework" class="level2">
+<h2 class="anchored" data-anchor-id="homework">Homework</h2>
+<p>Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.</p>
+<section id="aufgabe-1-interaktiver-produktfilter-für-einen-shop" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-1-interaktiver-produktfilter-für-einen-shop">Aufgabe 1: Interaktiver Produktfilter für einen Shop</h3>
+<blockquote class="blockquote">
+<p>Budget: 90 Minuten</p>
+</blockquote>
+<p>En dieser Aufgabe erstellen Sie eine interaktive Produktfilterung für den OMM-Online-Shop. Gegeben ist der untenstehende HTML-Code. Verwenden Sie CSS für das Styling und jQuery für die Interaktivität. Ziel ist es, dass Nutzer die angezeigten Produkte nach Kategorien filtern können.</p>
+<p><em>Lösungshinweis:</em> Sie können mittels jQuery alle Einträge ausblenden und die jeweilige Kategorie selektieren und einblenden.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="ot"> lang</span><span class="op">=</span><span class="st">"de"</span><span class="dt">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> charset</span><span class="op">=</span><span class="st">"UTF-8"</span><span class="dt">&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> name</span><span class="op">=</span><span class="st">"viewport"</span><span class="ot"> content</span><span class="op">=</span><span class="st">"width=device-width, initial-scale=1.0"</span><span class="dt">&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>OMM Shop<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">header</span><span class="dt">&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>OMM-Merch-Shop<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">header</span><span class="dt">&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"filters"</span><span class="dt">&gt;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">button</span><span class="ot"> class</span><span class="op">=</span><span class="st">"filter-btn"</span><span class="ot"> data-category</span><span class="op">=</span><span class="st">"all"</span><span class="dt">&gt;</span>Alle<span class="dt">&lt;/</span><span class="kw">button</span><span class="dt">&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">button</span><span class="ot"> class</span><span class="op">=</span><span class="st">"filter-btn"</span><span class="ot"> data-category</span><span class="op">=</span><span class="st">"fashion"</span><span class="dt">&gt;</span>Fashion<span class="dt">&lt;/</span><span class="kw">button</span><span class="dt">&gt;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">button</span><span class="ot"> class</span><span class="op">=</span><span class="st">"filter-btn"</span><span class="ot"> data-category</span><span class="op">=</span><span class="st">"office"</span><span class="dt">&gt;</span>Office<span class="dt">&lt;/</span><span class="kw">button</span><span class="dt">&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">button</span><span class="ot"> class</span><span class="op">=</span><span class="st">"filter-btn"</span><span class="ot"> data-category</span><span class="op">=</span><span class="st">"accessories"</span><span class="dt">&gt;</span>Zubehör<span class="dt">&lt;/</span><span class="kw">button</span><span class="dt">&gt;</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"products"</span><span class="dt">&gt;</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"product"</span><span class="ot"> data-category</span><span class="op">=</span><span class="st">"fashion"</span><span class="dt">&gt;</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">h2</span><span class="dt">&gt;</span>Fan-Shirt Riemke<span class="dt">&lt;/</span><span class="kw">h2</span><span class="dt">&gt;</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Mit inverser Taillierung<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"product"</span><span class="ot"> data-category</span><span class="op">=</span><span class="st">"fashion"</span><span class="dt">&gt;</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">h2</span><span class="dt">&gt;</span>Fan-Shirt Wilczek<span class="dt">&lt;/</span><span class="kw">h2</span><span class="dt">&gt;</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Modischer Schnitt<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"product"</span><span class="ot"> data-category</span><span class="op">=</span><span class="st">"office"</span><span class="dt">&gt;</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">h2</span><span class="dt">&gt;</span>Aktenordner<span class="dt">&lt;/</span><span class="kw">h2</span><span class="dt">&gt;</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Stylischer Aktenordner im OMM-Design<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

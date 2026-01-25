@@ -1,0 +1,82 @@
+---
+  title: "Übung 12: Client-seitiges Javascript"
+---
+
+## Aufgabe 1: Die News-Seite eines Studiengangs
+> Budget: 20 Minuten
+
+a. Erstellen Sie HTML-Code, der eine Überschrift mit dem Text „Hallo OMM!“ und einen Button umfasst. Ergänzen Sie die Seite mit jQuery-Code in Javascript so, dass der Button die Überschrift bei Klick ausblendet.
+b. Erstellen Sie einen zweiten Button, der den Text der Überschrift in „Hallo Nutzer!“ ändert.
+c. Ein dritter Button ändert die Farbe auf „rot“.
+d. Lagern Sie Ihren Code in eine externe Datei aus und führen Sie alle notwendige Schritte aus um den Code in die Seite zu laden.
+
+## Aufgabe 2: Der Klick-Zähler
+> Budget: 20 Minuten
+
+a. Entwickeln Sie einen Klick-Zähler, der die Klicks auf einen Button zählt und in einem `div` über dem Button anzeigt. Wie merken Sie sich den Zustand desd Zählers?
+b. Die Zahl der Klicks soll im Button angezeigt werden.
+
+## Aufgabe 3: Der Initialen-Ausgeber
+> Budget: 20 Minuten
+
+a. Erstellen Sie ein Formular in HTML, welches Vor- und Nachname entgegennimmt.
+Entwickeln Sie Javascript-Code mit jQuery, welcher die Inhalte des Formulars ausliest und die Initialen (also jeweils der erste Buchstabe des Vor- und Nachnamens) ausgibt. Die Eingabe von „Thorsten“ und „Riemke“ ergibt als Ausgabe „T.R.“.
+
+## Aufgabe 4: Light & Dark Mode
+> Budget: 30 Minuten
+
+In modernen Webanwendungen ist ein "Dark Mode" Standard. Ihre Aufgabe ist es, eine einfache Umschaltfunktion zu implementieren, die das Design der Seite dynamisch verändert.
+
+a. Erstellen Sie eine kleine Website in HTML.
+b. Definieren Sie die CSS-Klassen `.light-theme` und `.dark-theme`, die ein Light und Dark-Grunddesign mit Background und Schriftfarbe definieren. Weisen Sie dem `body` die Klasse für das Light-Theme zu.
+c. Bauen Sie einen Umschalter (z.B. Button) ein.
+d. Implementieren Sie eine Logik mit jQuery, die das Theme umschaltet. Dies passiert durch das Entfernen der Light-Klasse aus dem `body` und das Hinzufügen der Dark-Klasse. Entsprechend auch in umgekehrter Richtung.
+
+
+## Homework
+
+Homework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.
+
+
+### Aufgabe 1:  Interaktiver Produktfilter für einen Shop
+> Budget: 90 Minuten
+
+En dieser Aufgabe erstellen Sie eine interaktive Produktfilterung für den OMM-Online-Shop. Gegeben ist der untenstehende HTML-Code. Verwenden Sie CSS für das Styling und jQuery für die Interaktivität. Ziel ist es, dass Nutzer die angezeigten Produkte nach Kategorien filtern können. 
+
+_Lösungshinweis:_ Sie können mittels jQuery alle Einträge ausblenden und die jeweilige Kategorie selektieren und einblenden.
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OMM Shop</title>
+</head>
+<body>
+<header>
+  <h1>OMM-Merch-Shop</h1>
+</header>
+<div class="filters">
+  <button class="filter-btn" data-category="all">Alle</button>
+  <button class="filter-btn" data-category="fashion">Fashion</button>
+  <button class="filter-btn" data-category="office">Office</button>
+  <button class="filter-btn" data-category="accessories">Zubehör</button>
+</div>
+<div class="products">
+<div class="product" data-category="fashion">
+  <h2>Fan-Shirt Riemke</h2>
+  <p>Mit inverser Taillierung</p>
+</div>
+<div class="product" data-category="fashion">
+  <h2>Fan-Shirt Wilczek</h2>
+  <p>Modischer Schnitt</p>
+</div>
+<div class="product" data-category="office">
+  <h2>Aktenordner</h2>
+  <p>Stylischer Aktenordner im OMM-Design</p>
+</div>
+</div>
+</body>
+</html>
+```

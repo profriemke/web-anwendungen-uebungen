@@ -214,7 +214,7 @@
     "href": "index.html",
     "title": "Web Anwendungen Übungen",
     "section": "",
-    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nÜbung 1: Setup & Basics\nÜbung 2: Node.js und Kommandozeile\nÜbung 3: Arrays, Funktionen und mehr\nÜbung 4: Strings, Datei und Datenbank\nÜbung 5: Objektorientierung und AdonisJS\nCapstone Übung 1: Javascript Basics\nÜbung 6: AdonisJS und Datenbanken\nÜbung 7: AdonisJS: Eine Todo-Liste\nÜbung 8: AdonisJS: Sessions\nCapstone Übung 2: Kuchen backen mit AdonisJS\nÜbung 9: Grundlagen CSS\nÜbung 10: Mehr CSS\nÜbung 11: Adaptive und Responsive Web Design\nCapstone Übung 3: CSS\nCapstone Übung 4: Client-seitiges Javascript"
+    "text": "Diese Seiten enthalten die Übungen zur Lehrveranstaltung Web Anwendungen.\n\nÜbung 1: Setup & Basics\nÜbung 2: Node.js und Kommandozeile\nÜbung 3: Arrays, Funktionen und mehr\nÜbung 4: Strings, Datei und Datenbank\nÜbung 5: Objektorientierung und AdonisJS\nCapstone Übung 1: Javascript Basics\nÜbung 6: AdonisJS und Datenbanken\nÜbung 7: AdonisJS: Eine Todo-Liste\nÜbung 8: AdonisJS: Sessions\nCapstone Übung 2: Kuchen backen mit AdonisJS\nÜbung 9: Grundlagen CSS\nÜbung 10: Mehr CSS\nÜbung 11: Adaptive und Responsive Web Design\nCapstone Übung 3: CSS\nÜbung 12: Client-seitiges Javascript"
   },
   {
     "objectID": "u2/index.html",
@@ -399,6 +399,48 @@
     "text": "Aufgabe C.1.9\nGegeben ist folgendes Objekt:\nconst person = {\n  vorname: \"Lisa\",\n  nachname: \"Meyer\",\n  alter: 28,\n  beruf: \"Webentwicklerin\"\n};\n\nVerwenden Sie Object Destructuring, um die Werte der Eigenschaften vorname und beruf aus dem Objekt zu extrahieren.\n\nGeben Sie die Werte anschließend mit console.log() aus.\n\nLösung"
   },
   {
+    "objectID": "u12/index.html",
+    "href": "u12/index.html",
+    "title": "Übung 12: Client-seitiges Javascript",
+    "section": "",
+    "text": "Budget: 20 Minuten\n\n\nErstellen Sie HTML-Code, der eine Überschrift mit dem Text „Hallo OMM!“ und einen Button umfasst. Ergänzen Sie die Seite mit jQuery-Code in Javascript so, dass der Button die Überschrift bei Klick ausblendet.\nErstellen Sie einen zweiten Button, der den Text der Überschrift in „Hallo Nutzer!“ ändert.\nEin dritter Button ändert die Farbe auf „rot“.\nLagern Sie Ihren Code in eine externe Datei aus und führen Sie alle notwendige Schritte aus um den Code in die Seite zu laden."
+  },
+  {
+    "objectID": "u12/index.html#aufgabe-1-die-news-seite-eines-studiengangs",
+    "href": "u12/index.html#aufgabe-1-die-news-seite-eines-studiengangs",
+    "title": "Übung 12: Client-seitiges Javascript",
+    "section": "",
+    "text": "Budget: 20 Minuten\n\n\nErstellen Sie HTML-Code, der eine Überschrift mit dem Text „Hallo OMM!“ und einen Button umfasst. Ergänzen Sie die Seite mit jQuery-Code in Javascript so, dass der Button die Überschrift bei Klick ausblendet.\nErstellen Sie einen zweiten Button, der den Text der Überschrift in „Hallo Nutzer!“ ändert.\nEin dritter Button ändert die Farbe auf „rot“.\nLagern Sie Ihren Code in eine externe Datei aus und führen Sie alle notwendige Schritte aus um den Code in die Seite zu laden."
+  },
+  {
+    "objectID": "u12/index.html#aufgabe-2-der-klick-zähler",
+    "href": "u12/index.html#aufgabe-2-der-klick-zähler",
+    "title": "Übung 12: Client-seitiges Javascript",
+    "section": "Aufgabe 2: Der Klick-Zähler",
+    "text": "Aufgabe 2: Der Klick-Zähler\n\nBudget: 20 Minuten\n\n\nEntwickeln Sie einen Klick-Zähler, der die Klicks auf einen Button zählt und in einem div über dem Button anzeigt. Wie merken Sie sich den Zustand desd Zählers?\nDie Zahl der Klicks soll im Button angezeigt werden."
+  },
+  {
+    "objectID": "u12/index.html#aufgabe-3-der-initialen-ausgeber",
+    "href": "u12/index.html#aufgabe-3-der-initialen-ausgeber",
+    "title": "Übung 12: Client-seitiges Javascript",
+    "section": "Aufgabe 3: Der Initialen-Ausgeber",
+    "text": "Aufgabe 3: Der Initialen-Ausgeber\n\nBudget: 20 Minuten\n\n\nErstellen Sie ein Formular in HTML, welches Vor- und Nachname entgegennimmt. Entwickeln Sie Javascript-Code mit jQuery, welcher die Inhalte des Formulars ausliest und die Initialen (also jeweils der erste Buchstabe des Vor- und Nachnamens) ausgibt. Die Eingabe von „Thorsten“ und „Riemke“ ergibt als Ausgabe „T.R.“."
+  },
+  {
+    "objectID": "u12/index.html#aufgabe-4-light-dark-mode",
+    "href": "u12/index.html#aufgabe-4-light-dark-mode",
+    "title": "Übung 12: Client-seitiges Javascript",
+    "section": "Aufgabe 4: Light & Dark Mode",
+    "text": "Aufgabe 4: Light & Dark Mode\n\nBudget: 30 Minuten\n\nIn modernen Webanwendungen ist ein “Dark Mode” Standard. Ihre Aufgabe ist es, eine einfache Umschaltfunktion zu implementieren, die das Design der Seite dynamisch verändert.\n\nErstellen Sie eine kleine Website in HTML.\nDefinieren Sie die CSS-Klassen .light-theme und .dark-theme, die ein Light und Dark-Grunddesign mit Background und Schriftfarbe definieren. Weisen Sie dem body die Klasse für das Light-Theme zu.\nBauen Sie einen Umschalter (z.B. Button) ein.\nImplementieren Sie eine Logik mit jQuery, die das Theme umschaltet. Dies passiert durch das Entfernen der Light-Klasse aus dem body und das Hinzufügen der Dark-Klasse. Entsprechend auch in umgekehrter Richtung."
+  },
+  {
+    "objectID": "u12/index.html#homework",
+    "href": "u12/index.html#homework",
+    "title": "Übung 12: Client-seitiges Javascript",
+    "section": "Homework",
+    "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Interaktiver Produktfilter für einen Shop\n\nBudget: 90 Minuten\n\nEn dieser Aufgabe erstellen Sie eine interaktive Produktfilterung für den OMM-Online-Shop. Gegeben ist der untenstehende HTML-Code. Verwenden Sie CSS für das Styling und jQuery für die Interaktivität. Ziel ist es, dass Nutzer die angezeigten Produkte nach Kategorien filtern können.\nLösungshinweis: Sie können mittels jQuery alle Einträge ausblenden und die jeweilige Kategorie selektieren und einblenden.\n&lt;!DOCTYPE html&gt;\n&lt;html lang=\"de\"&gt;\n&lt;head&gt;\n  &lt;meta charset=\"UTF-8\"&gt;\n  &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt;\n  &lt;title&gt;OMM Shop&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;header&gt;\n  &lt;h1&gt;OMM-Merch-Shop&lt;/h1&gt;\n&lt;/header&gt;\n&lt;div class=\"filters\"&gt;\n  &lt;button class=\"filter-btn\" data-category=\"all\"&gt;Alle&lt;/button&gt;\n  &lt;button class=\"filter-btn\" data-category=\"fashion\"&gt;Fashion&lt;/button&gt;\n  &lt;button class=\"filter-btn\" data-category=\"office\"&gt;Office&lt;/button&gt;\n  &lt;button class=\"filter-btn\" data-category=\"accessories\"&gt;Zubehör&lt;/button&gt;\n&lt;/div&gt;\n&lt;div class=\"products\"&gt;\n&lt;div class=\"product\" data-category=\"fashion\"&gt;\n  &lt;h2&gt;Fan-Shirt Riemke&lt;/h2&gt;\n  &lt;p&gt;Mit inverser Taillierung&lt;/p&gt;\n&lt;/div&gt;\n&lt;div class=\"product\" data-category=\"fashion\"&gt;\n  &lt;h2&gt;Fan-Shirt Wilczek&lt;/h2&gt;\n  &lt;p&gt;Modischer Schnitt&lt;/p&gt;\n&lt;/div&gt;\n&lt;div class=\"product\" data-category=\"office\"&gt;\n  &lt;h2&gt;Aktenordner&lt;/h2&gt;\n  &lt;p&gt;Stylischer Aktenordner im OMM-Design&lt;/p&gt;\n&lt;/div&gt;\n&lt;/div&gt;\n&lt;/body&gt;\n&lt;/html&gt;"
+  },
+  {
     "objectID": "c2/index.html",
     "href": "c2/index.html",
     "title": "Capstone Übung C.2: Kuchen backen mit AdonisJS",
@@ -513,21 +555,21 @@
   {
     "objectID": "u11/index.html",
     "href": "u11/index.html",
-    "title": "Übung 11:Adaptive und Responsive Web Design",
+    "title": "Übung 11: Adaptive und Responsive Web Design",
     "section": "",
     "text": "Budget: 70 Minuten\n\nFür einen völlig fiktiven Studiengang mit dem Namen „Online Medien Management“ (nicht zu verwechseln mit dem Original Online-Medien-Management, der nur mit Bindestrichen echt ist), soll eine News-Seite erstellt werden.\n\n\n\nEntwurf der Seiten\n\n\n\nRealisieren Sie das in der Abbildung links dargestellte Design. Arbeiten Sie hierzu das Design aus, d.h. statt der Skizze aus der Abbildung soll eine vollständige Seite mit echten Bildern entstehen. Das menü darf natürlich auch viel schöner sein und auch ein Hover unterstützen. Ihrer Kreativität ist hier keine Grenze gesetzt. Der Text darf natürlich Blindtext sein.\nSetzen Sie im zweiten Schritt das rechte Layout als adaptive Version des Designs aus a. um. Überlegen Sie vorher welchen Breakpoint Sie nehmen. Begründen Sie diesen. Als Hilfestellung können Sie die in der Übung gezeigten Entwicklertools verwenden. Verwenden Sie Lazy Loading für die Bilder.\nÜberlegen Sie in einer Skizze wie ein Design für ein Tablet im Querformat aussehen könnte. Legen Sie hierfür einen weiteren Breakpoint fest. Beziehen Sie in Ihre Überlegungen ein, dass Sie Elemente anzeigen oder ausblenden können. Integrieren Sie diesen Entwurf in die bestehende Lösung.\nDie Seite soll auch schön formatiert gedruckt werden. Das machen vor allem Studieninteressierte. Überlegen Sie, wie ein Print-Layout aussehen könnte. Beziehen Sie auch hier in Ihre Überlegungen ein, dass Sie Elemente anzeigen oder ausblenden können."
   },
   {
     "objectID": "u11/index.html#aufgabe-1-die-news-seite-eines-studiengangs",
     "href": "u11/index.html#aufgabe-1-die-news-seite-eines-studiengangs",
-    "title": "Übung 11:Adaptive und Responsive Web Design",
+    "title": "Übung 11: Adaptive und Responsive Web Design",
     "section": "",
     "text": "Budget: 70 Minuten\n\nFür einen völlig fiktiven Studiengang mit dem Namen „Online Medien Management“ (nicht zu verwechseln mit dem Original Online-Medien-Management, der nur mit Bindestrichen echt ist), soll eine News-Seite erstellt werden.\n\n\n\nEntwurf der Seiten\n\n\n\nRealisieren Sie das in der Abbildung links dargestellte Design. Arbeiten Sie hierzu das Design aus, d.h. statt der Skizze aus der Abbildung soll eine vollständige Seite mit echten Bildern entstehen. Das menü darf natürlich auch viel schöner sein und auch ein Hover unterstützen. Ihrer Kreativität ist hier keine Grenze gesetzt. Der Text darf natürlich Blindtext sein.\nSetzen Sie im zweiten Schritt das rechte Layout als adaptive Version des Designs aus a. um. Überlegen Sie vorher welchen Breakpoint Sie nehmen. Begründen Sie diesen. Als Hilfestellung können Sie die in der Übung gezeigten Entwicklertools verwenden. Verwenden Sie Lazy Loading für die Bilder.\nÜberlegen Sie in einer Skizze wie ein Design für ein Tablet im Querformat aussehen könnte. Legen Sie hierfür einen weiteren Breakpoint fest. Beziehen Sie in Ihre Überlegungen ein, dass Sie Elemente anzeigen oder ausblenden können. Integrieren Sie diesen Entwurf in die bestehende Lösung.\nDie Seite soll auch schön formatiert gedruckt werden. Das machen vor allem Studieninteressierte. Überlegen Sie, wie ein Print-Layout aussehen könnte. Beziehen Sie auch hier in Ihre Überlegungen ein, dass Sie Elemente anzeigen oder ausblenden können."
   },
   {
     "objectID": "u11/index.html#homework",
     "href": "u11/index.html#homework",
-    "title": "Übung 11:Adaptive und Responsive Web Design",
+    "title": "Übung 11: Adaptive und Responsive Web Design",
     "section": "Homework",
     "text": "Homework\nHomework sind immer die Aufgaben bis zur kommenden Woche. Sie können natürlich schon beginnen, wenn Sie mit den anderen Aufgaben bereits fertig sind.\n\nAufgabe 1: Adaptives Fluides Design für eine Produktseite\n\nBudget: 90 Minuten\n\nErstellen Sie eine Produktseite, die ein adaptives und fluides Design nutzt, um sich nahtlos an verschiedene Bildschirmgrößen und -verhältnisse anzupassen.\nDie Seite hat folgende Anforderungen:\nSeitenstruktur\n\nHeader mit Logo und Navigation.\nHauptbereich mit einem großen Produktbild, Produktbeschreibung und Kaufoptionen.\nFooter mit Kontaktinformationen und Social Media Links.\n\nFluides Layout\n\nVerwenden Sie prozentuale Breiten und relative Einheiten (em, rem) anstelle von festen Pixelwerten für das Layout.\nSorgen Sie dafür, dass alle Bilder und Medieninhalte skalierbar sind und sich proportional zur Bildschirmgröße anpassen.\nAdaptive Typografie: Implementieren Sie eine skalierbare Typografie, die sich an die Bildschirmgröße anpasst. Verwenden Sie dazu relative Einheiten wie em und rem.\nSorgen Sie dafür, dass die Schriftgrößen bei großen Bildschirmen größer und bei kleinen Bildschirmen kleiner sind.\n\nResponsive Bilder - Das Hauptproduktbild sollte sich flexibel an die verfügbare Breite des Containers anpassen. - Nutzen Sie das srcset-Attribut, um verschiedene Bildauflösungen für unterschiedliche Bildschirmgrößen bereitzustellen.\nMedienabfragen\n\nVerwenden Sie @media-Queries, um Layout-Änderungen für spezifische Bildschirmgrößen vorzunehmen:\nBei einer Bildschirmbreite über 1200px sollte der Inhalt in drei Spalten (Bild, Beschreibung, Kaufoptionen) angezeigt werden.\nBei einer Bildschirmbreite zwischen 768px und 1200px sollte der Inhalt in zwei Spalten (Bild, Beschreibung/Kaufoptionen) angezeigt werden.\nUnter 768px sollte der gesamte Inhalt untereinander in einer Spalte angezeigt werden.\nFluide Abstände und Padding: Verwenden Sie relative Einheiten für Margins und Padding, um sicherzustellen, dass Abstände proportional zur Bildschirmgröße bleiben.\n\nHinweise\n\nNutzen Sie prozentuale Breiten (z.B. width: 50%) und relative Einheiten (z.B. padding: 2em) für das Layout.\nImplementieren Sie responsive Bilder mit dem srcset-Attribut, um verschiedene Bildgrößen für unterschiedliche Geräte zu laden.\nVerwenden Sie freie Bilder von entsprechenden Anbietern."
   },
